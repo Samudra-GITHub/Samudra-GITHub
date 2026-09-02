@@ -1,31 +1,42 @@
-# <p align="center">Samudra Kar</p>
+<div align="center">
 
-<p align="center">
-  <img src="./GITHUB%20PROFILE%20BANNER.png" alt="Samudra Kar GitHub Banner" width="100%" />
+<img src="./GITHUB%20PROFILE%20BANNER.png" alt="Samudra Kar GitHub Banner" width="100%" />
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Geist+Mono&weight=600&size=20&duration=3000&pause=1000&color=60A5FA&center=true&vCenter=true&width=850&lines=Hi%2C+I'm+Samudra+%F0%9F%91%8B;Computer+Science+Student+%40+Chanakya+University;UI%2FUX+Designer+%E2%80%A2+Full+Stack+Developer;Building+AkashaLens+%E2%80%A2+Sams+Studio+%E2%80%A2+Portfolio+v2;Designing+beautiful+digital+experiences." alt="Typing Animation"/>
+
+<p>
+Building immersive digital experiences where <b>design, AI, and engineering</b> work together.
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Geist+Mono&weight=600&size=16&duration=3500&pause=1000&color=60A5FA&center=true&vCenter=true&width=750&lines=Computer+Science+Student+%40+Chanakya+University;UI%2FUX+Designer+%E2%80%A2+Full+Stack+Developer;Building+AkashaLens+%E2%80%A2+Sams+Studio+%E2%80%A2+Portfolio+v2;Designing+beautiful+digital+experiences." alt="Typing SVG" />
+<!-- Badges -->
+<p>
+<img src="https://img.shields.io/badge/dynamic/json?color=60A5FA&label=Profile%20Views&query=count&url=https://api.countapi.xyz/hit/samudra-github/profile&style=for-the-badge&logo=eye&logoColor=white" alt="Profile views"/>
+<img src="https://img.shields.io/badge/Location-Bangalore%2C%20India-050816?style=for-the-badge&logo=googlemaps&logoColor=60A5FA" alt="Location"/>
+<img src="https://img.shields.io/badge/Status-Open%20to%20Collab-050816?style=for-the-badge&logo=handshake&logoColor=60A5FA" alt="Status"/>
 </p>
 
-<p align="center">
-  Building immersive digital products where <strong>design, AI, and engineering</strong> work together.
+<p>
+<a href="mailto:hi.samsstudio@gmail.com"><img src="https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=gmail&logoColor=60A5FA"/></a>
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/></a>
+<a href="https://github.com/Samudra-GITHub"><img src="https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=60A5FA"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Portfolio-050816?style=for-the-badge&logo=vercel&logoColor=60A5FA"/></a>
 </p>
 
-<p align="center">
-  <a href="mailto:hi.samsstudio@gmail.com">
-    <img src="https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=gmail&logoColor=60A5FA"/>
-  </a>
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
-    <img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/>
-  </a>
-  <a href="https://github.com/Samudra-GITHUB">
-    <img src="https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=60A5FA"/>
-  </a>
-</p>
+<sub>📌 Replace the LinkedIn / Portfolio placeholder links above before publishing.</sub>
+
+</div>
+
+<br/>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Samudra-GITHUB&label=PROFILE+VIEWS&color=2563EB&style=flat-square"/>
+  <a href="#-about-me">About</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-featured-projects">Projects</a> •
+  <a href="#-github-analytics">Analytics</a> •
+  <a href="#-2026-roadmap">Roadmap</a> •
+  <a href="#-lets-connect">Connect</a>
 </p>
 
 ---
@@ -36,41 +47,49 @@
 <tr>
 <td width="55%" valign="top">
 
-### Currently Building
-
-* 🌌 **AkashaLens** — AI-powered satellite image reconstruction.
-* 👟 **Sams Studio** — Premium sneaker marketplace.
-* 🌦️ **SkyCast** — Minimal weather dashboard.
-* 🎨 **Portfolio v2** — Interactive 3D developer portfolio.
-
-### Currently Learning
-
-* Artificial Intelligence & Computer Vision
-* Three.js & React Three Fiber
-* Motion Design
-* Backend Architecture
-* Design Systems
+```ts
+const samudra = {
+  role: ["CS Student", "UI/UX Designer", "Full Stack Dev"],
+  university: "Chanakya University",
+  degree: "B.Tech Computer Science Engineering",
+  location: "Bangalore, India",
+  currentlyBuilding: [
+    "AkashaLens — AI satellite image reconstruction",
+    "Sams Studio — premium sneaker marketplace",
+    "SkyCast — minimal weather dashboard",
+    "Portfolio v2 — interactive developer portfolio",
+  ],
+  currentlyLearning: [
+    "AI & Computer Vision",
+    "Three.js / React Three Fiber",
+    "Motion Design",
+    "Backend Architecture",
+    "Design Systems",
+  ],
+  funFact: "I think in components and design tokens.",
+};
+```
 
 </td>
-
 <td width="45%" valign="top">
 
-```yaml
-name: Samudra Kar
+### 🚀 Currently Building
+- 🌌 **AkashaLens** — AI-powered satellite image reconstruction
+- 👟 **Sams Studio** — Premium sneaker marketplace
+- 🌦️ **SkyCast** — Minimal weather forecasting dashboard
+- 🎨 **Portfolio v2** — Interactive developer portfolio
 
-location: Bangalore, India
+### 🌱 Currently Learning
+- Artificial Intelligence & Computer Vision
+- Three.js / React Three Fiber
+- Motion Design
+- Backend Architecture
+- Design Systems
 
-education:
-  university: Chanakya University
-  degree: B.Tech Computer Science Engineering
-
-interests:
-  - AI
-  - UI/UX
-  - Full Stack Development
-  - Creative Coding
-  - Product Design
-```
+### 🤝 Open To
+- Collaborating on AI + design-driven products
+- Freelance UI/UX & frontend work
+- Open-source contributions
 
 </td>
 </tr>
@@ -80,29 +99,25 @@ interests:
 
 ## ✦ Tech Stack
 
-### Languages
+<div align="center">
 
-<p>
-  <img src="https://skillicons.dev/icons?i=python,c,java,js,html,css"/>
-</p>
+**Languages**
+<br/>
+<img src="https://skillicons.dev/icons?i=python,c,java,js,html,css"/>
 
-### Frameworks & Tools
+**Frameworks & Tools**
+<br/>
+<img src="https://skillicons.dev/icons?i=react,tailwind,fastapi,flask,nodejs,git,github,vscode"/>
 
-<p>
-  <img src="https://skillicons.dev/icons?i=react,tailwind,fastapi,flask,nodejs,git,github,vscode"/>
-</p>
+**Design & Creative**
+<br/>
+<img src="https://skillicons.dev/icons?i=figma,ps,ai"/>
 
-### Design
+**Currently Exploring**
+<br/>
+<img src="https://skillicons.dev/icons?i=threejs,firebase,mongodb,tensorflow"/>
 
-<p>
-  <img src="https://skillicons.dev/icons?i=figma,ps,ai"/>
-</p>
-
-### Exploring
-
-<p>
-  <img src="https://skillicons.dev/icons?i=threejs,firebase,mongodb,tensorflow"/>
-</p>
+</div>
 
 ---
 
@@ -112,49 +127,34 @@ interests:
 <tr>
 <td width="50%" valign="top">
 
-### 🌌 AkashaLens
-
-AI-powered satellite cloud removal and reconstruction using Computer Vision.
-
-**Tech**
+### 🌌 [AkashaLens](https://github.com/Samudra-GITHub)
+AI-powered satellite cloud removal and reconstruction using computer vision — restoring obscured Earth imagery with deep learning.
 
 `Python` `OpenCV` `NumPy` `Deep Learning`
 
 </td>
-
 <td width="50%" valign="top">
 
-### 👟 Sams Studio
-
-Luxury sneaker marketplace inspired by Apple, Nike, and A Ma Maniére.
-
-**Tech**
+### 👟 [Sams Studio](https://github.com/Samudra-GITHub)
+A luxury sneaker marketplace inspired by Apple, Nike, and modern fashion e-commerce — built for a premium, tactile shopping feel.
 
 `Figma` `React` `Tailwind CSS`
 
 </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 
-### 🌦️ SkyCast
+### 🌦️ [SkyCast](https://github.com/Samudra-GITHub)
+A clean, minimal weather dashboard powered by the OpenWeather API, focused on clarity over clutter.
 
-Weather dashboard powered by OpenWeather API.
-
-**Tech**
-
-`Flask` `REST API` `HTML/CSS`
+`Flask` `REST API`
 
 </td>
-
 <td width="50%" valign="top">
 
-### 🎨 Portfolio v2
-
-Interactive developer portfolio with cinematic animations.
-
-**Tech**
+### 🎨 [Portfolio v2](https://github.com/Samudra-GITHub)
+An interactive developer portfolio with cinematic 3D animations and motion-driven storytelling.
 
 `React` `Three.js` `Framer Motion`
 
@@ -162,37 +162,51 @@ Interactive developer portfolio with cinematic animations.
 </tr>
 </table>
 
+<div align="center">
+<sub>💡 Swap the placeholder project links above for each repo's actual URL.</sub>
+</div>
+
 ---
 
 ## ✦ GitHub Analytics
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Samudra-GITHUB&show_icons=true&theme=transparent&hide_border=true&title_color=60A5FA&icon_color=60A5FA&text_color=E2E8F0"/>
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com?user=Samudra-GITHUB&theme=transparent&hide_border=true&ring=60A5FA&fire=60A5FA&currStreakLabel=60A5FA"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Samudra-GITHub&show_icons=true&theme=transparent&hide_border=true&title_color=60A5FA&icon_color=60A5FA&text_color=E2E8F0&rank_icon=github"/>
+  <img width="49%" src="https://streak-stats.demolab.com?user=Samudra-GITHub&theme=transparent&hide_border=true&ring=60A5FA&fire=60A5FA&currStreakLabel=60A5FA"/>
 </p>
 
 <p align="center">
-  <img width="45%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Samudra-GITHUB&layout=compact&theme=transparent&hide_border=true&title_color=60A5FA&text_color=CBD5E1"/>
+  <img width="45%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Samudra-GITHub&layout=compact&theme=transparent&hide_border=true&title_color=60A5FA&text_color=CBD5E1"/>
 </p>
-
----
-
-## ✦ Activity Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Samudra-GITHUB&bg_color=050816&color=60A5FA&line=3B82F6&point=93C5FD&area=true&hide_border=true"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=Samudra-GITHub&theme=algolia&no-frame=true&no-bg=true&column=6&margin-w=8&margin-h=8" alt="trophies"/>
 </p>
+
+### Activity Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Samudra-GITHub&bg_color=050816&color=60A5FA&line=3B82F6&point=93C5FD&area=true&hide_border=true"/>
+</p>
+
+### Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake.svg" alt="snake animation"/>
+</p>
+
+<sub>🐍 The snake needs a one-time GitHub Action — see <code>snake.yml</code> provided alongside this README.</sub>
 
 ---
 
 ## ✦ 2026 Roadmap
 
-| Project         | Status            |
-| --------------- | ----------------- |
-| 🌌 AkashaLens   | 🟢 AI Prototype   |
-| 👟 Sams Studio  | 🟡 UI Development |
-| 🎨 Portfolio v2 | 🟢 Building       |
-| 🌦️ SkyCast     | ✅ Completed       |
+| Project | Focus | Status |
+| --- | --- | --- |
+| 🌌 AkashaLens | AI Prototype → Model refinement | 🟢 In Progress |
+| 👟 Sams Studio | UI Development → Storefront build | 🟡 In Progress |
+| 🎨 Portfolio v2 | Interactive Build → 3D polish | 🟢 In Progress |
+| 🌦️ SkyCast | Shipped | ✅ Completed |
 
 ---
 
@@ -206,20 +220,29 @@ I enjoy building products that combine thoughtful design, modern frontend engine
 
 ## ✦ Let's Connect
 
-<p align="center">
-  <a href="mailto:hi.samsstudio@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-050816?style=for-the-badge&logo=gmail&logoColor=60A5FA"/>
-  </a>
+<div align="center">
 
-  <a href="https://www.linkedin.com/in/samudra-kar-a495951b5/">
-    <img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/>
-  </a>
+<a href="mailto:hi.samsstudio@gmail.com"><img src="https://img.shields.io/badge/Gmail-050816?style=for-the-badge&logo=gmail&logoColor=60A5FA"/></a>
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/></a>
+<a href="https://github.com/Samudra-GITHub"><img src="https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=60A5FA"/></a>
 
-  <a href="https://github.com/Samudra-GITHUB">
-    <img src="https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=60A5FA"/>
-  </a>
-</p>
+<br/><br/>
 
-<p align="center">
-  Thanks for stopping by.
-</p>
+*Thanks for stopping by — feel free to explore my pinned repos below.* ✨
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Geist+Mono&weight=400&size=14&duration=4000&pause=1500&color=60A5FA&center=true&vCenter=true&width=600&lines=Let's+build+something+beautiful+together." alt="Footer"/>
+
+</div>
+
+<!--
+Notes for Samudra:
+1. Widgets (stats, streak, trophies, activity graph, snake) depend on external
+   services — if an image looks empty at first, it's a cache/rate-limit delay,
+   not a broken link.
+2. Update every "YOUR_LINKEDIN" and project-link placeholder before publishing.
+3. Keep the banner image (GITHUB PROFILE BANNER.png) in this same repo root.
+4. To activate the contribution snake, add the included snake.yml to
+   .github/workflows/ in your Samudra-GITHub/Samudra-GITHub repo, then push once.
+-->
