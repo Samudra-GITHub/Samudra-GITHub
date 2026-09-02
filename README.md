@@ -24,7 +24,7 @@ Building immersive digital experiences where <b>design, AI, and engineering</b> 
 <a href="#"><img src="https://img.shields.io/badge/Portfolio-050816?style=for-the-badge&logo=vercel&logoColor=60A5FA"/></a>
 </p>
 
-<sub>📌 Replace the LinkedIn / Portfolio placeholder links above before publishing.</sub>
+
 
 </div>
 
