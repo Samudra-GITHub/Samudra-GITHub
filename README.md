@@ -222,7 +222,7 @@ I enjoy building products that combine thoughtful design, modern frontend engine
 <div align="center">
 
 <a href="mailto:hi.samsstudio@gmail.com"><img src="https://img.shields.io/badge/Gmail-050816?style=for-the-badge&logo=gmail&logoColor=60A5FA"/></a>
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/></a>
+<a href="https://www.linkedin.com/in/samudra-kar-a495951b5/"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/></a>
 <a href="https://github.com/Samudra-GITHub"><img src="https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=60A5FA"/></a>
 
 <br/><br/>
