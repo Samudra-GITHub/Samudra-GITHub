@@ -169,19 +169,7 @@ An interactive developer portfolio with cinematic 3D animations and motion-drive
 ## ✦ GitHub Analytics
 
 <p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Samudra-GITHub&show_icons=true&theme=tokyonight&hide_border=true&title_color=60A5FA&icon_color=60A5FA&text_color=E2E8F0&bg_color=0d1117&rank_icon=github&cache_seconds=1800"/>
-  &nbsp;
-  <img height="180" src="https://streak-stats.demolab.com?user=Samudra-GITHub&theme=tokyonight-duo&hide_border=true&ring=60A5FA&fire=60A5FA&currStreakLabel=60A5FA&background=0d1117"/>
-</p>
-
-<p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Samudra-GITHub&layout=compact&theme=tokyonight&hide_border=true&title_color=60A5FA&text_color=CBD5E1&bg_color=0d1117&cache_seconds=1800&langs_count=8"/>
-</p>
-
-### Activity Graph
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Samudra-GITHub&bg_color=0d1117&color=60A5FA&line=3B82F6&point=93C5FD&area=true&hide_border=true&radius=6"/>
+  <img src="https://streak-stats.demolab.com?user=Samudra-GITHub&theme=tokyonight-duo&hide_border=true&ring=60A5FA&fire=60A5FA&currStreakLabel=60A5FA&background=0d1117"/>
 </p>
 
 ### Contribution Snake
