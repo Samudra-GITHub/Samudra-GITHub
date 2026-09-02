@@ -19,7 +19,7 @@ Building immersive digital experiences where <b>design, AI, and engineering</b> 
 
 <p>
 <a href="mailto:hi.samsstudio@gmail.com"><img src="https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=gmail&logoColor=60A5FA"/></a>
-<a href="https://www.linkedin.com/in/samudra-kar-a495951b5/"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/></a>
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/></a>
 <a href="https://github.com/Samudra-GITHub"><img src="https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=60A5FA"/></a>
 <a href="#"><img src="https://img.shields.io/badge/Portfolio-050816?style=for-the-badge&logo=vercel&logoColor=60A5FA"/></a>
 </p>
@@ -162,9 +162,7 @@ An interactive developer portfolio with cinematic 3D animations and motion-drive
 </tr>
 </table>
 
-<div align="center">
-<sub>💡 Swap the placeholder project links above for each repo's actual URL.</sub>
-</div>
+
 
 ---
 
@@ -222,7 +220,7 @@ I enjoy building products that combine thoughtful design, modern frontend engine
 <div align="center">
 
 <a href="mailto:hi.samsstudio@gmail.com"><img src="https://img.shields.io/badge/Gmail-050816?style=for-the-badge&logo=gmail&logoColor=60A5FA"/></a>
-<a href="https://www.linkedin.com/in/samudra-kar-a495951b5/"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/></a>
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/></a>
 <a href="https://github.com/Samudra-GITHub"><img src="https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=60A5FA"/></a>
 
 <br/><br/>
