@@ -165,17 +165,28 @@ An interactive developer portfolio with cinematic 3D animations and motion-drive
 ## ✦ GitHub Analytics
 
 <p align="center">
-  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=Samudra-GITHub&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=60A5FA&icon_color=60A5FA&text_color=c9d1d9"/>
-  <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Samudra-GITHub&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=60A5FA&text_color=c9d1d9"/>
-</p>
-
-<p align="center">
   <img src="https://streak-stats.demolab.com?user=Samudra-GITHub&theme=tokyonight-duo&hide_border=true&ring=60A5FA&fire=60A5FA&currStreakLabel=60A5FA&background=0d1117"/>
 </p>
 
+<!--
+Stats / Top Languages / Trophy cards removed for now — the free shared instances of
+github-readme-stats.vercel.app and github-profile-trophy.vercel.app were returning broken
+images (they're frequently overloaded). Once you deploy your own instance (both repos have a
+one-click "Deploy to Vercel" button in their README), swap YOUR-STATS-DOMAIN below and paste
+this block back in above "### Contribution Snake":
+
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Samudra-GITHub&theme=tokyonight&no-frame=true&margin-w=8&row=1&column=7"/>
+  <img height="165em" src="https://YOUR-STATS-DOMAIN.vercel.app/api?username=Samudra-GITHub&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=60A5FA&icon_color=60A5FA&text_color=c9d1d9"/>
+  <img height="165em" src="https://YOUR-STATS-DOMAIN.vercel.app/api/top-langs/?username=Samudra-GITHub&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=60A5FA&text_color=c9d1d9"/>
 </p>
+<p align="center">
+  <img src="https://YOUR-TROPHY-DOMAIN.vercel.app/?username=Samudra-GITHub&theme=tokyonight&no-frame=true&margin-w=8&row=1&column=7"/>
+</p>
+
+Repos to deploy:
+- https://github.com/anuraghazra/github-readme-stats
+- https://github.com/ryo-ma/github-profile-trophy
+-->
 
 ### Contribution Snake
 
@@ -233,8 +244,9 @@ Notes for Samudra:
 2. The old profile-view counter (countapi.xyz) has been discontinued for a while and was
    rendering as a dead badge — swapped it for komarev.com/ghpvc, which is the standard
    working alternative and matches your accent color.
-3. Added the GitHub Stats + Top Languages cards (github-readme-stats) and a Trophy row
-   (github-profile-trophy), both on the "tokyonight" theme to match your streak-stats theme.
+3. The GitHub Stats / Top Languages / Trophy cards were pulled out (their shared free
+   instances were rendering broken images) and left commented-out below the Contribution
+   Snake section with deploy links — restore them once you're on your own instance.
 4. Update every "YOUR_LINKEDIN" and project-link placeholder before publishing.
 5. Keep the banner image (GITHUB PROFILE BANNER.png) in this same repo root.
 6. To activate the contribution snake, add the included snake.yml to
