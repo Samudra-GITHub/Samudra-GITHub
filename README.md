@@ -1,210 +1,242 @@
 <div align="center">
-  <img src="./GITHUB%20PROFILE%20BANNER.png" alt="Samudra Kar profile banner" width="100%" />
-  <br />
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=21&duration=2800&pause=900&color=00F5FF&center=true&vCenter=true&width=860&lines=SYSTEM.ONLINE+%2F%2F+SAMUDRA+KAR;CREATIVE+TECHNOLOGIST;UI%2FUX+DESIGNER+%2B+FULL-STACK+DEVELOPER;DESIGNING+THE+FUTURE%2C+ONE+INTERFACE+AT+A+TIME."
-    alt="Animated introduction"
-  />
-  <br />
-  <img src="https://img.shields.io/badge/◈_DESIGN-00F5FF?style=for-the-badge&labelColor=070A1A&color=00F5FF" alt="Design" />
-  <img src="https://img.shields.io/badge/◈_AI-8B5CF6?style=for-the-badge&labelColor=070A1A&color=8B5CF6" alt="Artificial intelligence" />
-  <img src="https://img.shields.io/badge/◈_ENGINEERING-FF2BD6?style=for-the-badge&labelColor=070A1A&color=FF2BD6" alt="Engineering" />
+  <img src="./GITHUB%20PROFILE%20BANNER.png" alt="Samudra Kar — designer and developer" width="100%" />
   <br />
   <br />
-  <p>
-    <strong>Building digital experiences from the space between imagination and implementation.</strong>
-  </p>
+  <h1>Samudra Kar</h1>
+  <p><strong>Design-minded developer building digital products with clarity.</strong></p>
   <p>
     <a href="mailto:hi.samsstudio@gmail.com">
-      <img src="https://img.shields.io/badge/CONTACT-070A1A?style=flat-square&logo=gmail&logoColor=00F5FF&labelColor=070A1A&color=00F5FF" alt="Contact Samudra" />
+      <img src="https://img.shields.io/badge/Email-111111?style=flat-square&logo=gmail&logoColor=ffffff" alt="Email" />
     </a>
     <a href="https://github.com/Samudra-GITHub">
-      <img src="https://img.shields.io/badge/ACCESS%20THE%20LAB-070A1A?style=flat-square&logo=github&logoColor=8B5CF6&labelColor=070A1A&color=8B5CF6" alt="Visit GitHub profile" />
+      <img src="https://img.shields.io/badge/GitHub-111111?style=flat-square&logo=github&logoColor=ffffff" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
+      <img src="https://img.shields.io/badge/LinkedIn-111111?style=flat-square&logo=linkedin&logoColor=ffffff" alt="LinkedIn" />
     </a>
   </p>
 </div>
+
 <br />
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F5FF,50:8B5CF6,100:FF2BD6&height=120&section=header&text=&fontSize=0" alt="" width="100%" />
-</div>
+
 <p align="center">
-  <a href="#-identity">IDENTITY</a>
-  &nbsp; // &nbsp;
-  <a href="#-active-protocols">ACTIVE PROTOCOLS</a>
-  &nbsp; // &nbsp;
-  <a href="#-loadout">LOADOUT</a>
-  &nbsp; // &nbsp;
-  <a href="#-transmissions">TRANSMISSIONS</a>
-  &nbsp; // &nbsp;
-  <a href="#-establish-uplink">UPLINK</a>
+  <a href="#about">About</a>
+  &nbsp;&nbsp;/&nbsp;&nbsp;
+  <a href="#selected-work">Selected work</a>
+  &nbsp;&nbsp;/&nbsp;&nbsp;
+  <a href="#capabilities">Capabilities</a>
+  &nbsp;&nbsp;/&nbsp;&nbsp;
+  <a href="#now">Now</a>
+  &nbsp;&nbsp;/&nbsp;&nbsp;
+  <a href="#connect">Connect</a>
 </p>
+
 <br />
-## `01` // IDENTITY
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=111111&height=2&section=header" alt="" width="90%" />
+</div>
+
+## About
+
+I'm a Computer Science Engineering student at **Chanakya University**, a UI/UX designer, and a full-stack developer based in **Bangalore, India**.
+
+I make digital products that are:
+
 <table>
   <tr>
-    <td width="58%" valign="top">
-### Hello, traveller.
-I'm **Samudra Kar** — a Computer Science Engineering student at **Chanakya University**, UI/UX designer, and full-stack developer based in Bangalore.
-I design and build products with a bias toward:
-<table>
-  <tr>
-    <td>◉ Clear interfaces</td>
-    <td>◉ Expressive motion</td>
-  </tr>
-  <tr>
-    <td>◉ Useful AI</td>
-    <td>◉ Thoughtful systems</td>
+    <td width="33%" align="center"><strong>USEFUL</strong><br /><sub>Clear enough to understand.<br />Fast enough to use.</sub></td>
+    <td width="33%" align="center"><strong>CONSIDERED</strong><br /><sub>Every interaction has a reason.<br />Every detail earns its place.</sub></td>
+    <td width="33%" align="center"><strong>MEMORABLE</strong><br /><sub>Simple does not have to mean<br />forgettable.</sub></td>
   </tr>
 </table>
-I like taking complicated ideas and giving them a visual language people can understand immediately.
-  </td>
-  <td width="42%" valign="top">
-```yaml
-operator:
-  name: "Samudra Kar"
-  alias: "Samudra-GITHub"
-  class: "creative_technologist"
-  location: "Bangalore, India"
-  education: "B.Tech CSE"
-core_directives:
-  - design with intent
-  - engineer with empathy
-  - ship the strange idea
-current_mode:
-  building: "AI × design systems"
-  status: "open to collaboration"
-  signal: "strong"
+
+My work sits between product thinking, visual design, frontend engineering, and applied AI.
+
+```js
+const samudra = {
+  role: ["UI/UX Designer", "Full-Stack Developer"],
+  education: "B.Tech Computer Science Engineering",
+  university: "Chanakya University",
+  location: "Bangalore, India",
+  interestedIn: ["AI", "Computer Vision", "3D", "Design Systems"],
+  belief: "Good technology should feel obvious.",
+};
 ```
-  </td>
-  </tr>
-</table>
-## `02` // ACTIVE PROTOCOLS
+
+## Selected Work
+
 <table>
   <tr>
     <td width="50%" valign="top">
-### `AKASHALENS.exe`
-**Satellite image reconstruction**
-Using AI and computer vision to recover obscured Earth imagery and reveal what the clouds hide.
-`PYTHON` `OPENCV` `NUMPY` `DEEP LEARNING`
+
+### AkashaLens
+**Making satellite imagery clearer.**
+
+An AI-powered computer-vision project exploring cloud removal and image reconstruction for satellite imagery.
+
+`Python` · `OpenCV` · `NumPy` · `Deep Learning`
+
+<a href="https://github.com/Samudra-GITHub">View project →</a>
+
   </td>
-  <td width="50%" valign="top">
-### `KRAMA.exe`
-**Premium sneaker marketplace**
-A fashion-forward storefront concept built around tactile browsing, visual confidence, and a premium purchase flow.
-`REACT` `TAILWIND` `FIGMA`
+    <td width="50%" valign="top">
+
+### Krama
+**A more considered way to shop sneakers.**
+
+A premium marketplace concept shaped by fashion, editorial layouts, and a tactile shopping experience.
+
+`React` · `Tailwind CSS` · `Figma`
+
+<a href="https://github.com/Samudra-GITHub">View project →</a>
+
   </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-### `SKYCAST.exe`
-**Minimal weather intelligence**
-A calm, focused forecast dashboard that puts the right information in front of you without the clutter.
-`FLASK` `REST API` `OPENWEATHER`
+
+### SkyCast
+**Weather information without the noise.**
+
+A minimal forecast dashboard designed around quick comprehension and a calm visual hierarchy.
+
+`Flask` · `REST API` · `OpenWeather`
+
+<a href="https://github.com/Samudra-GITHub">View project →</a>
+
   </td>
-  <td width="50%" valign="top">
-### `PORTFOLIO_V2.exe`
-**Interactive developer identity**
-A motion-led portfolio experiment exploring 3D environments, cinematic transitions, and expressive frontend work.
-`REACT` `THREE.JS` `FRAMER MOTION`
+    <td width="50%" valign="top">
+
+### Portfolio v2
+**A digital space with a point of view.**
+
+An interactive portfolio exploring motion, 3D, visual storytelling, and expressive frontend development.
+
+`React` · `Three.js` · `Framer Motion`
+
+<a href="https://github.com/Samudra-GITHub">View project →</a>
+
   </td>
   </tr>
 </table>
-## `03` // LOADOUT
-<div align="center">
-### PRIMARY LANGUAGES
-<img src="https://skillicons.dev/icons?i=python,c,java,js,html,css&theme=dark" alt="Python, C, Java, JavaScript, HTML and CSS" />
-<br />
-<br />
-### SYSTEMS & FRAMEWORKS
-<img src="https://skillicons.dev/icons?i=react,tailwind,fastapi,flask,nodejs,firebase,mongodb,git,github&theme=dark" alt="React, Tailwind CSS, FastAPI, Flask, Node.js, Firebase, MongoDB, Git and GitHub" />
-<br />
-<br />
-### VISUAL INSTRUMENTS
-<img src="https://skillicons.dev/icons?i=figma,ps,ai,threejs,tensorflow,vscode&theme=dark" alt="Figma, Photoshop, Illustrator, Three.js, TensorFlow and VS Code" />
-</div>
-<br />
+
+## Capabilities
+
 <table>
   <tr>
-    <td width="33%" align="center">
-      <strong>LEARNING</strong><br /><br />
-      Computer Vision<br />
+    <td width="25%" align="center">
+      <strong>PRODUCT</strong><br /><br />
+      User flows<br />
+      Product thinking<br />
+      Information architecture
+    </td>
+    <td width="25%" align="center">
+      <strong>DESIGN</strong><br /><br />
+      UI/UX systems<br />
+      Prototyping<br />
+      Motion design
+    </td>
+    <td width="25%" align="center">
+      <strong>ENGINEERING</strong><br /><br />
+      React interfaces<br />
+      Full-stack systems<br />
+      API integration
+    </td>
+    <td width="25%" align="center">
+      <strong>EXPLORATION</strong><br /><br />
+      Computer vision<br />
       Three.js / R3F<br />
-      Backend Architecture
-    </td>
-    <td width="33%" align="center">
-      <strong>CALIBRATING</strong><br /><br />
-      Motion Design<br />
-      Design Systems<br />
-      Creative Development
-    </td>
-    <td width="33%" align="center">
-      <strong>RECEPTIVE TO</strong><br /><br />
-      AI + Design Products<br />
-      UI/UX Collaborations<br />
-      Open Source
+      Applied AI
     </td>
   </tr>
 </table>
+
 <br />
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=00F5FF&height=2&section=header" alt="" width="88%" />
+  <img src="https://skillicons.dev/icons?i=python,c,java,js,html,css,react,tailwind,fastapi,flask,nodejs,firebase,mongodb,git,github,figma,threejs,tensorflow&theme=light" alt="Technology stack" />
 </div>
-## `04` // TRANSMISSIONS
+
+## Now
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+
+### Learning
+- Artificial intelligence and computer vision
+- Three.js and React Three Fiber
+- Backend architecture
+- Scalable design systems
+
+  </td>
+    <td width="50%" valign="top">
+
+### Open to
+- AI and design-driven products
+- UI/UX and frontend collaborations
+- Open-source contributions
+- Interesting problems with thoughtful people
+
+  </td>
+  </tr>
+</table>
+
+## GitHub
+
 <div align="center">
   <img
-    src="https://streak-stats.demolab.com?user=Samudra-GITHub&theme=dark&hide_border=true&background=070A1A&ring=00F5FF&fire=FF2BD6&currStreakLabel=00F5FF&sideLabels=CBD5E1&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B"
+    src="https://streak-stats.demolab.com?user=Samudra-GITHub&theme=default&hide_border=true&background=ffffff&ring=111111&fire=111111&currStreakLabel=111111&sideLabels=555555&currStreakNum=111111&sideNums=111111&dates=888888"
     alt="GitHub contribution streak"
-    width="72%"
+    width="70%"
   />
-  <br />
-  <br />
+  <br /><br />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake.svg" />
-    <img src="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake-dark.svg" alt="Animated GitHub contribution graph" width="90%" />
+    <img src="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake.svg" alt="Animated contribution graph" width="90%" />
   </picture>
 </div>
-## `05` // OPERATING PRINCIPLE
+
+## A Note on Craft
+
 <div align="center">
-<img src="https://img.shields.io/badge/BUILD%20THE%20USEFUL-070A1A?style=for-the-badge&labelColor=070A1A&color=00F5FF" alt="Build the useful" />
-<img src="https://img.shields.io/badge/MAKE%20IT%20MEMORABLE-070A1A?style=for-the-badge&labelColor=070A1A&color=8B5CF6" alt="Make it memorable" />
-<img src="https://img.shields.io/badge/SHIP%20THE%20IDEA-070A1A?style=for-the-badge&labelColor=070A1A&color=FF2BD6" alt="Ship the idea" />
-<br />
-<br />
-> **“Great products are built where design meets engineering.”**
-The best interface is not just beautiful. It gives people momentum.
+
+### “The best design is the one that makes the right thing feel natural.”
+
+I care about the space between a good idea and a finished product: the decisions, iterations, details, and small moments that make something worth using.
+
 </div>
-## `06` // ESTABLISH UPLINK
+
+## Connect
+
 <div align="center">
   <a href="mailto:hi.samsstudio@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-070A1A?style=for-the-badge&logo=gmail&logoColor=00F5FF&labelColor=070A1A&color=00F5FF" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-111111?style=for-the-badge&logo=gmail&logoColor=ffffff" alt="Email" />
   </a>
   <a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
-    <img src="https://img.shields.io/badge/LINKEDIN-070A1A?style=for-the-badge&logo=linkedin&logoColor=8B5CF6&labelColor=070A1A&color=8B5CF6" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-111111?style=for-the-badge&logo=linkedin&logoColor=ffffff" alt="LinkedIn" />
   </a>
   <a href="https://github.com/Samudra-GITHub">
-    <img src="https://img.shields.io/badge/GITHUB-070A1A?style=for-the-badge&logo=github&logoColor=FF2BD6&labelColor=070A1A&color=FF2BD6" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github&logoColor=ffffff" alt="GitHub" />
   </a>
-  <br />
-  <br />
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Space+Mono&weight=400&size=14&duration=4000&pause=1200&color=00F5FF&center=true&vCenter=true&width=680&lines=Signal+received.;Let's+build+something+from+the+future."
-    alt="Let's build something from the future"
-  />
-  <br />
-  <br />
-  <sub>◈ SYSTEM STATUS: ONLINE &nbsp;·&nbsp; ◈ LOCATION: BLR &nbsp;·&nbsp; ◈ SIGNAL: OPEN</sub>
+  <br /><br />
+  <sub>Designed and built by Samudra Kar · Bangalore, India</sub>
 </div>
+
 <br />
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF2BD6,50:8B5CF6,100:00F5FF&height=110&section=footer" alt="" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=111111&height=100&section=footer" alt="" width="100%" />
 </div>
+
 <!--
 SETUP CHECKLIST
 1. Rename this file to README.md inside the Samudra-GITHub/Samudra-GITHub profile repository.
-2. Keep GITHUB PROFILE BANNER.png in the repository root.
-3. Replace YOUR_LINKEDIN with the real LinkedIn profile URL.
-4. Replace the generic project links with the actual repository URLs.
+2. Keep "GITHUB PROFILE BANNER.png" in the repository root.
+3. Replace YOUR_LINKEDIN (two places) with the real LinkedIn profile URL.
+4. Replace each "View project →" link with the matching repository URL — all four currently point to the profile page.
 5. The contribution snake requires a workflow that writes SVG files to the output branch.
-6. If the neon widgets ever rate-limit, remove that individual image; the layout remains complete.
+6. This version is intentionally monochrome; keep the palette restrained for the intended look.
 -->
