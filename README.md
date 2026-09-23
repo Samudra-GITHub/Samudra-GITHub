@@ -1,329 +1,242 @@
 <div align="center">
 
-<img src="./GITHUB PROFILE BANNER.png" width="100%" alt="Samudra Kar Banner"/>
+<img src="./GITHUB%20PROFILE%20BANNER.png" alt="Samudra Kar GitHub Banner" width="100%" />
 
 <br/>
 
-# Samudra Kar
-
-### Product Engineer • UI/UX Designer • AI Builder
-
-Building products that blend **design**, **artificial intelligence**, and **engineering** into memorable digital experiences.
-
-<br/>
+<img src="https://readme-typing-svg.demolab.com?font=Geist+Mono&weight=600&size=20&duration=3000&pause=1000&color=60A5FA&center=true&vCenter=true&width=850&lines=Hi%2C+I'm+Samudra+%F0%9F%91%8B;Computer+Science+Student+%40+Chanakya+University;UI%2FUX+Designer+%E2%80%A2+Full+Stack+Developer;Building+AkashaLens+%E2%80%A2+Krama+%E2%80%A2+Portfolio+v2;Designing+beautiful+digital+experiences." alt="Typing Animation"/>
 
 <p>
-<img src="https://img.shields.io/badge/Bangalore-India-0B0F19?style=for-the-badge&logo=googlemaps&logoColor=5EEAD4"/>
-<img src="https://img.shields.io/badge/Chanakya-University-0B0F19?style=for-the-badge&logo=bookstack&logoColor=60A5FA"/>
-<img src="https://img.shields.io/badge/Open%20Source-Lover-0B0F19?style=for-the-badge&logo=github&logoColor=ffffff"/>
+Building immersive digital experiences where <b>design, AI, and engineering</b> work together.
+</p>
+
+<!-- Badges -->
+<p>
+<img src="https://komarev.com/ghpvc/?username=Samudra-GITHub&style=for-the-badge&color=60A5FA&label=Profile+Views" alt="Profile views"/>
+<img src="https://img.shields.io/badge/Location-Bangalore%2C%20India-050816?style=for-the-badge&logo=googlemaps&logoColor=60A5FA" alt="Location"/>
+<img src="https://img.shields.io/badge/Status-Open%20to%20Collab-050816?style=for-the-badge&logo=handshake&logoColor=60A5FA" alt="Status"/>
 </p>
 
 <p>
-<a href="mailto:samudrakar8@gmail.com">
-<img src="https://img.shields.io/badge/Email-0B0F19?style=flat-square&logo=gmail&logoColor=60A5FA"/>
-</a>
-
-<a href="YOUR_LINKEDIN">
-<img src="https://img.shields.io/badge/LinkedIn-0B0F19?style=flat-square&logo=linkedin&logoColor=60A5FA"/>
-</a>
-
-<a href="YOUR_PORTFOLIO">
-<img src="https://img.shields.io/badge/Portfolio-0B0F19?style=flat-square&logo=vercel&logoColor=60A5FA"/>
-</a>
-
-<a href="https://github.com/Samudra-GITHub">
-<img src="https://img.shields.io/badge/GitHub-0B0F19?style=flat-square&logo=github&logoColor=white"/>
-</a>
+<a href="mailto:hi.samsstudio@gmail.com"><img src="https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=gmail&logoColor=60A5FA"/></a>
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/></a>
+<a href="https://github.com/Samudra-GITHub"><img src="https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=60A5FA"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Portfolio-050816?style=for-the-badge&logo=vercel&logoColor=60A5FA"/></a>
 </p>
 
 </div>
 
----
+<br/>
 
-## /about
-
-```typescript
-const Samudra = {
-  title: "Product Engineer",
-
-  location: "Bangalore, India",
-
-  education: "B.Tech Computer Science Engineering @ Chanakya University",
-
-  interests: [
-    "Artificial Intelligence",
-    "Computer Vision",
-    "Frontend Engineering",
-    "UI/UX Design",
-    "Motion Design",
-    "Design Systems"
-  ],
-
-  currentlyBuilding: [
-    "Tarang",
-    "Rinti AI",
-    "Sentinel AI",
-    "AkashaLens"
-  ],
-
-  philosophy: "Beautiful products deserve beautiful engineering."
-}
-```
-
-I enjoy designing products where engineering feels invisible and the experience feels magical.
+<p align="center">
+  <a href="#-about-me">About</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-featured-projects">Projects</a> •
+  <a href="#-github-analytics">Analytics</a> •
+  <a href="#-2026-roadmap">Roadmap</a> •
+  <a href="#-lets-connect">Connect</a>
+</p>
 
 ---
 
-# Featured Products
+## ✦ About Me
 
 <table>
-
 <tr>
+<td width="55%" valign="top">
 
-<td width="50%">
-
-## 🎵 Tarang
-
-A music streaming experience unlike Spotify.
-
-**Cartoonverse × Glassmorphism × Motion Design**
-
-- Animated music universe
-- Mood-first discovery
-- Floating illustrated world
-- Premium player experience
-- Fully responsive web app
-
-`Next.js` `TailwindCSS` `Framer Motion` `TypeScript`
-
-</td>
-
-<td width="50%">
-
-## 🤖 Rinti AI
-
-An AI assistant designed like ChatGPT, but built from scratch.
-
-- Authentication
-- Streaming AI chat
-- Long-term memory
-- Deep research mode
-- Persistent conversations
-- Tavily + Groq powered
-
-`Next.js` `FastAPI` `PostgreSQL` `Groq`
+```ts
+const samudra = {
+  role: ["CS Student", "UI/UX Designer", "Full Stack Dev"],
+  university: "Chanakya University",
+  degree: "B.Tech Computer Science Engineering",
+  location: "Bangalore, India",
+  currentlyBuilding: [
+    "AkashaLens — AI satellite image reconstruction",
+    "Krama — premium sneaker marketplace",
+    "SkyCast — minimal weather dashboard",
+    "Portfolio v2 — interactive developer portfolio",
+  ],
+  currentlyLearning: [
+    "AI & Computer Vision",
+    "Three.js / React Three Fiber",
+    "Motion Design",
+    "Backend Architecture",
+    "Design Systems",
+  ],
+  funFact: "I think in components and design tokens.",
+};
+```
 
 </td>
+<td width="45%" valign="top">
 
+### 🚀 Currently Building
+- 🌌 **AkashaLens** — AI-powered satellite image reconstruction
+- 👟 **Krama** — Premium sneaker marketplace
+- 🌦️ **SkyCast** — Minimal weather forecasting dashboard
+- 🎨 **Portfolio v2** — Interactive developer portfolio
+
+### 🌱 Currently Learning
+- Artificial Intelligence & Computer Vision
+- Three.js / React Three Fiber
+- Motion Design
+- Backend Architecture
+- Design Systems
+
+### 🤝 Open To
+- Collaborating on AI + design-driven products
+- Freelance UI/UX & frontend work
+- Open-source contributions
+
+</td>
 </tr>
-
-<tr>
-
-<td width="50%">
-
-## 🛰️ Sentinel AI
-
-Smart India Hackathon 2026 Project.
-
-AI-powered disaster intelligence using satellite imagery.
-
-- Flood detection
-- Satellite analysis
-- AI insights dashboard
-- Emergency response workflows
-
-`Python` `FastAPI` `OpenCV`
-
-</td>
-
-<td width="50%">
-
-## 🌍 AkashaLens
-
-ISRO-inspired computer vision project for reconstructing cloud-covered Earth imagery.
-
-- Cloud removal
-- Satellite reconstruction
-- Image enhancement
-- Deep Learning pipeline
-
-`Python` `OpenCV` `NumPy`
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%">
-
-## 👟 Sams Studio
-
-Luxury sneaker marketplace inspired by Nike and Apple.
-
-- Premium shopping UI
-- Storytelling product pages
-- Motion interactions
-- Design system driven
-
-`React` `Tailwind CSS` `Figma`
-
-</td>
-
-<td width="50%">
-
-## 🎨 Portfolio v2
-
-Interactive portfolio built like a cinematic experience.
-
-- Three.js
-- Framer Motion
-- Scroll storytelling
-- Glassmorphism UI
-
-`React` `Three.js`
-
-</td>
-
-</tr>
-
 </table>
 
 ---
 
-# More Projects
-
-| Project | Description |
-|----------|-------------|
-| 🌦️ SkyCast | Minimal weather dashboard with OpenWeather API. |
-| 🍽️ The Waffle House | Modern restaurant landing page with premium UI. |
-| 🎙️ Grama Sathi | Kannada voice assistant hackathon project. |
-| 🔐 Singularity Login | Beautiful authentication experience with glassmorphism. |
-| 💻 Niriksh AI | Experimental AI interface & assistant concepts. |
-
----
-
-# Tech Stack
-
-### Languages
-
-<p>
-<img src="https://skillicons.dev/icons?i=python,ts,js,java,c,html,css"/>
-</p>
-
-### Frontend
-
-<p>
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,threejs,vite"/>
-</p>
-
-### Backend
-
-<p>
-<img src="https://skillicons.dev/icons?i=fastapi,flask,nodejs,firebase,mongodb"/>
-</p>
-
-### AI / Computer Vision
-
-<p>
-<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv"/>
-</p>
-
-### Design
-
-<p>
-<img src="https://skillicons.dev/icons?i=figma,ps,ai"/>
-</p>
-
-### Tools
-
-<p>
-<img src="https://skillicons.dev/icons?i=git,github,vercel,linux,vscode"/>
-</p>
-
----
-
-# Building in 2026
-
-| Product | Status |
-|----------|--------|
-| 🎵 Tarang | 🟢 Building Cartoonverse UI |
-| 🤖 Rinti AI | 🟢 Production Deployment |
-| 🛰️ Sentinel AI | 🟡 Smart India Hackathon |
-| 🌍 AkashaLens | 🟢 Computer Vision Research |
-| 🎨 Portfolio v3 | 🔵 Planning |
-
----
-
-# GitHub Analytics
-
-<p align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Samudra-GITHub&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
-
-</p>
-
-<p align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Samudra-GITHub&layout=compact&theme=tokyonight&hide_border=true"/>
-
-</p>
-
-<p align="center">
-
-<img src="https://streak-stats.demolab.com?user=Samudra-GITHub&theme=tokyonight&hide_border=true"/>
-
-</p>
-
----
-
-# Contribution Snake
-
-<p align="center">
-
-<picture>
-<source media="(prefers-color-scheme: dark)"
-srcset="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake-dark.svg"/>
-
-<img src="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake-dark.svg"/>
-
-</picture>
-
-</p>
-
----
-
-# Current Focus
-
-- Designing **Tarang** — an immersive music streaming platform.
-- Shipping **Rinti AI** on Vercel with authentication & memory.
-- Building **Sentinel AI** for Smart India Hackathon.
-- Learning motion design, Three.js, and AI product architecture.
-
----
-
-# Philosophy
-
-> **"The best interfaces don't just work — they make people feel something."**
-
-Everything I build aims to combine thoughtful design, fluid motion, and solid engineering.
-
----
+## ✦ Tech Stack
 
 <div align="center">
 
-### Let's build something beautiful.
+**Languages**
+<br/>
+<img src="https://skillicons.dev/icons?i=python,c,java,js,html,css"/>
 
-<a href="mailto:samudrakar8@gmail.com">
-<img src="https://img.shields.io/badge/Email-0B0F19?style=for-the-badge&logo=gmail&logoColor=60A5FA"/>
-</a>
+**Frameworks & Tools**
+<br/>
+<img src="https://skillicons.dev/icons?i=react,tailwind,fastapi,flask,nodejs,git,github,vscode"/>
 
-<a href="YOUR_LINKEDIN">
-<img src="https://img.shields.io/badge/LinkedIn-0B0F19?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/>
-</a>
+**Design & Creative**
+<br/>
+<img src="https://skillicons.dev/icons?i=figma,ps,ai"/>
 
-<a href="YOUR_PORTFOLIO">
-<img src="https://img.shields.io/badge/Portfolio-0B0F19?style=for-the-badge&logo=vercel&logoColor=60A5FA"/>
-</a>
+**Currently Exploring**
+<br/>
+<img src="https://skillicons.dev/icons?i=threejs,firebase,mongodb,tensorflow"/>
 
 </div>
+
+---
+
+## ✦ Featured Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🌌 [AkashaLens](https://github.com/Samudra-GITHub)
+AI-powered satellite cloud removal and reconstruction using computer vision — restoring obscured Earth imagery with deep learning.
+
+`Python` `OpenCV` `NumPy` `Deep Learning`
+
+</td>
+<td width="50%" valign="top">
+
+### 👟 [Krama](https://github.com/Samudra-GITHub)
+A luxury sneaker marketplace inspired by Apple, Nike, and modern fashion e-commerce — built for a premium, tactile shopping feel.
+
+`Figma` `React` `Tailwind CSS`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🌦️ [SkyCast](https://github.com/Samudra-GITHub)
+A clean, minimal weather dashboard powered by the OpenWeather API, focused on clarity over clutter.
+
+`Flask` `REST API`
+
+</td>
+<td width="50%" valign="top">
+
+### 🎨 [Portfolio v2](https://github.com/Samudra-GITHub)
+An interactive developer portfolio with cinematic 3D animations and motion-driven storytelling.
+
+`React` `Three.js` `Framer Motion`
+
+</td>
+</tr>
+</table>
+
+---
+
+## ✦ GitHub Analytics
+
+<p align="center">
+  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=Samudra-GITHub&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=60A5FA&icon_color=60A5FA&text_color=c9d1d9"/>
+  <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Samudra-GITHub&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=60A5FA&text_color=c9d1d9"/>
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Samudra-GITHub&theme=tokyonight-duo&hide_border=true&ring=60A5FA&fire=60A5FA&currStreakLabel=60A5FA&background=0d1117"/>
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Samudra-GITHub&theme=tokyonight&no-frame=true&margin-w=8&row=1&column=7"/>
+</p>
+
+### Contribution Snake
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake-dark.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake.svg"/>
+    <img alt="snake animation" src="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake-dark.svg"/>
+  </picture>
+</p>
+
+---
+
+## ✦ 2026 Roadmap
+
+| Project | Focus | Status |
+| --- | --- | --- |
+| 🌌 AkashaLens | AI Prototype → Model refinement | 🟢 In Progress |
+| 👟 Krama | UI Development → Storefront build | 🟡 In Progress |
+| 🎨 Portfolio v2 | Interactive Build → 3D polish | 🟢 In Progress |
+| 🌦️ SkyCast | Shipped | ✅ Completed |
+
+---
+
+## ✦ Philosophy
+
+> *"Great products are built where design meets engineering."*
+
+I enjoy building products that combine thoughtful design, modern frontend engineering, and AI to create experiences that are both useful and beautiful.
+
+---
+
+## ✦ Let's Connect
+
+<div align="center">
+
+<a href="mailto:hi.samsstudio@gmail.com"><img src="https://img.shields.io/badge/Gmail-050816?style=for-the-badge&logo=gmail&logoColor=60A5FA"/></a>
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=60A5FA"/></a>
+<a href="https://github.com/Samudra-GITHub"><img src="https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=60A5FA"/></a>
+
+<br/><br/>
+
+*Thanks for stopping by — feel free to explore my pinned repos below.* ✨
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Geist+Mono&weight=400&size=14&duration=4000&pause=1500&color=60A5FA&center=true&vCenter=true&width=600&lines=Let's+build+something+beautiful+together." alt="Footer"/>
+
+</div>
+
+<!--
+Notes for Samudra:
+1. Widgets (stats, top-langs, streak, trophies, activity graph, snake) depend on external
+   services — if an image looks empty at first, it's a cache/rate-limit delay, not a broken link.
+2. The old profile-view counter (countapi.xyz) has been discontinued for a while and was
+   rendering as a dead badge — swapped it for komarev.com/ghpvc, which is the standard
+   working alternative and matches your accent color.
+3. Added the GitHub Stats + Top Languages cards (github-readme-stats) and a Trophy row
+   (github-profile-trophy), both on the "tokyonight" theme to match your streak-stats theme.
+4. Update every "YOUR_LINKEDIN" and project-link placeholder before publishing.
+5. Keep the banner image (GITHUB PROFILE BANNER.png) in this same repo root.
+6. To activate the contribution snake, add the included snake.yml to
+   .github/workflows/ in your Samudra-GITHub/Samudra-GITHub repo, then push once.
+-->
