@@ -1,0 +1,39 @@
+<svg width="620" height="460" viewBox="0 0 620 460" xmlns="http://www.w3.org/2000/svg">
+  <rect width="620" height="460" fill="#F8F4EC"/>
+
+  <text x="40" y="44" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="3" fill="#75695E">RINTI AI</text>
+  <text x="580" y="44" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#C66A2E">IN DEVELOPMENT</text>
+  <line x1="40" y1="56" x2="580" y2="56" stroke="#2D241F" stroke-opacity="0.1"/>
+
+  <!-- dashboard panel -->
+  <rect x="60" y="80" width="500" height="300" rx="12" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/>
+
+  <!-- chat bubbles -->
+  <rect x="90" y="110" width="220" height="34" rx="14" fill="#F8F4EC" stroke="#2D241F" stroke-opacity="0.08"/>
+  <rect x="150" y="154" width="260" height="34" rx="14" fill="#C66A2E" fill-opacity="0.14" stroke="#C66A2E" stroke-opacity="0.3"/>
+  <rect x="90" y="198" width="180" height="34" rx="14" fill="#F8F4EC" stroke="#2D241F" stroke-opacity="0.08"/>
+
+  <!-- architecture nodes -->
+  <g stroke="#2D241F" stroke-opacity="0.2">
+    <line x1="150" y1="290" x2="260" y2="330"/>
+    <line x1="370" y1="290" x2="260" y2="330"/>
+    <line x1="260" y1="330" x2="260" y2="360"/>
+  </g>
+  <g fill="#C66A2E">
+    <circle cx="150" cy="290" r="5"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="370" cy="290" r="5"><animate attributeName="opacity" values="0.4;1;0.4" dur="3s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="260" cy="330" r="6" fill="#2D241F"/>
+    <circle cx="260" cy="360" r="5"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" begin="0.8s" repeatCount="indefinite"/></circle>
+  </g>
+  <text x="150" y="275" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#75695E">GROQ</text>
+  <text x="370" y="275" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#75695E">TAVILY</text>
+  <text x="260" y="316" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#F8F4EC">API</text>
+  <text x="260" y="378" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#75695E">DB</text>
+
+  <!-- typing cursor -->
+  <rect x="418" y="160" width="6" height="16" fill="#C66A2E">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="40" y="428" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="1.5" fill="#75695E">YOUR INTELLIGENT AI WORKSPACE.</text>
+</svg>
