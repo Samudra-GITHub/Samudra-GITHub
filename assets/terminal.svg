@@ -1,53 +1,53 @@
-<svg width="620" height="330" viewBox="0 0 620 330" xmlns="http://www.w3.org/2000/svg">
+<svg width="620" height="340" viewBox="0 0 620 340" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="winbg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
+      <stop offset="0%" stop-color="#FBF6E9"/>
+      <stop offset="100%" stop-color="#F2E9D4"/>
     </linearGradient>
   </defs>
 
-  <rect x="10" y="10" width="600" height="310" rx="14" fill="url(#winbg)" stroke="#2a2a2a"/>
-  <rect x="10" y="10" width="600" height="34" rx="14" fill="#151515"/>
-  <rect x="10" y="30" width="600" height="14" fill="#151515"/>
+  <rect x="10" y="10" width="600" height="320" rx="14" fill="url(#winbg)" stroke="#D8C89C"/>
+  <rect x="10" y="10" width="600" height="36" rx="14" fill="#F0E4C6"/>
+  <rect x="10" y="32" width="600" height="14" fill="#F0E4C6"/>
 
-  <circle cx="34" cy="27" r="6" fill="#4a4a4a"/>
-  <circle cx="54" cy="27" r="6" fill="#3a3a3a"/>
-  <circle cx="74" cy="27" r="6" fill="#2a2a2a"/>
-  <text x="310" y="31" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="11" fill="#777">samudra — zsh</text>
+  <circle cx="34" cy="28" r="6.5" fill="#C9A26A"/>
+  <circle cx="55" cy="28" r="6.5" fill="#D8C08A"/>
+  <circle cx="76" cy="28" r="6.5" fill="#E4D5AC"/>
+  <text x="310" y="32" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#8A7B5E">samudra — zsh</text>
 
-  <g font-family="Menlo, Consolas, monospace" font-size="14" fill="#e6e6e6">
+  <g font-family="Menlo, Consolas, monospace" font-size="16" fill="#2A2419">
 
     <g opacity="0">
-      <text x="30" y="80"><tspan fill="#6ee06e">❯</tspan> <tspan fill="#e6e6e6">whoami</tspan></text>
+      <text x="30" y="86"><tspan fill="#8A6D22">&#10095;</tspan> <tspan fill="#211C15">whoami</tspan></text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.2s" fill="freeze"/>
     </g>
-    <g opacity="0" fill="#b8b8b8">
-      <text x="30" y="104">Samudra Kar — UI/UX Designer, Full&#8209;Stack Developer</text>
-      <text x="30" y="124">B.Tech CSE · Chanakya University · Bangalore, IN</text>
+    <g opacity="0" fill="#5C513E">
+      <text x="30" y="112">Samudra Kar &#8212; UI/UX Designer, Full&#8209;Stack Developer</text>
+      <text x="30" y="134">B.Tech CSE &#183; Chanakya University &#183; Bangalore, IN</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.9s" fill="freeze"/>
     </g>
 
     <g opacity="0">
-      <text x="30" y="158"><tspan fill="#6ee06e">❯</tspan> <tspan fill="#e6e6e6">current-focus</tspan></text>
+      <text x="30" y="170"><tspan fill="#8A6D22">&#10095;</tspan> <tspan fill="#211C15">current-focus</tspan></text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.6s" fill="freeze"/>
     </g>
-    <g opacity="0" fill="#b8b8b8">
-      <text x="30" y="182">AI &#183; Computer Vision &#183; Three.js &#183; Design Systems</text>
+    <g opacity="0" fill="#5C513E">
+      <text x="30" y="196">AI &#183; Computer Vision &#183; Three.js &#183; Design Systems</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.2s" fill="freeze"/>
     </g>
 
     <g opacity="0">
-      <text x="30" y="216"><tspan fill="#6ee06e">❯</tspan> <tspan fill="#e6e6e6">status</tspan></text>
+      <text x="30" y="232"><tspan fill="#8A6D22">&#10095;</tspan> <tspan fill="#211C15">status</tspan></text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.8s" fill="freeze"/>
     </g>
-    <g opacity="0" fill="#b8b8b8">
-      <text x="30" y="240">shipping. always.</text>
+    <g opacity="0" fill="#5C513E">
+      <text x="30" y="258">shipping. always.</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.3s" fill="freeze"/>
     </g>
 
     <g opacity="0">
-      <text x="30" y="274"><tspan fill="#6ee06e">❯</tspan></text>
-      <rect x="46" y="263" width="8" height="15" fill="#e6e6e6">
+      <text x="30" y="294"><tspan fill="#8A6D22">&#10095;</tspan></text>
+      <rect x="48" y="282" width="9" height="17" fill="#211C15">
         <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
       </rect>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.9s" fill="freeze"/>
