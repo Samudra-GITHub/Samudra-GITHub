@@ -1,97 +1,38 @@
-<svg width="620" height="560" viewBox="0 0 620 560" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <radialGradient id="pf-spot" cx="50%" cy="45%" r="55%">
-      <stop offset="0%" stop-color="#E8C878" stop-opacity="0.28"/>
-      <stop offset="60%" stop-color="#E8C878" stop-opacity="0.06"/>
-      <stop offset="100%" stop-color="#E8C878" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="pf-grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#262119" stroke-opacity="0.035" stroke-width="1"/>
-    </pattern>
-  </defs>
+<svg width="620" height="460" viewBox="0 0 620 460" xmlns="http://www.w3.org/2000/svg">
+  <rect width="620" height="460" fill="#EFE6DA"/>
 
-  <rect width="620" height="560" fill="#F6F0E3"/>
-  <rect width="620" height="560" fill="url(#pf-grid)"/>
-  <ellipse cx="310" cy="270" rx="260" ry="190" fill="url(#pf-spot)"/>
+  <text x="40" y="44" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="3" fill="#75695E">PORTFOLIO</text>
+  <text x="580" y="44" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#C66A2E">LIVE</text>
+  <line x1="40" y1="56" x2="580" y2="56" stroke="#2D241F" stroke-opacity="0.1"/>
 
-  <!-- top label -->
-  <text x="40" y="46" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="3" fill="#6B5F48">PORTFOLIO &#8212; 2026</text>
-  <text x="580" y="46" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="3" fill="#6B5F48">LIVE</text>
-  <line x1="40" y1="58" x2="580" y2="58" stroke="#262119" stroke-opacity="0.14"/>
+  <rect x="70" y="80" width="480" height="300" rx="14" fill="#F8F4EC" stroke="#2D241F" stroke-opacity="0.08"/>
+  <rect x="70" y="80" width="480" height="38" rx="14" fill="#EFE6DA"/>
+  <rect x="70" y="104" width="480" height="14" fill="#EFE6DA"/>
+  <circle cx="96" cy="99" r="5" fill="#E9C8AA"/>
+  <circle cx="114" cy="99" r="5" fill="#D8C6A8"/>
+  <circle cx="132" cy="99" r="5" fill="#C66A2E"/>
 
-  <!-- browser window -->
-  <rect x="70" y="90" width="480" height="320" rx="16" fill="#FBF6E9" stroke="#D8C89C" stroke-width="1.4"/>
-  <rect x="70" y="90" width="480" height="42" rx="16" fill="#F0E4C6"/>
-  <rect x="70" y="116" width="480" height="16" fill="#F0E4C6"/>
-  <circle cx="96" cy="111" r="5" fill="#C9A26A"/>
-  <circle cx="114" cy="111" r="5" fill="#D8C08A"/>
-  <circle cx="132" cy="111" r="5" fill="#E4D5AC"/>
-  <rect x="220" y="103" width="180" height="16" rx="8" fill="#F6F0E3" stroke="#D8C89C"/>
-  <text x="310" y="115" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#8A7B5E">samudra.design</text>
+  <rect x="100" y="150" width="200" height="16" rx="3" fill="#2D241F" fill-opacity="0.7"/>
+  <rect x="100" y="176" width="140" height="9" rx="3" fill="#2D241F" fill-opacity="0.3"/>
 
-  <!-- hero heading block -->
-  <rect x="100" y="150" width="220" height="16" rx="3" fill="#211C15" fill-opacity="0.7"/>
-  <rect x="100" y="174" width="150" height="9" rx="3" fill="#211C15" fill-opacity="0.35"/>
-
-  <!-- 3D scene orb -->
   <g>
-    <circle cx="450" cy="185" r="40" fill="none" stroke="#B8902E" stroke-opacity="0.6" stroke-width="1.4"/>
-    <ellipse cx="450" cy="185" rx="40" ry="14" fill="none" stroke="#B8902E" stroke-opacity="0.4"/>
-    <ellipse cx="450" cy="185" rx="14" ry="40" fill="none" stroke="#B8902E" stroke-opacity="0.4"/>
-    <animateTransform attributeName="transform" type="rotate" from="0 450 185" to="360 450 185" dur="14s" repeatCount="indefinite"/>
+    <circle cx="440" cy="200" r="42" fill="none" stroke="#C66A2E" stroke-opacity="0.6" stroke-width="1.4"/>
+    <ellipse cx="440" cy="200" rx="42" ry="15" fill="none" stroke="#C66A2E" stroke-opacity="0.4"/>
+    <ellipse cx="440" cy="200" rx="15" ry="42" fill="none" stroke="#C66A2E" stroke-opacity="0.4"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 440 200" to="360 440 200" dur="14s" repeatCount="indefinite"/>
   </g>
 
-  <!-- content card grid -->
   <g>
-    <rect x="100" y="220" width="110" height="90" rx="8" fill="none" stroke="#262119" stroke-opacity="0.3"/>
-    <rect x="222" y="220" width="110" height="90" rx="8" fill="none" stroke="#262119" stroke-opacity="0.3"/>
-    <rect x="344" y="220" width="110" height="90" rx="8" fill="none" stroke="#262119" stroke-opacity="0.3"/>
+    <rect x="100" y="230" width="110" height="90" rx="8" fill="none" stroke="#2D241F" stroke-opacity="0.25"/>
+    <rect x="222" y="230" width="110" height="90" rx="8" fill="none" stroke="#2D241F" stroke-opacity="0.25"/>
+    <rect x="344" y="230" width="110" height="90" rx="8" fill="none" stroke="#2D241F" stroke-opacity="0.25"/>
     <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="4.5s" repeatCount="indefinite"/>
   </g>
-  <rect x="115" y="235" width="60" height="6" rx="2" fill="#211C15" fill-opacity="0.4"/>
-  <rect x="237" y="235" width="60" height="6" rx="2" fill="#211C15" fill-opacity="0.4"/>
-  <rect x="359" y="235" width="60" height="6" rx="2" fill="#211C15" fill-opacity="0.4"/>
 
-  <!-- scroll progress rail -->
-  <rect x="520" y="150" width="4" height="180" rx="2" fill="#262119" fill-opacity="0.12"/>
-  <rect x="520" y="150" width="4" height="60" rx="2" fill="#B8902E">
-    <animate attributeName="y" values="150;270;150" dur="6s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- cursor -->
   <g>
-    <path d="M300 260 L300 282 L306 276 L311 286 L315 284 L310 274 L318 274 Z" fill="#211C15" fill-opacity="0.85"/>
+    <path d="M300 260 L300 282 L306 276 L311 286 L315 284 L310 274 L318 274 Z" fill="#2D241F" fill-opacity="0.85"/>
     <animateTransform attributeName="transform" type="translate" values="0,0; 20,14; 0,0" dur="5s" repeatCount="indefinite"/>
   </g>
 
-  <!-- dimension line -->
-  <g stroke="#6B5F48" stroke-opacity="0.75">
-    <line x1="70" y1="440" x2="550" y2="440"/>
-    <line x1="70" y1="434" x2="70" y2="446"/>
-    <line x1="550" y1="434" x2="550" y2="446"/>
-  </g>
-  <text x="310" y="460" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="1.5" fill="#6B5F48">SCROLL DEPTH &#183; FULL EXPERIENCE</text>
-
-  <!-- spec markers -->
-  <g font-family="Helvetica, Arial, sans-serif">
-    <circle cx="450" cy="185" r="10" fill="#F6F0E3" stroke="#211C15" stroke-opacity="0.7"/>
-    <text x="450" y="189" text-anchor="middle" font-size="10" fill="#211C15">01</text>
-    <line x1="460" y1="185" x2="560" y2="165" stroke="#211C15" stroke-opacity="0.4"/>
-    <text x="563" y="162" font-size="10.5" letter-spacing="1" fill="#4A4133">3D SCENES</text>
-
-    <circle cx="70" cy="265" r="10" fill="#F6F0E3" stroke="#211C15" stroke-opacity="0.7"/>
-    <text x="70" y="269" text-anchor="middle" font-size="10" fill="#211C15">02</text>
-    <line x1="60" y1="265" x2="15" y2="250" stroke="#211C15" stroke-opacity="0.4"/>
-    <text x="12" y="246" text-anchor="end" font-size="10.5" letter-spacing="1" fill="#4A4133">EDITORIAL GRID</text>
-
-    <circle cx="310" cy="160" r="10" fill="#F6F0E3" stroke="#211C15" stroke-opacity="0.7"/>
-    <text x="310" y="164" text-anchor="middle" font-size="10" fill="#211C15">03</text>
-    <line x1="310" y1="150" x2="310" y2="140" stroke="#211C15" stroke-opacity="0.4"/>
-    <text x="310" y="134" text-anchor="middle" font-size="10.5" letter-spacing="1" fill="#4A4133">MOTION&#8209;FIRST</text>
-  </g>
-
-  <!-- bottom tagline -->
-  <line x1="40" y1="500" x2="580" y2="500" stroke="#262119" stroke-opacity="0.14"/>
-  <text x="40" y="524" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="1.5" fill="#332C22">A DIGITAL SPACE.</text>
-  <text x="580" y="524" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="1.5" fill="#332C22">BUILT WITH REACT + THREE.JS.</text>
+  <text x="40" y="428" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="1.5" fill="#75695E">A CREATIVE STUDIO, ONLINE.</text>
 </svg>
