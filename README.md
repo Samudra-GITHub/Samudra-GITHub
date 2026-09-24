@@ -16,16 +16,27 @@
 <br/><br/>
 
 <sub>
-<a href="#-about">ABOUT</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-selected-work">WORK</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-skills-universe">SKILLS</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-journey">JOURNEY</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-ai-playground">AI LAB</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-github-analytics">ANALYTICS</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-frame">FRAME</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-connect">CONNECT</a>
+<a href="#about-me">ABOUT</a>&nbsp;&nbsp;&nbsp;<a href="#featured-projects">WORK</a>&nbsp;&nbsp;&nbsp;<a href="#skills-and-technologies">SKILLS</a>&nbsp;&nbsp;&nbsp;<a href="#journey">JOURNEY</a>&nbsp;&nbsp;&nbsp;<a href="#github-analytics">ANALYTICS</a>&nbsp;&nbsp;&nbsp;<a href="#connect">CONNECT</a>
 </sub>
 
 </div>
 
-<img src="./assets/divider-scan.svg" width="100%" alt="" />
+<br/><br/><br/>
+
+<!-- ============================================= -->
+<!-- 02 — ABOUT ME                                  -->
+<!-- ============================================= -->
+
+<div align="center">
+
+<sub>02 &nbsp;—&nbsp; ABOUT</sub>
+
+## About Me
+<sub>Product thinking, visual design, and engineering under one name.</sub>
+
+</div>
 
 <br/>
-
-## 🖤 About
 
 <table width="100%">
 <tr>
@@ -36,59 +47,69 @@
 </td>
 <td width="54%" valign="top">
 
-<br/>
-
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<br/>
 
-**◆ PRODUCT THINKING**
-<sub>I start from the problem, not the pixel — user flows and information architecture that hold up under real use.</sub>
-<br/><br/>
+**Product Thinking**
+<br/>
+<sub>I start from the problem, not the pixel — flows and information architecture that hold up under real use.</sub>
+
 </td>
 <td width="50%" valign="top">
-<br/>
 
-**◆ DESIGN PHILOSOPHY**
+**Design Philosophy**
+<br/>
 <sub>Interfaces should feel inevitable. Every element earns its place; nothing is decoration.</sub>
-<br/><br/>
+
 </td>
 </tr>
+<tr><td colspan="2">&nbsp;</td></tr>
 <tr>
 <td width="50%" valign="top">
 
-**◆ ENGINEERING**
+**Engineering**
+<br/>
 <sub>I build what I design. Full-stack execution keeps the idea honest all the way to production.</sub>
-<br/><br/>
+
 </td>
 <td width="50%" valign="top">
 
-**◆ AI CURIOSITY**
-<sub>Computer vision, applied ML, and Three.js — where the interface starts to think.</sub>
-<br/><br/>
-</td>
-</tr>
-</table>
-
-</td>
-</tr>
-</table>
-
+**AI Curiosity**
 <br/>
+<sub>Computer vision, applied ML, and Three.js — where the interface starts to think.</sub>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<br/><br/>
 
 <div align="center">
 
-### GOOD DESIGN IS INVISIBLE.
+### Good design is invisible.
 <sub>It doesn't ask for attention — it earns trust quietly, one considered decision at a time.</sub>
 
 </div>
 
-<img src="./assets/divider-wave.svg" width="100%" alt="" />
+<br/><br/><br/>
 
-<br/>
+<!-- ============================================= -->
+<!-- 03 — FEATURED PROJECTS                         -->
+<!-- ============================================= -->
 
-## 💼 Selected Work
+<div align="center">
+
+<sub>03 &nbsp;—&nbsp; WORK</sub>
+
+## Featured Projects
+<sub>Four products. Four different problems.</sub>
+
+</div>
 
 <br/>
 
@@ -98,95 +119,118 @@
 
 <img src="./assets/project-akashalens.svg" width="100%" alt="AkashaLens" />
 
-**AkashaLens** &nbsp;<sub>◆ ACTIVE</sub>
-<br/>Cloud removal and image reconstruction for satellite imagery.
+<br/>
 
+**AkashaLens** &nbsp;·&nbsp; <sub>ACTIVE</sub>
+<br/>
+<sub>Cloud removal and image reconstruction for satellite imagery.</sub>
+<br/><br/>
 <img src="https://img.shields.io/badge/Python-000?style=flat-square"/> <img src="https://img.shields.io/badge/OpenCV-000?style=flat-square"/> <img src="https://img.shields.io/badge/Deep_Learning-000?style=flat-square"/>
-
-**[↗ Repository](https://github.com/Samudra-GITHub/AkashaLens)**
+<br/><br/>
+**[View Repository →](https://github.com/Samudra-GITHub/AkashaLens)**
 
 </td>
 <td width="50%" valign="top">
 
 <img src="./assets/project-krama.svg" width="100%" alt="Krama" />
 
-**Krama** &nbsp;<sub>◆ CONCEPT</sub>
-<br/>A premium sneaker marketplace, shaped by fashion editorial.
+<br/>
 
+**Krama** &nbsp;·&nbsp; <sub>CONCEPT</sub>
+<br/>
+<sub>A premium sneaker marketplace, shaped by fashion editorial.</sub>
+<br/><br/>
 <img src="https://img.shields.io/badge/React-000?style=flat-square"/> <img src="https://img.shields.io/badge/Tailwind-000?style=flat-square"/> <img src="https://img.shields.io/badge/Figma-000?style=flat-square"/>
-
-**[↗ Repository](https://github.com/Samudra-GITHub/Krama)**
+<br/><br/>
+**[View Repository →](https://github.com/Samudra-GITHub/Krama)**
 
 </td>
 </tr>
+<tr><td colspan="2">&nbsp;<br/></td></tr>
 <tr>
 <td width="50%" valign="top">
 
 <img src="./assets/project-skycast.svg" width="100%" alt="SkyCast" />
 
-**SkyCast** &nbsp;<sub>◆ SHIPPED</sub>
-<br/>A minimal forecast dashboard, built for calm comprehension.
+<br/>
 
+**SkyCast** &nbsp;·&nbsp; <sub>SHIPPED</sub>
+<br/>
+<sub>A minimal forecast dashboard, built for calm comprehension.</sub>
+<br/><br/>
 <img src="https://img.shields.io/badge/Flask-000?style=flat-square"/> <img src="https://img.shields.io/badge/REST_API-000?style=flat-square"/> <img src="https://img.shields.io/badge/OpenWeather-000?style=flat-square"/>
-
-**[↗ Repository](https://github.com/Samudra-GITHub/SkyCast-Weather-App)**
+<br/><br/>
+**[View Repository →](https://github.com/Samudra-GITHub/SkyCast-Weather-App)**
 
 </td>
 <td width="50%" valign="top">
 
 <img src="./assets/project-portfolio.svg" width="100%" alt="Portfolio" />
 
-**Portfolio** &nbsp;<sub>◆ LIVE</sub>
-<br/>A digital space with a point of view — motion, 3D, storytelling.
+<br/>
 
+**Portfolio** &nbsp;·&nbsp; <sub>LIVE</sub>
+<br/>
+<sub>A digital space with a point of view — motion, 3D, storytelling.</sub>
+<br/><br/>
 <img src="https://img.shields.io/badge/React-000?style=flat-square"/> <img src="https://img.shields.io/badge/Three.js-000?style=flat-square"/> <img src="https://img.shields.io/badge/FastAPI-000?style=flat-square"/>
-
-**[↗ Live Site](https://mudra-kar-portfolio-g46m.vercel.app)** &nbsp;·&nbsp; **[Repository](https://github.com/Samudra-GITHub/samudra-kar-portfolio)**
+<br/><br/>
+**[View Live →](https://mudra-kar-portfolio-g46m.vercel.app)** &nbsp;·&nbsp; **[Repository](https://github.com/Samudra-GITHub/samudra-kar-portfolio)**
 
 </td>
 </tr>
 </table>
 
-<img src="./assets/divider-constellation.svg" width="100%" alt="" />
+<br/><br/><br/>
 
-<br/>
+<!-- ============================================= -->
+<!-- 04 — SKILLS & TECHNOLOGIES                     -->
+<!-- ============================================= -->
 
-## 🛠️ Skills Universe
+<div align="center">
+
+<sub>04 &nbsp;—&nbsp; SKILLS</sub>
+
+## Skills and Technologies
+<sub>The tools behind the work.</sub>
+
+</div>
 
 <br/>
 
 <table width="100%">
 <tr>
-<td width="45%" valign="top">
+<td width="44%" valign="top">
 
 <img src="./assets/orbit.svg" width="100%" alt="skills orbit" />
 
 </td>
-<td width="55%" valign="top">
+<td width="56%" valign="top">
 
 <br/>
 
 <table width="100%">
-<tr><td valign="top">
+<tr><td width="50%" valign="top">
 
-**FRONTEND**
+**Frontend**
 <br/><sub>React · TypeScript · Tailwind CSS · Three.js / R3F</sub>
-<br/><br/>
 
-**BACKEND**
+</td><td width="50%" valign="top">
+
+**Backend**
 <br/><sub>Node.js · FastAPI · Flask · Firebase · MongoDB</sub>
-<br/><br/>
 
 </td></tr>
-<tr><td valign="top">
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td width="50%" valign="top">
 
 **AI / ML**
 <br/><sub>Python · TensorFlow · OpenCV · Deep Learning</sub>
-<br/><br/>
 
-**DESIGN & TOOLS**
-<br/><sub>Figma · Git · GitHub · VS Code · C · Java</sub>
-<br/><br/>
+</td><td width="50%" valign="top">
+
+**Design & Tools**
+<br/><sub>Figma · Git · GitHub · VS Code</sub>
 
 </td></tr>
 </table>
@@ -195,41 +239,96 @@
 </tr>
 </table>
 
-<img src="./assets/divider-scan.svg" width="100%" alt="" />
+<br/><br/><br/>
 
-<br/>
-
-## 🧭 Journey
-
-<br/>
+<!-- ============================================= -->
+<!-- 05 — JOURNEY                                   -->
+<!-- ============================================= -->
 
 <div align="center">
+
+<sub>05 &nbsp;—&nbsp; JOURNEY</sub>
+
+## Journey
+<sub>From first line of code to what's next.</sub>
+
+<br/>
+
 <img src="./assets/timeline.svg" width="100%" alt="journey timeline" />
+
+</div>
+
+<br/><br/><br/>
+
+<!-- ============================================= -->
+<!-- 06 — WHAT I'M BUILDING                         -->
+<!-- ============================================= -->
+
+<div align="center">
+
+<sub>06 &nbsp;—&nbsp; BUILDING</sub>
+
+## What I'm Building
+<sub>Skills currently in progress, tracked honestly.</sub>
+
 </div>
 
 <br/>
 
-<details>
-<summary><b>🏆 Featured Hackathons &amp; Programs</b></summary>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+**AI + Computer Vision**
+<br/><sub>`████████████░░░░░░░░` 60%</sub>
+
+</td>
+<td width="50%" valign="top">
+
+**Three.js / React Three Fiber**
+<br/><sub>`██████████░░░░░░░░░░` 50%</sub>
+
+</td>
+</tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr>
+<td width="50%" valign="top">
+
+**Backend Architecture**
+<br/><sub>`██████████████░░░░░░` 70%</sub>
+
+</td>
+<td width="50%" valign="top">
+
+**Design Systems**
+<br/><sub>`████████████████░░░░` 80%</sub>
+
+</td>
+</tr>
+</table>
+
 <br/>
 
-| Program | Focus |
-|:--|:--|
-| **Smart India Hackathon (SIH)** | National-level product problem-solving under time pressure |
-| **AkashaLens** | Independent computer-vision research project, built outside a classroom setting |
-| **Campus build sprints** | Rapid prototyping across UI/UX and full-stack tracks |
+<div align="center">
+<sub>Open to: AI &amp; design-driven products · UI/UX and frontend collaborations · open-source contributions · well-scoped problems with thoughtful teams.</sub>
+</div>
 
-</details>
+<br/><br/><br/>
 
-<img src="./assets/divider-wave.svg" width="100%" alt="" />
+<!-- ============================================= -->
+<!-- 07 — AI PLAYGROUND & HACKATHONS                -->
+<!-- ============================================= -->
+
+<div align="center">
+
+<sub>07 &nbsp;—&nbsp; LAB</sub>
+
+## AI Playground and Hackathons
+<sub>Where the interface starts to think — and where it gets tested under pressure.</sub>
+
+</div>
 
 <br/>
-
-## 🧪 AI Playground
-
-<sub>Where the interface starts to think.</sub>
-
-<br/><br/>
 
 <table width="100%">
 <tr>
@@ -256,44 +355,67 @@
 
 <br/>
 
-## 🌱 Building Now
+<table width="100%">
+<tr>
+<td width="33%" align="center" valign="top">
 
-<br/>
+**Smart India Hackathon**
+<br/><sub>National-level product problem-solving under time pressure</sub>
 
-| Area | Progress |
-|:--|:--|
-| AI + Computer Vision | `████████████░░░░░░░░` 60% |
-| Three.js / React Three Fiber | `██████████░░░░░░░░░░` 50% |
-| Backend Architecture | `██████████████░░░░░░` 70% |
-| Design Systems | `████████████████░░░░` 80% |
+</td>
+<td width="33%" align="center" valign="top">
 
-<br/>
+**AkashaLens Research**
+<br/><sub>Independent computer-vision project, built outside a classroom setting</sub>
 
-**Open to:** AI and design-driven products · UI/UX and frontend collaborations · open-source contributions · well-scoped problems with thoughtful teams.
+</td>
+<td width="33%" align="center" valign="top">
 
-<img src="./assets/divider-constellation.svg" width="100%" alt="" />
+**Campus Build Sprints**
+<br/><sub>Rapid prototyping across UI/UX and full-stack tracks</sub>
 
-<br/>
+</td>
+</tr>
+</table>
 
-## 📊 GitHub Analytics
+<br/><br/><br/>
 
-<sub align="center">Building consistently. Shipping ideas into products.</sub>
-
-<br/><br/>
+<!-- ============================================= -->
+<!-- 08 — GITHUB ANALYTICS                          -->
+<!-- ============================================= -->
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Samudra-GITHub&show_icons=true&count_private=true&hide_border=true&title_color=0A0A0A&icon_color=0A0A0A&text_color=333333&bg_color=ffffff&ring_color=0A0A0A" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Samudra-GITHub&layout=compact&hide_border=true&title_color=0A0A0A&text_color=333333&bg_color=ffffff&langs_count=8" alt="Top languages" />
+<sub>08 &nbsp;—&nbsp; ANALYTICS</sub>
 
-<br/>
+## GitHub Analytics
+<sub>Building consistently. Shipping ideas into products.</sub>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Samudra-GITHub&hide_border=true&background=FFFFFF&ring=0A0A0A&fire=0A0A0A&currStreakLabel=0A0A0A&sideLabels=555555&currStreakNum=0A0A0A&sideNums=0A0A0A&dates=888888" alt="GitHub streak" width="70%"/>
+<br/><br/>
 
+<sub>STATS &nbsp;&amp;&nbsp; LANGUAGES</sub>
+<br/><br/>
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Samudra-GITHub&show_icons=true&count_private=true&hide_border=false&border_color=1a1a1a&title_color=0A0A0A&icon_color=0A0A0A&text_color=333333&bg_color=ffffff&ring_color=0A0A0A" alt="GitHub stats" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Samudra-GITHub&layout=compact&hide_border=false&border_color=1a1a1a&title_color=0A0A0A&text_color=333333&bg_color=ffffff&langs_count=8" alt="Top languages" />
+
+<br/><br/>
+
+<sub>STREAK</sub>
+<br/><br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Samudra-GITHub&hide_border=false&border=1a1a1a&background=FFFFFF&ring=0A0A0A&fire=0A0A0A&currStreakLabel=0A0A0A&sideLabels=555555&currStreakNum=0A0A0A&sideNums=0A0A0A&dates=888888" alt="GitHub streak" width="65%"/>
+
+<br/><br/>
+
+<sub>ACTIVITY</sub>
 <br/><br/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Samudra-GITHub&theme=minimal&hide_border=true&area=true&color=0A0A0A&line=0A0A0A&point=000000" alt="Activity graph" width="95%"/>
 
+<br/><br/>
+
+<sub>CONTRIBUTIONS</sub>
 <br/><br/>
 
 <picture>
@@ -304,78 +426,79 @@
 
 <br/><br/>
 
+<sub>TROPHIES</sub>
+<br/><br/>
+
 <img src="https://github-profile-trophy.vercel.app/?username=Samudra-GITHub&theme=onedark&no-frame=true&no-bg=true&row=1&column=6&margin-w=10" alt="trophies" width="95%"/>
 
 </div>
 
-<img src="./assets/divider-wave.svg" width="100%" alt="" />
+<br/><br/><br/>
 
-<br/>
-
-## 📷 Frame
-
-<sub>Personal work, off-screen. Bangalore street, product studies, mobile edits.</sub>
-
-<br/>
+<!-- ============================================= -->
+<!-- 09 — PHOTOGRAPHY & PERSONAL INTERESTS          -->
+<!-- ============================================= -->
 
 <div align="center">
+
+<sub>09 &nbsp;—&nbsp; INTERESTS</sub>
+
+## Photography and Personal Interests
+<sub>Personal work, off-screen.</sub>
+
+<br/>
+
 <img src="./assets/photography.svg" width="100%" alt="photography" />
+
+<sub>gallery placeholders — ready for real frames anytime</sub>
+
 </div>
 
-<br/>
-
-<div align="center"><sub>gallery placeholders — swap in real frames anytime</sub></div>
-
-<img src="./assets/divider-scan.svg" width="100%" alt="" />
-
-<br/>
-
-## 🎮 Playground
-
-<br/>
+<br/><br/>
 
 <table width="100%">
 <tr>
 <td width="25%" align="center" valign="top">
 
-**💬 QUOTE**
+**Quote**
 <br/><sub>"Simplicity is the ultimate sophistication."<br/>— Leonardo da Vinci</sub>
 
 </td>
 <td width="25%" align="center" valign="top">
 
-**📍 BASE**
+**Base**
 <br/><sub>Bangalore, India<br/>IST (UTC+5:30)</sub>
 
 </td>
 <td width="25%" align="center" valign="top">
 
-**🕐 CODING SINCE**
+**Coding Since**
 <br/><sub>2022<br/>Still going.</sub>
 
 </td>
 <td width="25%" align="center" valign="top">
 
-**☕ FUEL**
+**Fuel**
 <br/><sub>Immeasurable<br/>Renewable.</sub>
 
 </td>
 </tr>
 </table>
 
-<br/>
+<br/><br/><br/>
+
+<!-- ============================================= -->
+<!-- 10 — CONNECT                                   -->
+<!-- ============================================= -->
 
 <div align="center">
-<img src="https://komarev.com/ghpvc/?username=Samudra-GITHub&label=PROFILE%20VIEWS&color=0A0A0A&style=for-the-badge" alt="Profile views" />
-</div>
 
-<img src="./assets/divider-wave.svg" width="100%" alt="" />
+<sub>10 &nbsp;—&nbsp; CONNECT</sub>
 
-<br/>
+## Connect
+<sub>Open to design-driven products, frontend collaborations, and well-scoped problems.</sub>
 
-## 📫 Connect
-
-<div align="center">
+<br/><br/>
 
 <a href="mailto:hi.samsstudio@gmail.com"><img src="https://img.shields.io/badge/EMAIL-000000?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0A0A0A" /></a>
 <a href="https://github.com/Samudra-GITHub"><img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=0A0A0A" /></a>
@@ -384,11 +507,15 @@
 
 <br/><br/>
 
-### *"The best design is the one that makes the right thing feel natural."*
+<img src="https://komarev.com/ghpvc/?username=Samudra-GITHub&label=PROFILE%20VIEWS&color=0A0A0A&style=for-the-badge" alt="Profile views" />
+
+<br/><br/>
+
+### "The best design is the one that makes the right thing feel natural."
 
 <br/>
 
-<sub>✦ Designed and built by <b>Samudra Kar</b> · Bangalore, India ✦</sub>
+<sub>Designed and built by <b>Samudra Kar</b> · Bangalore, India</sub>
 
 </div>
 
