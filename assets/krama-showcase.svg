@@ -1,135 +1,58 @@
-<svg width="620" height="560" viewBox="0 0 620 560" xmlns="http://www.w3.org/2000/svg">
+<svg width="620" height="460" viewBox="0 0 620 460" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="kr-spot" cx="50%" cy="55%" r="55%">
-      <stop offset="0%" stop-color="#E8C878" stop-opacity="0.3"/>
-      <stop offset="60%" stop-color="#E8C878" stop-opacity="0.06"/>
-      <stop offset="100%" stop-color="#E8C878" stop-opacity="0"/>
-    </radialGradient>
     <linearGradient id="kr-upper" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#4A4133"/>
-      <stop offset="100%" stop-color="#1C1712"/>
+      <stop offset="0%" stop-color="#5A4A38"/>
+      <stop offset="100%" stop-color="#2D241F"/>
     </linearGradient>
-    <linearGradient id="kr-sole" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FBF6E9"/>
-      <stop offset="100%" stop-color="#D8C89C"/>
-    </linearGradient>
-    <pattern id="kr-grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#262119" stroke-opacity="0.035" stroke-width="1"/>
-    </pattern>
-    <clipPath id="kr-clip">
-      <path id="kr-shoe-path" d="M100,238 L228,225 C240,220 250,213 253,205 C256,212 264,217 275,220 L390,247 L500,283 C520,291 534,303 540,318 C542,330 538,341 528,347 L470,358 L360,369 L230,373 L130,371 L72,362 C48,357 30,343 26,323 C24,300 26,275 38,258 C50,247 72,241 100,238 Z"/>
+    <clipPath id="kr-clip2">
+      <path id="kr-shoe2" d="M100,198 L228,185 C240,180 250,173 253,165 C256,172 264,177 275,180 L390,207 L500,243 C520,251 534,263 540,278 C542,290 538,301 528,307 L470,318 L360,329 L230,333 L130,331 L72,322 C48,317 30,303 26,283 C24,260 26,235 38,218 C50,207 72,201 100,198 Z"/>
     </clipPath>
   </defs>
 
-  <rect width="620" height="560" fill="#F6F0E3"/>
-  <rect width="620" height="560" fill="url(#kr-grid)"/>
-  <ellipse cx="310" cy="300" rx="270" ry="190" fill="url(#kr-spot)"/>
+  <rect width="620" height="460" fill="#F8F4EC"/>
 
-  <!-- top label -->
-  <text x="40" y="46" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="3" fill="#6B5F48">KRAMA &#8212; SS26</text>
-  <text x="580" y="46" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="3" fill="#6B5F48">DROP 01</text>
-  <line x1="40" y1="58" x2="580" y2="58" stroke="#262119" stroke-opacity="0.14"/>
+  <text x="40" y="40" font-family="Georgia, serif" font-size="13" letter-spacing="3" fill="#75695E">KRAMA &#8212; SS26</text>
+  <text x="580" y="40" text-anchor="end" font-family="Georgia, serif" font-size="13" letter-spacing="3" fill="#C66A2E">DROP 01</text>
+  <line x1="40" y1="52" x2="580" y2="52" stroke="#2D241F" stroke-opacity="0.1"/>
 
-  <!-- ghost blueprint duplicate -->
-  <use href="#kr-shoe-path" transform="translate(10,-14) scale(0.97)" fill="none" stroke="#262119" stroke-opacity="0.13" stroke-width="1" stroke-dasharray="2 4"/>
+  <use href="#kr-shoe2" transform="translate(10,-10) scale(0.97)" fill="none" stroke="#2D241F" stroke-opacity="0.1" stroke-width="1" stroke-dasharray="2 4"/>
 
-  <!-- outsole platform -->
-  <path d="M30,340 C26,352 30,364 44,371 L110,382 L240,390 L370,388 L480,378 L536,362 C548,355 550,344 542,336
-           C548,340 550,348 546,357 C540,368 526,377 508,381 L470,400 L360,412 L220,415 L110,410 L48,398
-           C24,392 8,378 6,360 C4,346 8,336 20,330 Z" fill="url(#kr-sole)" stroke="#B8A374" stroke-opacity="0.55"/>
-  <g stroke="#8A7B5E" stroke-opacity="0.65" stroke-width="1.3">
-    <line x1="80" y1="395" x2="78" y2="406"/>
-    <line x1="150" y1="403" x2="149" y2="414"/>
-    <line x1="220" y1="407" x2="220" y2="418"/>
-    <line x1="290" y1="408" x2="291" y2="419"/>
-    <line x1="360" y1="405" x2="362" y2="416"/>
-    <line x1="430" y1="398" x2="433" y2="409"/>
-    <line x1="490" y1="386" x2="494" y2="396"/>
+  <path d="M120,300 C160,314 220,320 300,320 C380,320 460,316 520,301 C532,305 538,312 534,319 C480,335 400,340 310,340 C220,340 150,337 105,323 C98,315 105,306 120,300 Z" fill="#EFE6DA" stroke="#D8C6A8"/>
+  <g stroke="#75695E" stroke-opacity="0.6" stroke-width="1.2">
+    <line x1="150" y1="323" x2="150" y2="332"/>
+    <line x1="230" y1="330" x2="230" y2="339"/>
+    <line x1="310" y1="332" x2="310" y2="341"/>
+    <line x1="390" y1="330" x2="390" y2="339"/>
+    <line x1="460" y1="322" x2="460" y2="331"/>
   </g>
 
-  <!-- main upper -->
-  <path d="M100,238 L228,225 C240,220 250,213 253,205 C256,212 264,217 275,220 L390,247 L500,283 C520,291 534,303 540,318 C542,330 538,341 528,347 L470,358 L360,369 L230,373 L130,371 L72,362 C48,357 30,343 26,323 C24,300 26,275 38,258 C50,247 72,241 100,238 Z"
-        fill="url(#kr-upper)" stroke="#0D0A06" stroke-opacity="0.55"/>
+  <path d="M100,198 L228,185 C240,180 250,173 253,165 C256,172 264,177 275,180 L390,207 L500,243 C520,251 534,263 540,278 C542,290 538,301 528,307 L470,318 L360,329 L230,333 L130,331 L72,322 C48,317 30,303 26,283 C24,260 26,235 38,218 C50,207 72,201 100,198 Z"
+        fill="url(#kr-upper)" stroke="#0D0A06" stroke-opacity="0.5"/>
 
-  <!-- toe cap panel -->
-  <path d="M360,369 L470,358 L528,347 C538,341 542,330 540,318 C534,303 520,291 500,283 L390,247
-           C398,275 400,305 392,330 C386,348 375,360 360,369 Z"
-        fill="#332C22" fill-opacity="0.9" stroke="#0D0A06" stroke-opacity="0.35"/>
-  <path d="M390,247 C398,275 400,305 392,330 C386,348 375,360 360,369" fill="none" stroke="#0D0A06" stroke-dasharray="2 3" stroke-opacity="0.55"/>
+  <path d="M360,329 L470,318 L528,307 C538,301 542,290 540,278 C534,263 520,251 500,243 L390,207
+           C398,235 400,265 392,290 C386,308 375,320 360,329 Z"
+        fill="#C66A2E" fill-opacity="0.75" stroke="#0D0A06" stroke-opacity="0.3"/>
 
-  <!-- heel counter + abstract K-mark -->
-  <path d="M100,238 C72,241 50,247 38,258 C26,275 24,300 26,323 C30,343 48,357 72,362 L130,371
-           C110,352 100,325 104,298 C107,275 115,254 100,238 Z"
-        fill="#3A3226" fill-opacity="0.85" stroke="#0D0A06" stroke-opacity="0.35"/>
-  <path d="M62,290 L96,278 L84,302 L108,296" fill="none" stroke="#E8C878" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.92"/>
+  <path d="M100,198 C72,201 50,207 38,218 C26,235 24,260 26,283 C30,303 48,317 72,322 L130,331
+           C110,312 100,285 104,258 C107,235 115,214 100,198 Z"
+        fill="#2D241F" fill-opacity="0.9"/>
+  <path d="M62,250 L96,238 L84,262 L108,256" fill="none" stroke="#E9C8AA" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- tongue -->
-  <path d="M228,225 C238,214 248,206 253,205 C258,206 264,213 275,220 C268,232 256,238 244,236 C236,234 230,231 228,225 Z"
-        fill="#211C15" stroke="#0D0A06" stroke-opacity="0.4"/>
+  <path d="M228,185 C238,174 248,166 253,165 C258,166 264,173 275,180 C268,192 256,198 244,196 C236,194 230,191 228,185 Z"
+        fill="#75695E"/>
 
-  <!-- eyelets + laces -->
-  <g stroke="#EFE4C8" stroke-width="1.7" stroke-opacity="0.92">
-    <line x1="238" y1="230" x2="272" y2="246"/>
-    <line x1="272" y1="230" x2="238" y2="246"/>
-    <line x1="272" y1="236" x2="306" y2="253"/>
-    <line x1="306" y1="236" x2="272" y2="253"/>
-    <line x1="306" y1="243" x2="338" y2="260"/>
-    <line x1="338" y1="243" x2="306" y2="260"/>
-  </g>
-  <g fill="#F6F0E3">
-    <circle cx="238" cy="230" r="2.3"/><circle cx="272" cy="230" r="2.3"/>
-    <circle cx="272" cy="236" r="2.3"/><circle cx="306" cy="236" r="2.3"/>
-    <circle cx="306" cy="243" r="2.3"/><circle cx="338" cy="243" r="2.3"/>
-    <circle cx="238" cy="246" r="2.3"/><circle cx="272" cy="253" r="2.3"/><circle cx="306" cy="260" r="2.3"/>
+  <g stroke="#F8F4EC" stroke-width="1.7" stroke-opacity="0.95">
+    <line x1="238" y1="190" x2="272" y2="206"/>
+    <line x1="272" y1="190" x2="238" y2="206"/>
+    <line x1="272" y1="196" x2="306" y2="213"/>
+    <line x1="306" y1="196" x2="272" y2="213"/>
   </g>
 
-  <!-- stitching -->
-  <path d="M100,238 L228,225" fill="none" stroke="#0D0A06" stroke-opacity="0.5" stroke-dasharray="1.5 3"/>
-  <path d="M130,371 L230,373 L360,369" fill="none" stroke="#0D0A06" stroke-opacity="0.5" stroke-dasharray="1.5 3"/>
-
-  <!-- light sweep -->
-  <g clip-path="url(#kr-clip)">
-    <rect x="-120" y="180" width="90" height="260" fill="#FFF3D6" opacity="0.3" transform="rotate(14 0 0)">
+  <g clip-path="url(#kr-clip2)">
+    <rect x="-120" y="140" width="90" height="260" fill="#FFF3D6" opacity="0.35" transform="rotate(14 0 0)">
       <animate attributeName="x" values="-160;620" dur="5.5s" repeatCount="indefinite"/>
     </rect>
   </g>
 
-  <!-- floating orbit dots -->
-  <g fill="#B8902E">
-    <circle cx="80" cy="180" r="1.8"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="560" cy="240" r="1.6"><animate attributeName="opacity" values="0.2;0.85;0.2" dur="3.6s" begin="0.5s" repeatCount="indefinite"/></circle>
-    <circle cx="580" cy="350" r="1.8"><animate attributeName="opacity" values="0.2;0.85;0.2" dur="4.2s" begin="1s" repeatCount="indefinite"/></circle>
-  </g>
-
-  <!-- dimension line: length -->
-  <g stroke="#6B5F48" stroke-opacity="0.75">
-    <line x1="26" y1="445" x2="540" y2="445"/>
-    <line x1="26" y1="439" x2="26" y2="451"/>
-    <line x1="540" y1="439" x2="540" y2="451"/>
-  </g>
-  <text x="283" y="465" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="1.5" fill="#6B5F48">TOE&#8211;TO&#8211;HEEL &#183; 312MM</text>
-
-  <!-- spec markers -->
-  <g font-family="Helvetica, Arial, sans-serif">
-    <circle cx="460" cy="305" r="10" fill="#F6F0E3" stroke="#211C15" stroke-opacity="0.7"/>
-    <text x="460" y="309" text-anchor="middle" font-size="10" fill="#211C15">01</text>
-    <line x1="470" y1="305" x2="520" y2="290" stroke="#211C15" stroke-opacity="0.4"/>
-    <text x="524" y="293" font-size="10.5" letter-spacing="1" fill="#4A4133">REINFORCED TOE</text>
-
-    <circle cx="70" cy="310" r="10" fill="#F6F0E3" stroke="#211C15" stroke-opacity="0.7"/>
-    <text x="70" y="314" text-anchor="middle" font-size="10" fill="#211C15">02</text>
-    <line x1="60" y1="310" x2="10" y2="310" stroke="#211C15" stroke-opacity="0.4"/>
-    <text x="7" y="307" text-anchor="end" font-size="10.5" letter-spacing="1" fill="#4A4133">SIGNATURE</text>
-    <text x="7" y="319" text-anchor="end" font-size="10.5" letter-spacing="1" fill="#4A4133">COUNTER</text>
-
-    <circle cx="255" cy="222" r="10" fill="#F6F0E3" stroke="#211C15" stroke-opacity="0.7"/>
-    <text x="255" y="226" text-anchor="middle" font-size="10" fill="#211C15">03</text>
-    <line x1="255" y1="212" x2="255" y2="185" stroke="#211C15" stroke-opacity="0.4"/>
-    <text x="255" y="178" text-anchor="middle" font-size="10.5" letter-spacing="1" fill="#4A4133">QUICK&#8209;PULL LACING</text>
-  </g>
-
-  <!-- bottom tagline -->
-  <line x1="40" y1="500" x2="580" y2="500" stroke="#262119" stroke-opacity="0.14"/>
-  <text x="40" y="524" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="1.5" fill="#332C22">EDITORIAL MARKETPLACE.</text>
-  <text x="580" y="524" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="1.5" fill="#332C22">DESIGNED FOR MOVEMENT.</text>
+  <text x="325" y="420" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#75695E">Designed for movement.</text>
 </svg>
