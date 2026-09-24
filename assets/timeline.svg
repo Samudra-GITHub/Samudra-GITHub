@@ -1,0 +1,84 @@
+<svg width="820" height="230" viewBox="0 0 820 230" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="820" height="230" fill="#050505"/>
+
+  <line x1="40" y1="120" x2="780" y2="120" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="740" stroke-dashoffset="740">
+    <animate attributeName="stroke-dashoffset" from="740" to="0" dur="2.4s" begin="0.1s" fill="freeze"/>
+  </line>
+
+  <!-- 2022 -->
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <circle cx="110" cy="120" r="5" fill="#ffffff" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.3s" fill="freeze"/>
+    </circle>
+    <text x="110" y="90" font-size="13" font-weight="700" fill="#ffffff" opacity="0">2022
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.4s" fill="freeze"/>
+    </text>
+    <text x="110" y="150" font-size="10.5" fill="#8c8c8c" opacity="0">Started CSE
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.4s" fill="freeze"/>
+    </text>
+  </g>
+
+  <!-- 2023 -->
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <circle cx="260" cy="120" r="5" fill="#ffffff" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.6s" fill="freeze"/>
+    </circle>
+    <text x="260" y="90" font-size="13" font-weight="700" fill="#ffffff" opacity="0">2023
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.7s" fill="freeze"/>
+    </text>
+    <text x="260" y="150" font-size="10.5" fill="#8c8c8c" opacity="0">Learned UI/UX
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.7s" fill="freeze"/>
+    </text>
+  </g>
+
+  <!-- 2024 -->
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <circle cx="410" cy="120" r="5" fill="#ffffff" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.9s" fill="freeze"/>
+    </circle>
+    <text x="410" y="90" font-size="13" font-weight="700" fill="#ffffff" opacity="0">2024
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.0s" fill="freeze"/>
+    </text>
+    <text x="410" y="150" font-size="10.5" fill="#8c8c8c" opacity="0">SkyCast &#183; Krama
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.0s" fill="freeze"/>
+    </text>
+  </g>
+
+  <!-- 2025 -->
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <circle cx="560" cy="120" r="5" fill="#ffffff" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.2s" fill="freeze"/>
+    </circle>
+    <text x="560" y="90" font-size="13" font-weight="700" fill="#ffffff" opacity="0">2025
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.3s" fill="freeze"/>
+    </text>
+    <text x="560" y="150" font-size="10.5" fill="#8c8c8c" opacity="0">AkashaLens &#183; SIH
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.3s" fill="freeze"/>
+    </text>
+  </g>
+
+  <!-- NOW -->
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <circle cx="720" cy="120" r="9" fill="none" stroke="#ffffff" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="9;15;9" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0;0.15" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="720" cy="120" r="6" fill="#ffffff" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.5s" fill="freeze"/>
+    </circle>
+    <text x="720" y="90" font-size="13" font-weight="700" fill="#ffffff" opacity="0">NOW
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.6s" fill="freeze"/>
+    </text>
+    <text x="720" y="150" font-size="10.5" fill="#8c8c8c" opacity="0">AI &#183; Computer Vision
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.6s" fill="freeze"/>
+    </text>
+  </g>
+</svg>
