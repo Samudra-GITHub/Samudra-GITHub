@@ -1,0 +1,28 @@
+<svg width="400" height="220" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#0a0a0a"/>
+
+  <!-- editorial grid -->
+  <g stroke="#ffffff" stroke-opacity="0.06">
+    <line x1="40" y1="20" x2="40" y2="200"/>
+    <line x1="130" y1="20" x2="130" y2="200"/>
+    <line x1="220" y1="20" x2="220" y2="200"/>
+    <line x1="310" y1="20" x2="310" y2="200"/>
+    <line x1="360" y1="20" x2="360" y2="200"/>
+  </g>
+
+  <!-- abstract sneaker silhouette -->
+  <path d="M 90 140 C 95 118 120 100 155 98 C 185 96 205 104 225 118 C 245 108 275 106 300 118 C 312 124 316 134 312 144 L 300 150 L 100 150 C 92 150 88 146 90 140 Z"
+        fill="none" stroke="#ffffff" stroke-opacity="0.75" stroke-width="1.4"/>
+  <path d="M 155 98 C 165 104 172 112 178 120" fill="none" stroke="#ffffff" stroke-opacity="0.4"/>
+  <path d="M 190 102 L 196 116 M 205 100 L 211 116 M 220 100 L 227 118" stroke="#ffffff" stroke-opacity="0.4"/>
+  <line x1="90" y1="150" x2="312" y2="150" stroke="#ffffff" stroke-opacity="0.75" stroke-width="2"/>
+
+  <!-- price tag -->
+  <g transform="translate(300,60)">
+    <path d="M0 0 L28 0 L34 8 L28 16 L0 16 Z" fill="none" stroke="#ffffff" stroke-opacity="0.5"/>
+    <circle cx="8" cy="8" r="1.6" fill="#ffffff" fill-opacity="0.5"/>
+  </g>
+
+  <text x="40" y="34" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="3" fill="#8a8a8a">SS26 &#8212; DROP 01</text>
+  <text x="200" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#8a8a8a">EDITORIAL &#183; MARKETPLACE</text>
+</svg>
