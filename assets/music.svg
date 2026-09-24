@@ -1,0 +1,49 @@
+<svg width="1100" height="200" viewBox="0 0 1100 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1100" height="200" fill="#EFE6DA"/>
+
+  <!-- vinyl -->
+  <g transform="translate(150,100)">
+    <circle r="70" fill="#2D241F"/>
+    <circle r="55" fill="none" stroke="#F8F4EC" stroke-opacity="0.08"/>
+    <circle r="40" fill="none" stroke="#F8F4EC" stroke-opacity="0.08"/>
+    <circle r="24" fill="#C66A2E"/>
+    <circle r="4" fill="#EFE6DA"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 150 100" to="360 150 100" dur="8s" repeatCount="indefinite" additive="sum"/>
+  </g>
+
+  <!-- cassette -->
+  <g transform="translate(320,60)">
+    <rect width="180" height="110" rx="10" fill="#F8F4EC" stroke="#2D241F" stroke-opacity="0.12"/>
+    <rect x="20" y="20" width="140" height="50" rx="6" fill="#EFE6DA"/>
+    <g>
+      <circle cx="55" cy="45" r="16" fill="none" stroke="#2D241F" stroke-opacity="0.4"/>
+      <circle cx="55" cy="45" r="4" fill="#2D241F"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 55 45" to="360 55 45" dur="6s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="125" cy="45" r="16" fill="none" stroke="#2D241F" stroke-opacity="0.4"/>
+      <circle cx="125" cy="45" r="4" fill="#2D241F"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 125 45" to="360 125 45" dur="6s" repeatCount="indefinite"/>
+    </g>
+    <rect x="20" y="82" width="140" height="6" rx="3" fill="#C66A2E" fill-opacity="0.5"/>
+  </g>
+
+  <!-- now playing text -->
+  <g font-family="Helvetica, Arial, sans-serif">
+    <text x="560" y="80" font-size="11" letter-spacing="2" fill="#75695E">NOW PLAYING</text>
+    <text x="560" y="108" font-size="20" font-weight="700" fill="#2D241F">Lo-fi for late builds</text>
+    <text x="560" y="130" font-size="13" fill="#75695E">the playlist that ships features</text>
+
+    <g stroke="#C66A2E" stroke-width="2.4" stroke-linecap="round">
+      <line x1="560" y1="150" x2="560" y2="164"><animate attributeName="y1" values="150;140;150" dur="1s" repeatCount="indefinite"/></line>
+      <line x1="572" y1="150" x2="572" y2="168"><animate attributeName="y1" values="150;132;150" dur="1.2s" begin="0.1s" repeatCount="indefinite"/></line>
+      <line x1="584" y1="150" x2="584" y2="162"><animate attributeName="y1" values="150;142;150" dur="0.9s" begin="0.2s" repeatCount="indefinite"/></line>
+      <line x1="596" y1="150" x2="596" y2="167"><animate attributeName="y1" values="150;136;150" dur="1.1s" begin="0.05s" repeatCount="indefinite"/></line>
+    </g>
+  </g>
+
+  <!-- floating star doodle -->
+  <path d="M980 60 l4 10 10 1 -7 7 2 10 -9 -5 -9 5 2 -10 -7 -7 10 -1 Z" fill="#C66A2E" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-10; 0,0" dur="4s" repeatCount="indefinite"/>
+  </path>
+</svg>
