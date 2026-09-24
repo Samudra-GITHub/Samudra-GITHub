@@ -1,151 +1,262 @@
+<img src="./assets/hero.svg" width="100%" alt="Samudra Kar — building immersive digital experiences" />
+
+<br/>
+
 <div align="center">
-
-<img src="./assets/hero.svg" width="100%" alt="Samudra Kar" />
-
-<br/>
-
-<sub>[Email](mailto:hi.samsstudio@gmail.com) &nbsp;·&nbsp; [GitHub](https://github.com/Samudra-GITHub) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/samudra-kar-a495951b5/) &nbsp;·&nbsp; [Portfolio](https://mudra-kar-portfolio-g46m.vercel.app)</sub>
-
-<br/>
-
-<sub>[Products](#featured-products) &nbsp;/&nbsp; [About](#about) &nbsp;/&nbsp; [Stack](#tech-stack) &nbsp;/&nbsp; [Focus](#current-focus) &nbsp;/&nbsp; [Analytics](#github-analytics) &nbsp;/&nbsp; [Roadmap](#roadmap-2026) &nbsp;/&nbsp; [Connect](#connect)</sub>
-
+<sub>
+<a href="#about">About</a> &nbsp;·&nbsp;
+<a href="#featured-products">Featured Products</a> &nbsp;·&nbsp;
+<a href="#tech-stack">Tech Stack</a> &nbsp;·&nbsp;
+<a href="#github-journey">Journey</a> &nbsp;·&nbsp;
+<a href="#currently-building">Currently Building</a> &nbsp;·&nbsp;
+<a href="#photography">Photography</a> &nbsp;·&nbsp;
+<a href="#connect">Connect</a>
+</sub>
 </div>
 
 <br/>
 
-## Featured Products
-
-<sub>Samudra OS — a connected set of products spanning design, AI, and engineering.</sub>
-
-<br/>
-
-<table width="100%">
-<tr>
-<td width="100%">
-
-**Tarang** — flagship
-<br/>Music, redesigned for the web.
-<br/><sub>Next.js · React · TypeScript · Tailwind CSS · Framer Motion</sub> &nbsp; `IN DEVELOPMENT`
-<br/>**[Repository →](https://github.com/Samudra-GITHub/Tarang)**
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-**Rinti AI**
-<br/>Your intelligent AI workspace.
-<br/><sub>FastAPI · Python · Next.js · Groq · Tavily</sub> &nbsp; `IN DEVELOPMENT`
-<br/>**[Repository →](https://github.com/Samudra-GITHub/Rinti-Ai)**
-
-</td>
-<td width="50%" valign="top">
-
-**AkashaLens**
-<br/>AI-powered satellite cloud reconstruction.
-<br/><sub>Python · OpenCV · NumPy · Deep Learning</sub> &nbsp; `RESEARCH`
-<br/>**[Repository →](https://github.com/Samudra-GITHub/AkashaLens)**
-
-</td>
-</tr>
-<tr><td colspan="2">&nbsp;</td></tr>
-<tr>
-<td width="50%" valign="top">
-
-**Krama**
-<br/>Luxury sneaker marketplace.
-<br/><sub>Next.js · React · TypeScript · Tailwind CSS</sub> &nbsp; `CONCEPT`
-<br/>**[Repository →](https://github.com/Samudra-GITHub/Krama)**
-
-</td>
-<td width="50%" valign="top">
-
-**PRAHARI**
-<br/>AI-powered mine compliance & safety monitoring platform.
-<br/><sub>Next.js · TypeScript · Prisma · PostgreSQL</sub> &nbsp; `HACKATHON`
-<br/>**[Repository →](https://github.com/Samudra-GITHub/PRAHARI)**
-
-</td>
-</tr>
-<tr><td colspan="2">&nbsp;</td></tr>
-<tr>
-<td width="50%" valign="top">
-
-**Portfolio V2**
-<br/>Interactive developer portfolio.
-<br/><sub>Next.js · React · Three.js · Framer Motion</sub> &nbsp; `LIVE`
-<br/>**[Live Site →](https://mudra-kar-portfolio-g46m.vercel.app)**
-
-</td>
-<td width="50%" valign="top">
-
-</td>
-</tr>
-</table>
-
-<br/>
+<img src="./assets/divider.svg" width="100%" alt="" />
 
 ## About
 
-I'm a Computer Science Engineering student, UI/UX designer, full-stack developer, and AI builder based in Bangalore, India.
+I'm a Computer Science Engineering student, UI/UX designer, and full-stack builder working out of Bangalore. Somewhere along the way I picked up a camera too, and now half my reference folders are photos I took myself instead of screenshots I saved.
 
-My work spans product design, frontend engineering, and applied machine learning — from glassmorphic web interfaces to computer-vision research. I care about interfaces that feel inevitable and systems that hold up under real use.
+Most of what I build lives at the edge of a few things at once — product thinking, visual design, and enough engineering to actually ship it. I like AI best when it disappears into the product instead of being the headline. A copilot is more interesting to me than a chatbot; a recommendation is more interesting than a leaderboard.
+
+I'm slow to add a feature and quick to cut one. If two things compete for attention on a screen, one of them loses.
 
 <br/>
+
+<p align="center">
+<em>"Build the thing you'd actually want to open twice."</em>
+</p>
+
+<br/>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+## Featured Products
+
+<sub>Every product here belongs to **Sams Studio** — a connected set of things I've built, spanning design, AI, and engineering.</sub>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="55%" valign="top">
+
+<img src="./assets/tarang-showcase.svg" width="100%" alt="Tarang" />
+
+</td>
+<td width="45%" valign="top">
+
+<br/>
+
+<sub>SAMS STUDIO &nbsp;·&nbsp; FLAGSHIP</sub>
+
+### Tarang
+**Music, redesigned for the web.**
+
+A premium music streaming web app built around motion, glass surfaces, and a listening experience that feels closer to a physical object than a browser tab. Free playback, a floating persistent player, and a full in-app design system are live today.
+
+<br/>
+
+`Next.js` `React` `TypeScript` `Tailwind CSS` `Framer Motion`
+
+<br/>
+
+**[View Repository →](https://github.com/Samudra-GITHub/Tarang)**
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="45%" valign="top">
+
+<br/>
+
+<sub>SAMS STUDIO &nbsp;·&nbsp; AI</sub>
+
+### Rinti AI
+**Your intelligent AI workspace.**
+
+A conversational AI assistant with persistent memory, a multi-step research mode, and real account-based sessions — password auth, HttpOnly cookies, CSRF protection. Backed by a Groq/OpenAI-compatible chat engine and Tavily for research.
+
+<br/>
+
+`FastAPI` `Python` `Next.js` `Groq` `Tavily`
+
+<br/>
+
+**[View Repository →](https://github.com/Samudra-GITHub/Rinti-Ai)**
+
+</td>
+<td width="55%" valign="top">
+
+<img src="./assets/rinti-showcase.svg" width="100%" alt="Rinti AI" />
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="55%" valign="top">
+
+<img src="./assets/akashalens-showcase.svg" width="100%" alt="AkashaLens" />
+
+</td>
+<td width="45%" valign="top">
+
+<br/>
+
+<sub>SAMS STUDIO &nbsp;·&nbsp; RESEARCH</sub>
+
+### AkashaLens
+**AI-powered satellite cloud reconstruction.**
+
+A U-Net trained on paired Sentinel imagery to reconstruct cloud-occluded ground detail. Built for ISRO Hackathon 2026, evaluated with SSIM and PSNR against held-out ground truth.
+
+<br/>
+
+`PyTorch` `Flask` `scikit-image` `SciPy`
+
+<br/>
+
+**[View Repository →](https://github.com/Samudra-GITHub/AkashaLens)**
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="45%" valign="top">
+
+<br/>
+
+<sub>SAMS STUDIO &nbsp;·&nbsp; FASHION</sub>
+
+### Krama
+**Luxury sneaker marketplace.**
+
+A premium shopping experience inspired by Apple and Nike — editorial pacing, real shop/checkout/account/admin routes, and motion driven by GSAP and Lenis rather than default page transitions.
+
+<br/>
+
+`Next.js` `GSAP` `Motion` `Lenis` `Tailwind CSS`
+
+<br/>
+
+**[View Repository →](https://github.com/Samudra-GITHub/Krama)**
+
+</td>
+<td width="55%" valign="top">
+
+<img src="./assets/krama-showcase.svg" width="100%" alt="Krama" />
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="55%" valign="top">
+
+<img src="./assets/portfolio-showcase.svg" width="100%" alt="Portfolio" />
+
+</td>
+<td width="45%" valign="top">
+
+<br/>
+
+<sub>SAMS STUDIO &nbsp;·&nbsp; HOME</sub>
+
+### Portfolio
+**A creative studio, online.**
+
+My personal site — a custom Three.js scene with real shaders, narrative sections instead of a project grid, and a contact form that actually sends mail via EmailJS.
+
+<br/>
+
+`Vite` `React Three Fiber` `Three.js` `Framer Motion`
+
+<br/>
+
+**[View Live →](https://mudra-kar-portfolio-g46m.vercel.app)**
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
 
 ## Tech Stack
 
-**Languages**
-<br/>
-<img src="https://skillicons.dev/icons?i=ts,js,python,c,java&theme=dark" />
-
-**Frontend**
-<br/>
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,threejs,html,css&theme=dark" />
-
-**Backend**
-<br/>
-<img src="https://skillicons.dev/icons?i=nodejs,fastapi,flask,firebase,mongodb&theme=dark" />
-
-**AI**
-<br/>
-<img src="https://skillicons.dev/icons?i=tensorflow,opencv,python&theme=dark" />
-
-**Design**
-<br/>
-<img src="https://skillicons.dev/icons?i=figma&theme=dark" />
-
-**Tools**
-<br/>
-<img src="https://skillicons.dev/icons?i=git,github,vscode,vercel&theme=dark" />
+<img src="./assets/tech-chips.svg" width="100%" alt="tech stack" />
 
 <br/>
 
-## Current Focus
+<img src="./assets/divider.svg" width="100%" alt="" />
 
-- **Tarang** — shipping the UI/UX and motion system for the flagship music product
-- **Rinti AI** — building memory, research mode, and streaming responses
-- **AkashaLens** — deepening the satellite cloud-reconstruction pipeline
-- **Krama** — refining the marketplace design system
-- **Portfolio V2** — relaunching with new case studies and motion work
+## GitHub Journey
+
+<img src="./assets/journey-timeline.svg" width="100%" alt="journey timeline" />
 
 <br/>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+## Currently Building
+
+<img src="./assets/sticky-notes.svg" width="100%" alt="currently building" />
+
+<br/>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+## Photography
+
+<sub>Between builds, I shoot. Mostly street, sometimes product. Placeholders below — real frames coming.</sub>
+
+<br/>
+
+<img src="./assets/film-strip.svg" width="100%" alt="photography film strip" />
+
+<br/>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+## Now Playing
+
+<img src="./assets/music.svg" width="100%" alt="now playing" />
+
+<br/>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
 
 ## GitHub Analytics
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Samudra-GITHub&hide_border=true&background=0B1220&ring=22D3EE&fire=22D3EE&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F1F5F9&sideNums=F1F5F9&dates=64748B" alt="GitHub streak" width="65%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Samudra-GITHub&hide_border=true&background=F8F4EC&ring=C66A2E&fire=C66A2E&currStreakLabel=2D241F&sideLabels=75695E&currStreakNum=2D241F&sideNums=2D241F&dates=75695E" alt="GitHub streak" width="65%"/>
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Samudra-GITHub&theme=react-dark&hide_border=true&area=true&color=22D3EE&line=22D3EE&point=F1F5F9&bg_color=0B1220" alt="Activity graph" width="95%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Samudra-GITHub&theme=minimal&hide_border=true&area=true&color=2D241F&line=C66A2E&point=2D241F&bg_color=F8F4EC" alt="Activity graph" width="95%"/>
 
 <br/>
 
@@ -159,17 +270,7 @@ My work spans product design, frontend engineering, and applied machine learning
 
 <br/>
 
-## Roadmap 2026
-
-- [x] Ship Tarang v1 — glassmorphism music streaming UI
-- [x] Launch AkashaLens satellite reconstruction pipeline
-- [ ] Add playlists, lyrics, and AI recommendations to Tarang
-- [ ] Ship Rinti AI research mode and streaming responses
-- [ ] Open-source the Krama design system
-- [ ] Publish Portfolio V2 case studies
-- [ ] Push AkashaLens toward ISRO-grade reconstruction accuracy
-
-<br/>
+<img src="./assets/divider.svg" width="100%" alt="" />
 
 ## Connect
 
@@ -177,8 +278,12 @@ My work spans product design, frontend engineering, and applied machine learning
 
 <sub>[Email](mailto:hi.samsstudio@gmail.com) &nbsp;·&nbsp; [GitHub](https://github.com/Samudra-GITHub) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/samudra-kar-a495951b5/) &nbsp;·&nbsp; [Portfolio](https://mudra-kar-portfolio-g46m.vercel.app)</sub>
 
+<br/><br/>
+
+<em>See you in the next build.</em>
+
 <br/>
 
-<sub>Samudra Kar &nbsp;·&nbsp; Bangalore, India</sub>
+<sub>— Samudra Kar, Sams Studio</sub>
 
 </div>
