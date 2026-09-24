@@ -2,24 +2,24 @@
 
 <img src="./assets/hero.svg" width="100%" alt="Samudra Kar" />
 
-<br/><br/>
+<br/>
 
 <a href="mailto:hi.samsstudio@gmail.com"><img src="https://img.shields.io/badge/EMAIL-3A3226?style=for-the-badge&logo=gmail&logoColor=white&labelColor=6B5F48" /></a>
 <a href="https://github.com/Samudra-GITHub"><img src="https://img.shields.io/badge/GITHUB-3A3226?style=for-the-badge&logo=github&logoColor=white&labelColor=6B5F48" /></a>
 <a href="https://www.linkedin.com/in/samudra-kar-a495951b5/"><img src="https://img.shields.io/badge/LINKEDIN-3A3226?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=6B5F48" /></a>
 <a href="https://mudra-kar-portfolio-g46m.vercel.app"><img src="https://img.shields.io/badge/PORTFOLIO-3A3226?style=for-the-badge&logo=vercel&logoColor=white&labelColor=6B5F48" /></a>
 
-<br/><br/>
+<br/>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2600&pause=1100&color=4A4133&center=true&vCenter=true&width=640&height=30&lines=Designing+products+people+remember.;Building+interfaces+that+feel+inevitable.;UI+%C3%97+Code+%C3%97+Intelligence." alt="Typing SVG" />
 
-<br/><br/>
+<br/>
 
 <sub><a href="#about-me">ABOUT</a>&nbsp;&nbsp;&nbsp;<a href="#featured-work">WORK</a>&nbsp;&nbsp;&nbsp;<a href="#skills-and-technologies">SKILLS</a>&nbsp;&nbsp;&nbsp;<a href="#journey">JOURNEY</a>&nbsp;&nbsp;&nbsp;<a href="#github-analytics">ANALYTICS</a>&nbsp;&nbsp;&nbsp;<a href="#connect">CONNECT</a></sub>
 
 </div>
 
-<br/><br/>
+<br/>
 
 <!-- ============================================= -->
 <!-- ABOUT                                          -->
@@ -64,7 +64,7 @@ I believe the best technology disappears. It doesn't ask for attention; it earns
 
 </div>
 
-<br/><br/>
+<br/>
 
 <!-- ============================================= -->
 <!-- FEATURED WORK                                  -->
@@ -75,7 +75,7 @@ I believe the best technology disappears. It doesn't ask for attention; it earns
 # Featured Work
 <sub>Four products. Four different problems.</sub>
 
-<br/><br/>
+<br/>
 
 <img src="./assets/project-akashalens-large.svg" width="100%" alt="AkashaLens" />
 
@@ -99,7 +99,7 @@ AI-powered computer vision exploring cloud removal and image reconstruction for 
 </td>
 <td width="42%" valign="top">
 
-<br/><br/>
+<br/>
 
 <sub>FLAGSHIP PROJECT &nbsp;·&nbsp; CONCEPT</sub>
 
@@ -111,7 +111,7 @@ A premium sneaker marketplace concept — shaped by fashion, editorial layout, a
 
 <img src="https://img.shields.io/badge/React-6B5F48?style=flat-square&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/Tailwind_CSS-6B5F48?style=flat-square&logo=tailwindcss&logoColor=white"/> <img src="https://img.shields.io/badge/Figma-6B5F48?style=flat-square&logo=figma&logoColor=white"/>
 
-<br/><br/>
+<br/>
 
 **[View Repository →](https://github.com/Samudra-GITHub/Krama)**
 
@@ -123,14 +123,14 @@ A premium sneaker marketplace concept — shaped by fashion, editorial layout, a
 
 <table width="100%">
 <tr>
-<td width="38%" valign="top">
+<td width="58%" valign="top">
 
-<img src="./assets/project-skycast.svg" width="100%" alt="SkyCast" />
+<img src="./assets/skycast-showcase.svg" width="100%" alt="SkyCast" />
 
 </td>
-<td width="62%" valign="top">
+<td width="42%" valign="top">
 
-<br/><br/>
+<br/>
 
 <sub>WEATHER DASHBOARD &nbsp;·&nbsp; SHIPPED</sub>
 
@@ -142,7 +142,7 @@ A minimal forecast dashboard designed around quick comprehension and a calm visu
 
 <img src="https://img.shields.io/badge/Flask-6B5F48?style=flat-square&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/REST_API-6B5F48?style=flat-square"/> <img src="https://img.shields.io/badge/OpenWeather-6B5F48?style=flat-square&logo=openweathermap&logoColor=white"/>
 
-<br/><br/>
+<br/>
 
 **[View Repository →](https://github.com/Samudra-GITHub/SkyCast-Weather-App)**
 
@@ -156,6 +156,11 @@ A minimal forecast dashboard designed around quick comprehension and a calm visu
 <tr>
 <td width="58%" valign="top">
 
+<img src="./assets/portfolio-showcase.svg" width="100%" alt="Portfolio" />
+
+</td>
+<td width="42%" valign="top">
+
 <br/>
 
 <sub>PERSONAL SITE &nbsp;·&nbsp; LIVE</sub>
@@ -168,20 +173,15 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 
 <img src="https://img.shields.io/badge/React-6B5F48?style=flat-square&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/Three.js-6B5F48?style=flat-square&logo=threedotjs&logoColor=white"/> <img src="https://img.shields.io/badge/FastAPI-6B5F48?style=flat-square&logo=fastapi&logoColor=white"/>
 
-<br/><br/>
+<br/>
 
 **[View Live →](https://mudra-kar-portfolio-g46m.vercel.app)** &nbsp;·&nbsp; **[Repository](https://github.com/Samudra-GITHub/samudra-kar-portfolio)**
-
-</td>
-<td width="42%" valign="top">
-
-<img src="./assets/project-portfolio.svg" width="100%" alt="Portfolio" />
 
 </td>
 </tr>
 </table>
 
-<br/><br/>
+<br/>
 
 <!-- ============================================= -->
 <!-- SKILLS & TECHNOLOGIES                          -->
@@ -192,37 +192,37 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 # Skills and Technologies
 <sub>The tools behind the work.</sub>
 
-<br/><br/>
+<br/>
 
 <div align="center">
 <img src="./assets/orbit.svg" width="100%" alt="skills orbit" />
 </div>
 
-<br/><br/>
+<br/>
 
 **Frontend**
 <br/>
 <img src="https://img.shields.io/badge/React-6B5F48?style=flat-square&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/TypeScript-6B5F48?style=flat-square&logo=typescript&logoColor=white"/> <img src="https://img.shields.io/badge/Tailwind_CSS-6B5F48?style=flat-square&logo=tailwindcss&logoColor=white"/> <img src="https://img.shields.io/badge/Three.js-6B5F48?style=flat-square&logo=threedotjs&logoColor=white"/>
 
-<br/><br/>
+<br/>
 
 **Backend**
 <br/>
 <img src="https://img.shields.io/badge/Node.js-6B5F48?style=flat-square&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/FastAPI-6B5F48?style=flat-square&logo=fastapi&logoColor=white"/> <img src="https://img.shields.io/badge/Flask-6B5F48?style=flat-square&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/Firebase-6B5F48?style=flat-square&logo=firebase&logoColor=white"/> <img src="https://img.shields.io/badge/MongoDB-6B5F48?style=flat-square&logo=mongodb&logoColor=white"/>
 
-<br/><br/>
+<br/>
 
 **AI / ML**
 <br/>
 <img src="https://img.shields.io/badge/Python-6B5F48?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/TensorFlow-6B5F48?style=flat-square&logo=tensorflow&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-6B5F48?style=flat-square&logo=opencv&logoColor=white"/>
 
-<br/><br/>
+<br/>
 
 **Design & Tools**
 <br/>
 <img src="https://img.shields.io/badge/Figma-6B5F48?style=flat-square&logo=figma&logoColor=white"/> <img src="https://img.shields.io/badge/Git-6B5F48?style=flat-square&logo=git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-6B5F48?style=flat-square&logo=github&logoColor=white"/> <img src="https://img.shields.io/badge/VS_Code-6B5F48?style=flat-square&logo=visualstudiocode&logoColor=white"/>
 
-<br/><br/>
+<br/>
 
 <!-- ============================================= -->
 <!-- JOURNEY                                        -->
@@ -235,13 +235,13 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 # Journey
 <sub>From first line of code to what's next.</sub>
 
-<br/><br/>
+<br/>
 
 <img src="./assets/timeline.svg" width="100%" alt="journey timeline" />
 
 </div>
 
-<br/><br/>
+<br/>
 
 <!-- ============================================= -->
 <!-- WHAT I'M BUILDING                              -->
@@ -254,17 +254,17 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 # What I'm Building
 <sub>Skills currently in progress, tracked honestly.</sub>
 
-<br/><br/>
+<br/>
 
 <img src="./assets/building-progress.svg" width="90%" alt="building progress" />
 
-<br/><br/>
+<br/>
 
 <sub>Open to: AI &amp; design-driven products · UI/UX and frontend collaborations · open-source contributions · well-scoped problems with thoughtful teams.</sub>
 
 </div>
 
-<br/><br/>
+<br/>
 
 <!-- ============================================= -->
 <!-- BIG STATEMENT                                  -->
@@ -276,7 +276,7 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 
 </div>
 
-<br/><br/>
+<br/>
 
 <!-- ============================================= -->
 <!-- AI PLAYGROUND & HACKATHONS                     -->
@@ -287,13 +287,13 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 # AI Playground and Hackathons
 <sub>Where the interface starts to think — and where it gets tested under pressure.</sub>
 
-<br/><br/>
+<br/>
 
 <div align="center">
 <img src="./assets/neural-lab.svg" width="100%" alt="neural lab" />
 </div>
 
-<br/><br/>
+<br/>
 
 <table width="100%">
 <tr>
@@ -318,7 +318,7 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 </tr>
 </table>
 
-<br/><br/>
+<br/>
 
 <table width="100%">
 <tr>
@@ -343,7 +343,7 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 </tr>
 </table>
 
-<br/><br/>
+<br/>
 
 <!-- ============================================= -->
 <!-- GITHUB ANALYTICS                               -->
@@ -356,20 +356,20 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 # GitHub Analytics
 <sub>Building consistently. Shipping ideas into products.</sub>
 
-<br/><br/>
+<br/>
 
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=Samudra-GITHub&show_icons=true&count_private=true&hide_border=true&title_color=3A3226&icon_color=B8902E&text_color=4A4133&bg_color=F6F0E3&ring_color=B8902E" alt="GitHub stats" />
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Samudra-GITHub&layout=compact&hide_border=true&title_color=3A3226&text_color=4A4133&bg_color=F6F0E3&langs_count=8" alt="Top languages" />
 
-<br/><br/>
+<br/>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Samudra-GITHub&hide_border=true&background=F6F0E3&ring=B8902E&fire=B8902E&currStreakLabel=3A3226&sideLabels=6B5F48&currStreakNum=3A3226&sideNums=3A3226&dates=8A7B5E" alt="GitHub streak" width="65%"/>
 
-<br/><br/>
+<br/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Samudra-GITHub&theme=minimal&hide_border=true&area=true&color=3A3226&line=B8902E&point=3A3226&bg_color=F6F0E3" alt="Activity graph" width="95%"/>
 
-<br/><br/>
+<br/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake-dark.svg" />
@@ -377,13 +377,13 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
   <img src="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake.svg" alt="Animated contribution graph" width="95%" />
 </picture>
 
-<br/><br/>
+<br/>
 
 <img src="https://github-profile-trophy.vercel.app/?username=Samudra-GITHub&theme=flat&no-frame=true&no-bg=true&row=1&column=6&margin-w=10" alt="trophies" width="95%"/>
 
 </div>
 
-<br/><br/>
+<br/>
 
 <!-- ============================================= -->
 <!-- PHOTOGRAPHY & INTERESTS                        -->
@@ -394,7 +394,7 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 # Photography and Personal Interests
 <sub>Personal work, off-screen.</sub>
 
-<br/><br/>
+<br/>
 
 <div align="center">
 <img src="./assets/photography.svg" width="100%" alt="photography" />
@@ -402,7 +402,7 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 <sub>gallery placeholders — ready for real frames anytime</sub>
 </div>
 
-<br/><br/>
+<br/>
 
 <table width="100%">
 <tr>
@@ -433,7 +433,7 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 </tr>
 </table>
 
-<br/><br/>
+<br/>
 
 <!-- ============================================= -->
 <!-- CONNECT                                        -->
@@ -446,14 +446,14 @@ A digital space with a point of view — motion, 3D, and visual storytelling bui
 # Connect
 <sub>Open to design-driven products, frontend collaborations, and well-scoped problems.</sub>
 
-<br/><br/>
+<br/>
 
 <a href="mailto:hi.samsstudio@gmail.com"><img src="https://img.shields.io/badge/EMAIL-3A3226?style=for-the-badge&logo=gmail&logoColor=white&labelColor=6B5F48" /></a>
 <a href="https://github.com/Samudra-GITHub"><img src="https://img.shields.io/badge/GITHUB-3A3226?style=for-the-badge&logo=github&logoColor=white&labelColor=6B5F48" /></a>
 <a href="https://www.linkedin.com/in/samudra-kar-a495951b5/"><img src="https://img.shields.io/badge/LINKEDIN-3A3226?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=6B5F48" /></a>
 <a href="https://mudra-kar-portfolio-g46m.vercel.app"><img src="https://img.shields.io/badge/PORTFOLIO-3A3226?style=for-the-badge&logo=vercel&logoColor=white&labelColor=6B5F48" /></a>
 
-<br/><br/>
+<br/>
 
 <img src="https://komarev.com/ghpvc/?username=Samudra-GITHub&label=PROFILE%20VIEWS&color=3A3226&style=for-the-badge" alt="Profile views" />
 
