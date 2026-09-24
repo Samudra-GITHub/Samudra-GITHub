@@ -1,0 +1,64 @@
+<svg width="1100" height="240" viewBox="0 0 1100 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1100" height="240" fill="#F8F4EC"/>
+  <rect width="1100" height="240" fill="#EFE6DA" opacity="0.4"/>
+
+  <g font-family="Helvetica, Arial, sans-serif">
+
+    <!-- Tarang -->
+    <g transform="translate(60,40) rotate(-4)">
+      <animateTransform attributeName="transform" type="rotate" values="-4 90 80; -1 90 80; -4 90 80" dur="5s" repeatCount="indefinite" additive="sum"/>
+      <rect width="180" height="160" fill="#E9C8AA"/>
+      <rect x="0" y="0" width="180" height="160" fill="none" stroke="#2D241F" stroke-opacity="0.06"/>
+      <circle cx="90" cy="10" r="6" fill="#C66A2E"/>
+      <text x="20" y="50" font-size="16" font-weight="700" fill="#2D241F">Tarang</text>
+      <text x="20" y="72" font-size="11" fill="#75695E">Music streaming</text>
+      <text x="20" y="88" font-size="11" fill="#75695E">UI + motion system</text>
+      <text x="20" y="130" font-size="10" fill="#C66A2E">&#9733; flagship</text>
+    </g>
+
+    <!-- Rinti AI -->
+    <g transform="translate(260,60) rotate(3)">
+      <animateTransform attributeName="transform" type="rotate" values="3 90 80; 6 90 80; 3 90 80" dur="6s" begin="0.3s" repeatCount="indefinite" additive="sum"/>
+      <rect width="180" height="160" fill="#EFE6DA"/>
+      <rect x="0" y="0" width="180" height="160" fill="none" stroke="#2D241F" stroke-opacity="0.06"/>
+      <circle cx="90" cy="10" r="6" fill="#2D241F"/>
+      <text x="20" y="50" font-size="16" font-weight="700" fill="#2D241F">Rinti AI</text>
+      <text x="20" y="72" font-size="11" fill="#75695E">Memory + research</text>
+      <text x="20" y="88" font-size="11" fill="#75695E">mode, streaming</text>
+    </g>
+
+    <!-- AkashaLens -->
+    <g transform="translate(460,35) rotate(-2)">
+      <animateTransform attributeName="transform" type="rotate" values="-2 90 80; 1 90 80; -2 90 80" dur="5.5s" begin="0.6s" repeatCount="indefinite" additive="sum"/>
+      <rect width="180" height="160" fill="#E9C8AA"/>
+      <rect x="0" y="0" width="180" height="160" fill="none" stroke="#2D241F" stroke-opacity="0.06"/>
+      <circle cx="90" cy="10" r="6" fill="#C66A2E"/>
+      <text x="20" y="50" font-size="16" font-weight="700" fill="#2D241F">AkashaLens</text>
+      <text x="20" y="72" font-size="11" fill="#75695E">ISRO-grade</text>
+      <text x="20" y="88" font-size="11" fill="#75695E">reconstruction</text>
+    </g>
+
+    <!-- Krama -->
+    <g transform="translate(660,55) rotate(4)">
+      <animateTransform attributeName="transform" type="rotate" values="4 90 80; 7 90 80; 4 90 80" dur="6.5s" begin="0.9s" repeatCount="indefinite" additive="sum"/>
+      <rect width="180" height="160" fill="#EFE6DA"/>
+      <rect x="0" y="0" width="180" height="160" fill="none" stroke="#2D241F" stroke-opacity="0.06"/>
+      <circle cx="90" cy="10" r="6" fill="#2D241F"/>
+      <text x="20" y="50" font-size="16" font-weight="700" fill="#2D241F">Krama</text>
+      <text x="20" y="72" font-size="11" fill="#75695E">Design system</text>
+      <text x="20" y="88" font-size="11" fill="#75695E">open-sourcing</text>
+    </g>
+
+    <!-- Portfolio -->
+    <g transform="translate(860,40) rotate(-3)">
+      <animateTransform attributeName="transform" type="rotate" values="-3 90 80; 0 90 80; -3 90 80" dur="5.2s" begin="1.2s" repeatCount="indefinite" additive="sum"/>
+      <rect width="180" height="160" fill="#E9C8AA"/>
+      <rect x="0" y="0" width="180" height="160" fill="none" stroke="#2D241F" stroke-opacity="0.06"/>
+      <circle cx="90" cy="10" r="6" fill="#C66A2E"/>
+      <text x="20" y="50" font-size="16" font-weight="700" fill="#2D241F">Portfolio</text>
+      <text x="20" y="72" font-size="11" fill="#75695E">Case studies</text>
+      <text x="20" y="88" font-size="11" fill="#75695E">+ new motion work</text>
+    </g>
+
+  </g>
+</svg>
