@@ -1,71 +1,68 @@
 <svg width="900" height="340" viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="tl-line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0%" stop-color="#262119" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#262119" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#B8902E" stop-opacity="0.95"/>
     </linearGradient>
   </defs>
 
-  <rect width="900" height="340" fill="#050505"/>
+  <rect width="900" height="340" fill="#F6F0E3"/>
 
-  <line x1="40" y1="210" x2="860" y2="210" stroke="url(#tl-line)" stroke-width="1.4" stroke-dasharray="820" stroke-dashoffset="820">
+  <line x1="40" y1="210" x2="860" y2="210" stroke="url(#tl-line)" stroke-width="1.6" stroke-dasharray="820" stroke-dashoffset="820">
     <animate attributeName="stroke-dashoffset" from="820" to="0" dur="2.6s" begin="0.1s" fill="freeze"/>
   </line>
 
   <!-- 2022 -->
   <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.3s" fill="freeze"/>
-    <text x="120" y="160" font-size="42" font-weight="800" fill="#ffffff" opacity="0.9">22</text>
-    <circle cx="120" cy="210" r="5" fill="#ffffff"/>
-    <text x="120" y="245" font-size="11" fill="#a0a0a0" letter-spacing="0.5">Started Computer</text>
-    <text x="120" y="260" font-size="11" fill="#a0a0a0" letter-spacing="0.5">Science Engineering</text>
+    <text x="120" y="160" font-size="46" font-weight="800" fill="#211C15">22</text>
+    <circle cx="120" cy="210" r="5.5" fill="#211C15"/>
+    <text x="120" y="248" font-size="12.5" fill="#5C513E" letter-spacing="0.4">Started Computer</text>
+    <text x="120" y="265" font-size="12.5" fill="#5C513E" letter-spacing="0.4">Science Engineering</text>
   </g>
 
   <!-- 2023 -->
   <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.6s" fill="freeze"/>
-    <text x="290" y="160" font-size="42" font-weight="800" fill="#ffffff" opacity="0.9">23</text>
-    <circle cx="290" cy="210" r="5" fill="#ffffff"/>
-    <text x="290" y="245" font-size="11" fill="#a0a0a0" letter-spacing="0.5">Learned UI/UX</text>
-    <text x="290" y="260" font-size="11" fill="#a0a0a0" letter-spacing="0.5">design fundamentals</text>
+    <text x="290" y="160" font-size="46" font-weight="800" fill="#211C15">23</text>
+    <circle cx="290" cy="210" r="5.5" fill="#211C15"/>
+    <text x="290" y="248" font-size="12.5" fill="#5C513E" letter-spacing="0.4">Learned UI/UX</text>
+    <text x="290" y="265" font-size="12.5" fill="#5C513E" letter-spacing="0.4">design fundamentals</text>
   </g>
 
   <!-- 2024 -->
   <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.9s" fill="freeze"/>
-    <!-- weather glyph -->
-    <ellipse cx="452" cy="128" rx="16" ry="7" fill="none" stroke="#c8c8c8" stroke-opacity="0.7"/>
-    <text x="460" y="160" font-size="42" font-weight="800" fill="#ffffff" opacity="0.9">24</text>
-    <circle cx="460" cy="210" r="5" fill="#ffffff"/>
-    <text x="460" y="245" font-size="11" fill="#a0a0a0" letter-spacing="0.5">Built SkyCast &amp; first</text>
-    <text x="460" y="260" font-size="11" fill="#a0a0a0" letter-spacing="0.5">full-stack products</text>
+    <ellipse cx="452" cy="126" rx="16" ry="7" fill="none" stroke="#6B5F48" stroke-opacity="0.8"/>
+    <text x="460" y="160" font-size="46" font-weight="800" fill="#211C15">24</text>
+    <circle cx="460" cy="210" r="5.5" fill="#211C15"/>
+    <text x="460" y="248" font-size="12.5" fill="#5C513E" letter-spacing="0.4">Built SkyCast &amp; first</text>
+    <text x="460" y="265" font-size="12.5" fill="#5C513E" letter-spacing="0.4">full-stack products</text>
   </g>
 
   <!-- 2025 -->
   <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.2s" fill="freeze"/>
-    <!-- sneaker tick glyph -->
-    <path d="M618,124 C624,120 632,120 640,124 L645,130 L615,130 Z" fill="none" stroke="#c8c8c8" stroke-opacity="0.7"/>
-    <text x="630" y="160" font-size="42" font-weight="800" fill="#ffffff" opacity="0.9">25</text>
-    <circle cx="630" cy="210" r="5" fill="#ffffff"/>
-    <text x="630" y="245" font-size="11" fill="#a0a0a0" letter-spacing="0.5">Krama, AkashaLens</text>
-    <text x="630" y="260" font-size="11" fill="#a0a0a0" letter-spacing="0.5">&amp; Smart India Hackathon</text>
+    <path d="M618,124 C624,120 632,120 640,124 L645,130 L615,130 Z" fill="none" stroke="#6B5F48" stroke-opacity="0.8"/>
+    <text x="630" y="160" font-size="46" font-weight="800" fill="#211C15">25</text>
+    <circle cx="630" cy="210" r="5.5" fill="#211C15"/>
+    <text x="630" y="248" font-size="12.5" fill="#5C513E" letter-spacing="0.4">Krama, AkashaLens</text>
+    <text x="630" y="265" font-size="12.5" fill="#5C513E" letter-spacing="0.4">&amp; Smart India Hackathon</text>
   </g>
 
   <!-- NOW -->
   <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.5s" fill="freeze"/>
-    <!-- satellite glyph -->
-    <circle cx="780" cy="126" r="5" fill="none" stroke="#c8c8c8" stroke-opacity="0.7"/>
-    <line x1="774" y1="120" x2="769" y2="115" stroke="#c8c8c8" stroke-opacity="0.7"/>
-    <line x1="786" y1="132" x2="791" y2="137" stroke="#c8c8c8" stroke-opacity="0.7"/>
-    <text x="800" y="160" font-size="34" font-weight="800" fill="#ffffff">NOW</text>
-    <circle cx="800" cy="210" r="10" fill="none" stroke="#ffffff" stroke-width="1">
-      <animate attributeName="r" values="10;18;10" dur="2.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.2;0;0.2" dur="2.2s" repeatCount="indefinite"/>
+    <circle cx="780" cy="126" r="5" fill="none" stroke="#6B5F48" stroke-opacity="0.8"/>
+    <line x1="774" y1="120" x2="769" y2="115" stroke="#6B5F48" stroke-opacity="0.8"/>
+    <line x1="786" y1="132" x2="791" y2="137" stroke="#6B5F48" stroke-opacity="0.8"/>
+    <text x="800" y="160" font-size="38" font-weight="800" fill="#8A6D22">NOW</text>
+    <circle cx="800" cy="210" r="11" fill="none" stroke="#B8902E" stroke-width="1.2">
+      <animate attributeName="r" values="11;19;11" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="2.2s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="800" cy="210" r="6" fill="#ffffff"/>
-    <text x="800" y="245" font-size="11" fill="#a0a0a0" letter-spacing="0.5">AI &amp; Computer Vision</text>
+    <circle cx="800" cy="210" r="6.5" fill="#B8902E"/>
+    <text x="800" y="248" font-size="12.5" fill="#5C513E" letter-spacing="0.4">AI &amp; Computer Vision</text>
   </g>
 </svg>
