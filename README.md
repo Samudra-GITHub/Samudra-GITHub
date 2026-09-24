@@ -1,24 +1,6 @@
 <div align="center">
 
-<img src="./GITHUB%20PROFILE%20BANNER.png" alt="Samudra Kar — designer and developer" width="100%" />
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0A0A,50:1a1a1a,100:0A0A0A&height=4&section=header" width="100%"/>
-
-<br/>
-
-<h1 align="center">SAMUDRA KAR</h1>
-
-<p align="center">
-<img src="https://img.shields.io/badge/-DESIGNING%20PRODUCTS%20PEOPLE%20REMEMBER-000000?style=flat-square&labelColor=000000" alt="tagline"/>
-</p>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=1000&color=0A0A0A&center=true&vCenter=true&random=false&width=750&height=50&lines=Building+interfaces+that+feel+inevitable.;Code.+Design.+Motion.+Intelligence.;UI%2FUX+Designer+%E2%80%94+Full-Stack+Developer;Computer+Science+Engineer+%E2%80%94+Bangalore%2C+India" alt="Typing SVG" />
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/●_AVAILABLE_FOR_OPPORTUNITIES-000000?style=for-the-badge&labelColor=0A0A0A&color=1a1a1a" alt="status pill"/>
+<img src="./assets/hero.svg" width="100%" alt="Samudra Kar" />
 
 <br/><br/>
 
@@ -29,92 +11,65 @@
 
 <br/><br/>
 
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=2600&pause=1100&color=8C8C8C&center=true&vCenter=true&width=640&height=30&lines=Designing+products+people+remember.;Building+interfaces+that+feel+inevitable.;UI+%C3%97+Code+%C3%97+Intelligence." alt="Typing SVG" />
+
+<br/><br/>
+
 <sub>
-<a href="#-about">ABOUT</a> &nbsp;/&nbsp;
-<a href="#-selected-work">WORK</a> &nbsp;/&nbsp;
-<a href="#-skills">SKILLS</a> &nbsp;/&nbsp;
-<a href="#-journey">JOURNEY</a> &nbsp;/&nbsp;
-<a href="#-building-now">BUILDING NOW</a> &nbsp;/&nbsp;
-<a href="#-github-analytics">ANALYTICS</a> &nbsp;/&nbsp;
-<a href="#-playground">PLAYGROUND</a> &nbsp;/&nbsp;
-<a href="#-connect">CONNECT</a>
+<a href="#-about">ABOUT</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-selected-work">WORK</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-skills-universe">SKILLS</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-journey">JOURNEY</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-ai-playground">AI LAB</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-github-analytics">ANALYTICS</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-frame">FRAME</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#-connect">CONNECT</a>
 </sub>
 
 </div>
 
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0A0A0A,100:0A0A0A&height=1&section=header" width="100%"/>
+<img src="./assets/divider-scan.svg" width="100%" alt="" />
 
 <br/>
-
-<div align="center">
-<sub>◇ ◇ ◇</sub>
-</div>
 
 ## 🖤 About
 
 <table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td width="46%" valign="top">
 
-```bash
-❯ whoami
-```
-```
-Samudra Kar
-
-UI/UX Designer
-Full-Stack Developer
-AI Explorer
-
-B.Tech, Computer Science Engineering
-Chanakya University — Bangalore, IN
-
-> Status: shipping.
-> Focus: AI × Computer Vision × 3D
-█▓▒░ _
-```
+<img src="./assets/terminal.svg" width="100%" alt="terminal" />
 
 </td>
-<td width="50%" valign="top">
-
-I sit at the intersection of **product thinking, visual design, and engineering** — with a deepening focus on applied artificial intelligence and computer vision.
-
-I believe the best technology disappears. It doesn't ask for attention; it earns trust quietly, one considered decision at a time.
-
-This profile is my workshop as much as my resume — a running log of what I'm building, breaking, and learning next.
-
-</td>
-</tr>
-</table>
+<td width="54%" valign="top">
 
 <br/>
 
 <table width="100%">
 <tr>
-<td width="25%" align="center" valign="top">
+<td width="50%" valign="top">
+<br/>
 
-**◆ PRODUCT**
-<sub>User flows, product thinking, information architecture</sub>
-
+**◆ PRODUCT THINKING**
+<sub>I start from the problem, not the pixel — user flows and information architecture that hold up under real use.</sub>
+<br/><br/>
 </td>
-<td width="25%" align="center" valign="top">
+<td width="50%" valign="top">
+<br/>
 
-**◆ DESIGN**
-<sub>UI/UX systems, prototyping, motion design</sub>
-
+**◆ DESIGN PHILOSOPHY**
+<sub>Interfaces should feel inevitable. Every element earns its place; nothing is decoration.</sub>
+<br/><br/>
 </td>
-<td width="25%" align="center" valign="top">
+</tr>
+<tr>
+<td width="50%" valign="top">
 
 **◆ ENGINEERING**
-<sub>React interfaces, full-stack systems, API integration</sub>
-
+<sub>I build what I design. Full-stack execution keeps the idea honest all the way to production.</sub>
+<br/><br/>
 </td>
-<td width="25%" align="center" valign="top">
+<td width="50%" valign="top">
 
 **◆ AI CURIOSITY**
-<sub>Computer vision, Three.js / R3F, applied AI</sub>
+<sub>Computer vision, applied ML, and Three.js — where the interface starts to think.</sub>
+<br/><br/>
+</td>
+</tr>
+</table>
 
 </td>
 </tr>
@@ -124,13 +79,14 @@ This profile is my workshop as much as my resume — a running log of what I'm b
 
 <div align="center">
 
-> *"The best design is the one that makes the right thing feel natural."*
+### GOOD DESIGN IS INVISIBLE.
+<sub>It doesn't ask for attention — it earns trust quietly, one considered decision at a time.</sub>
 
 </div>
 
-<br/>
+<img src="./assets/divider-wave.svg" width="100%" alt="" />
 
-<div align="center"><sub>◇ ◇ ◇</sub></div>
+<br/>
 
 ## 💼 Selected Work
 
@@ -140,61 +96,121 @@ This profile is my workshop as much as my resume — a running log of what I'm b
 <tr>
 <td width="50%" valign="top">
 
-### 🛰️ AkashaLens
-**Making satellite imagery clearer.**
+<img src="./assets/project-akashalens.svg" width="100%" alt="AkashaLens" />
 
-An AI-powered computer-vision project exploring cloud removal and image reconstruction for satellite imagery — trained to reconstruct occluded ground detail with minimal artifacting.
+**AkashaLens** &nbsp;<sub>◆ ACTIVE</sub>
+<br/>Cloud removal and image reconstruction for satellite imagery.
 
-<img src="https://img.shields.io/badge/Python-000000?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-000000?style=flat-square&logo=opencv&logoColor=white"/> <img src="https://img.shields.io/badge/NumPy-000000?style=flat-square&logo=numpy&logoColor=white"/> <img src="https://img.shields.io/badge/Deep_Learning-000000?style=flat-square"/>
+<img src="https://img.shields.io/badge/Python-000?style=flat-square"/> <img src="https://img.shields.io/badge/OpenCV-000?style=flat-square"/> <img src="https://img.shields.io/badge/Deep_Learning-000?style=flat-square"/>
 
-**[↗ View Repository](https://github.com/Samudra-GITHub/AkashaLens)**
+**[↗ Repository](https://github.com/Samudra-GITHub/AkashaLens)**
 
 </td>
 <td width="50%" valign="top">
 
-### 👟 Krama
-**A more considered way to shop sneakers.**
+<img src="./assets/project-krama.svg" width="100%" alt="Krama" />
 
-A premium marketplace concept shaped by fashion, editorial layouts, and a tactile shopping experience — built to feel closer to a lookbook than a storefront.
+**Krama** &nbsp;<sub>◆ CONCEPT</sub>
+<br/>A premium sneaker marketplace, shaped by fashion editorial.
 
-<img src="https://img.shields.io/badge/React-000000?style=flat-square&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/Tailwind_CSS-000000?style=flat-square&logo=tailwindcss&logoColor=white"/> <img src="https://img.shields.io/badge/Figma-000000?style=flat-square&logo=figma&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-000?style=flat-square"/> <img src="https://img.shields.io/badge/Tailwind-000?style=flat-square"/> <img src="https://img.shields.io/badge/Figma-000?style=flat-square"/>
 
-**[↗ View Repository](https://github.com/Samudra-GITHub/Krama)**
+**[↗ Repository](https://github.com/Samudra-GITHub/Krama)**
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### ⛅ SkyCast
-**Weather information without the noise.**
+<img src="./assets/project-skycast.svg" width="100%" alt="SkyCast" />
 
-A minimal forecast dashboard designed around quick comprehension and a calm visual hierarchy — every panel earns its place on screen.
+**SkyCast** &nbsp;<sub>◆ SHIPPED</sub>
+<br/>A minimal forecast dashboard, built for calm comprehension.
 
-<img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/REST_API-000000?style=flat-square"/> <img src="https://img.shields.io/badge/OpenWeather-000000?style=flat-square&logo=openweathermap&logoColor=white"/>
+<img src="https://img.shields.io/badge/Flask-000?style=flat-square"/> <img src="https://img.shields.io/badge/REST_API-000?style=flat-square"/> <img src="https://img.shields.io/badge/OpenWeather-000?style=flat-square"/>
 
-**[↗ View Repository](https://github.com/Samudra-GITHub/SkyCast-Weather-App)**
+**[↗ Repository](https://github.com/Samudra-GITHub/SkyCast-Weather-App)**
 
 </td>
 <td width="50%" valign="top">
 
-### 🌐 Portfolio
-**A digital space with a point of view.**
+<img src="./assets/project-portfolio.svg" width="100%" alt="Portfolio" />
 
-My personal site, built to communicate range across design and engineering — motion, layout, and interaction as the pitch itself.
+**Portfolio** &nbsp;<sub>◆ LIVE</sub>
+<br/>A digital space with a point of view — motion, 3D, storytelling.
 
-<img src="https://img.shields.io/badge/HTML-000000?style=flat-square&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS-000000?style=flat-square&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-000000?style=flat-square&logo=javascript&logoColor=white"/> <img src="https://img.shields.io/badge/FastAPI-000000?style=flat-square&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-000?style=flat-square"/> <img src="https://img.shields.io/badge/Three.js-000?style=flat-square"/> <img src="https://img.shields.io/badge/FastAPI-000?style=flat-square"/>
 
-**[↗ View Repository](https://github.com/Samudra-GITHub/samudra-kar-portfolio)**
+**[↗ Live Site](https://mudra-kar-portfolio-g46m.vercel.app)** &nbsp;·&nbsp; **[Repository](https://github.com/Samudra-GITHub/samudra-kar-portfolio)**
 
 </td>
 </tr>
 </table>
 
+<img src="./assets/divider-constellation.svg" width="100%" alt="" />
+
+<br/>
+
+## 🛠️ Skills Universe
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="45%" valign="top">
+
+<img src="./assets/orbit.svg" width="100%" alt="skills orbit" />
+
+</td>
+<td width="55%" valign="top">
+
+<br/>
+
+<table width="100%">
+<tr><td valign="top">
+
+**FRONTEND**
+<br/><sub>React · TypeScript · Tailwind CSS · Three.js / R3F</sub>
+<br/><br/>
+
+**BACKEND**
+<br/><sub>Node.js · FastAPI · Flask · Firebase · MongoDB</sub>
+<br/><br/>
+
+</td></tr>
+<tr><td valign="top">
+
+**AI / ML**
+<br/><sub>Python · TensorFlow · OpenCV · Deep Learning</sub>
+<br/><br/>
+
+**DESIGN & TOOLS**
+<br/><sub>Figma · Git · GitHub · VS Code · C · Java</sub>
+<br/><br/>
+
+</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<img src="./assets/divider-scan.svg" width="100%" alt="" />
+
+<br/>
+
+## 🧭 Journey
+
+<br/>
+
+<div align="center">
+<img src="./assets/timeline.svg" width="100%" alt="journey timeline" />
+</div>
+
 <br/>
 
 <details>
-<summary><b>🏆 Featured Hackathons & Programs</b></summary>
+<summary><b>🏆 Featured Hackathons &amp; Programs</b></summary>
 <br/>
 
 | Program | Focus |
@@ -205,68 +221,40 @@ My personal site, built to communicate range across design and engineering — m
 
 </details>
 
-<br/>
-
-<div align="center"><sub>◇ ◇ ◇</sub></div>
-
-## 🛠️ Skills
+<img src="./assets/divider-wave.svg" width="100%" alt="" />
 
 <br/>
+
+## 🧪 AI Playground
+
+<sub>Where the interface starts to think.</sub>
+
+<br/><br/>
 
 <table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td width="33%" align="center" valign="top">
 
-**FRONTEND**
-
-<img src="https://skillicons.dev/icons?i=react,js,ts,html,css,tailwind,threejs&theme=light" />
-
-**AI / ML**
-
-<img src="https://skillicons.dev/icons?i=python,tensorflow,opencv&theme=light" />
+**Satellite Reconstruction**
+<br/><sub>Cloud removal · in-fill · AkashaLens</sub>
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" align="center" valign="top">
 
-**BACKEND**
+**Computer Vision**
+<br/><sub>Image segmentation · OpenCV pipelines</sub>
 
-<img src="https://skillicons.dev/icons?i=nodejs,fastapi,flask,firebase,mongodb&theme=light" />
+</td>
+<td width="33%" align="center" valign="top">
 
-**DESIGN & TOOLS**
-
-<img src="https://skillicons.dev/icons?i=figma,git,github,vscode,c,java&theme=light" />
+**Applied ML**
+<br/><sub>TensorFlow experiments · model tuning</sub>
 
 </td>
 </tr>
 </table>
 
 <br/>
-
-<div align="center"><sub>◇ ◇ ◇</sub></div>
-
-## 🧭 Journey
-
-<br/>
-
-```
-● 2022   Started Computer Science Engineering
-│
-● 2023   Learned UI/UX design fundamentals — Figma, systems, prototyping
-│
-● 2024   Built SkyCast — first full-stack product, shipped end to end
-│
-● 2024   Built Krama — first serious UI/UX-led product concept
-│
-● 2025   Competed in Smart India Hackathon (SIH) & campus build sprints
-│
-● 2025   Built AkashaLens — first computer-vision research project
-│
-◉ NOW    Exploring AI + Computer Vision, Three.js, and scalable design systems
-```
-
-<br/>
-
-<div align="center"><sub>◇ ◇ ◇</sub></div>
 
 ## 🌱 Building Now
 
@@ -283,9 +271,9 @@ My personal site, built to communicate range across design and engineering — m
 
 **Open to:** AI and design-driven products · UI/UX and frontend collaborations · open-source contributions · well-scoped problems with thoughtful teams.
 
-<br/>
+<img src="./assets/divider-constellation.svg" width="100%" alt="" />
 
-<div align="center"><sub>◇ ◇ ◇</sub></div>
+<br/>
 
 ## 📊 GitHub Analytics
 
@@ -320,9 +308,27 @@ My personal site, built to communicate range across design and engineering — m
 
 </div>
 
+<img src="./assets/divider-wave.svg" width="100%" alt="" />
+
 <br/>
 
-<div align="center"><sub>◇ ◇ ◇</sub></div>
+## 📷 Frame
+
+<sub>Personal work, off-screen. Bangalore street, product studies, mobile edits.</sub>
+
+<br/>
+
+<div align="center">
+<img src="./assets/photography.svg" width="100%" alt="photography" />
+</div>
+
+<br/>
+
+<div align="center"><sub>gallery placeholders — swap in real frames anytime</sub></div>
+
+<img src="./assets/divider-scan.svg" width="100%" alt="" />
+
+<br/>
 
 ## 🎮 Playground
 
@@ -330,27 +336,28 @@ My personal site, built to communicate range across design and engineering — m
 
 <table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td width="25%" align="center" valign="top">
 
-**💬 CODING QUOTE**
-
-> "Simplicity is the ultimate sophistication."
-> — Leonardo da Vinci
-
-**☕ FUEL**
-
-<img src="https://img.shields.io/badge/Coffees_This_Week-∞-000000?style=flat-square&logo=buymeacoffee&logoColor=white"/>
+**💬 QUOTE**
+<br/><sub>"Simplicity is the ultimate sophistication."<br/>— Leonardo da Vinci</sub>
 
 </td>
-<td width="50%" valign="top">
+<td width="25%" align="center" valign="top">
 
 **📍 BASE**
+<br/><sub>Bangalore, India<br/>IST (UTC+5:30)</sub>
 
-<img src="https://img.shields.io/badge/Bangalore,_India-IST_(UTC%2B5:30)-000000?style=flat-square&logo=googlemaps&logoColor=white"/>
+</td>
+<td width="25%" align="center" valign="top">
 
 **🕐 CODING SINCE**
+<br/><sub>2022<br/>Still going.</sub>
 
-<img src="https://img.shields.io/badge/Since-2022-000000?style=flat-square&logo=clockify&logoColor=white"/>
+</td>
+<td width="25%" align="center" valign="top">
+
+**☕ FUEL**
+<br/><sub>Immeasurable<br/>Renewable.</sub>
 
 </td>
 </tr>
@@ -362,9 +369,9 @@ My personal site, built to communicate range across design and engineering — m
 <img src="https://komarev.com/ghpvc/?username=Samudra-GITHub&label=PROFILE%20VIEWS&color=0A0A0A&style=for-the-badge" alt="Profile views" />
 </div>
 
-<br/>
+<img src="./assets/divider-wave.svg" width="100%" alt="" />
 
-<div align="center"><sub>◇ ◇ ◇</sub></div>
+<br/>
 
 ## 📫 Connect
 
@@ -377,8 +384,12 @@ My personal site, built to communicate range across design and engineering — m
 
 <br/><br/>
 
+### *"The best design is the one that makes the right thing feel natural."*
+
+<br/>
+
 <sub>✦ Designed and built by <b>Samudra Kar</b> · Bangalore, India ✦</sub>
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0A0A,50:1a1a1a,100:0A0A0A&height=140&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0A0A,50:1a1a1a,100:0A0A0A&height=120&section=footer" width="100%"/>
