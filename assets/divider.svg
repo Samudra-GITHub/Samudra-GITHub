@@ -1,0 +1,10 @@
+<svg width="1200" height="60" viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="60" fill="#F8F4EC"/>
+  <path d="M 0 30 Q 50 10 100 30 T 200 30 T 300 30 T 400 30 T 500 30 T 600 30 T 700 30 T 800 30 T 900 30 T 1000 30 T 1100 30 T 1200 30"
+        fill="none" stroke="#C66A2E" stroke-opacity="0.35" stroke-width="1.4">
+    <animateTransform attributeName="transform" type="translate" values="0,0; -100,0; 0,0" dur="9s" repeatCount="indefinite"/>
+  </path>
+  <g fill="#C66A2E">
+    <circle cx="600" cy="30" r="3"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>
