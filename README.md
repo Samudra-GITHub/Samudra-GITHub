@@ -15,28 +15,19 @@
 
 <br/><br/>
 
-<sub>
-<a href="#about-me">ABOUT</a>&nbsp;&nbsp;&nbsp;<a href="#featured-projects">WORK</a>&nbsp;&nbsp;&nbsp;<a href="#skills-and-technologies">SKILLS</a>&nbsp;&nbsp;&nbsp;<a href="#journey">JOURNEY</a>&nbsp;&nbsp;&nbsp;<a href="#github-analytics">ANALYTICS</a>&nbsp;&nbsp;&nbsp;<a href="#connect">CONNECT</a>
-</sub>
+<sub><a href="#about-me">ABOUT</a>&nbsp;&nbsp;&nbsp;<a href="#featured-work">WORK</a>&nbsp;&nbsp;&nbsp;<a href="#skills-and-technologies">SKILLS</a>&nbsp;&nbsp;&nbsp;<a href="#journey">JOURNEY</a>&nbsp;&nbsp;&nbsp;<a href="#github-analytics">ANALYTICS</a>&nbsp;&nbsp;&nbsp;<a href="#connect">CONNECT</a></sub>
 
 </div>
 
-<br/><br/><br/>
+<br/><br/><br/><br/>
 
 <!-- ============================================= -->
-<!-- 02 — ABOUT ME                                  -->
+<!-- ABOUT                                          -->
 <!-- ============================================= -->
 
-<div align="center">
+<sub>&nbsp;&nbsp;02 — ABOUT</sub>
 
-<sub>02 &nbsp;—&nbsp; ABOUT</sub>
-
-## About Me
-<sub>Product thinking, visual design, and engineering under one name.</sub>
-
-</div>
-
-<br/>
+# About Me
 
 <table width="100%">
 <tr>
@@ -47,288 +38,262 @@
 </td>
 <td width="54%" valign="top">
 
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-**Product Thinking**
 <br/>
-<sub>I start from the problem, not the pixel — flows and information architecture that hold up under real use.</sub>
 
-</td>
-<td width="50%" valign="top">
+I sit at the intersection of **product thinking, visual design, and engineering** — with a deepening focus on applied artificial intelligence and computer vision.
 
-**Design Philosophy**
+I believe the best technology disappears. It doesn't ask for attention; it earns trust quietly, one considered decision at a time.
+
 <br/>
-<sub>Interfaces should feel inevitable. Every element earns its place; nothing is decoration.</sub>
 
-</td>
-</tr>
-<tr><td colspan="2">&nbsp;</td></tr>
-<tr>
-<td width="50%" valign="top">
-
-**Engineering**
-<br/>
-<sub>I build what I design. Full-stack execution keeps the idea honest all the way to production.</sub>
-
-</td>
-<td width="50%" valign="top">
-
-**AI Curiosity**
-<br/>
-<sub>Computer vision, applied ML, and Three.js — where the interface starts to think.</sub>
+**Product Thinking** — I start from the problem, not the pixel.
+**Design Philosophy** — every element earns its place; nothing is decoration.
+**Engineering** — I build what I design, end to end.
+**AI Curiosity** — computer vision, applied ML, Three.js — where the interface starts to think.
 
 </td>
 </tr>
 </table>
 
-</td>
-</tr>
-</table>
-
-<br/><br/>
+<br/><br/><br/>
 
 <div align="center">
 
-### Good design is invisible.
+# Good design is invisible.
 <sub>It doesn't ask for attention — it earns trust quietly, one considered decision at a time.</sub>
 
 </div>
 
-<br/><br/><br/>
+<br/><br/><br/><br/>
 
 <!-- ============================================= -->
-<!-- 03 — FEATURED PROJECTS                         -->
+<!-- FEATURED WORK                                  -->
 <!-- ============================================= -->
 
-<div align="center">
+<sub>&nbsp;&nbsp;03 — WORK</sub>
 
-<sub>03 &nbsp;—&nbsp; WORK</sub>
-
-## Featured Projects
+# Featured Work
 <sub>Four products. Four different problems.</sub>
 
-</div>
+<br/><br/>
 
-<br/>
+<img src="./assets/project-akashalens-large.svg" width="100%" alt="AkashaLens" />
+
+### AkashaLens
+<sub>SATELLITE IMAGERY &nbsp;·&nbsp; ACTIVE</sub>
+
+AI-powered computer vision exploring cloud removal and image reconstruction for satellite imagery — reconstructing occluded ground detail with minimal artifacting.
+
+<img src="https://img.shields.io/badge/Python-000000?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-000000?style=flat-square&logo=opencv&logoColor=white"/> <img src="https://img.shields.io/badge/NumPy-000000?style=flat-square&logo=numpy&logoColor=white"/> <img src="https://img.shields.io/badge/Deep_Learning-000000?style=flat-square"/>
+
+**[View Repository →](https://github.com/Samudra-GITHub/AkashaLens)**
+
+<br/><br/><br/>
 
 <table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td width="58%" valign="top">
 
-<img src="./assets/project-akashalens.svg" width="100%" alt="AkashaLens" />
-
-<br/>
-
-**AkashaLens** &nbsp;·&nbsp; <sub>ACTIVE</sub>
-<br/>
-<sub>Cloud removal and image reconstruction for satellite imagery.</sub>
-<br/><br/>
-<img src="https://img.shields.io/badge/Python-000?style=flat-square"/> <img src="https://img.shields.io/badge/OpenCV-000?style=flat-square"/> <img src="https://img.shields.io/badge/Deep_Learning-000?style=flat-square"/>
-<br/><br/>
-**[View Repository →](https://github.com/Samudra-GITHub/AkashaLens)**
+<img src="./assets/krama-showcase.svg" width="100%" alt="Krama" />
 
 </td>
-<td width="50%" valign="top">
+<td width="42%" valign="top">
 
-<img src="./assets/project-krama.svg" width="100%" alt="Krama" />
+<br/><br/>
+
+<sub>FLAGSHIP PROJECT &nbsp;·&nbsp; CONCEPT</sub>
+
+### Krama
+
+A premium sneaker marketplace concept — shaped by fashion, editorial layout, and a tactile shopping experience. Designed like a launch page, not a storefront.
 
 <br/>
 
-**Krama** &nbsp;·&nbsp; <sub>CONCEPT</sub>
-<br/>
-<sub>A premium sneaker marketplace, shaped by fashion editorial.</sub>
+<img src="https://img.shields.io/badge/React-000000?style=flat-square&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/Tailwind_CSS-000000?style=flat-square&logo=tailwindcss&logoColor=white"/> <img src="https://img.shields.io/badge/Figma-000000?style=flat-square&logo=figma&logoColor=white"/>
+
 <br/><br/>
-<img src="https://img.shields.io/badge/React-000?style=flat-square"/> <img src="https://img.shields.io/badge/Tailwind-000?style=flat-square"/> <img src="https://img.shields.io/badge/Figma-000?style=flat-square"/>
-<br/><br/>
+
 **[View Repository →](https://github.com/Samudra-GITHub/Krama)**
 
 </td>
 </tr>
-<tr><td colspan="2">&nbsp;<br/></td></tr>
+</table>
+
+<br/><br/><br/>
+
+<table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td width="38%" valign="top">
 
 <img src="./assets/project-skycast.svg" width="100%" alt="SkyCast" />
 
+</td>
+<td width="62%" valign="top">
+
+<br/><br/>
+
+<sub>WEATHER DASHBOARD &nbsp;·&nbsp; SHIPPED</sub>
+
+### SkyCast
+
+A minimal forecast dashboard designed around quick comprehension and a calm visual hierarchy — every panel earns its place on screen.
+
 <br/>
 
-**SkyCast** &nbsp;·&nbsp; <sub>SHIPPED</sub>
-<br/>
-<sub>A minimal forecast dashboard, built for calm comprehension.</sub>
+<img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/REST_API-000000?style=flat-square"/> <img src="https://img.shields.io/badge/OpenWeather-000000?style=flat-square&logo=openweathermap&logoColor=white"/>
+
 <br/><br/>
-<img src="https://img.shields.io/badge/Flask-000?style=flat-square"/> <img src="https://img.shields.io/badge/REST_API-000?style=flat-square"/> <img src="https://img.shields.io/badge/OpenWeather-000?style=flat-square"/>
-<br/><br/>
+
 **[View Repository →](https://github.com/Samudra-GITHub/SkyCast-Weather-App)**
 
 </td>
-<td width="50%" valign="top">
-
-<img src="./assets/project-portfolio.svg" width="100%" alt="Portfolio" />
-
-<br/>
-
-**Portfolio** &nbsp;·&nbsp; <sub>LIVE</sub>
-<br/>
-<sub>A digital space with a point of view — motion, 3D, storytelling.</sub>
-<br/><br/>
-<img src="https://img.shields.io/badge/React-000?style=flat-square"/> <img src="https://img.shields.io/badge/Three.js-000?style=flat-square"/> <img src="https://img.shields.io/badge/FastAPI-000?style=flat-square"/>
-<br/><br/>
-**[View Live →](https://mudra-kar-portfolio-g46m.vercel.app)** &nbsp;·&nbsp; **[Repository](https://github.com/Samudra-GITHub/samudra-kar-portfolio)**
-
-</td>
 </tr>
 </table>
 
 <br/><br/><br/>
-
-<!-- ============================================= -->
-<!-- 04 — SKILLS & TECHNOLOGIES                     -->
-<!-- ============================================= -->
-
-<div align="center">
-
-<sub>04 &nbsp;—&nbsp; SKILLS</sub>
-
-## Skills and Technologies
-<sub>The tools behind the work.</sub>
-
-</div>
-
-<br/>
 
 <table width="100%">
 <tr>
-<td width="44%" valign="top">
-
-<img src="./assets/orbit.svg" width="100%" alt="skills orbit" />
-
-</td>
-<td width="56%" valign="top">
+<td width="58%" valign="top">
 
 <br/>
 
-<table width="100%">
-<tr><td width="50%" valign="top">
+<sub>PERSONAL SITE &nbsp;·&nbsp; LIVE</sub>
 
-**Frontend**
-<br/><sub>React · TypeScript · Tailwind CSS · Three.js / R3F</sub>
+### Portfolio
 
-</td><td width="50%" valign="top">
+A digital space with a point of view — motion, 3D, and visual storytelling built to communicate range across design and engineering.
 
-**Backend**
-<br/><sub>Node.js · FastAPI · Flask · Firebase · MongoDB</sub>
+<br/>
 
-</td></tr>
-<tr><td colspan="2">&nbsp;</td></tr>
-<tr><td width="50%" valign="top">
+<img src="https://img.shields.io/badge/React-000000?style=flat-square&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white"/> <img src="https://img.shields.io/badge/FastAPI-000000?style=flat-square&logo=fastapi&logoColor=white"/>
 
-**AI / ML**
-<br/><sub>Python · TensorFlow · OpenCV · Deep Learning</sub>
+<br/><br/>
 
-</td><td width="50%" valign="top">
+**[View Live →](https://mudra-kar-portfolio-g46m.vercel.app)** &nbsp;·&nbsp; **[Repository](https://github.com/Samudra-GITHub/samudra-kar-portfolio)**
 
-**Design & Tools**
-<br/><sub>Figma · Git · GitHub · VS Code</sub>
+</td>
+<td width="42%" valign="top">
 
-</td></tr>
-</table>
+<img src="./assets/project-portfolio.svg" width="100%" alt="Portfolio" />
 
 </td>
 </tr>
 </table>
 
-<br/><br/><br/>
+<br/><br/><br/><br/>
 
 <!-- ============================================= -->
-<!-- 05 — JOURNEY                                   -->
+<!-- SKILLS & TECHNOLOGIES                          -->
+<!-- ============================================= -->
+
+<sub>&nbsp;&nbsp;04 — SKILLS</sub>
+
+# Skills and Technologies
+<sub>The tools behind the work.</sub>
+
+<br/><br/>
+
+<div align="center">
+<img src="./assets/orbit.svg" width="100%" alt="skills orbit" />
+</div>
+
+<br/><br/>
+
+**Frontend**
+<br/>
+<img src="https://img.shields.io/badge/React-000000?style=flat-square&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/TypeScript-000000?style=flat-square&logo=typescript&logoColor=white"/> <img src="https://img.shields.io/badge/Tailwind_CSS-000000?style=flat-square&logo=tailwindcss&logoColor=white"/> <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white"/>
+
+<br/><br/>
+
+**Backend**
+<br/>
+<img src="https://img.shields.io/badge/Node.js-000000?style=flat-square&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/FastAPI-000000?style=flat-square&logo=fastapi&logoColor=white"/> <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/Firebase-000000?style=flat-square&logo=firebase&logoColor=white"/> <img src="https://img.shields.io/badge/MongoDB-000000?style=flat-square&logo=mongodb&logoColor=white"/>
+
+<br/><br/>
+
+**AI / ML**
+<br/>
+<img src="https://img.shields.io/badge/Python-000000?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/TensorFlow-000000?style=flat-square&logo=tensorflow&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-000000?style=flat-square&logo=opencv&logoColor=white"/>
+
+<br/><br/>
+
+**Design & Tools**
+<br/>
+<img src="https://img.shields.io/badge/Figma-000000?style=flat-square&logo=figma&logoColor=white"/> <img src="https://img.shields.io/badge/Git-000000?style=flat-square&logo=git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-000000?style=flat-square&logo=github&logoColor=white"/> <img src="https://img.shields.io/badge/VS_Code-000000?style=flat-square&logo=visualstudiocode&logoColor=white"/>
+
+<br/><br/><br/><br/>
+
+<!-- ============================================= -->
+<!-- JOURNEY                                        -->
 <!-- ============================================= -->
 
 <div align="center">
 
-<sub>05 &nbsp;—&nbsp; JOURNEY</sub>
+<sub>05 — JOURNEY</sub>
 
-## Journey
+# Journey
 <sub>From first line of code to what's next.</sub>
 
-<br/>
+<br/><br/>
 
 <img src="./assets/timeline.svg" width="100%" alt="journey timeline" />
 
 </div>
 
-<br/><br/><br/>
+<br/><br/><br/><br/>
 
 <!-- ============================================= -->
-<!-- 06 — WHAT I'M BUILDING                         -->
+<!-- WHAT I'M BUILDING                              -->
 <!-- ============================================= -->
 
 <div align="center">
 
-<sub>06 &nbsp;—&nbsp; BUILDING</sub>
+<sub>06 — BUILDING</sub>
 
-## What I'm Building
+# What I'm Building
 <sub>Skills currently in progress, tracked honestly.</sub>
 
-</div>
+<br/><br/>
 
-<br/>
+<img src="./assets/building-progress.svg" width="90%" alt="building progress" />
 
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
+<br/><br/>
 
-**AI + Computer Vision**
-<br/><sub>`████████████░░░░░░░░` 60%</sub>
-
-</td>
-<td width="50%" valign="top">
-
-**Three.js / React Three Fiber**
-<br/><sub>`██████████░░░░░░░░░░` 50%</sub>
-
-</td>
-</tr>
-<tr><td colspan="2">&nbsp;</td></tr>
-<tr>
-<td width="50%" valign="top">
-
-**Backend Architecture**
-<br/><sub>`██████████████░░░░░░` 70%</sub>
-
-</td>
-<td width="50%" valign="top">
-
-**Design Systems**
-<br/><sub>`████████████████░░░░` 80%</sub>
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<div align="center">
 <sub>Open to: AI &amp; design-driven products · UI/UX and frontend collaborations · open-source contributions · well-scoped problems with thoughtful teams.</sub>
+
 </div>
 
-<br/><br/><br/>
+<br/><br/><br/><br/>
 
 <!-- ============================================= -->
-<!-- 07 — AI PLAYGROUND & HACKATHONS                -->
+<!-- BIG STATEMENT                                  -->
 <!-- ============================================= -->
 
 <div align="center">
 
-<sub>07 &nbsp;—&nbsp; LAB</sub>
+# Simplicity, executed well, is indistinguishable from magic.
 
-## AI Playground and Hackathons
+</div>
+
+<br/><br/><br/><br/>
+
+<!-- ============================================= -->
+<!-- AI PLAYGROUND & HACKATHONS                     -->
+<!-- ============================================= -->
+
+<sub>&nbsp;&nbsp;07 — LAB</sub>
+
+# AI Playground and Hackathons
 <sub>Where the interface starts to think — and where it gets tested under pressure.</sub>
 
+<br/><br/>
+
+<div align="center">
+<img src="./assets/neural-lab.svg" width="100%" alt="neural lab" />
 </div>
 
-<br/>
+<br/><br/>
 
 <table width="100%">
 <tr>
@@ -353,69 +318,57 @@
 </tr>
 </table>
 
-<br/>
+<br/><br/>
 
 <table width="100%">
 <tr>
 <td width="33%" align="center" valign="top">
 
-**Smart India Hackathon**
+**◆ Smart India Hackathon**
 <br/><sub>National-level product problem-solving under time pressure</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
-**AkashaLens Research**
+**◆ AkashaLens Research**
 <br/><sub>Independent computer-vision project, built outside a classroom setting</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
-**Campus Build Sprints**
+**◆ Campus Build Sprints**
 <br/><sub>Rapid prototyping across UI/UX and full-stack tracks</sub>
 
 </td>
 </tr>
 </table>
 
-<br/><br/><br/>
+<br/><br/><br/><br/>
 
 <!-- ============================================= -->
-<!-- 08 — GITHUB ANALYTICS                          -->
+<!-- GITHUB ANALYTICS                               -->
 <!-- ============================================= -->
 
 <div align="center">
 
-<sub>08 &nbsp;—&nbsp; ANALYTICS</sub>
+<sub>08 — ANALYTICS</sub>
 
-## GitHub Analytics
+# GitHub Analytics
 <sub>Building consistently. Shipping ideas into products.</sub>
 
 <br/><br/>
 
-<sub>STATS &nbsp;&amp;&nbsp; LANGUAGES</sub>
-<br/><br/>
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Samudra-GITHub&show_icons=true&count_private=true&hide_border=false&border_color=1a1a1a&title_color=0A0A0A&icon_color=0A0A0A&text_color=333333&bg_color=ffffff&ring_color=0A0A0A" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Samudra-GITHub&layout=compact&hide_border=false&border_color=1a1a1a&title_color=0A0A0A&text_color=333333&bg_color=ffffff&langs_count=8" alt="Top languages" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Samudra-GITHub&show_icons=true&count_private=true&hide_border=true&title_color=0A0A0A&icon_color=0A0A0A&text_color=333333&bg_color=ffffff&ring_color=0A0A0A" alt="GitHub stats" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Samudra-GITHub&layout=compact&hide_border=true&title_color=0A0A0A&text_color=333333&bg_color=ffffff&langs_count=8" alt="Top languages" />
 
 <br/><br/>
 
-<sub>STREAK</sub>
-<br/><br/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Samudra-GITHub&hide_border=true&background=FFFFFF&ring=0A0A0A&fire=0A0A0A&currStreakLabel=0A0A0A&sideLabels=555555&currStreakNum=0A0A0A&sideNums=0A0A0A&dates=888888" alt="GitHub streak" width="65%"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Samudra-GITHub&hide_border=false&border=1a1a1a&background=FFFFFF&ring=0A0A0A&fire=0A0A0A&currStreakLabel=0A0A0A&sideLabels=555555&currStreakNum=0A0A0A&sideNums=0A0A0A&dates=888888" alt="GitHub streak" width="65%"/>
-
-<br/><br/>
-
-<sub>ACTIVITY</sub>
 <br/><br/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Samudra-GITHub&theme=minimal&hide_border=true&area=true&color=0A0A0A&line=0A0A0A&point=000000" alt="Activity graph" width="95%"/>
 
-<br/><br/>
-
-<sub>CONTRIBUTIONS</sub>
 <br/><br/>
 
 <picture>
@@ -426,32 +379,27 @@
 
 <br/><br/>
 
-<sub>TROPHIES</sub>
-<br/><br/>
-
 <img src="https://github-profile-trophy.vercel.app/?username=Samudra-GITHub&theme=onedark&no-frame=true&no-bg=true&row=1&column=6&margin-w=10" alt="trophies" width="95%"/>
 
 </div>
 
-<br/><br/><br/>
+<br/><br/><br/><br/>
 
 <!-- ============================================= -->
-<!-- 09 — PHOTOGRAPHY & PERSONAL INTERESTS          -->
+<!-- PHOTOGRAPHY & INTERESTS                        -->
 <!-- ============================================= -->
 
-<div align="center">
+<sub>&nbsp;&nbsp;09 — INTERESTS</sub>
 
-<sub>09 &nbsp;—&nbsp; INTERESTS</sub>
-
-## Photography and Personal Interests
+# Photography and Personal Interests
 <sub>Personal work, off-screen.</sub>
 
-<br/>
+<br/><br/>
 
+<div align="center">
 <img src="./assets/photography.svg" width="100%" alt="photography" />
-
+<br/>
 <sub>gallery placeholders — ready for real frames anytime</sub>
-
 </div>
 
 <br/><br/>
@@ -473,29 +421,29 @@
 <td width="25%" align="center" valign="top">
 
 **Coding Since**
-<br/><sub>2022<br/>Still going.</sub>
+<br/><sub>2022 · still going</sub>
 
 </td>
 <td width="25%" align="center" valign="top">
 
 **Fuel**
-<br/><sub>Immeasurable<br/>Renewable.</sub>
+<br/><sub>Immeasurable · renewable</sub>
 
 </td>
 </tr>
 </table>
 
-<br/><br/><br/>
+<br/><br/><br/><br/>
 
 <!-- ============================================= -->
-<!-- 10 — CONNECT                                   -->
+<!-- CONNECT                                        -->
 <!-- ============================================= -->
 
 <div align="center">
 
-<sub>10 &nbsp;—&nbsp; CONNECT</sub>
+<sub>10 — CONNECT</sub>
 
-## Connect
+# Connect
 <sub>Open to design-driven products, frontend collaborations, and well-scoped problems.</sub>
 
 <br/><br/>
@@ -509,9 +457,9 @@
 
 <img src="https://komarev.com/ghpvc/?username=Samudra-GITHub&label=PROFILE%20VIEWS&color=0A0A0A&style=for-the-badge" alt="Profile views" />
 
-<br/><br/>
+<br/><br/><br/>
 
-### "The best design is the one that makes the right thing feel natural."
+# "The best design is the one that makes the right thing feel natural."
 
 <br/>
 
