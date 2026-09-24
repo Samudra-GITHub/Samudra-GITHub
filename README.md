@@ -67,8 +67,8 @@
 <td width="50%" valign="top">
 
 **PRAHARI**
-<br/>AI-powered disaster monitoring platform.
-<br/><sub>Next.js · Python · Geospatial AI</sub> &nbsp; `HACKATHON`
+<br/>AI-powered mine compliance & safety monitoring platform.
+<br/><sub>Next.js · TypeScript · Prisma · PostgreSQL</sub> &nbsp; `HACKATHON`
 <br/>**[Repository →](https://github.com/Samudra-GITHub/PRAHARI)**
 
 </td>
