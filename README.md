@@ -13,9 +13,7 @@
 </sub>
 </div>
 
-<br/>
-
-<img src="./assets/divider.svg" width="100%" alt="" />
+<br/><br/>
 
 ## About
 
@@ -31,9 +29,7 @@ I'm slow to add a feature and quick to cut one. If two things compete for attent
 <em>"Build the thing you'd actually want to open twice."</em>
 </p>
 
-<br/>
-
-<img src="./assets/divider.svg" width="100%" alt="" />
+<br/><br/>
 
 ## Featured Products
 
@@ -201,15 +197,11 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 
 <br/>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
-
 ## Tech Stack
 
 <img src="./assets/tech-chips.svg" width="100%" alt="tech stack" />
 
 <br/>
-
-<img src="./assets/divider.svg" width="100%" alt="" />
 
 ## GitHub Journey
 
@@ -217,23 +209,17 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 
 <br/>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
-
 ## Currently Building
 
 <img src="./assets/sticky-notes.svg" width="100%" alt="currently building" />
 
 <br/>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
-
 ## Now Playing
 
 <img src="./assets/music.svg" width="100%" alt="now playing" />
 
 <br/>
-
-<img src="./assets/divider.svg" width="100%" alt="" />
 
 ## GitHub Analytics
 
@@ -256,8 +242,6 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 </div>
 
 <br/>
-
-<img src="./assets/divider.svg" width="100%" alt="" />
 
 ## Connect
 
