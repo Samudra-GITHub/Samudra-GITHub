@@ -3,12 +3,14 @@
 
   <!-- vinyl -->
   <g transform="translate(150,100)">
-    <circle r="70" fill="#2D241F"/>
-    <circle r="55" fill="none" stroke="#F8F4EC" stroke-opacity="0.08"/>
-    <circle r="40" fill="none" stroke="#F8F4EC" stroke-opacity="0.08"/>
-    <circle r="24" fill="#C66A2E"/>
-    <circle r="4" fill="#EFE6DA"/>
-    <animateTransform attributeName="transform" type="rotate" from="0 150 100" to="360 150 100" dur="8s" repeatCount="indefinite" additive="sum"/>
+    <g>
+      <circle r="70" fill="#2D241F"/>
+      <circle r="55" fill="none" stroke="#F8F4EC" stroke-opacity="0.08"/>
+      <circle r="40" fill="none" stroke="#F8F4EC" stroke-opacity="0.08"/>
+      <circle r="24" fill="#C66A2E"/>
+      <circle r="4" fill="#EFE6DA"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite"/>
+    </g>
   </g>
 
   <!-- cassette -->
