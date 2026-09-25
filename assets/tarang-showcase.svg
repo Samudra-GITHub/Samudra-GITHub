@@ -14,14 +14,16 @@
 
   <!-- vinyl record -->
   <g transform="translate(210,230)">
-    <circle r="120" fill="#2D241F"/>
-    <circle r="120" fill="none" stroke="#F8F4EC" stroke-opacity="0.06" stroke-width="1"/>
-    <circle r="98" fill="none" stroke="#F8F4EC" stroke-opacity="0.08"/>
-    <circle r="78" fill="none" stroke="#F8F4EC" stroke-opacity="0.08"/>
-    <circle r="58" fill="none" stroke="#F8F4EC" stroke-opacity="0.08"/>
-    <circle r="38" fill="#C66A2E"/>
-    <circle r="6" fill="#EFE6DA"/>
-    <animateTransform attributeName="transform" type="rotate" from="0 210 230" to="360 210 230" dur="10s" repeatCount="indefinite" additive="sum"/>
+    <g>
+      <circle r="120" fill="#2D241F"/>
+      <circle r="120" fill="none" stroke="#F8F4EC" stroke-opacity="0.06" stroke-width="1"/>
+      <circle r="98" fill="none" stroke="#F8F4EC" stroke-opacity="0.08"/>
+      <circle r="78" fill="none" stroke="#F8F4EC" stroke-opacity="0.08"/>
+      <circle r="58" fill="none" stroke="#F8F4EC" stroke-opacity="0.08"/>
+      <circle r="38" fill="#C66A2E"/>
+      <circle r="6" fill="#EFE6DA"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="10s" repeatCount="indefinite"/>
+    </g>
   </g>
 
   <!-- tonearm -->
