@@ -217,7 +217,11 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 
 ## Now Playing
 
-<img src="./assets/music.svg" width="100%" alt="now playing" />
+<p align="center">
+  <a href="https://github.com/kittinan/spotify-github-profile">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=z1ivuklc9si9851g1fgkwaqsw&cover_image=true&theme=default&show_offline=false&background_color=F8F4EC&bar_color=C66A2E&border_radius=15&interchange=false&profanity=false&hide_remaster=false" alt="Spotify — now playing" />
+  </a>
+</p>
 
 <br/>
 
