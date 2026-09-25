@@ -4,18 +4,29 @@
 
 <div align="center">
 <sub>
-<a href="#about">About</a> &nbsp;·&nbsp;
-<a href="#featured-products">Featured Products</a> &nbsp;·&nbsp;
-<a href="#tech-stack">Tech Stack</a> &nbsp;·&nbsp;
-<a href="#github-journey">Journey</a> &nbsp;·&nbsp;
-<a href="#currently-building">Currently Building</a> &nbsp;·&nbsp;
-<a href="#connect">Connect</a>
+<img src="https://cdn.simpleicons.org/gmail/2D241F" width="13" height="13"/> <a href="mailto:hi.samsstudio@gmail.com">Email</a> &nbsp;·&nbsp;
+<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> <a href="https://github.com/Samudra-GITHub">GitHub</a> &nbsp;·&nbsp;
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" width="13" height="13"/> <a href="https://www.linkedin.com/in/samudra-kar-a495951b5/">LinkedIn</a> &nbsp;·&nbsp;
+<img src="https://cdn.simpleicons.org/vercel/2D241F" width="13" height="13"/> <a href="https://mudra-kar-portfolio-g46m.vercel.app">Portfolio</a>
+</sub>
+</div>
+
+<br/>
+
+<div align="center">
+<sub>
+<a href="#about">👋 About</a> &nbsp;·&nbsp;
+<a href="#featured-products">🧩 Featured Products</a> &nbsp;·&nbsp;
+<a href="#tech-stack">🛠️ Tech Stack</a> &nbsp;·&nbsp;
+<a href="#github-journey">🧭 Journey</a> &nbsp;·&nbsp;
+<a href="#currently-building">🚧 Currently Building</a> &nbsp;·&nbsp;
+<a href="#connect">📬 Connect</a>
 </sub>
 </div>
 
 <br/><br/>
 
-## About
+## 👋 About
 
 I'm a Computer Science Engineering student, UI/UX designer, and full-stack builder working out of Bangalore. Somewhere along the way I picked up a camera too, and now half my reference folders are photos I took myself instead of screenshots I saved.
 
@@ -31,7 +42,7 @@ I'm slow to add a feature and quick to cut one. If two things compete for attent
 
 <br/><br/>
 
-## Featured Products
+## 🧩 Featured Products
 
 <sub>Every product here belongs to **Sams Studio** — a connected set of things I've built, spanning design, AI, and engineering.</sub>
 
@@ -50,7 +61,7 @@ I'm slow to add a feature and quick to cut one. If two things compete for attent
 
 <sub>SAMS STUDIO &nbsp;·&nbsp; FLAGSHIP</sub>
 
-### Tarang
+### 🎵 Tarang
 **Music, redesigned for the web.**
 
 A premium music streaming web app built around motion, glass surfaces, and a listening experience that feels closer to a physical object than a browser tab. Free playback, a floating persistent player, and a full in-app design system are live today.
@@ -61,7 +72,7 @@ A premium music streaming web app built around motion, glass surfaces, and a lis
 
 <br/>
 
-**[View Repository →](https://github.com/Samudra-GITHub/Tarang)**
+<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> **[View Repository →](https://github.com/Samudra-GITHub/Tarang)**
 
 </td>
 </tr>
@@ -77,7 +88,7 @@ A premium music streaming web app built around motion, glass surfaces, and a lis
 
 <sub>SAMS STUDIO &nbsp;·&nbsp; AI</sub>
 
-### Rinti AI
+### 🤖 Rinti AI
 **Your intelligent AI workspace.**
 
 A conversational AI assistant with persistent memory, a multi-step research mode, and real account-based sessions — password auth, HttpOnly cookies, CSRF protection. Backed by a Groq/OpenAI-compatible chat engine and Tavily for research.
@@ -88,7 +99,7 @@ A conversational AI assistant with persistent memory, a multi-step research mode
 
 <br/>
 
-**[View Repository →](https://github.com/Samudra-GITHub/Rinti-Ai)**
+<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> **[View Repository →](https://github.com/Samudra-GITHub/Rinti-Ai)**
 
 </td>
 <td width="55%" valign="top">
@@ -114,7 +125,7 @@ A conversational AI assistant with persistent memory, a multi-step research mode
 
 <sub>SAMS STUDIO &nbsp;·&nbsp; RESEARCH</sub>
 
-### AkashaLens
+### 🛰️ AkashaLens
 **AI-powered satellite cloud reconstruction.**
 
 A U-Net trained on paired Sentinel imagery to reconstruct cloud-occluded ground detail. Built for ISRO Hackathon 2026, evaluated with SSIM and PSNR against held-out ground truth.
@@ -125,7 +136,7 @@ A U-Net trained on paired Sentinel imagery to reconstruct cloud-occluded ground 
 
 <br/>
 
-**[View Repository →](https://github.com/Samudra-GITHub/AkashaLens)**
+<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> **[View Repository →](https://github.com/Samudra-GITHub/AkashaLens)**
 
 </td>
 </tr>
@@ -141,7 +152,7 @@ A U-Net trained on paired Sentinel imagery to reconstruct cloud-occluded ground 
 
 <sub>SAMS STUDIO &nbsp;·&nbsp; FASHION</sub>
 
-### Krama
+### 👟 Krama
 **Luxury sneaker marketplace.**
 
 A premium shopping experience inspired by Apple and Nike — editorial pacing, real shop/checkout/account/admin routes, and motion driven by GSAP and Lenis rather than default page transitions.
@@ -152,7 +163,7 @@ A premium shopping experience inspired by Apple and Nike — editorial pacing, r
 
 <br/>
 
-**[View Repository →](https://github.com/Samudra-GITHub/Krama)**
+<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> **[View Repository →](https://github.com/Samudra-GITHub/Krama)**
 
 </td>
 <td width="55%" valign="top">
@@ -178,7 +189,7 @@ A premium shopping experience inspired by Apple and Nike — editorial pacing, r
 
 <sub>SAMS STUDIO &nbsp;·&nbsp; HOME</sub>
 
-### Portfolio
+### 🎨 Portfolio
 **A creative studio, online.**
 
 My personal site — a custom Three.js scene with real shaders, narrative sections instead of a project grid, and a contact form that actually sends mail via EmailJS.
@@ -189,7 +200,7 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 
 <br/>
 
-**[View Live →](https://mudra-kar-portfolio-g46m.vercel.app)**
+<img src="https://cdn.simpleicons.org/vercel/2D241F" width="13" height="13"/> **[View Live →](https://mudra-kar-portfolio-g46m.vercel.app)**
 
 </td>
 </tr>
@@ -198,7 +209,7 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 <br/>
 
 <table width="100%"><tr>
-<td width="60%"><h2>Tech Stack</h2></td>
+<td width="60%"><h2>🛠️ Tech Stack</h2></td>
 <td width="40%" align="right"><sub><em>Not a skill wall — the actual tools behind every product on this page.</em></sub></td>
 </tr></table>
 
@@ -206,13 +217,13 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 
 <br/>
 
-## GitHub Journey
+## 🧭 GitHub Journey
 
 <img src="./assets/journey-timeline.svg" width="100%" alt="journey timeline" />
 
 <br/>
 
-## Currently Building
+## 🚧 Currently Building
 
 <img src="./assets/sticky-notes.svg" width="100%" alt="currently building" />
 
@@ -220,7 +231,7 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 
 <br/>
 
-## Now Playing
+## 🎧 Now Playing
 
 <p align="center">
   <a href="https://github.com/kittinan/spotify-github-profile">
@@ -230,7 +241,7 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 
 <br/>
 
-## GitHub Analytics
+## 📊 GitHub Analytics
 
 <sub><em>Building consistently. Shipping in public.</em></sub>
 
@@ -254,11 +265,16 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 
 <br/>
 
-## Connect
+## 📬 Connect
 
 <div align="center">
 
-<sub>[Email](mailto:hi.samsstudio@gmail.com) &nbsp;·&nbsp; [GitHub](https://github.com/Samudra-GITHub) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/samudra-kar-a495951b5/) &nbsp;·&nbsp; [Portfolio](https://mudra-kar-portfolio-g46m.vercel.app)</sub>
+<sub>
+<img src="https://cdn.simpleicons.org/gmail/2D241F" width="13" height="13"/> [Email](mailto:hi.samsstudio@gmail.com) &nbsp;·&nbsp;
+<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> [GitHub](https://github.com/Samudra-GITHub) &nbsp;·&nbsp;
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" width="13" height="13"/> [LinkedIn](https://www.linkedin.com/in/samudra-kar-a495951b5/) &nbsp;·&nbsp;
+<img src="https://cdn.simpleicons.org/vercel/2D241F" width="13" height="13"/> [Portfolio](https://mudra-kar-portfolio-g46m.vercel.app)
+</sub>
 
 <br/><br/>
 
