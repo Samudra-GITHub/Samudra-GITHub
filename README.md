@@ -9,7 +9,6 @@
 <a href="#tech-stack">Tech Stack</a> &nbsp;·&nbsp;
 <a href="#github-journey">Journey</a> &nbsp;·&nbsp;
 <a href="#currently-building">Currently Building</a> &nbsp;·&nbsp;
-<a href="#photography">Photography</a> &nbsp;·&nbsp;
 <a href="#connect">Connect</a>
 </sub>
 </div>
@@ -223,18 +222,6 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 ## Currently Building
 
 <img src="./assets/sticky-notes.svg" width="100%" alt="currently building" />
-
-<br/>
-
-<img src="./assets/divider.svg" width="100%" alt="" />
-
-## Photography
-
-<sub>Between builds, I shoot. Mostly street, sometimes product. Placeholders below — real frames coming.</sub>
-
-<br/>
-
-<img src="./assets/film-strip.svg" width="100%" alt="photography film strip" />
 
 <br/>
 
