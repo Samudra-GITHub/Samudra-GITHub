@@ -1,54 +1,53 @@
-<svg width="1100" height="420" viewBox="0 0 1100 420" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1100" height="420" fill="#F8F4EC"/>
+<svg width="1100" height="460" viewBox="0 0 1100 460" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1100" height="460" fill="#F8F4EC"/>
 
   <g font-family="Helvetica, Arial, sans-serif">
 
     <!-- category labels -->
-    <g font-size="11" letter-spacing="2" fill="#75695E">
-      <text x="40" y="66">LANGUAGES</text>
-      <text x="40" y="128">FRONTEND</text>
-      <text x="40" y="190">BACKEND</text>
-      <text x="40" y="252">AI</text>
-      <text x="40" y="314">DESIGN</text>
-      <text x="40" y="376">TOOLS</text>
+    <g font-size="14" font-weight="700" letter-spacing="2" fill="#75695E">
+      <text x="40" y="72">LANGUAGES</text>
+      <text x="40" y="140">FRONTEND</text>
+      <text x="40" y="208">BACKEND</text>
+      <text x="40" y="276">AI</text>
+      <text x="40" y="344">DESIGN</text>
+      <text x="40" y="412">TOOLS</text>
     </g>
 
-    <!-- reusable chip macro via manual groups -->
-    <g font-size="12.5" fill="#2D241F">
+    <g font-size="15" fill="#2D241F">
 
       <!-- Languages -->
-      <g transform="translate(180,42) rotate(-2)"><rect width="103" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="51" y="19" text-anchor="middle">TypeScript</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4s" repeatCount="indefinite"/></g>
-      <g transform="translate(293,42) rotate(1.5)"><rect width="103" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="51" y="19" text-anchor="middle">JavaScript</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.4s" begin="0.2s" repeatCount="indefinite"/></g>
-      <g transform="translate(406,42) rotate(-1)"><rect width="73" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="36" y="19" text-anchor="middle">Python</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="3.8s" begin="0.4s" repeatCount="indefinite"/></g>
-      <g transform="translate(489,42) rotate(2)"><rect width="70" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="35" y="19" text-anchor="middle">C</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.2s" begin="0.6s" repeatCount="indefinite"/></g>
-      <g transform="translate(569,42) rotate(-1.5)"><rect width="70" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="35" y="19" text-anchor="middle">Java</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.6s" begin="0.8s" repeatCount="indefinite"/></g>
+      <g transform="translate(200,46) rotate(-2)"><rect width="116" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="58" y="23" text-anchor="middle">TypeScript</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4s" repeatCount="indefinite"/></g>
+      <g transform="translate(328,46) rotate(1.5)"><rect width="116" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="58" y="23" text-anchor="middle">JavaScript</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.4s" begin="0.2s" repeatCount="indefinite"/></g>
+      <g transform="translate(456,46) rotate(-1)"><rect width="83" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="41" y="23" text-anchor="middle">Python</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="3.8s" begin="0.4s" repeatCount="indefinite"/></g>
+      <g transform="translate(551,46) rotate(2)"><rect width="80" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="40" y="23" text-anchor="middle">C</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.2s" begin="0.6s" repeatCount="indefinite"/></g>
+      <g transform="translate(643,46) rotate(-1.5)"><rect width="80" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="40" y="23" text-anchor="middle">Java</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.6s" begin="0.8s" repeatCount="indefinite"/></g>
 
       <!-- Frontend -->
-      <g transform="translate(180,104) rotate(2)"><rect width="70" height="28" rx="14" fill="#C66A2E" fill-opacity="0.12" stroke="#C66A2E" stroke-opacity="0.35"/><text x="35" y="19" text-anchor="middle" fill="#C66A2E">React</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4s" repeatCount="indefinite"/></g>
-      <g transform="translate(260,104) rotate(-1.5)"><rect width="81" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="40" y="19" text-anchor="middle">Next.js</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.3s" begin="0.3s" repeatCount="indefinite"/></g>
-      <g transform="translate(351,104) rotate(1)"><rect width="118" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="59" y="19" text-anchor="middle">Tailwind CSS</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.7s" begin="0.5s" repeatCount="indefinite"/></g>
-      <g transform="translate(479,104) rotate(-2)"><rect width="88" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="44" y="19" text-anchor="middle">Three.js</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="3.9s" begin="0.7s" repeatCount="indefinite"/></g>
+      <g transform="translate(200,114) rotate(2)"><rect width="80" height="34" rx="17" fill="#C66A2E" fill-opacity="0.12" stroke="#C66A2E" stroke-opacity="0.35"/><text x="40" y="23" text-anchor="middle" fill="#C66A2E">React</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4s" repeatCount="indefinite"/></g>
+      <g transform="translate(292,114) rotate(-1.5)"><rect width="91" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="45" y="23" text-anchor="middle">Next.js</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.3s" begin="0.3s" repeatCount="indefinite"/></g>
+      <g transform="translate(395,114) rotate(1)"><rect width="132" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="66" y="23" text-anchor="middle">Tailwind CSS</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.7s" begin="0.5s" repeatCount="indefinite"/></g>
+      <g transform="translate(539,114) rotate(-2)"><rect width="100" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="50" y="23" text-anchor="middle">Three.js</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="3.9s" begin="0.7s" repeatCount="indefinite"/></g>
 
       <!-- Backend -->
-      <g transform="translate(180,166) rotate(-1)"><rect width="81" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="40" y="19" text-anchor="middle">Node.js</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.1s" repeatCount="indefinite"/></g>
-      <g transform="translate(271,166) rotate(1.5)"><rect width="81" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="40" y="19" text-anchor="middle">FastAPI</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.5s" begin="0.2s" repeatCount="indefinite"/></g>
-      <g transform="translate(362,166) rotate(-2)"><rect width="70" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="35" y="19" text-anchor="middle">Flask</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="3.7s" begin="0.4s" repeatCount="indefinite"/></g>
-      <g transform="translate(442,166) rotate(1)"><rect width="103" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="51" y="19" text-anchor="middle">PostgreSQL</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.4s" begin="0.6s" repeatCount="indefinite"/></g>
-      <g transform="translate(555,166) rotate(-1.5)"><rect width="81" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="40" y="19" text-anchor="middle">MongoDB</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.8s" begin="0.8s" repeatCount="indefinite"/></g>
+      <g transform="translate(200,182) rotate(-1)"><rect width="91" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="45" y="23" text-anchor="middle">Node.js</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.1s" repeatCount="indefinite"/></g>
+      <g transform="translate(302,182) rotate(1.5)"><rect width="91" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="45" y="23" text-anchor="middle">FastAPI</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.5s" begin="0.2s" repeatCount="indefinite"/></g>
+      <g transform="translate(404,182) rotate(-2)"><rect width="80" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="40" y="23" text-anchor="middle">Flask</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="3.7s" begin="0.4s" repeatCount="indefinite"/></g>
+      <g transform="translate(495,182) rotate(1)"><rect width="116" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="58" y="23" text-anchor="middle">PostgreSQL</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.4s" begin="0.6s" repeatCount="indefinite"/></g>
+      <g transform="translate(622,182) rotate(-1.5)"><rect width="91" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="45" y="23" text-anchor="middle">MongoDB</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.8s" begin="0.8s" repeatCount="indefinite"/></g>
 
       <!-- AI -->
-      <g transform="translate(180,228) rotate(2)"><rect width="103" height="28" rx="14" fill="#C66A2E" fill-opacity="0.12" stroke="#C66A2E" stroke-opacity="0.35"/><text x="51" y="19" text-anchor="middle" fill="#C66A2E">TensorFlow</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4s" repeatCount="indefinite"/></g>
-      <g transform="translate(293,228) rotate(-1)"><rect width="73" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="36" y="19" text-anchor="middle">OpenCV</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.3s" begin="0.3s" repeatCount="indefinite"/></g>
-      <g transform="translate(376,228) rotate(1.5)"><rect width="81" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="40" y="19" text-anchor="middle">PyTorch</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.6s" begin="0.5s" repeatCount="indefinite"/></g>
+      <g transform="translate(200,250) rotate(2)"><rect width="116" height="34" rx="17" fill="#C66A2E" fill-opacity="0.12" stroke="#C66A2E" stroke-opacity="0.35"/><text x="58" y="23" text-anchor="middle" fill="#C66A2E">TensorFlow</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4s" repeatCount="indefinite"/></g>
+      <g transform="translate(328,250) rotate(-1)"><rect width="84" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="42" y="23" text-anchor="middle">OpenCV</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.3s" begin="0.3s" repeatCount="indefinite"/></g>
+      <g transform="translate(424,250) rotate(1.5)"><rect width="91" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="45" y="23" text-anchor="middle">PyTorch</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.6s" begin="0.5s" repeatCount="indefinite"/></g>
 
       <!-- Design -->
-      <g transform="translate(180,290) rotate(-2)"><rect width="70" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="35" y="19" text-anchor="middle">Figma</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4s" repeatCount="indefinite"/></g>
+      <g transform="translate(200,318) rotate(-2)"><rect width="80" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="40" y="23" text-anchor="middle">Figma</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4s" repeatCount="indefinite"/></g>
 
       <!-- Tools -->
-      <g transform="translate(180,352) rotate(1)"><rect width="70" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="35" y="19" text-anchor="middle">Git</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.2s" repeatCount="indefinite"/></g>
-      <g transform="translate(260,352) rotate(-1.5)"><rect width="73" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="36" y="19" text-anchor="middle">GitHub</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.5s" begin="0.2s" repeatCount="indefinite"/></g>
-      <g transform="translate(343,352) rotate(2)"><rect width="81" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="40" y="19" text-anchor="middle">VS Code</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="3.9s" begin="0.4s" repeatCount="indefinite"/></g>
-      <g transform="translate(434,352) rotate(-1)"><rect width="73" height="28" rx="14" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="36" y="19" text-anchor="middle">Docker</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.7s" begin="0.6s" repeatCount="indefinite"/></g>
+      <g transform="translate(200,386) rotate(1)"><rect width="80" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="40" y="23" text-anchor="middle">Git</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.2s" repeatCount="indefinite"/></g>
+      <g transform="translate(292,386) rotate(-1.5)"><rect width="84" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="42" y="23" text-anchor="middle">GitHub</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.5s" begin="0.2s" repeatCount="indefinite"/></g>
+      <g transform="translate(388,386) rotate(2)"><rect width="91" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="45" y="23" text-anchor="middle">VS Code</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="3.9s" begin="0.4s" repeatCount="indefinite"/></g>
+      <g transform="translate(491,386) rotate(-1)"><rect width="84" height="34" rx="17" fill="#EFE6DA" stroke="#2D241F" stroke-opacity="0.08"/><text x="42" y="23" text-anchor="middle">Docker</text><animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-3;0,0" dur="4.7s" begin="0.6s" repeatCount="indefinite"/></g>
 
     </g>
   </g>
