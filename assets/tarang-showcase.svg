@@ -12,6 +12,9 @@
   <text x="580" y="44" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#C66A2E">LIVE ON DEV</text>
   <line x1="40" y1="56" x2="580" y2="56" stroke="#2D241F" stroke-opacity="0.1"/>
 
+  <!-- turntable plinth -->
+  <rect x="42" y="72" width="380" height="336" rx="20" fill="#F8F4EC" fill-opacity="0.55" stroke="#2D241F" stroke-opacity="0.08"/>
+
   <!-- vinyl record -->
   <g transform="translate(210,230)">
     <g>
@@ -26,10 +29,13 @@
     </g>
   </g>
 
-  <!-- tonearm -->
-  <g stroke="#2D241F" stroke-width="3" stroke-linecap="round">
-    <line x1="380" y1="120" x2="300" y2="200"/>
-    <circle cx="380" cy="120" r="7" fill="#2D241F"/>
+  <!-- tonearm: mounted on a pivot housing at the plinth corner, resting on the record -->
+  <g>
+    <rect x="368" y="108" width="22" height="30" rx="5" fill="#2D241F"/>
+    <circle cx="379" cy="123" r="4" fill="#EFE6DA"/>
+    <line x1="379" y1="123" x2="300" y2="176" stroke="#2D241F" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="300" cy="176" r="4.5" fill="#2D241F"/>
+    <circle cx="300" cy="176" r="1.6" fill="#C66A2E"/>
   </g>
 
   <!-- waveform -->
