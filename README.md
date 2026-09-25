@@ -197,7 +197,10 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 
 <br/>
 
-## Tech Stack
+<table width="100%"><tr>
+<td width="60%"><h2>Tech Stack</h2></td>
+<td width="40%" align="right"><sub><em>Not a skill wall — the actual tools behind every product on this page.</em></sub></td>
+</tr></table>
 
 <img src="./assets/tech-chips.svg" width="100%" alt="tech stack" />
 
@@ -213,6 +216,8 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 
 <img src="./assets/sticky-notes.svg" width="100%" alt="currently building" />
 
+<p align="right"><sub><em>Tarang gets the most hours. Everything else gets whatever's left.</em></sub></p>
+
 <br/>
 
 ## Now Playing
@@ -226,6 +231,8 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 <br/>
 
 ## GitHub Analytics
+
+<sub><em>Building consistently. Shipping in public.</em></sub>
 
 <div align="center">
 
