@@ -7,7 +7,8 @@
 <img src="https://cdn.simpleicons.org/gmail/2D241F" width="13" height="13"/> <a href="mailto:hi.samsstudio@gmail.com">Email</a> &nbsp;·&nbsp;
 <img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> <a href="https://github.com/Samudra-GITHub">GitHub</a> &nbsp;·&nbsp;
 <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" width="13" height="13"/> <a href="https://www.linkedin.com/in/samudra-kar-a495951b5/">LinkedIn</a> &nbsp;·&nbsp;
-<img src="https://cdn.simpleicons.org/vercel/2D241F" width="13" height="13"/> <a href="https://mudra-kar-portfolio-g46m.vercel.app">Portfolio</a>
+<img src="https://cdn.simpleicons.org/instagram/2D241F" width="13" height="13"/> <a href="https://www.instagram.com/samudra_kar/">Instagram</a> &nbsp;·&nbsp;
+<img src="https://cdn.simpleicons.org/vercel/2D241F" width="13" height="13"/> <a href="https://sam-sportfolio.vercel.app">Portfolio</a>
 </sub>
 </div>
 
@@ -17,6 +18,7 @@
 <sub>
 <a href="#about">👋 About</a> &nbsp;·&nbsp;
 <a href="#featured-products">🧩 Featured Products</a> &nbsp;·&nbsp;
+<a href="#more-builds">🧪 More Builds</a> &nbsp;·&nbsp;
 <a href="#tech-stack">🛠️ Tech Stack</a> &nbsp;·&nbsp;
 <a href="#github-journey">🧭 Journey</a> &nbsp;·&nbsp;
 <a href="#currently-building">🚧 Currently Building</a> &nbsp;·&nbsp;
@@ -180,7 +182,7 @@ A premium shopping experience inspired by Apple and Nike — editorial pacing, r
 <tr>
 <td width="55%" valign="top">
 
-<img src="./assets/portfolio-showcase.svg" width="100%" alt="Portfolio" />
+<a href="https://sam-sportfolio.vercel.app"><img src="./assets/portfolio-site.jpg" width="100%" alt="The portfolio's hero: a big SAMUDRA KAR wordmark, a lime dot and a fanned deck of seven project cards, with a small cartoon buddy" /></a>
 
 </td>
 <td width="45%" valign="top">
@@ -190,17 +192,93 @@ A premium shopping experience inspired by Apple and Nike — editorial pacing, r
 <sub>SAMS STUDIO &nbsp;·&nbsp; HOME</sub>
 
 ### 🎨 Portfolio
-**A creative studio, online.**
+**Every project is its own small world.**
 
-My personal site — a custom Three.js scene with real shaders, narrative sections instead of a project grid, and a contact form that actually sends mail via EmailJS.
-
-<br/>
-
-`Vite` `React Three Fiber` `Three.js` `Framer Motion`
+My personal site, rebuilt as a scroll-driven, cursor-aware experience: seven project worlds with their own motion, a Toolbox sticker sheet generated from the real tech in each project, a social-first contact scene with a 3D orb, and a little cartoon buddy who wanders the page, points at your cursor, and gets sad if you click him. Raw WebGL shaders, no Three.js.
 
 <br/>
 
-<img src="https://cdn.simpleicons.org/vercel/2D241F" width="13" height="13"/> **[View Live →](https://mudra-kar-portfolio-g46m.vercel.app)**
+`React` `TypeScript` `GSAP` `Lenis` `Framer Motion` `WebGL`
+
+<br/>
+
+<img src="https://cdn.simpleicons.org/vercel/2D241F" width="13" height="13"/> **[View Live →](https://sam-sportfolio.vercel.app)** &nbsp;·&nbsp;
+<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> **[Repository →](https://github.com/Samudra-GITHub/Sam-s_Portfolio)**
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<p align="center">
+<img src="./assets/buddy.jpg" width="100%" alt="The site's companion in four moods: smiling, talking, chuckling when hovered, sad when clicked" />
+<br/>
+<sub><em>Meet the buddy. He lives on the site, follows you around, points at your cursor, laughs when hovered and gets sad when clicked.</em></sub>
+</p>
+
+<br/>
+
+## 🧪 More Builds
+
+<sub>Smaller experiments and earlier projects. Descriptions are straight from each repository.</sub>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+### 🌤️ [SkyCast](https://github.com/Samudra-GITHub/SkyCast-Weather-App)
+Minimal weather dashboard powered by the OpenWeather API with a clean, responsive interface.
+
+</td>
+<td width="50%" valign="top">
+
+### ☕ [Noir Cafe](https://github.com/Samudra-GITHub/noir-cafe)
+Cinematic specialty coffee experience built with Next.js, TypeScript, Tailwind CSS, Framer Motion and Lenis.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📡 [Niriksh AI](https://github.com/Samudra-GITHub/Niriksh-AI)
+Intelligent AI analytics and monitoring platform for research, automation, and decision support.
+
+</td>
+<td width="50%" valign="top">
+
+### 🛡️ [PRAHARI](https://github.com/Samudra-GITHub/PRAHARI)
+AI-powered disaster monitoring and emergency response platform for smart public safety.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🖥️ [Orbit OS](https://github.com/Samudra-GITHub/orbit-os)
+Experimental futuristic operating system interface built with React, TypeScript, and modern UI animations.
+
+</td>
+<td width="50%" valign="top">
+
+### 🔐 [Singularity Login](https://github.com/Samudra-GITHub/singularity-login)
+Modern glassmorphism authentication system built with Next.js, TypeScript, and Tailwind CSS.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🧇 [The Waffle House](https://github.com/Samudra-GITHub/the-waffle-house)
+Modern restaurant landing page with elegant animations, responsive layouts, and premium UI design.
+
+</td>
+<td width="50%" valign="top">
+
+### 📚 [All repositories →](https://github.com/Samudra-GITHub?tab=repositories)
+Everything else, including the rest of the experiments.
 
 </td>
 </tr>
@@ -250,9 +328,6 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Samudra-GITHub&hide_border=true&background=F8F4EC&ring=C66A2E&fire=C66A2E&currStreakLabel=2D241F&sideLabels=75695E&currStreakNum=2D241F&sideNums=2D241F&dates=75695E" alt="GitHub streak" width="65%"/>
 
 <br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Samudra-GITHub&theme=minimal&hide_border=true&area=true&color=2D241F&line=C66A2E&point=2D241F&bg_color=F8F4EC" alt="Activity graph" width="95%"/>
-
 <br/>
 
 <picture>
@@ -270,10 +345,11 @@ My personal site — a custom Three.js scene with real shaders, narrative sectio
 <div align="center">
 
 <sub>
-<img src="https://cdn.simpleicons.org/gmail/2D241F" width="13" height="13"/> [Email](mailto:hi.samsstudio@gmail.com) &nbsp;·&nbsp;
-<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> [GitHub](https://github.com/Samudra-GITHub) &nbsp;·&nbsp;
-<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" width="13" height="13"/> [LinkedIn](https://www.linkedin.com/in/samudra-kar-a495951b5/) &nbsp;·&nbsp;
-<img src="https://cdn.simpleicons.org/vercel/2D241F" width="13" height="13"/> [Portfolio](https://mudra-kar-portfolio-g46m.vercel.app)
+<img src="https://cdn.simpleicons.org/gmail/2D241F" width="13" height="13"/> <a href="mailto:hi.samsstudio@gmail.com">Email</a> &nbsp;·&nbsp;
+<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> <a href="https://github.com/Samudra-GITHub">GitHub</a> &nbsp;·&nbsp;
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" width="13" height="13"/> <a href="https://www.linkedin.com/in/samudra-kar-a495951b5/">LinkedIn</a> &nbsp;·&nbsp;
+<img src="https://cdn.simpleicons.org/instagram/2D241F" width="13" height="13"/> <a href="https://www.instagram.com/samudra_kar/">Instagram</a> &nbsp;·&nbsp;
+<img src="https://cdn.simpleicons.org/vercel/2D241F" width="13" height="13"/> <a href="https://sam-sportfolio.vercel.app">Portfolio</a>
 </sub>
 
 <br/><br/>
