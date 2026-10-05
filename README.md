@@ -1,5 +1,11 @@
 <img src="./assets/hero.svg" width="100%" alt="Samudra Kar — building immersive digital experiences" />
 
+<p align="center">
+  <img src="./assets/typing.svg" width="620" alt="Computer Science student · AI engineer · UI/UX designer · Frontend developer · Builder at Sams Studio · Open to internships" />
+</p>
+
+<img src="./assets/ticker.svg" width="100%" alt="Rinti AI, AkashaLens, Niriksh AI, PRAHARI, Tarang, Krama, Orbit OS, Noir Café, SkyCast, Portfolio, The Waffle House" />
+
 <br/>
 
 <div align="center">
@@ -17,11 +23,12 @@
 <div align="center">
 <sub>
 <a href="#about">👋 About</a> &nbsp;·&nbsp;
-<a href="#featured-products">🧩 Featured Products</a> &nbsp;·&nbsp;
+<a href="#the-studio-all-at-once">🌌 The Studio</a> &nbsp;·&nbsp;
+<a href="#featured-products">🧩 Featured</a> &nbsp;·&nbsp;
 <a href="#more-builds">🧪 More Builds</a> &nbsp;·&nbsp;
-<a href="#tech-stack">🛠️ Tech Stack</a> &nbsp;·&nbsp;
+<a href="#tech-stack">🛠️ Stack</a> &nbsp;·&nbsp;
 <a href="#github-journey">🧭 Journey</a> &nbsp;·&nbsp;
-<a href="#currently-building">🚧 Currently Building</a> &nbsp;·&nbsp;
+<a href="#currently-building">🚧 Building</a> &nbsp;·&nbsp;
 <a href="#connect">📬 Connect</a>
 </sub>
 </div>
@@ -44,9 +51,19 @@ I'm slow to add a feature and quick to cut one. If two things compete for attent
 
 <br/><br/>
 
+## 🌌 The Studio, All at Once
+
+<sub>Everything under **Sams Studio** in one orbit: AI and research close to the core, products and interfaces in the middle, sites and experiments on the rim. Every dot is a repository on this account.</sub>
+
+<p align="center">
+  <img src="./assets/studio-orbit.svg" width="100%" alt="An animated constellation of fifteen projects orbiting Sams Studio" />
+</p>
+
+<br/><br/>
+
 ## 🧩 Featured Products
 
-<sub>Every product here belongs to **Sams Studio** — a connected set of things I've built, spanning design, AI, and engineering.</sub>
+<sub>Every clip and screenshot below was captured from the project running locally. Nothing here is a mock-up.</sub>
 
 <br/>
 
@@ -54,7 +71,7 @@ I'm slow to add a feature and quick to cut one. If two things compete for attent
 <tr>
 <td width="55%" valign="top">
 
-<img src="./assets/tarang-showcase.svg" width="100%" alt="Tarang" />
+<a href="https://tarang-ecru.vercel.app"><img src="https://raw.githubusercontent.com/Samudra-GITHub/Tarang/main/docs/screenshots/playback.gif" width="100%" alt="Tarang: pressing Play, then expanding the floating player into the full now-playing view" /></a>
 
 </td>
 <td width="45%" valign="top">
@@ -66,15 +83,16 @@ I'm slow to add a feature and quick to cut one. If two things compete for attent
 ### 🎵 Tarang
 **Music, redesigned for the web.**
 
-A premium music streaming web app built around motion, glass surfaces, and a listening experience that feels closer to a physical object than a browser tab. Free playback, a floating persistent player, and a full in-app design system are live today.
+A music-first streaming web app: a persistent floating player that expands into a full now-playing view with a waveform, queue, time-synced lyrics and translations, plus playlists, moods, listening stats and a documented design system.
 
 <br/>
 
-`Next.js` `React` `TypeScript` `Tailwind CSS` `Framer Motion`
+`Next.js` `React` `TypeScript` `Tailwind CSS` `Framer Motion` `Zustand`
 
 <br/>
 
-<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> **[View Repository →](https://github.com/Samudra-GITHub/Tarang)**
+<img src="https://cdn.simpleicons.org/vercel/2D241F" width="13" height="13"/> **[View Live →](https://tarang-ecru.vercel.app)** &nbsp;·&nbsp;
+<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> **[Repository →](https://github.com/Samudra-GITHub/Tarang)**
 
 </td>
 </tr>
@@ -93,20 +111,23 @@ A premium music streaming web app built around motion, glass surfaces, and a lis
 ### 🤖 Rinti AI
 **Your intelligent AI workspace.**
 
-A conversational AI assistant with persistent memory, a multi-step research mode, and real account-based sessions — password auth, HttpOnly cookies, CSRF protection. Backed by a Groq/OpenAI-compatible chat engine and Tavily for research.
+A chat workspace with per-user memory, a cited multi-step research mode and real account sessions: Argon2 password hashing, HttpOnly cookies and CSRF checks. Groq or any OpenAI-compatible model for chat, Tavily for research.
 
 <br/>
 
-`FastAPI` `Python` `Next.js` `Groq` `Tavily`
+`FastAPI` `Python` `Next.js` `Groq` `Tavily` `Postgres`
 
 <br/>
 
-<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> **[View Repository →](https://github.com/Samudra-GITHub/Rinti-Ai)**
+<img src="https://cdn.simpleicons.org/vercel/2D241F" width="13" height="13"/> **[View Live →](https://rinti-ai.vercel.app)** &nbsp;·&nbsp;
+<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> **[Repository →](https://github.com/Samudra-GITHub/Rinti-Ai)**
 
 </td>
-<td width="55%" valign="top">
+<td width="55%" valign="top" align="center">
 
-<img src="./assets/rinti-showcase.svg" width="100%" alt="Rinti AI" />
+<a href="https://github.com/Samudra-GITHub/Rinti-Ai"><img src="https://raw.githubusercontent.com/Samudra-GITHub/Rinti-Ai/main/docs/screenshots/login.webp" width="48%" alt="Rinti AI sign-in screen" /></a> <a href="https://github.com/Samudra-GITHub/Rinti-Ai"><img src="https://raw.githubusercontent.com/Samudra-GITHub/Rinti-Ai/main/docs/screenshots/register.webp" width="48%" alt="Rinti AI create-account screen" /></a>
+
+<sub>The sign-in and register screens. The rest of the app sits behind the login.</sub>
 
 </td>
 </tr>
@@ -116,9 +137,11 @@ A conversational AI assistant with persistent memory, a multi-step research mode
 
 <table width="100%">
 <tr>
-<td width="55%" valign="top">
+<td width="55%" valign="top" align="center">
 
-<img src="./assets/akashalens-showcase.svg" width="100%" alt="AkashaLens" />
+<a href="https://github.com/Samudra-GITHub/AkashaLens"><img src="https://raw.githubusercontent.com/Samudra-GITHub/AkashaLens/main/dataset/cloudy/cloudy1.jpg" width="48%" alt="A cloudy Sentinel-2 sample from the dataset" /></a> <a href="https://github.com/Samudra-GITHub/AkashaLens"><img src="https://raw.githubusercontent.com/Samudra-GITHub/AkashaLens/main/dataset/clear/clear1.jpeg" width="48%" alt="A clear sample from the dataset" /></a>
+
+<sub>Dataset samples (cloudy and clear), not model output.</sub>
 
 </td>
 <td width="45%" valign="top">
@@ -128,13 +151,13 @@ A conversational AI assistant with persistent memory, a multi-step research mode
 <sub>SAMS STUDIO &nbsp;·&nbsp; RESEARCH</sub>
 
 ### 🛰️ AkashaLens
-**AI-powered satellite cloud reconstruction.**
+**Cloud removal for satellite imagery.**
 
-A U-Net trained on paired Sentinel imagery to reconstruct cloud-occluded ground detail. Built for ISRO Hackathon 2026, evaluated with SSIM and PSNR against held-out ground truth.
+A PyTorch U-Net prototype that reconstructs cloud-occluded Sentinel-2 scenes, with a rule-based cloud mask, a confidence heatmap and MAE, PSNR and SSIM evaluation behind a Flask demo. Built for ISRO Hackathon 2026.
 
 <br/>
 
-`PyTorch` `Flask` `scikit-image` `SciPy`
+`PyTorch` `Flask` `scikit-image` `SciPy` `Sentinel-2`
 
 <br/>
 
@@ -155,13 +178,13 @@ A U-Net trained on paired Sentinel imagery to reconstruct cloud-occluded ground 
 <sub>SAMS STUDIO &nbsp;·&nbsp; FASHION</sub>
 
 ### 👟 Krama
-**Luxury sneaker marketplace.**
+**A sneaker storefront designed like an editorial.**
 
-A premium shopping experience inspired by Apple and Nike — editorial pacing, real shop/checkout/account/admin routes, and motion driven by GSAP and Lenis rather than default page transitions.
+Shop and filters, product pages with a rotatable viewport, a cart drawer, multi-step checkout, an account area and an admin console for drops, with motion driven by GSAP, Motion and Lenis. Runs entirely on seed data.
 
 <br/>
 
-`Next.js` `GSAP` `Motion` `Lenis` `Tailwind CSS`
+`Next.js` `GSAP` `Motion` `Lenis` `Zustand` `Tailwind CSS`
 
 <br/>
 
@@ -170,7 +193,71 @@ A premium shopping experience inspired by Apple and Nike — editorial pacing, r
 </td>
 <td width="55%" valign="top">
 
-<img src="./assets/krama-showcase.svg" width="100%" alt="Krama" />
+<a href="https://github.com/Samudra-GITHub/Krama"><img src="https://raw.githubusercontent.com/Samudra-GITHub/Krama/main/docs/screenshots/add-to-cart.gif" width="100%" alt="Krama: choosing a size on a product page and adding it to the cart drawer" /></a>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="55%" valign="top">
+
+<a href="https://github.com/Samudra-GITHub/orbit-os"><img src="https://raw.githubusercontent.com/Samudra-GITHub/orbit-os/main/docs/screenshots/command-palette.gif" width="100%" alt="Orbit OS: opening the command palette and searching for weather" /></a>
+
+</td>
+<td width="45%" valign="top">
+
+<br/>
+
+<sub>SAMS STUDIO &nbsp;·&nbsp; INTERFACE</sub>
+
+### 🖥️ Orbit OS
+**A personal dashboard that behaves like an operating system.**
+
+Glass widgets, an AI workspace, notes, files and a Kanban board, a command palette and a notification center, in a dark "Liquid Spatial UI" with spring motion. An interface exploration, with mock data.
+
+<br/>
+
+`Next.js` `React` `Framer Motion` `GSAP` `Tailwind CSS`
+
+<br/>
+
+<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> **[View Repository →](https://github.com/Samudra-GITHub/orbit-os)**
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="45%" valign="top">
+
+<br/>
+
+<sub>SAMS STUDIO &nbsp;·&nbsp; BRAND + ENGINEERING</sub>
+
+### ☕ Noir Café
+**A café that exists only as a website.**
+
+A specialty-coffee brand designed and engineered end to end: four languages and four currencies, an installable offline PWA, ordering and table booking, an AI barista and a scroll-driven 3D cup. Every integration is optional.
+
+<br/>
+
+`Next.js 16` `Three.js` `Framer Motion` `Lenis` `Supabase` `Stripe`
+
+<br/>
+
+<img src="https://cdn.simpleicons.org/github/2D241F" width="13" height="13"/> **[View Repository →](https://github.com/Samudra-GITHub/noir-cafe)**
+
+</td>
+<td width="55%" valign="top">
+
+<a href="https://github.com/Samudra-GITHub/noir-cafe"><img src="https://raw.githubusercontent.com/Samudra-GITHub/noir-cafe/main/case-study/github/responsive-preview.png" width="100%" alt="Noir Café's home page on a MacBook, an iPad and an iPhone" /></a>
 
 </td>
 </tr>
@@ -221,7 +308,7 @@ My personal site, rebuilt as a scroll-driven, cursor-aware experience: seven pro
 
 ## 🧪 More Builds
 
-<sub>Smaller experiments and earlier projects. Descriptions are straight from each repository.</sub>
+<sub>The rest of the lineup. Where a repo has real captures they are shown; where it doesn't, the tile is typography, not a fake screenshot.</sub>
 
 <br/>
 
@@ -229,60 +316,78 @@ My personal site, rebuilt as a scroll-driven, cursor-aware experience: seven pro
 <tr>
 <td width="50%" valign="top">
 
-### 🌤️ [SkyCast](https://github.com/Samudra-GITHub/SkyCast-Weather-App)
-Minimal weather dashboard powered by the OpenWeather API with a clean, responsive interface.
-
-</td>
-<td width="50%" valign="top">
-
-### ☕ [Noir Cafe](https://github.com/Samudra-GITHub/noir-cafe)
-Cinematic specialty coffee experience built with Next.js, TypeScript, Tailwind CSS, Framer Motion and Lenis.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<a href="https://github.com/Samudra-GITHub/Niriksh-AI"><img src="https://raw.githubusercontent.com/Samudra-GITHub/Niriksh-AI/main/docs/screenshots/revenue-tabs.gif" width="100%" alt="Niriksh AI merchant dashboard: switching the chart between revenue, transactions and refunds" /></a>
 
 ### 📡 [Niriksh AI](https://github.com/Samudra-GITHub/Niriksh-AI)
-Intelligent AI analytics and monitoring platform for research, automation, and decision support.
+An AI copilot that helps merchants investigate failed or flagged transactions and trigger recovery, by text or voice in five Indian languages. FastAPI, Sarvam AI, Cognee memory and an n8n workflow behind a Next.js dashboard. Built for a payments hackathon.
 
 </td>
 <td width="50%" valign="top">
+
+<a href="https://github.com/Samudra-GITHub/PRAHARI"><img src="https://raw.githubusercontent.com/Samudra-GITHub/PRAHARI/main/docs/screenshots/login.webp" width="48%" alt="PRAHARI sign-in screen" /></a>
 
 ### 🛡️ [PRAHARI](https://github.com/Samudra-GITHub/PRAHARI)
-AI-powered disaster monitoring and emergency response platform for smart public safety.
+Mine compliance and safety monitoring with explainable risk scoring, automatic alerts, a hash-chained audit log and a copilot that can only narrate real, permission-scoped data. Next.js, Prisma and PostgreSQL in Docker. Built for the Smart India Hackathon.
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🖥️ [Orbit OS](https://github.com/Samudra-GITHub/orbit-os)
-Experimental futuristic operating system interface built with React, TypeScript, and modern UI animations.
+<a href="https://the-waffle-house.vercel.app"><img src="https://raw.githubusercontent.com/Samudra-GITHub/the-waffle-house/main/docs/screenshots/menu-carousel.gif" width="100%" alt="The Waffle House menu carousel stepping through the signature waffles" /></a>
+
+### 🧇 [The Waffle House](https://github.com/Samudra-GITHub/the-waffle-house) &nbsp;<sub>[live ↗](https://the-waffle-house.vercel.app)</sub>
+A one-page site for a Belgian waffle café in Siliguri: animated hero, menu carousel, gallery with lightbox, reviews and a map. React, Framer Motion and Tailwind.
 
 </td>
 <td width="50%" valign="top">
+
+<a href="https://github.com/Samudra-GITHub/samudra-kar-portfolio"><img src="https://raw.githubusercontent.com/Samudra-GITHub/samudra-kar-portfolio/main/docs/screenshots/scroll.gif" width="100%" alt="Portfolio V2: scrolling from the hero through the projects to the systems stack over a WebGL scene" /></a>
+
+### 🌐 [Portfolio V2](https://github.com/Samudra-GITHub/samudra-kar-portfolio)
+An earlier take on the portfolio with one persistent React Three Fiber scene, custom shaders, adaptive quality by device tier and procedural Web Audio sound.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/Samudra-GITHub/SkyCast-Weather-App"><img src="./assets/tile-skycast.svg" width="100%" alt="SkyCast" /></a>
+
+### 🌤️ [SkyCast](https://github.com/Samudra-GITHub/SkyCast-Weather-App)
+One screen of weather: current conditions, forecast, UV and air quality for any city, from a small Flask app over OpenWeatherMap with an animated sky canvas.
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/Samudra-GITHub/singularity-login"><img src="./assets/tile-singularity.svg" width="100%" alt="Singularity Login" /></a>
 
 ### 🔐 [Singularity Login](https://github.com/Samudra-GITHub/singularity-login)
-Modern glassmorphism authentication system built with Next.js, TypeScript, and Tailwind CSS.
+A planned glassmorphism login and register component set for Next.js. The repository has no code yet, only the intent.
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🧇 [The Waffle House](https://github.com/Samudra-GITHub/the-waffle-house)
-Modern restaurant landing page with elegant animations, responsive layouts, and premium UI design.
+<a href="https://github.com/Samudra-GITHub/speed-of-numbers-fca"><img src="./assets/tile-fca.svg" width="100%" alt="The Speed of Numbers" /></a>
+
+### 🔬 [The Speed of Numbers](https://github.com/Samudra-GITHub/speed-of-numbers-fca)
+A team lab on numerical representation and execution latency on the ESP32 (Xtensa LX6 at 240 MHz): an Arduino sketch, raw experiment data and a LaTeX report.
 
 </td>
 <td width="50%" valign="top">
 
-### 📚 [All repositories →](https://github.com/Samudra-GITHub?tab=repositories)
-Everything else, including the rest of the experiments.
+<a href="https://github.com/Samudra-GITHub/website"><img src="./assets/tile-website.svg" width="100%" alt="website" /></a>
+
+### 🕰️ [website](https://github.com/Samudra-GITHub/website)
+Where it started: a small static personal site in plain HTML and CSS from 2023.
 
 </td>
 </tr>
 </table>
+
+<p align="center"><sub>📚 <a href="https://github.com/Samudra-GITHub?tab=repositories"><b>All repositories →</b></a></sub></p>
 
 <br/>
 

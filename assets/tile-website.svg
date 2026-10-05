@@ -1,0 +1,8 @@
+<svg width="480" height="270" viewBox="0 0 480 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="website">
+<defs><pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#2D241F" stroke-opacity=".05"/></pattern></defs>
+<rect width="480" height="270" rx="18" fill="#F6F0E3"/><rect width="480" height="270" rx="18" fill="url(#g)"/>
+<circle cx="390" cy="70" r="46" fill="#D8F827" opacity=".85"><animate attributeName="cy" values="70;84;70" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="390" cy="70" r="62" fill="none" stroke="#2D241F" stroke-opacity=".25" stroke-dasharray="4 8"><animateTransform attributeName="transform" type="rotate" from="0 390 70" to="360 390 70" dur="24s" repeatCount="indefinite"/></circle>
+<text x="32" y="48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Courier New', monospace" font-size="12" letter-spacing="3" fill="#75695E">2023 · HTML + CSS</text>
+<text x="32" y="188" font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="46" fill="#2D241F">website</text>
+<rect x="32" y="205" width="0" height="6" rx="3" fill="#D8F827"><animate attributeName="width" values="0;150;150;0" keyTimes="0;.4;.8;1" dur="5s" repeatCount="indefinite"/></rect></svg>
