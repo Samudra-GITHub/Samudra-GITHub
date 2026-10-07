@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620" role="img" aria-labelledby="t d">
+  <title id="t">Samudra Kar. Systems, AI and product.</title>
+  <desc id="d">Computer science engineering student in Bangalore, India. Building across layers, from kernels and computer vision to interfaces people enjoy using. An animated diagram shows a signal travelling down six layers: product, interface, AI, systems, kernel, hardware.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101524"/>
+      <stop offset="1" stop-color="#080A12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="700" cy="320" r="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3FBFB4" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#3FBFB4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+  <style>
+    .serif{font-family:"Cormorant Garamond","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+    .mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .pulse{animation:travel 6s linear infinite}
+    .lit{opacity:0;animation:lit 6s linear infinite}
+    @keyframes travel{
+      0%{transform:translateY(0);opacity:0}
+      5%{opacity:1}
+      83%{transform:translateY(400px);opacity:1}
+      90%,100%{transform:translateY(400px);opacity:0}
+    }
+    @keyframes lit{0%{opacity:0}7%{opacity:1}20%{opacity:0}100%{opacity:0}}
+    @media (prefers-reduced-motion:reduce){.pulse,.lit{animation:none}.pulse{opacity:0}}
+  </style>
+
+  <!-- frame -->
+  <rect x="0.5" y="0.5" width="999" height="619" rx="20" fill="url(#bg)" stroke="#232B3B"/>
+  <rect x="0.5" y="0.5" width="999" height="619" rx="20" fill="url(#glow)"/>
+
+  <!-- left: identity -->
+  <text class="mono" x="64" y="98" font-size="16" letter-spacing="3" fill="#5FD4C8">COMPUTER SCIENCE ENGINEERING STUDENT</text>
+  <line x1="64" y1="120" x2="600" y2="120" stroke="#232B3B"/>
+  <text class="serif" x="60" y="238" font-size="102" font-weight="500" letter-spacing="0.5" fill="#EEF3FA">SAMUDRA</text>
+  <text class="serif" x="60" y="336" font-size="102" font-weight="500" letter-spacing="0.5" fill="#EEF3FA">KAR</text>
+  <text class="mono" x="64" y="394" font-size="20" letter-spacing="6" fill="#DCE4F0">SYSTEMS / AI / PRODUCT</text>
+  <text class="serif" x="64" y="452" font-size="29" font-style="italic" fill="#B8C2D4">Building across layers —</text>
+  <text class="serif" x="64" y="488" font-size="29" font-style="italic" fill="#B8C2D4">from kernels and computer vision</text>
+  <text class="serif" x="64" y="524" font-size="29" font-style="italic" fill="#B8C2D4">to interfaces people enjoy using.</text>
+  <line x1="64" y1="574" x2="100" y2="574" stroke="#3FBFB4" stroke-width="2"/>
+  <text class="mono" x="114" y="579" font-size="16" letter-spacing="4" fill="#8792A6">BANGALORE · INDIA</text>
+
+  <!-- right: layer diagram -->
+  <line x1="690" y1="110" x2="690" y2="510" stroke="#232B3B" stroke-width="1.5"/>
+
+  <g class="mono">
+    <g><circle cx="690" cy="110" r="8" fill="#0B0E18" stroke="#566176" stroke-width="1.5"/><circle class="lit" style="animation-delay:-0.48s" cx="690" cy="110" r="8" fill="#9CF0E6"/>
+      <text x="722" y="116" font-size="20" letter-spacing="3" fill="#DCE4F0">PRODUCT</text>
+      <text x="722" y="140" font-size="15" fill="#8792A6">Tarang · Rinti AI</text></g>
+    <g><circle cx="690" cy="190" r="8" fill="#0B0E18" stroke="#566176" stroke-width="1.5"/><circle class="lit" style="animation-delay:0.52s" cx="690" cy="190" r="8" fill="#9CF0E6"/>
+      <text x="722" y="196" font-size="20" letter-spacing="3" fill="#DCE4F0">INTERFACE</text>
+      <text x="722" y="220" font-size="15" fill="#8792A6">Orbit OS · design systems</text></g>
+    <g><circle cx="690" cy="270" r="8" fill="#0B0E18" stroke="#566176" stroke-width="1.5"/><circle class="lit" style="animation-delay:1.52s" cx="690" cy="270" r="8" fill="#9CF0E6"/>
+      <text x="722" y="276" font-size="20" letter-spacing="3" fill="#DCE4F0">AI</text>
+      <text x="722" y="300" font-size="15" fill="#8792A6">AkashaLens · PRAHARI</text></g>
+    <g><circle cx="690" cy="350" r="8" fill="#0B0E18" stroke="#566176" stroke-width="1.5"/><circle class="lit" style="animation-delay:2.52s" cx="690" cy="350" r="8" fill="#9CF0E6"/>
+      <text x="722" y="356" font-size="20" letter-spacing="3" fill="#DCE4F0">SYSTEMS</text>
+      <text x="722" y="380" font-size="15" fill="#8792A6">services · APIs · data</text></g>
+    <g><circle cx="690" cy="430" r="8" fill="#0B0E18" stroke="#566176" stroke-width="1.5"/><circle class="lit" style="animation-delay:3.52s" cx="690" cy="430" r="8" fill="#9CF0E6"/>
+      <text x="722" y="436" font-size="20" letter-spacing="3" fill="#DCE4F0">KERNEL</text>
+      <text x="722" y="460" font-size="15" fill="#8792A6">Samagra OS</text></g>
+    <g><circle cx="690" cy="510" r="8" fill="#0B0E18" stroke="#566176" stroke-width="1.5"/><circle class="lit" style="animation-delay:4.52s" cx="690" cy="510" r="8" fill="#9CF0E6"/>
+      <text x="722" y="516" font-size="20" letter-spacing="3" fill="#DCE4F0">HARDWARE</text>
+      <text x="722" y="540" font-size="15" fill="#8792A6">x86-64 · QEMU</text></g>
+  </g>
+
+  <!-- travelling signal -->
+  <g class="pulse">
+    <circle cx="690" cy="110" r="9" fill="#9CF0E6" filter="url(#soft)"/>
+    <circle cx="690" cy="110" r="4" fill="#E6FFFB"/>
+  </g>
+</svg>

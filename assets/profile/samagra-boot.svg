@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-labelledby="t d">
+  <title id="t">Samagra OS boot sequence, stylised</title>
+  <desc id="d">A stylised terminal showing the kernel's initialisation: memory management, interrupts, timer and scheduler are working; keyboard input is basic. The last line reads kernel tasks running, no user space yet, followed by a blinking cursor. This is an illustration based on the real init sequence, not a screenshot.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101524"/>
+      <stop offset="1" stop-color="#080A12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="500" cy="300" r="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3FBFB4" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#3FBFB4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .serif{font-family:"Cormorant Garamond","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+    .mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .ln{animation:ln 12s ease-out infinite both}
+    @keyframes ln{0%{opacity:0}3%{opacity:1}90%{opacity:1}96%,100%{opacity:0}}
+    .cur{animation:cur 1.1s steps(1) infinite}
+    @keyframes cur{0%,55%{opacity:1}56%,100%{opacity:0}}
+    @media (prefers-reduced-motion:reduce){.ln,.cur{animation:none}}
+  </style>
+
+  <rect x="0.5" y="0.5" width="999" height="559" rx="20" fill="url(#bg)" stroke="#232B3B"/>
+  <rect x="0.5" y="0.5" width="999" height="559" rx="20" fill="url(#glow)"/>
+
+  <!-- header -->
+  <text class="serif" x="64" y="104" font-size="64" font-weight="500" letter-spacing="1.5" fill="#EEF3FA">SAMAGRA OS</text>
+  <text class="mono" x="936" y="96" font-size="14" letter-spacing="3" fill="#8792A6" text-anchor="end">x86-64 · LONG MODE</text>
+  <line x1="64" y1="132" x2="936" y2="132" stroke="#232B3B"/>
+  <line x1="64" y1="132" x2="112" y2="132" stroke="#3FBFB4" stroke-width="2"/>
+
+  <!-- subsystem lines -->
+  <g class="mono" font-size="27" letter-spacing="1">
+    <g class="ln" style="animation-delay:0.4s">
+      <text x="64" y="188" fill="#DCE4F0">MEMORY <tspan fill="#8792A6" font-size="19">PMM · VMM</tspan></text>
+      <line x1="430" y1="182" x2="800" y2="182" stroke="#343E52" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 9"/>
+      <text x="830" y="188" fill="#5FD4C8">OK</text>
+    </g>
+    <g class="ln" style="animation-delay:1.3s">
+      <text x="64" y="242" fill="#DCE4F0">INTERRUPTS <tspan fill="#8792A6" font-size="19">IDT · PIC</tspan></text>
+      <line x1="430" y1="236" x2="800" y2="236" stroke="#343E52" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 9"/>
+      <text x="830" y="242" fill="#5FD4C8">OK</text>
+    </g>
+    <g class="ln" style="animation-delay:2.2s">
+      <text x="64" y="296" fill="#DCE4F0">TIMER <tspan fill="#8792A6" font-size="19">PIT · 100 Hz</tspan></text>
+      <line x1="430" y1="290" x2="800" y2="290" stroke="#343E52" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 9"/>
+      <text x="830" y="296" fill="#5FD4C8">OK</text>
+    </g>
+    <g class="ln" style="animation-delay:3.1s">
+      <text x="64" y="350" fill="#DCE4F0">SCHEDULER <tspan fill="#8792A6" font-size="19">ROUND-ROBIN</tspan></text>
+      <line x1="430" y1="344" x2="800" y2="344" stroke="#343E52" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 9"/>
+      <text x="830" y="350" fill="#5FD4C8">OK</text>
+    </g>
+    <g class="ln" style="animation-delay:4s">
+      <text x="64" y="404" fill="#DCE4F0">INPUT <tspan fill="#8792A6" font-size="19">PS/2 KEYBOARD</tspan></text>
+      <line x1="430" y1="398" x2="800" y2="398" stroke="#343E52" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 9"/>
+      <text x="830" y="404" fill="#8792A6">BASIC</text>
+    </g>
+  </g>
+
+  <!-- status + prompt -->
+  <line x1="64" y1="432" x2="936" y2="432" stroke="#232B3B"/>
+  <g class="ln" style="animation-delay:5s">
+    <text class="mono" x="64" y="474" font-size="23" letter-spacing="2" fill="#DCE4F0">KERNEL TASKS RUNNING · NO USER SPACE YET</text>
+  </g>
+  <g class="ln" style="animation-delay:5.8s">
+    <text class="mono" x="64" y="516" font-size="22" fill="#5FD4C8">&gt;</text>
+    <rect class="cur" x="92" y="498" width="13" height="22" fill="#9CF0E6"/>
+  </g>
+  <text class="mono" x="936" y="520" font-size="13" letter-spacing="2" fill="#566176" text-anchor="end">STYLISED FROM THE REAL INIT SEQUENCE · NOT A SCREENSHOT</text>
+</svg>

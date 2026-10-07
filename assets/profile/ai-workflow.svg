@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="1000" height="580" role="img" aria-labelledby="t d">
+  <title id="t">Human direction and AI execution</title>
+  <desc id="d">A workflow diagram. At the top, Samudra, a human, provides architecture, product direction and validation. Direction flows down to two AI engineering agents: Claude Code, which handles UI, documentation, design and user-facing systems, and Antigravity, which handles kernel, memory, interrupts, scheduling and low-level systems. Both work in one shared repository of git history, docs, agent notes and API contracts. Validation flows back from the repository to Samudra.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101524"/>
+      <stop offset="1" stop-color="#080A12"/>
+    </linearGradient>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5FD4C8"/>
+    </marker>
+    <marker id="ahg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8792A6"/>
+    </marker>
+  </defs>
+  <style>
+    .serif{font-family:"Cormorant Garamond","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+    .mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .flow{animation:flow 1.6s linear infinite}
+    .back{animation:back 3.2s linear infinite}
+    @keyframes flow{to{stroke-dashoffset:-16}}
+    @keyframes back{to{stroke-dashoffset:-16}}
+    @media (prefers-reduced-motion:reduce){.flow,.back{animation:none}}
+  </style>
+
+  <rect x="0.5" y="0.5" width="999" height="579" rx="20" fill="url(#bg)" stroke="#232B3B"/>
+
+  <!-- connectors (drawn first, under the nodes) -->
+  <g fill="none" stroke="#5FD4C8" stroke-width="1.6" stroke-dasharray="6 10" marker-end="url(#ah)">
+    <path class="flow" d="M500 140 V190 H260 V248"/>
+    <path class="flow" d="M500 140 V190 H740 V248"/>
+    <path class="flow" d="M260 372 V452"/>
+    <path class="flow" d="M740 372 V452"/>
+  </g>
+  <path class="back" d="M936 492 H972 V96 H688" fill="none" stroke="#8792A6" stroke-width="1.4" stroke-dasharray="4 12" marker-end="url(#ahg)"/>
+
+  <text class="mono" x="500" y="176" font-size="13" letter-spacing="3" fill="#8792A6" text-anchor="middle" style="paint-order:stroke" stroke="#0B0E18" stroke-width="6">DIRECTION</text>
+  <text class="mono" x="500" y="420" font-size="13" letter-spacing="3" fill="#8792A6" text-anchor="middle">EXECUTION</text>
+  <text class="mono" x="856" y="82" font-size="13" letter-spacing="3" fill="#8792A6" text-anchor="middle">VALIDATION</text>
+
+  <!-- human -->
+  <rect x="312" y="44" width="376" height="96" rx="12" fill="#0B0E18" stroke="#566176"/>
+  <text class="mono" x="336" y="72" font-size="13" letter-spacing="4" fill="#5FD4C8">HUMAN</text>
+  <text class="serif" x="336" y="106" font-size="36" font-weight="500" fill="#EEF3FA">Samudra</text>
+  <text class="mono" x="336" y="128" font-size="14" fill="#8792A6">architecture · product direction · validation</text>
+
+  <!-- agents -->
+  <rect x="60" y="248" width="400" height="124" rx="12" fill="#0B0E18" stroke="#232B3B"/>
+  <text class="mono" x="84" y="278" font-size="13" letter-spacing="4" fill="#5FD4C8">AI AGENT</text>
+  <text class="serif" x="84" y="316" font-size="34" font-weight="500" fill="#EEF3FA">Claude Code</text>
+  <text class="mono" x="84" y="342" font-size="15" fill="#8792A6">UI · documentation · design</text>
+  <text class="mono" x="84" y="362" font-size="15" fill="#8792A6">user-facing systems</text>
+
+  <rect x="540" y="248" width="400" height="124" rx="12" fill="#0B0E18" stroke="#232B3B"/>
+  <text class="mono" x="564" y="278" font-size="13" letter-spacing="4" fill="#5FD4C8">AI AGENT</text>
+  <text class="serif" x="564" y="316" font-size="34" font-weight="500" fill="#EEF3FA">Antigravity</text>
+  <text class="mono" x="564" y="342" font-size="15" fill="#8792A6">kernel · memory · interrupts</text>
+  <text class="mono" x="564" y="362" font-size="15" fill="#8792A6">scheduling · low-level systems</text>
+
+  <!-- shared repository -->
+  <rect x="60" y="452" width="876" height="80" rx="12" fill="#0B0E18" stroke="#566176"/>
+  <text class="mono" x="84" y="484" font-size="13" letter-spacing="4" fill="#5FD4C8">ONE SHARED REPOSITORY</text>
+  <text class="mono" x="84" y="512" font-size="16" fill="#DCE4F0">git history · docs/ · .agents/ · API contracts · handoff notes</text>
+</svg>
