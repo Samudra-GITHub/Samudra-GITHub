@@ -1,63 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="1000" height="380" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 152" width="800" height="152" role="img" aria-labelledby="t d">
   <title id="t">Human direction and AI execution</title>
-  <desc id="d">A left-to-right workflow diagram. Samudra, a human, provides architecture, product direction and validation. Direction flows to two AI engineering agents: Claude Code, which handles UI, documentation, design and user-facing systems, and Antigravity, which handles kernel, memory, interrupts, scheduling and low-level systems. Both work in one shared repository of git history, docs, agent notes and API contracts. Validation flows back from the repository to Samudra.</desc>
+  <desc id="d">Left-to-right workflow. Samudra, a human, provides direction and validation. Direction flows to two AI engineering agents: Claude Code for UI, docs and design, and Antigravity for kernel, memory and scheduling. Both work in one shared repository of git history, docs, agent notes, API contracts and handoffs. Validation flows back to Samudra.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#101524"/>
-      <stop offset="1" stop-color="#080A12"/>
-    </linearGradient>
-    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto">
-      <path d="M0 0 L10 5 L0 10 z" fill="#5FD4C8"/>
-    </marker>
-    <marker id="ahg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto">
-      <path d="M0 0 L10 5 L0 10 z" fill="#8792A6"/>
-    </marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101524"/><stop offset="1" stop-color="#080A12"/></linearGradient>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5FD4C8"/></marker>
+    <marker id="ahg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8792A6"/></marker>
   </defs>
   <style>
-    .serif{font-family:"Cormorant Garamond","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
-    .mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
-    .flow{animation:flow 1.6s linear infinite}
-    .back{animation:flow 3.2s linear infinite}
-    @keyframes flow{to{stroke-dashoffset:-16}}
-    @media (prefers-reduced-motion:reduce){.flow,.back{animation:none}}
+text{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+@media (prefers-reduced-motion:reduce){*{animation:none !important}}
+.flow{animation:flow 1.8s linear infinite}
+.back{animation-duration:3.4s}
+@keyframes flow{to{stroke-dashoffset:-13}}
   </style>
+  <rect x="0.5" y="0.5" width="799" height="151" rx="12" fill="url(#bg)" stroke="#232B3B"/>
 
-  <rect x="0.5" y="0.5" width="999" height="379" rx="18" fill="url(#bg)" stroke="#232B3B"/>
-
-  <!-- connectors -->
-  <g fill="none" stroke="#5FD4C8" stroke-width="1.6" stroke-dasharray="6 10" marker-end="url(#ah)">
-    <path class="flow" d="M280 160 H322 V100 H365"/>
-    <path class="flow" d="M280 160 H322 V220 H365"/>
-    <path class="flow" d="M635 100 H678 V160 H722"/>
-    <path class="flow" d="M635 220 H678 V160 H722"/>
+  <g fill="none" stroke="#5FD4C8" stroke-width="1.4" stroke-dasharray="5 8" marker-end="url(#ah)">
+    <path class="flow" d="M178 75 H222 V46 H270"/><path class="flow" d="M178 75 H222 V106 H270"/>
+    <path class="flow" d="M460 46 H508 V75 H560"/><path class="flow" d="M460 106 H508 V75 H560"/>
   </g>
-  <path class="back" d="M840 232 V344 H160 V232" fill="none" stroke="#8792A6" stroke-width="1.4" stroke-dasharray="4 12" marker-end="url(#ahg)"/>
-  <text class="mono" x="500" y="348" font-size="12" letter-spacing="3" fill="#8792A6" text-anchor="middle" stroke="#0B0E18" stroke-width="8" style="paint-order:stroke">VALIDATION</text>
-
-  <!-- human -->
-  <rect x="40" y="96" width="240" height="128" rx="12" fill="#0B0E18" stroke="#566176"/>
-  <text class="mono" x="62" y="126" font-size="12" letter-spacing="4" fill="#5FD4C8">HUMAN</text>
-  <text class="serif" x="62" y="164" font-size="34" font-weight="500" fill="#EEF3FA">Samudra</text>
-  <text class="mono" x="62" y="188" font-size="13" fill="#8792A6">architecture · direction</text>
-  <text class="mono" x="62" y="206" font-size="13" fill="#8792A6">· validation</text>
-
-  <!-- agents -->
-  <rect x="365" y="40" width="270" height="120" rx="12" fill="#0B0E18" stroke="#232B3B"/>
-  <text class="mono" x="387" y="68" font-size="12" letter-spacing="4" fill="#5FD4C8">AI AGENT</text>
-  <text class="serif" x="387" y="102" font-size="30" font-weight="500" fill="#EEF3FA">Claude Code</text>
-  <text class="mono" x="387" y="128" font-size="13" fill="#8792A6">UI · documentation · design</text>
-  <text class="mono" x="387" y="146" font-size="13" fill="#8792A6">user-facing systems</text>
-
-  <rect x="365" y="180" width="270" height="120" rx="12" fill="#0B0E18" stroke="#232B3B"/>
-  <text class="mono" x="387" y="208" font-size="12" letter-spacing="4" fill="#5FD4C8">AI AGENT</text>
-  <text class="serif" x="387" y="242" font-size="30" font-weight="500" fill="#EEF3FA">Antigravity</text>
-  <text class="mono" x="387" y="268" font-size="13" fill="#8792A6">kernel · memory · interrupts</text>
-  <text class="mono" x="387" y="286" font-size="13" fill="#8792A6">scheduling · low-level systems</text>
-
-  <!-- repository -->
-  <rect x="722" y="96" width="240" height="128" rx="12" fill="#0B0E18" stroke="#566176"/>
-  <text class="mono" x="744" y="126" font-size="12" letter-spacing="3" fill="#5FD4C8">ONE REPOSITORY</text>
-  <text class="mono" x="744" y="158" font-size="14" fill="#DCE4F0">git history · docs/</text>
-  <text class="mono" x="744" y="180" font-size="14" fill="#DCE4F0">.agents/ · API contracts</text>
-  <text class="mono" x="744" y="202" font-size="14" fill="#DCE4F0">handoff notes</text>
+  <path class="flow back" d="M665 106 V140 H103 V110" fill="none" stroke="#8792A6" stroke-width="1.2" stroke-dasharray="3 9" marker-end="url(#ahg)"/>
+  <text x="384" y="138" font-size="9.5" letter-spacing="1.5" text-anchor="middle" fill="#8792A6" stroke="#0B0E18" stroke-width="6" style="paint-order:stroke">VALIDATION</text>
+  <rect x="28" y="44" width="150" height="66" rx="8" fill="#0B0E18" stroke="#566176"/>
+  <text x="44" y="64" font-size="9" letter-spacing="1.5" fill="#5FD4C8">HUMAN</text>
+  <text x="44" y="84" font-size="16" font-weight="600" fill="#EEF3FA">Samudra</text>
+  <text x="44" y="100" font-size="10" fill="#8792A6">direction · validation</text>
+  <rect x="270" y="20" width="190" height="52" rx="8" fill="#0B0E18" stroke="#232B3B"/>
+  <text x="286" y="38" font-size="9" letter-spacing="1.5" fill="#5FD4C8">AI AGENT</text>
+  <text x="286" y="54" font-size="14" font-weight="600" fill="#EEF3FA">Claude Code</text>
+  <text x="286" y="67" font-size="10" fill="#8792A6">UI · docs · design</text>
+  <rect x="270" y="80" width="190" height="52" rx="8" fill="#0B0E18" stroke="#232B3B"/>
+  <text x="286" y="98" font-size="9" letter-spacing="1.5" fill="#5FD4C8">AI AGENT</text>
+  <text x="286" y="114" font-size="14" font-weight="600" fill="#EEF3FA">Antigravity</text>
+  <text x="286" y="127" font-size="10" fill="#8792A6">kernel · memory · scheduling</text>
+  <rect x="560" y="44" width="210" height="66" rx="8" fill="#0B0E18" stroke="#566176"/>
+  <text x="576" y="64" font-size="9" letter-spacing="1.5" fill="#5FD4C8">ONE REPOSITORY</text>
+  <text class="m" x="576" y="82" font-size="10.5" fill="#DCE4F0">git · docs/ · .agents/</text>
+  <text class="m" x="576" y="98" font-size="10.5" fill="#DCE4F0">API contracts · handoffs</text>
 </svg>

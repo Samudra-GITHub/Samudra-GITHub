@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="800" height="120" role="img" aria-labelledby="t d">
+  <title id="t">Tarang</title>
+  <desc id="d">Animated audio equaliser bars above a playback progress line.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101524"/><stop offset="1" stop-color="#080A12"/></linearGradient>
+  </defs>
+  <style>
+text{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+@media (prefers-reduced-motion:reduce){*{animation:none !important}}
+.eq{transform-box:fill-box;transform-origin:50% 100%;animation-name:eq;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-direction:alternate}
+@keyframes eq{from{transform:scaleY(.14)}to{transform:scaleY(1)}}
+.prog{transform-box:fill-box;transform-origin:0 50%;animation:prog 12s linear infinite}
+@keyframes prog{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+  </style>
+  <rect x="0.5" y="0.5" width="799" height="119" rx="12" fill="url(#bg)" stroke="#232B3B"/>
+  <rect x="28" y="30" width="22" height="2" fill="#5FD4C8"/>
+  <text x="28" y="56" font-size="22" font-weight="600" fill="#EEF3FA">Tarang</text>
+  <text x="28" y="78" font-size="12.5" fill="#8792A6">Music web app, one persistent player</text>
+  <rect class="eq" style="transform:scaleY(0.35);animation-duration:0.90s;animation-delay:0.00s" x="352.0" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.74);animation-duration:1.30s;animation-delay:-0.20s" x="363.7" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.84);animation-duration:1.70s;animation-delay:-0.40s" x="375.4" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.56);animation-duration:1.00s;animation-delay:-0.60s" x="387.1" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.57);animation-duration:1.40s;animation-delay:-0.80s" x="398.8" y="22" width="6" height="62" rx="3" fill="#9CF0E6" fill-opacity="1"/>
+  <rect class="eq" style="transform:scaleY(0.84);animation-duration:1.80s;animation-delay:-1.00s" x="410.5" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.74);animation-duration:1.10s;animation-delay:-1.20s" x="422.2" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.36);animation-duration:1.50s;animation-delay:-1.40s" x="433.9" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.75);animation-duration:1.90s;animation-delay:-1.60s" x="445.6" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.83);animation-duration:1.20s;animation-delay:-0.10s" x="457.3" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.56);animation-duration:1.60s;animation-delay:-0.30s" x="469.0" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.58);animation-duration:0.90s;animation-delay:-0.50s" x="480.7" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.84);animation-duration:1.30s;animation-delay:-0.70s" x="492.4" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.73);animation-duration:1.70s;animation-delay:-0.90s" x="504.1" y="22" width="6" height="62" rx="3" fill="#9CF0E6" fill-opacity="1"/>
+  <rect class="eq" style="transform:scaleY(0.37);animation-duration:1.00s;animation-delay:-1.10s" x="515.8" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.75);animation-duration:1.40s;animation-delay:-1.30s" x="527.5" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.83);animation-duration:1.80s;animation-delay:-1.50s" x="539.2" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.55);animation-duration:1.10s;animation-delay:0.00s" x="550.9" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.59);animation-duration:1.50s;animation-delay:-0.20s" x="562.6" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.84);animation-duration:1.90s;animation-delay:-0.40s" x="574.3" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.73);animation-duration:1.20s;animation-delay:-0.60s" x="586.0" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.38);animation-duration:1.60s;animation-delay:-0.80s" x="597.7" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.76);animation-duration:0.90s;animation-delay:-1.00s" x="609.4" y="22" width="6" height="62" rx="3" fill="#9CF0E6" fill-opacity="1"/>
+  <rect class="eq" style="transform:scaleY(0.83);animation-duration:1.30s;animation-delay:-1.20s" x="621.1" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.54);animation-duration:1.70s;animation-delay:-1.40s" x="632.8" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.59);animation-duration:1.00s;animation-delay:-1.60s" x="644.5" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.84);animation-duration:1.40s;animation-delay:-0.10s" x="656.2" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.72);animation-duration:1.80s;animation-delay:-0.30s" x="667.9" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.38);animation-duration:1.10s;animation-delay:-0.50s" x="679.6" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.76);animation-duration:1.50s;animation-delay:-0.70s" x="691.3" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.83);animation-duration:1.90s;animation-delay:-0.90s" x="703.0" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.53);animation-duration:1.20s;animation-delay:-1.10s" x="714.7" y="22" width="6" height="62" rx="3" fill="#9CF0E6" fill-opacity="1"/>
+  <rect class="eq" style="transform:scaleY(0.60);animation-duration:1.60s;animation-delay:-1.30s" x="726.4" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.84);animation-duration:0.90s;animation-delay:-1.50s" x="738.1" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.71);animation-duration:1.30s;animation-delay:0.00s" x="749.8" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <rect class="eq" style="transform:scaleY(0.39);animation-duration:1.70s;animation-delay:-0.20s" x="761.5" y="22" width="6" height="62" rx="3" fill="#5FD4C8" fill-opacity="0.85"/>
+  <line x1="352" y1="100" x2="772" y2="100" stroke="#232B3B" stroke-width="3" stroke-linecap="round"/>
+  <line class="prog" x1="352" y1="100" x2="772" y2="100" stroke="#5FD4C8" stroke-width="3" stroke-linecap="round"/>
+</svg>

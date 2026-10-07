@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 110" width="800" height="110" role="img" aria-labelledby="t d">
+  <title id="t">Samudra Kar</title>
+  <desc id="d">Samudra Kar. Computer Science engineering student building across systems, AI and product.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101524"/><stop offset="1" stop-color="#080A12"/></linearGradient>
+  </defs>
+  <style>
+text{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+@media (prefers-reduced-motion:reduce){*{animation:none !important}}
+  </style>
+  <rect x="0.5" y="0.5" width="799" height="109" rx="12" fill="url(#bg)" stroke="#232B3B"/>
+  <rect x="32" y="32" width="3" height="48" rx="1.5" fill="#5FD4C8"/>
+  <text x="52" y="56" font-size="34" font-weight="700" fill="#EEF3FA">Samudra Kar</text>
+  <text x="52" y="82" font-size="16" fill="#B8C2D4">Computer Science engineering student building across systems, AI and product.</text>
+</svg>

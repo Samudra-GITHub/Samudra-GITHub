@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="800" height="120" role="img" aria-labelledby="t d">
+  <title id="t">Rinti AI</title>
+  <desc id="d">Animated chat: a question is sent, typing dots appear, then an answer forms with numbered citations.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101524"/><stop offset="1" stop-color="#080A12"/></linearGradient>
+  </defs>
+  <style>
+text{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+@media (prefers-reduced-motion:reduce){*{animation:none !important}}
+.u,.l1,.l2,.l3,.c1,.c2{animation-duration:9s;animation-iteration-count:infinite;animation-timing-function:linear}
+.u{animation-name:ku}.l1{animation-name:kl1}.l2{animation-name:kl2}.l3{animation-name:kl3}.c1{animation-name:kc1}.c2{animation-name:kc2}
+.dots{animation:kd 9s linear infinite}
+.dot{animation:dot .9s ease-in-out infinite}
+@keyframes ku{0%{opacity:0}3%,92%{opacity:1}97%,100%{opacity:0}}
+@keyframes kd{0%,10%{opacity:0}12%,32%{opacity:1}35%,100%{opacity:0}}
+@keyframes dot{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes kl1{0%,35%{opacity:0}39%,92%{opacity:1}97%,100%{opacity:0}}
+@keyframes kl2{0%,41%{opacity:0}45%,92%{opacity:1}97%,100%{opacity:0}}
+@keyframes kl3{0%,47%{opacity:0}51%,92%{opacity:1}97%,100%{opacity:0}}
+@keyframes kc1{0%,54%{opacity:0}58%,92%{opacity:1}97%,100%{opacity:0}}
+@keyframes kc2{0%,60%{opacity:0}64%,92%{opacity:1}97%,100%{opacity:0}}
+  </style>
+  <rect x="0.5" y="0.5" width="799" height="119" rx="12" fill="url(#bg)" stroke="#232B3B"/>
+  <rect x="28" y="30" width="22" height="2" fill="#5FD4C8"/>
+  <text x="28" y="56" font-size="22" font-weight="600" fill="#EEF3FA">Rinti AI</text>
+  <text x="28" y="78" font-size="12.5" fill="#8792A6">Chat workspace with memory and research</text>
+  <g class="u"><rect x="610" y="14" width="162" height="26" rx="13" fill="#1B2438"/><rect x="626" y="25" width="104" height="4" rx="2" fill="#566176"/></g>
+  <rect x="352" y="48" width="340" height="58" rx="10" fill="#0B0E18" stroke="#232B3B"/>
+  <g class="dots" opacity="0">
+    <circle class="dot" cx="374" cy="77" r="3.5" fill="#5FD4C8"/>
+    <circle class="dot" style="animation-delay:.18s" cx="388" cy="77" r="3.5" fill="#5FD4C8"/>
+    <circle class="dot" style="animation-delay:.36s" cx="402" cy="77" r="3.5" fill="#5FD4C8"/>
+  </g>
+  <rect class="l1" x="372" y="62" width="250" height="5" rx="2.5" fill="#566176"/>
+  <rect class="l2" x="372" y="74" width="200" height="5" rx="2.5" fill="#566176"/>
+  <rect class="l3" x="372" y="86" width="150" height="5" rx="2.5" fill="#566176"/>
+  <g class="c1"><rect x="640" y="60" width="20" height="14" rx="4" fill="none" stroke="#5FD4C8"/><text class="m" x="650" y="70.5" font-size="9.5" text-anchor="middle" fill="#5FD4C8">1</text></g>
+  <g class="c2"><rect x="664" y="60" width="20" height="14" rx="4" fill="none" stroke="#5FD4C8"/><text class="m" x="674" y="70.5" font-size="9.5" text-anchor="middle" fill="#5FD4C8">2</text></g>
+</svg>
