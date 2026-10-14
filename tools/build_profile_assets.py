@@ -59,8 +59,8 @@ def e(s):
 
 
 class Scene:
-    def __init__(self, pid, h, bg, title, desc):
-        self.pid, self.h, self.bg, self.title, self.desc = pid, h, bg, title, desc
+    def __init__(self, pid, h, bg, title, desc, w=W):
+        self.pid, self.h, self.bg, self.title, self.desc, self.w = pid, h, bg, title, desc, w
         self.parts, self.defs, self.css, self.glyphs = [], [], "", set()
 
     def add(self, s):
@@ -107,7 +107,7 @@ class Scene:
     def render(self):
         gdefs = "".join(f'<path id="{self.pid}-g{ord(c)}" d="{FONT["glyphs"][c]["d"]}"/>' for c in sorted(self.glyphs))
         h, pid = self.h, self.pid
-        return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-labelledby="{pid}-t {pid}-d">
+        return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {self.w} {h}" width="{self.w}" height="{h}" role="img" aria-labelledby="{pid}-t {pid}-d">
 <title id="{pid}-t">{e(self.title)}</title>
 <desc id="{pid}-d">{e(self.desc)}</desc>
 <defs>
@@ -120,9 +120,9 @@ class Scene:
 {''.join(self.defs)}
 </defs>
 <style>{BASE_CSS}{self.css}</style>
-<rect width="{W}" height="{h}" fill="{self.bg}"/>
+{"" if self.bg == "none" else f'<rect width="{self.w}" height="{h}" fill="{self.bg}"/>'}
 {''.join(self.parts)}
-<rect x="1.25" y="1.25" width="{W-2.5}" height="{h-2.5}" fill="none" stroke="{INK}" stroke-width="2.5"/>
+{"" if self.bg == "none" else f'<rect x="1.25" y="1.25" width="{self.w-2.5}" height="{h-2.5}" fill="none" stroke="{INK}" stroke-width="2.5"/>'}
 </svg>
 """
 
@@ -875,49 +875,44 @@ KINDS = {"Samagra-OS": "kernel", "PRAHARI": "chain", "AkashaLens": "tiles", "Tar
          "vyom": "sky", "Samudra-GITHub": "readme"}
 
 
-def repositories():
-    n = len(REPOS)
-    rows = (n + 1) // 2
-    ch, gap = 136, 26
-    H = 190 + rows * (ch + gap) + 24
-    sc = Scene("rp", H, PAPER, "All repositories",
-               "All public repositories on GitHub as designed cards, two per row, each with its own small illustration: " + ", ".join(r[0] for r in REPOS) + ".")
-    sc.css = """
-.hv{animation:hv 12s ease-in-out infinite}
-@keyframes hv{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-"""
-    sc.defs.append(f'<radialGradient id="rp-ball" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFBD0"/><stop offset=".35" stop-color="{YEL}"/><stop offset="1" stop-color="{GOLD}"/></radialGradient>')
-    sc.add(f'<rect width="{W}" height="{H}" fill="url(#rp-dots)"/>')
-    s, _ = tag(32, 24, f"ALL {n} REPOSITORIES", fill=INK, color=PAPER, size=12)
-    sc.add(s)
-    sc.add(sc.display("THE ARCHIVE.", 32, 128, sc.fit("THE ARCHIVE.", 520), rise=0.1))
-    sc.add(f'<text class="m" x="34" y="162" font-size="12" fill="{INK}">EVERY PUBLIC REPOSITORY · FEATURED FIRST</text>')
-    cw = 452
-    for i, (name, line, tech, fill, flag) in enumerate(REPOS):
-        r, c = divmod(i, 2)
-        x, y = 32 + c * (cw + 32), 190 + r * (ch + gap)
-        tc = PAPER if fill in (COBALT, INK) else INK
-        sc.add(f'<g class="hv" style="animation-delay:-{(i*0.7)%6:.1f}s">' + card(x, y, cw, ch, fill, sh=6))
-        sc.add(f'<text class="m" x="{x+18}" y="{y+26}" font-size="11" fill="{tc}" fill-opacity=".75">{i+1:02d} / {n}</text>')
-        size = min(25, sc.fit(name.upper(), 250))
-        sc.add(sc.display(name.upper(), x + 18, y + 66, size, fill=tc))
-        sc.add(f'<text class="m" x="{x+18}" y="{y+90}" font-size="11" fill="{tc}">{e(line)}</text>')
-        ts, tw_ = tag(x + 18, y + 102, tech.upper(), fill=PAPER, color=INK, size=9.5, h=22)
-        sc.add(ts)
-        if flag:
-            fs, _ = tag(x + 18 + tw_ + 8, y + 102, flag, fill=INK, color=LIME, size=9.5, h=22)
-            sc.add(fs)
-        repo_art(sc, KINDS.get(name, "readme"), x + cw - 144, y + 18, tc)
-        sc.add('</g>')
-    note(sc, "Illustrations are decorative. Descriptions are short summaries, not the GitHub description field.", y=H - 14)
-    return sc
-
 
 SCENES = {
     "about.svg": about, "samagra-os.svg": samagra, "prahari.svg": prahari, "akashalens.svg": akashalens,
     "tarang.svg": tarang, "rinti-ai.svg": rinti, "orbit-os.svg": orbit, "ai-workflow.svg": ai_workflow,
-    "capabilities.svg": capabilities, "closing.svg": closing, "repositories.svg": repositories,
+    "capabilities.svg": capabilities, "closing.svg": closing
 }
+
+
+def card_scene(idx, name, line, tech, fill, flag):
+    """A compact 500 x 244 repository card in the portfolio's card style."""
+    n = len(REPOS)
+    sc = Scene(f"c{idx:02d}", 244, PAPER, name, f"{name}: {line}. {tech}." + (f" {flag}." if flag else ""), w=500)
+    sc.css = """
+.bobc{animation:bob 5s ease-in-out infinite alternate}
+"""
+    sc.defs.append(f'<radialGradient id="c{idx:02d}-b" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFBD0"/><stop offset=".35" stop-color="{YEL}"/><stop offset="1" stop-color="{GOLD}"/></radialGradient>')
+    tc = PAPER if fill in (COBALT, INK) else INK
+    sc.bg = "none"
+    sc.add(card(3, 3, 486, 230, fill, sh=7))
+    sc.add(f'<text class="m" x="24" y="34" font-size="12" fill="{tc}" fill-opacity=".8">{idx+1:02d} / {n}</text>')
+    if flag:
+        fs, fw = tag(24 + 70, 18, flag, fill=INK, color=LIME, size=10, h=22)
+        sc.add(fs)
+    size = min(30, sc.fit(name.upper(), 270))
+    sc.add(sc.display(name.upper(), 24, 118, size, fill=tc))
+    sc.add(f'<text class="m" x="24" y="148" font-size="12" fill="{tc}">{e(line)}</text>')
+    ts, tw_ = tag(24, 166, tech.upper(), fill=PAPER, color=INK, size=10, h=24)
+    sc.add(ts)
+    sc.add(f'<text class="m" x="24" y="216" font-size="11" fill="{tc}" fill-opacity=".85">OPEN ON GITHUB →</text>')
+    sc.add('<g class="bobc"><g transform="translate(318 52) scale(1.22)">')
+    repo_art(sc, KINDS.get(name, "readme"), 0, 0, tc)
+    sc.add('</g></g>')
+    sc.parts = [p.replace("url(#rp-ball)", f"url(#c{idx:02d}-b)") for p in sc.parts]
+    return sc
+
+
+for _i, (_n, _l, _t, _f, _g) in enumerate(REPOS):
+    SCENES[f"cards/{_n.lower()}.svg"] = (lambda i=_i, n=_n, l=_l, t=_t, f=_f, g=_g: card_scene(i, n, l, t, f, g))
 
 
 def check():
@@ -945,6 +940,7 @@ def check():
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     for name, fn in SCENES.items():
+        (OUT / name).parent.mkdir(parents=True, exist_ok=True)
         (OUT / name).write_text(fn().render(), encoding="utf-8", newline="\n")
     sys.exit(0 if check() else 1)
 

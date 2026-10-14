@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 244" width="500" height="244" role="img" aria-labelledby="c06-t c06-d">
+<title id="c06-t">Krama</title>
+<desc id="c06-d">Krama: Luxury sneaker marketplace. TypeScript.</desc>
+<defs>
+<path id="c06-g65" d="M234 -97V-247H918V-97ZM10 0 439 -640H717L1150 0H875L504 -573H653L285 0Z"/><path id="c06-g75" d="M603 -315V-371L1180 0H808L318 -340L770 -640H1126ZM70 -640H320V0H70Z"/><path id="c06-g77" d="M864 -76H714L1260 -640H1510V0H1260V-436L1335 -405L940 0H640L244 -404L320 -435V0H70V-640H320Z"/><path id="c06-g82" d="M70 0V-640H843Q934 -640 1006 -620Q1079 -599 1122 -551Q1164 -503 1164 -420Q1164 -365 1144 -329Q1124 -293 1089 -273Q1054 -253 1009 -244Q964 -235 915 -233L842 -247Q961 -246 1026 -237Q1090 -228 1116 -204Q1141 -181 1141 -137V0H891V-107Q891 -137 880 -152Q868 -168 830 -174Q791 -180 711 -180H320V0ZM320 -347H843Q873 -347 894 -357Q914 -367 914 -395Q914 -421 894 -430Q873 -440 843 -440H320Z"/>
+<pattern id="c06-dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="14" cy="14" r="1.7" fill="#111215" fill-opacity=".22"/></pattern>
+<pattern id="c06-lines" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#111215" stroke-opacity=".12" stroke-width="1"/></pattern>
+<pattern id="c06-linesl" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1"/></pattern>
+<linearGradient id="c06-chrome" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF7B0"/><stop offset=".3" stop-color="#FFD400"/><stop offset=".62" stop-color="#F2B900"/><stop offset="1" stop-color="#FFE45C"/></linearGradient>
+<radialGradient id="c06-ball" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFBD0"/><stop offset=".35" stop-color="#FFD400"/><stop offset="1" stop-color="#F2B900"/></radialGradient>
+<radialGradient id="c06-b" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFBD0"/><stop offset=".35" stop-color="#FFD400"/><stop offset="1" stop-color="#F2B900"/></radialGradient>
+</defs>
+<style>
+.m{font-family:ui-monospace,"JetBrains Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-weight:700}
+.s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:800}
+.fb{transform-box:fill-box;transform-origin:center}
+.rise{animation:rise 12s cubic-bezier(.16,1,.3,1) infinite both}
+@keyframes rise{0%{transform:translateY(150px)}7%,88%{transform:translateY(0)}95%,100%{transform:translateY(150px)}}
+.flow{stroke-dasharray:4 8;animation:flow 1.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-24}}
+.bob{animation:bob 5s ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-9px)}}
+.spin{animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+
+.bobc{animation:bob 5s ease-in-out infinite alternate}
+</style>
+
+<rect x="10" y="10" width="486" height="230" rx="0" fill="#111215"/><rect x="3" y="3" width="486" height="230" rx="0" fill="#FF5226" stroke="#111215" stroke-width="2.5"/><text class="m" x="24" y="34" font-size="12" fill="#111215" fill-opacity=".8">07 / 18</text><g fill="#111215"><use href="#c06-g75" transform="translate(24.0 118.0) scale(0.0300)"/><use href="#c06-g82" transform="translate(60.4 118.0) scale(0.0300)"/><use href="#c06-g65" transform="translate(97.4 118.0) scale(0.0300)"/><use href="#c06-g77" transform="translate(132.2 118.0) scale(0.0300)"/><use href="#c06-g65" transform="translate(179.6 118.0) scale(0.0300)"/></g><text class="m" x="24" y="148" font-size="12" fill="#111215">Luxury sneaker marketplace</text><rect x="24" y="166" width="82" height="24" rx="12.0" fill="#FDF9F1" stroke="#111215" stroke-width="2"/><text class="m" x="34" y="181.6" font-size="10" fill="#111215">TYPESCRIPT</text><text class="m" x="24" y="216" font-size="11" fill="#111215" fill-opacity=".85">OPEN ON GITHUB →</text><g class="bobc"><g transform="translate(318 52) scale(1.22)"><path d="M6 74V60Q10 30 30 26L44 40Q58 44 70 34Q96 44 120 62V74Z" fill="#D8F827" stroke="#111215" stroke-width="2.5"/><rect x="4" y="72" width="120" height="14" fill="#FDF9F1" stroke="#111215" stroke-width="2.5"/><path d="M52 44l10 10M64 38l10 10" stroke="#111215" stroke-width="2.5"/></g></g>
+
+</svg>
