@@ -1,81 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="800" height="120" role="img" aria-labelledby="t d">
-  <title id="t">AkashaLens</title>
-  <desc id="d">Animation of clouds dissolving from a grid of satellite image tiles, revealing the clear scene underneath, then returning.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101524"/><stop offset="1" stop-color="#080A12"/></linearGradient>
-  </defs>
-  <style>
-text{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img" aria-labelledby="ak-t ak-d">
+<title id="ak-t">AkashaLens</title>
+<desc id="ak-d">AkashaLens: an animated satellite tile grid. Clouds drift across a block of tiles, then a sweep reveals a reconstruction drawn with a dashed teal outline and hatching, with amber marking low-confidence regions. Beside it, the pipeline: Sentinel-2 imagery, a rule-based cloud mask, a U-Net, and a reconstruction with a confidence heatmap. A prototype trained on a tiny sample set.</desc>
+<defs>
+<pattern id="ak-g" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" fill="none" stroke="#131923" stroke-width="1"/></pattern>
+<radialGradient id="ak-glow" cx="85%" cy="0%" r="70%"><stop offset="0" stop-color="#8CC8FF" stop-opacity=".16"/><stop offset="1" stop-color="#8CC8FF" stop-opacity="0"/></radialGradient>
+<linearGradient id="ak-scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8CC8FF" stop-opacity="0"/><stop offset=".85" stop-color="#8CC8FF" stop-opacity=".14"/><stop offset="1" stop-color="#8CC8FF" stop-opacity=".5"/></linearGradient>
+<clipPath id="ak-clip"><rect width="1000" height="520" rx="18"/></clipPath>
+
+<filter id="ak-bl" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+<pattern id="ak-ht" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V8" stroke="#5FD4C8" stroke-opacity=".5" stroke-width="1"/></pattern>
+
+</defs>
+<style>
+text{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
 .m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
-@media (prefers-reduced-motion:reduce){*{animation:none !important}}
-.cloud{opacity:.5;animation:cloud 8s ease-in-out infinite}
-@keyframes cloud{0%,25%{opacity:.92}50%,72%{opacity:0}95%,100%{opacity:.92}}
-  </style>
-  <rect x="0.5" y="0.5" width="799" height="119" rx="12" fill="url(#bg)" stroke="#232B3B"/>
-  <rect x="28" y="30" width="22" height="2" fill="#5FD4C8"/>
-  <text x="28" y="56" font-size="22" font-weight="600" fill="#EEF3FA">AkashaLens</text>
-  <text x="28" y="78" font-size="12.5" fill="#8792A6">Cloud removal for satellite imagery</text>
-  <defs><filter id="blur" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="5"/></filter><clipPath id="clip"><rect x="352" y="16" width="420" height="88" rx="6"/></clipPath></defs>
-  <g clip-path="url(#clip)">
-    <rect x="352" y="18" width="28" height="20" rx="2" fill="#1B3B44"/>
-    <rect x="382" y="18" width="28" height="20" rx="2" fill="#16313A"/>
-    <rect x="412" y="18" width="28" height="20" rx="2" fill="#245A55"/>
-    <rect x="442" y="18" width="28" height="20" rx="2" fill="#1F4D4A"/>
-    <rect x="472" y="18" width="28" height="20" rx="2" fill="#1B3B44"/>
-    <rect x="502" y="18" width="28" height="20" rx="2" fill="#16313A"/>
-    <rect x="532" y="18" width="28" height="20" rx="2" fill="#2A6B63"/>
-    <rect x="562" y="18" width="28" height="20" rx="2" fill="#1F4D4A"/>
-    <rect x="592" y="18" width="28" height="20" rx="2" fill="#1B3B44"/>
-    <rect x="622" y="18" width="28" height="20" rx="2" fill="#245A55"/>
-    <rect x="652" y="18" width="28" height="20" rx="2" fill="#2A6B63"/>
-    <rect x="682" y="18" width="28" height="20" rx="2" fill="#1F4D4A"/>
-    <rect x="712" y="18" width="28" height="20" rx="2" fill="#16313A"/>
-    <rect x="742" y="18" width="28" height="20" rx="2" fill="#245A55"/>
-    <rect x="352" y="40" width="28" height="20" rx="2" fill="#245A55"/>
-    <rect x="382" y="40" width="28" height="20" rx="2" fill="#2A6B63"/>
-    <rect x="412" y="40" width="28" height="20" rx="2" fill="#1F4D4A"/>
-    <rect x="442" y="40" width="28" height="20" rx="2" fill="#16313A"/>
-    <rect x="472" y="40" width="28" height="20" rx="2" fill="#245A55"/>
-    <rect x="502" y="40" width="28" height="20" rx="2" fill="#2A6B63"/>
-    <rect x="532" y="40" width="28" height="20" rx="2" fill="#1B3B44"/>
-    <rect x="562" y="40" width="28" height="20" rx="2" fill="#16313A"/>
-    <rect x="592" y="40" width="28" height="20" rx="2" fill="#245A55"/>
-    <rect x="622" y="40" width="28" height="20" rx="2" fill="#1F4D4A"/>
-    <rect x="652" y="40" width="28" height="20" rx="2" fill="#1B3B44"/>
-    <rect x="682" y="40" width="28" height="20" rx="2" fill="#16313A"/>
-    <rect x="712" y="40" width="28" height="20" rx="2" fill="#2A6B63"/>
-    <rect x="742" y="40" width="28" height="20" rx="2" fill="#1F4D4A"/>
-    <rect x="352" y="62" width="28" height="20" rx="2" fill="#1F4D4A"/>
-    <rect x="382" y="62" width="28" height="20" rx="2" fill="#1B3B44"/>
-    <rect x="412" y="62" width="28" height="20" rx="2" fill="#16313A"/>
-    <rect x="442" y="62" width="28" height="20" rx="2" fill="#2A6B63"/>
-    <rect x="472" y="62" width="28" height="20" rx="2" fill="#1F4D4A"/>
-    <rect x="502" y="62" width="28" height="20" rx="2" fill="#1B3B44"/>
-    <rect x="532" y="62" width="28" height="20" rx="2" fill="#245A55"/>
-    <rect x="562" y="62" width="28" height="20" rx="2" fill="#2A6B63"/>
-    <rect x="592" y="62" width="28" height="20" rx="2" fill="#1F4D4A"/>
-    <rect x="622" y="62" width="28" height="20" rx="2" fill="#16313A"/>
-    <rect x="652" y="62" width="28" height="20" rx="2" fill="#245A55"/>
-    <rect x="682" y="62" width="28" height="20" rx="2" fill="#2A6B63"/>
-    <rect x="712" y="62" width="28" height="20" rx="2" fill="#1B3B44"/>
-    <rect x="742" y="62" width="28" height="20" rx="2" fill="#16313A"/>
-    <rect x="352" y="84" width="28" height="20" rx="2" fill="#16313A"/>
-    <rect x="382" y="84" width="28" height="20" rx="2" fill="#245A55"/>
-    <rect x="412" y="84" width="28" height="20" rx="2" fill="#2A6B63"/>
-    <rect x="442" y="84" width="28" height="20" rx="2" fill="#1B3B44"/>
-    <rect x="472" y="84" width="28" height="20" rx="2" fill="#16313A"/>
-    <rect x="502" y="84" width="28" height="20" rx="2" fill="#245A55"/>
-    <rect x="532" y="84" width="28" height="20" rx="2" fill="#1F4D4A"/>
-    <rect x="562" y="84" width="28" height="20" rx="2" fill="#1B3B44"/>
-    <rect x="592" y="84" width="28" height="20" rx="2" fill="#16313A"/>
-    <rect x="622" y="84" width="28" height="20" rx="2" fill="#2A6B63"/>
-    <rect x="652" y="84" width="28" height="20" rx="2" fill="#1F4D4A"/>
-    <rect x="682" y="84" width="28" height="20" rx="2" fill="#1B3B44"/>
-    <rect x="712" y="84" width="28" height="20" rx="2" fill="#245A55"/>
-    <rect x="742" y="84" width="28" height="20" rx="2" fill="#2A6B63"/>
-    <g class="cloud" filter="url(#blur)" fill="#E6EEF6">
-      <ellipse cx="430" cy="52" rx="56" ry="22"/><ellipse cx="548" cy="38" rx="70" ry="24"/>
-      <ellipse cx="530" cy="78" rx="62" ry="18"/><ellipse cx="672" cy="60" rx="68" ry="24"/><ellipse cx="736" cy="30" rx="40" ry="16"/>
-    </g>
-  </g>
+.k{letter-spacing:.14em}
+.flow{stroke-dasharray:3 9;animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-24}}
+.scan{animation:scan 9s linear infinite}
+@keyframes scan{from{transform:translateY(-90px)}to{transform:translateY(640px)}}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+
+.cl{animation:cl 16s ease-in-out infinite}
+@keyframes cl{0%,28%{opacity:1}40%,78%{opacity:0}90%,100%{opacity:1}}
+.rc{animation:rc 16s ease-in-out infinite}
+@keyframes rc{0%,28%{opacity:0}40%,78%{opacity:1}90%,100%{opacity:0}}
+.sw{animation:sw 16s linear infinite}
+@keyframes sw{0%,28%{transform:translateX(0);opacity:0}30%{opacity:1}40%{transform:translateX(256px);opacity:1}42%,100%{transform:translateX(256px);opacity:0}}
+.dr{animation:dr 14s ease-in-out infinite alternate}
+@keyframes dr{from{transform:translateX(-22px)}to{transform:translateX(26px)}}
+.lb1{animation:cl 16s ease-in-out infinite}
+.lb2{animation:rc 16s ease-in-out infinite}
+</style>
+<g clip-path="url(#ak-clip)">
+<rect width="1000" height="520" fill="#090B10"/>
+<rect width="1000" height="520" fill="url(#ak-g)"/>
+<rect width="1000" height="520" fill="url(#ak-glow)"/>
+<text x="40" y="94" font-size="38" font-weight="700" fill="#EAF0F8">AkashaLens</text><text class="m" x="42" y="120" font-size="13" fill="#8E99AD">cloud removal for Sentinel-2 imagery · a U-Net reconstruction prototype</text><rect x="676" y="72" width="284" height="30" rx="15" fill="#0E121A" stroke="#8CC8FF" stroke-opacity=".7"/><text class="m k" x="818" y="91" font-size="11" fill="#8CC8FF" text-anchor="middle">ISRO HACKATHON 2026</text><text class="m" x="84.0" y="142" font-size="10" fill="#566075" text-anchor="middle">A</text><text class="m" x="148.0" y="142" font-size="10" fill="#566075" text-anchor="middle">B</text><text class="m" x="212.0" y="142" font-size="10" fill="#566075" text-anchor="middle">C</text><text class="m" x="276.0" y="142" font-size="10" fill="#566075" text-anchor="middle">D</text><text class="m" x="340.0" y="142" font-size="10" fill="#566075" text-anchor="middle">E</text><text class="m" x="404.0" y="142" font-size="10" fill="#566075" text-anchor="middle">F</text><text class="m" x="468.0" y="142" font-size="10" fill="#566075" text-anchor="middle">G</text><text class="m" x="532.0" y="142" font-size="10" fill="#566075" text-anchor="middle">H</text><text class="m" x="596.0" y="142" font-size="10" fill="#566075" text-anchor="middle">I</text><text class="m" x="42" y="176.0" font-size="10" fill="#566075" text-anchor="end">1</text><text class="m" x="42" y="220.0" font-size="10" fill="#566075" text-anchor="end">2</text><text class="m" x="42" y="264.0" font-size="10" fill="#566075" text-anchor="end">3</text><text class="m" x="42" y="308.0" font-size="10" fill="#566075" text-anchor="end">4</text><text class="m" x="42" y="352.0" font-size="10" fill="#566075" text-anchor="end">5</text><text class="m" x="42" y="396.0" font-size="10" fill="#566075" text-anchor="end">6</text><rect x="52" y="150" width="63" height="43" fill="#3A4B3C"/><rect x="116" y="150" width="63" height="43" fill="#455A47"/><rect x="180" y="150" width="63" height="43" fill="#3A4B3C"/><rect x="244" y="150" width="63" height="43" fill="#455A47"/><rect x="308" y="150" width="63" height="43" fill="#4A5A2E"/><rect x="372" y="150" width="63" height="43" fill="#66763A"/><rect x="436" y="150" width="63" height="43" fill="#4A5A2E"/><rect x="500" y="150" width="63" height="43" fill="#66763A"/><rect x="564" y="150" width="63" height="43" fill="#6B5B44"/><rect x="52" y="194" width="63" height="43" fill="#85735A"/><rect x="116" y="194" width="63" height="43" fill="#3A4B3C"/><rect x="180" y="194" width="63" height="43" fill="#85735A"/><rect x="500" y="194" width="63" height="43" fill="#4A5A2E"/><rect x="564" y="194" width="63" height="43" fill="#66763A"/><rect x="52" y="238" width="63" height="43" fill="#4A5A2E"/><rect x="116" y="238" width="63" height="43" fill="#85735A"/><rect x="180" y="238" width="63" height="43" fill="#4A5A2E"/><rect x="500" y="238" width="63" height="43" fill="#285234"/><rect x="564" y="238" width="63" height="43" fill="#4A5A2E"/><rect x="52" y="282" width="63" height="43" fill="#66763A"/><rect x="116" y="282" width="63" height="43" fill="#6B5B44"/><rect x="180" y="282" width="63" height="43" fill="#66763A"/><rect x="500" y="282" width="63" height="43" fill="#4A5A2E"/><rect x="564" y="282" width="63" height="43" fill="#85735A"/><rect x="52" y="326" width="63" height="43" fill="#6B5B44"/><rect x="116" y="326" width="63" height="43" fill="#85735A"/><rect x="180" y="326" width="63" height="43" fill="#6B5B44"/><rect x="500" y="326" width="63" height="43" fill="#85735A"/><rect x="564" y="326" width="63" height="43" fill="#3A4B3C"/><rect x="52" y="370" width="63" height="43" fill="#85735A"/><rect x="116" y="370" width="63" height="43" fill="#6B5B44"/><rect x="180" y="370" width="63" height="43" fill="#85735A"/><rect x="244" y="370" width="63" height="43" fill="#4A5A2E"/><rect x="308" y="370" width="63" height="43" fill="#285234"/><rect x="372" y="370" width="63" height="43" fill="#4A5A2E"/><rect x="436" y="370" width="63" height="43" fill="#85735A"/><rect x="500" y="370" width="63" height="43" fill="#6B5B44"/><rect x="564" y="370" width="63" height="43" fill="#455A47"/><g class="cl"><rect x="244" y="194" width="63" height="43" fill="#B9C5D4"/><rect x="308" y="194" width="63" height="43" fill="#C9D3E0"/><rect x="372" y="194" width="63" height="43" fill="#DCE4EE"/><rect x="436" y="194" width="63" height="43" fill="#B9C5D4"/><rect x="244" y="238" width="63" height="43" fill="#C9D3E0"/><rect x="308" y="238" width="63" height="43" fill="#DCE4EE"/><rect x="372" y="238" width="63" height="43" fill="#B9C5D4"/><rect x="436" y="238" width="63" height="43" fill="#C9D3E0"/><rect x="244" y="282" width="63" height="43" fill="#DCE4EE"/><rect x="308" y="282" width="63" height="43" fill="#B9C5D4"/><rect x="372" y="282" width="63" height="43" fill="#C9D3E0"/><rect x="436" y="282" width="63" height="43" fill="#DCE4EE"/><rect x="244" y="326" width="63" height="43" fill="#B9C5D4"/><rect x="308" y="326" width="63" height="43" fill="#C9D3E0"/><rect x="372" y="326" width="63" height="43" fill="#DCE4EE"/><rect x="436" y="326" width="63" height="43" fill="#B9C5D4"/></g><g class="rc"><rect x="244" y="194" width="63" height="43" fill="#6B5B44"/><rect x="244" y="194" width="63" height="43" fill="#F0B55E" fill-opacity="0.0"/><rect x="244" y="194" width="63" height="43" fill="url(#ak-ht)"/><rect x="308" y="194" width="63" height="43" fill="#66763A"/><rect x="308" y="194" width="63" height="43" fill="#F0B55E" fill-opacity="0.0"/><rect x="308" y="194" width="63" height="43" fill="url(#ak-ht)"/><rect x="372" y="194" width="63" height="43" fill="#2F5F3C"/><rect x="372" y="194" width="63" height="43" fill="#F0B55E" fill-opacity="0.0"/><rect x="372" y="194" width="63" height="43" fill="url(#ak-ht)"/><rect x="436" y="194" width="63" height="43" fill="#1E3F2C"/><rect x="436" y="194" width="63" height="43" fill="#F0B55E" fill-opacity="0.0"/><rect x="436" y="194" width="63" height="43" fill="url(#ak-ht)"/><rect x="244" y="238" width="63" height="43" fill="#1E3F2C"/><rect x="244" y="238" width="63" height="43" fill="#F0B55E" fill-opacity="0.0"/><rect x="244" y="238" width="63" height="43" fill="url(#ak-ht)"/><rect x="308" y="238" width="63" height="43" fill="#285234"/><rect x="308" y="238" width="63" height="43" fill="#F0B55E" fill-opacity="0.22"/><rect x="308" y="238" width="63" height="43" fill="url(#ak-ht)"/><rect x="372" y="238" width="63" height="43" fill="#1F4659"/><rect x="372" y="238" width="63" height="43" fill="#F0B55E" fill-opacity="0.22"/><rect x="372" y="238" width="63" height="43" fill="url(#ak-ht)"/><rect x="436" y="238" width="63" height="43" fill="#1A3B4D"/><rect x="436" y="238" width="63" height="43" fill="#F0B55E" fill-opacity="0.0"/><rect x="436" y="238" width="63" height="43" fill="url(#ak-ht)"/><rect x="244" y="282" width="63" height="43" fill="#1A3B4D"/><rect x="244" y="282" width="63" height="43" fill="#F0B55E" fill-opacity="0.0"/><rect x="244" y="282" width="63" height="43" fill="url(#ak-ht)"/><rect x="308" y="282" width="63" height="43" fill="#1F4659"/><rect x="308" y="282" width="63" height="43" fill="#F0B55E" fill-opacity="0.22"/><rect x="308" y="282" width="63" height="43" fill="url(#ak-ht)"/><rect x="372" y="282" width="63" height="43" fill="#1A3B4D"/><rect x="372" y="282" width="63" height="43" fill="#F0B55E" fill-opacity="0.22"/><rect x="372" y="282" width="63" height="43" fill="url(#ak-ht)"/><rect x="436" y="282" width="63" height="43" fill="#1F4659"/><rect x="436" y="282" width="63" height="43" fill="#F0B55E" fill-opacity="0.0"/><rect x="436" y="282" width="63" height="43" fill="url(#ak-ht)"/><rect x="244" y="326" width="63" height="43" fill="#1E3F2C"/><rect x="244" y="326" width="63" height="43" fill="#F0B55E" fill-opacity="0.0"/><rect x="244" y="326" width="63" height="43" fill="url(#ak-ht)"/><rect x="308" y="326" width="63" height="43" fill="#285234"/><rect x="308" y="326" width="63" height="43" fill="#F0B55E" fill-opacity="0.0"/><rect x="308" y="326" width="63" height="43" fill="url(#ak-ht)"/><rect x="372" y="326" width="63" height="43" fill="#2F5F3C"/><rect x="372" y="326" width="63" height="43" fill="#F0B55E" fill-opacity="0.0"/><rect x="372" y="326" width="63" height="43" fill="url(#ak-ht)"/><rect x="436" y="326" width="63" height="43" fill="#1E3F2C"/><rect x="436" y="326" width="63" height="43" fill="#F0B55E" fill-opacity="0.0"/><rect x="436" y="326" width="63" height="43" fill="url(#ak-ht)"/><rect x="244" y="194" width="255" height="175" fill="none" stroke="#5FD4C8" stroke-width="1.5" stroke-dasharray="6 4"/></g><clipPath id="ak-gc"><rect x="52" y="150" width="576" height="264"/></clipPath><g clip-path="url(#ak-gc)"><g class="dr" filter="url(#ak-bl)" opacity=".55" fill="#E6EDF6"><circle cx="284" cy="230" r="34"/><circle cx="354" cy="254" r="44"/><circle cx="434" cy="234" r="36"/><circle cx="394" cy="314" r="40"/><circle cx="304" cy="324" r="30"/><circle cx="82" cy="170" r="26"/><circle cx="572" cy="370" r="30"/></g></g><g class="sw"><rect x="244" y="188" width="2" height="187" fill="#5FD4C8"/><rect x="226" y="188" width="18" height="187" fill="#5FD4C8" opacity=".12"/></g><rect x="52" y="433" width="14" height="10" fill="#3A4B3C"/><text class="m" x="74" y="442" font-size="11.5" fill="#B8C2D4">observed</text><rect x="164" y="433" width="14" height="10" fill="#C9D3E0"/><text class="m" x="186" y="442" font-size="11.5" fill="#B8C2D4">cloud</text><rect x="258" y="433" width="14" height="10" fill="url(#ak-ht)" stroke="#5FD4C8" stroke-dasharray="3 2"/><text class="m" x="280" y="442" font-size="11.5" fill="#B8C2D4">reconstructed</text><rect x="402" y="433" width="14" height="10" fill="#F0B55E" fill-opacity=".5"/><text class="m" x="424" y="442" font-size="11.5" fill="#B8C2D4">low confidence</text><rect x="676" y="150" width="284" height="56" rx="8" fill="#0E121A" stroke="#2A3345"/><text class="m k" x="690" y="170" font-size="9.5" fill="#566075">01</text><text x="716" y="174" font-size="16" font-weight="600" fill="#EAF0F8">Sentinel-2 L1C</text><text class="m" x="716" y="193" font-size="10.5" fill="#8E99AD">Copernicus download, sorted by cloud cover</text><path class="flow" d="M818.0 206V230" stroke="#5FD4C8" stroke-width="1.5"/><rect x="676" y="230" width="284" height="56" rx="8" fill="#0E121A" stroke="#2A3345"/><text class="m k" x="690" y="250" font-size="9.5" fill="#566075">02</text><text x="716" y="254" font-size="16" font-weight="600" fill="#EAF0F8">Cloud mask</text><text class="m" x="716" y="273" font-size="10.5" fill="#8E99AD">rule-based: luminance + colour saturation</text><path class="flow" d="M818.0 286V310" stroke="#5FD4C8" stroke-width="1.5"/><rect x="676" y="310" width="284" height="56" rx="8" fill="#0E121A" stroke="#5FD4C8"/><text class="m k" x="690" y="330" font-size="9.5" fill="#566075">03</text><text x="716" y="334" font-size="16" font-weight="600" fill="#EAF0F8">U-Net</text><text class="m" x="716" y="353" font-size="10.5" fill="#8E99AD">3 down stages · L1 loss · Adam</text><path class="flow" d="M818.0 366V390" stroke="#5FD4C8" stroke-width="1.5"/><rect x="676" y="390" width="284" height="56" rx="8" fill="#0E121A" stroke="#2A3345"/><text class="m k" x="690" y="410" font-size="9.5" fill="#566075">04</text><text x="716" y="414" font-size="16" font-weight="600" fill="#EAF0F8">Reconstruction + confidence</text><text class="m" x="716" y="433" font-size="10.5" fill="#8E99AD">heatmap derived from the mask</text><circle r="3.2" fill="#C9FFF8" opacity="0"><animateMotion dur="5s" begin="0s" repeatCount="indefinite" path="M818.0 206V374"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.9;1" dur="5s" begin="0s" repeatCount="indefinite"/></circle>
+
+<rect width="1000" height="44" fill="#0C1017"/>
+<path d="M0 44.5H1000" stroke="#1D2431"/>
+<rect x="28" y="19" width="6" height="6" fill="#8CC8FF"/>
+<text class="m k" x="44" y="26" font-size="11.5" fill="#8E99AD">AKASHALENS  //  TILE VIEWPORT</text>
+<text class="m k" x="972" y="26" font-size="11.5" fill="#566075" text-anchor="end">PYTORCH · U-NET · FLASK</text>
+<text class="m" x="28" y="504" font-size="11" fill="#566075">Conceptual scene. Prototype: 3 sample pairs, no trained weights shipped, no accuracy claims.</text>
+<path d="M14 490V506H30M986 490V506H970" fill="none" stroke="#8CC8FF" stroke-opacity=".55"/>
+<rect class="scan" x="0" y="0" width="1000" height="70" fill="url(#ak-scan)" opacity=".5"/>
+
+</g>
+<rect x=".5" y=".5" width="999" height="519" rx="18" fill="none" stroke="#2A3345"/>
 </svg>
