@@ -1,6 +1,6 @@
 <h1 align="center"><img src="./assets/profile/about.svg" width="100%" alt="SAMUDRA KAR. Computer Science engineering student building across systems, AI and product, from first principles. A chrome-yellow disc with a 64-bit CPU outline, tilted project cards for Tarang, Rinti AI and AkashaLens, and a strip of illustrative boot instructions." /></h1>
 
-<p align="center"><sub><a href="#currently-building">Currently building</a> &nbsp;·&nbsp; <a href="#selected-work">Selected work</a> &nbsp;·&nbsp; <a href="#engineering-with-ai">Engineering with AI</a> &nbsp;·&nbsp; <a href="#stack">Stack</a> &nbsp;·&nbsp; <a href="#contact">Contact</a></sub></p>
+<p align="center"><sub><a href="#currently-building">Currently building</a> &nbsp;·&nbsp; <a href="#selected-work">Selected work</a> &nbsp;·&nbsp; <a href="#all-repositories">All repositories</a> &nbsp;·&nbsp; <a href="#engineering-with-ai">Engineering with AI</a> &nbsp;·&nbsp; <a href="#stack">Stack</a> &nbsp;·&nbsp; <a href="#contact">Contact</a></sub></p>
 
 ## Currently building
 
@@ -35,6 +35,36 @@ A chat workspace with per-user memory, cited multi-step research and real accoun
 
 A personal dashboard that borrows from operating-system design. An interface exploration with mock data, not a real operating system.<br>
 <sub>Next.js · TypeScript · Framer Motion &nbsp;·&nbsp; [GitHub ↗](https://github.com/Samudra-GITHub/orbit-os)</sub>
+
+## All repositories
+
+<img src="./assets/profile/repositories.svg" width="100%" alt="All 18 public repositories as illustrated cards, two per row: Samagra-OS, PRAHARI, AkashaLens, Tarang, Rinti-Ai, orbit-os, Krama, Niriksh-AI, SkyCast-Weather-App, Sam-s_Portfolio, samudra-kar-portfolio, noir-cafe, the-waffle-house, singularity-login, speed-of-numbers-fca, website, vyom and Samudra-GITHub." />
+
+<details>
+<summary>Open the full list with links</summary>
+
+| Repository | What it is |
+|---|---|
+| [Samagra-OS](https://github.com/Samudra-GITHub/Samagra-OS) | x86-64 operating system, from scratch |
+| [PRAHARI](https://github.com/Samudra-GITHub/PRAHARI) | Mine safety and compliance monitoring |
+| [AkashaLens](https://github.com/Samudra-GITHub/AkashaLens) | Cloud removal for Sentinel-2 imagery |
+| [Tarang](https://github.com/Samudra-GITHub/Tarang) | Music-first web app on seed data |
+| [Rinti-Ai](https://github.com/Samudra-GITHub/Rinti-Ai) | Research chat with memory and citations |
+| [orbit-os](https://github.com/Samudra-GITHub/orbit-os) | OS-inspired dashboard, mock data |
+| [Krama](https://github.com/Samudra-GITHub/Krama) | Luxury sneaker marketplace |
+| [Niriksh-AI](https://github.com/Samudra-GITHub/Niriksh-AI) | AI operations teammate for merchants |
+| [SkyCast-Weather-App](https://github.com/Samudra-GITHub/SkyCast-Weather-App) | One-screen weather over OpenWeatherMap |
+| [Sam-s_Portfolio](https://github.com/Samudra-GITHub/Sam-s_Portfolio) | Current portfolio site |
+| [samudra-kar-portfolio](https://github.com/Samudra-GITHub/samudra-kar-portfolio) | Earlier interactive portfolio |
+| [noir-cafe](https://github.com/Samudra-GITHub/noir-cafe) | Cinematic specialty-coffee site |
+| [the-waffle-house](https://github.com/Samudra-GITHub/the-waffle-house) | Restaurant landing page |
+| [singularity-login](https://github.com/Samudra-GITHub/singularity-login) | Glassmorphism sign-in UI |
+| [speed-of-numbers-fca](https://github.com/Samudra-GITHub/speed-of-numbers-fca) | ESP32 numeric-speed team lab |
+| [website](https://github.com/Samudra-GITHub/website) | Early website experiment |
+| [vyom](https://github.com/Samudra-GITHub/vyom) | Work in progress |
+| [Samudra-GITHub](https://github.com/Samudra-GITHub/Samudra-GITHub) | This profile README and its SVG generator |
+
+</details>
 
 ## Engineering with AI
 

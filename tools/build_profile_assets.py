@@ -189,13 +189,13 @@ def about():
     sc.add(card(824, 18, 142, 30, PAPER, sh=3, sw=2))
     sc.add(f'<text class="m" x="895" y="38" font-size="12" fill="{INK}" text-anchor="middle">BANGALORE · IN</text>')
     # tilted project cards (callback to the portfolio hero)
-    for cls, x, y, fill, n, name, dot in [("fan1", 36, 122, LIME, "01", "TARANG", VERM), ("fan2", 150, 112, COBALT, "02", "RINTI AI", LIME), ("fan3", 264, 124, INK, "03", "AKASHALENS", LIME)]:
+    for cls, x, y, fill, n, name, dot in [("fan1", 40, 132, LIME, "01", "TARANG", VERM), ("fan2", 128, 124, COBALT, "02", "RINTI AI", LIME), ("fan3", 220, 134, INK, "03", "AKASHALENS", LIME)]:
         tc = PAPER if fill != LIME else INK
         sc.add(f'<g class="{cls}" style="transform-box:fill-box;transform-origin:50% 100%">'
-               + card(x, y, 180, 138, fill, sh=5)
-               + f'<circle cx="{x+128}" cy="{y+52}" r="26" fill="{dot}" stroke="{INK}" stroke-width="2.5"/>'
-               + f'<text class="m" x="{x+14}" y="{y+26}" font-size="12" fill="{tc}">{n}</text>'
-               + f'<text class="m" x="{x+14}" y="{y+124}" font-size="15" fill="{tc}">{name}</text></g>')
+               + card(x, y, 138, 106, fill, sh=4, sw=2.2)
+               + f'<circle cx="{x+100}" cy="{y+40}" r="20" fill="{dot}" stroke="{INK}" stroke-width="2.2"/>'
+               + f'<text class="m" x="{x+10}" y="{y+20}" font-size="10.5" fill="{tc}">{n}</text>'
+               + f'<text class="m" x="{x+10}" y="{y+96}" font-size="12" fill="{tc}">{name}</text></g>')
     # disc
     sc.add('<g class="bob">')
     sc.add(f'<circle cx="780" cy="280" r="160" fill="{INK}"/>')
@@ -768,10 +768,155 @@ def closing():
     return sc
 
 
+# ------------------------------------------------------------------ 10 repositories
+REPOS = [
+    # name, one-liner, tech, fill, flags
+    ("Samagra-OS", "x86-64 operating system, from scratch", "C · NASM · QEMU", LIME, "FLAGSHIP"),
+    ("PRAHARI", "Mine safety and compliance monitoring", "TypeScript", VERM, ""),
+    ("AkashaLens", "Cloud removal for Sentinel-2 imagery", "Python · PyTorch", YEL, ""),
+    ("Tarang", "Music-first web app on seed data", "TypeScript", LIME, "LIVE"),
+    ("Rinti-Ai", "Research chat with memory + citations", "Python · FastAPI", COBALT, "LIVE"),
+    ("orbit-os", "OS-inspired dashboard, mock data", "TypeScript", SAND, ""),
+    ("Krama", "Luxury sneaker marketplace", "TypeScript", VERM, ""),
+    ("Niriksh-AI", "AI operations teammate for merchants", "TypeScript", PAPER, ""),
+    ("SkyCast-Weather-App", "One-screen weather over OpenWeatherMap", "Python · Flask", YEL, ""),
+    ("Sam-s_Portfolio", "Current portfolio site", "HTML", LIME, "LIVE"),
+    ("samudra-kar-portfolio", "Earlier interactive portfolio", "TypeScript", PAPER, "LIVE"),
+    ("noir-cafe", "Cinematic specialty-coffee site", "TypeScript", INK, ""),
+    ("the-waffle-house", "Restaurant landing page", "TypeScript", YEL, "LIVE"),
+    ("singularity-login", "Glassmorphism sign-in UI", "TypeScript", COBALT, ""),
+    ("speed-of-numbers-fca", "ESP32 numeric-speed team lab", "Arduino · TeX", SAND, ""),
+    ("website", "Early website experiment", "HTML", PAPER, ""),
+    ("vyom", "Work in progress", "no description yet", PAPER, ""),
+    ("Samudra-GITHub", "This profile README + SVG generator", "Python", LIME, "THIS PROFILE"),
+]
+
+
+def repo_art(sc, kind, x, y, tc):
+    """Mini illustration for a repository card, drawn in a 128 x 100 box at (x, y)."""
+    S = f'stroke="{INK}" stroke-width="2.5"'
+    o = ""
+    if kind == "kernel":
+        for i, (f, w) in enumerate([(YEL, 118), (PAPER, 96), (INK, 108), (LIME, 70)]):
+            o += f'<rect x="{x+4}" y="{y+4+i*24}" width="{w}" height="20" fill="{f}" {S}/>'
+        o += f'<rect x="{x+86}" y="{y+76}" width="34" height="20" fill="{VERM}" {S}/>'
+    elif kind == "chain":
+        for i in range(3):
+            o += f'<rect x="{x+2+i*44}" y="{y+26}" width="34" height="44" fill="{[PAPER, YEL, LIME][i]}" {S}/>'
+            if i < 2:
+                o += f'<path d="M{x+36+i*44} {y+48}h8" {S}/>'
+        o += f'<circle cx="{x+104}" cy="{y+14}" r="12" fill="{YEL}" {S}/><path d="M{x+98} {y+14}l4 4 8-9" fill="none" {S}/>'
+    elif kind == "tiles":
+        cols = ["#2B6B8A", "#2E6B3F", "#7A8A33", "#8A6C48", "#3C8450", "#98A840"]
+        for r in range(3):
+            for c in range(4):
+                cloud = (r, c) in [(0, 1), (0, 2), (1, 1), (1, 2)]
+                o += f'<rect x="{x+4+c*30}" y="{y+8+r*28}" width="28" height="26" fill="{PAPER if cloud else cols[(r*4+c)%6]}" {S}/>'
+        o += f'<path d="M{x+34} {y+36}h60v28h-60z" fill="none" stroke="{COBALT}" stroke-width="3" stroke-dasharray="6 4"/>'
+    elif kind == "record":
+        o += f'<circle cx="{x+56}" cy="{y+52}" r="42" fill="{VERM}" {S}/><circle cx="{x+56}" cy="{y+52}" r="26" fill="none" stroke="{INK}" stroke-width="2" stroke-opacity=".6"/><circle cx="{x+56}" cy="{y+52}" r="12" fill="{LIME}" {S}/>'
+        o += f'<path d="M{x+112} {y+8}L{x+78} {y+50}" stroke="{INK}" stroke-width="5" stroke-linecap="round"/><circle cx="{x+112}" cy="{y+8}" r="7" fill="{COBALT}" {S}/>'
+    elif kind == "cited":
+        for i in range(3):
+            o += f'<circle cx="{x+16}" cy="{y+16+i*34}" r="12" fill="{LIME}" {S}/><text class="m" x="{x+16}" y="{y+21+i*34}" font-size="13" fill="{INK}" text-anchor="middle">{i+1}</text>'
+            o += f'<path d="M{x+28} {y+16+i*34}H{x+58}" {S}/>'
+        o += f'<rect x="{x+58}" y="{y+8}" width="66" height="84" fill="{PAPER}" {S}/>'
+        for i in range(4):
+            o += f'<rect x="{x+66}" y="{y+20+i*14}" width="{50-(i%2)*14}" height="6" fill="{INK}"/>'
+        o += f'<rect x="{x+104}" y="{y+2}" width="18" height="18" fill="{CORAL}" {S}/>'
+    elif kind == "orbit":
+        o += f'<ellipse cx="{x+64}" cy="{y+52}" rx="58" ry="26" fill="none" {S} transform="rotate(-24 {x+64} {y+52})"/>'
+        o += f'<circle cx="{x+64}" cy="{y+52}" r="22" fill="url(#rp-ball)" {S}/><circle cx="{x+112}" cy="{y+36}" r="8" fill="{COBALT}" {S}/>'
+    elif kind == "shoe":
+        o += f'<path d="M{x+6} {y+74}V{y+60}Q{x+10} {y+30} {x+30} {y+26}L{x+44} {y+40}Q{x+58} {y+44} {x+70} {y+34}Q{x+96} {y+44} {x+120} {y+62}V{y+74}Z" fill="{LIME}" {S}/>'
+        o += f'<rect x="{x+4}" y="{y+72}" width="120" height="14" fill="{PAPER}" {S}/><path d="M{x+52} {y+44}l10 10M{x+64} {y+38}l10 10" {S}/>'
+    elif kind == "anomaly":
+        o += f'<rect x="{x+2}" y="{y+6}" width="124" height="88" fill="{PAPER}" {S}/>'
+        o += f'<path d="M{x+10} {y+70} L{x+36} {y+62} L{x+56} {y+68} L{x+72} {y+24} L{x+90} {y+66} L{x+118} {y+58}" fill="none" stroke="{INK}" stroke-width="3" stroke-linejoin="round"/>'
+        o += f'<circle cx="{x+72}" cy="{y+24}" r="10" fill="{VERM}" {S}/>'
+    elif kind == "weather":
+        o += f'<circle cx="{x+44}" cy="{y+36}" r="26" fill="{YEL}" {S}/>'
+        o += f'<g fill="{PAPER}" {S}><circle cx="{x+62}" cy="{y+66}" r="18"/><circle cx="{x+88}" cy="{y+60}" r="22"/><rect x="{x+44}" y="{y+66}" width="68" height="20"/></g><rect x="{x+48}" y="{y+68}" width="60" height="16" fill="{PAPER}"/>'
+    elif kind in ("window", "site"):
+        o += f'<rect x="{x+2}" y="{y+6}" width="124" height="88" fill="{PAPER}" {S}/><path d="M{x+2} {y+26}H{x+126}" {S}/>'
+        o += f'<circle cx="{x+14}" cy="{y+16}" r="3.5" fill="{VERM}"/><circle cx="{x+26}" cy="{y+16}" r="3.5" fill="{YEL}"/><circle cx="{x+38}" cy="{y+16}" r="3.5" fill="{LIME}" stroke="{INK}" stroke-width="1"/>'
+        if kind == "window":
+            o += f'<circle cx="{x+40}" cy="{y+62}" r="20" fill="{LIME}" {S}/><rect x="{x+70}" y="{y+42}" width="46" height="8" fill="{INK}"/><rect x="{x+70}" y="{y+58}" width="34" height="6" fill="{INK}" fill-opacity=".5"/><rect x="{x+70}" y="{y+72}" width="40" height="6" fill="{INK}" fill-opacity=".5"/>'
+        else:
+            o += f'<rect x="{x+12}" y="{y+38}" width="50" height="46" fill="{COBALT}" {S}/><rect x="{x+68}" y="{y+38}" width="48" height="20" fill="{YEL}" {S}/><rect x="{x+68}" y="{y+64}" width="48" height="20" fill="{VERM}" {S}/>'
+    elif kind == "cup":
+        o += f'<path d="M{x+24} {y+40}H{x+88}L{x+80} {y+84}H{x+32}Z" fill="{PAPER}" {S}/><path d="M{x+88} {y+48}h12a10 10 0 0 1 0 22h-14" fill="none" {S}/>'
+        o += f'<path d="M{x+14} {y+88}H{x+98}" {S} stroke-linecap="round"/>'
+        o += "".join(f'<path d="M{x+40+i*16} {y+30}c-8 -8 8 -14 0 -22" fill="none" stroke="{LIME}" stroke-width="3.5" stroke-linecap="round"/>' for i in range(3))
+    elif kind == "waffle":
+        for r in range(3):
+            for c in range(4):
+                o += f'<rect x="{x+6+c*30}" y="{y+10+r*28}" width="26" height="24" rx="5" fill="{GOLD if (r+c)%2 else YEL}" {S}/>'
+        o += f'<rect x="{x+46}" y="{y+30}" width="22" height="18" fill="{PAPER}" {S} transform="rotate(-8 {x+57} {y+39})"/>'
+    elif kind == "lock":
+        for r in (46, 32, 18):
+            o += f'<circle cx="{x+64}" cy="{y+50}" r="{r}" fill="none" stroke="{PAPER}" stroke-width="2" stroke-opacity=".6"/>'
+        o += f'<path d="M{x+50} {y+46}v-8a14 14 0 0 1 28 0v8" fill="none" stroke="{PAPER}" stroke-width="5"/><rect x="{x+44}" y="{y+46}" width="40" height="30" fill="{LIME}" {S}/><circle cx="{x+64}" cy="{y+60}" r="4" fill="{INK}"/>'
+    elif kind == "bits":
+        o += f'<rect x="{x+2}" y="{y+8}" width="124" height="84" fill="{INK}" {S}/>'
+        o += f'<text class="m" x="{x+12}" y="{y+42}" font-size="20" fill="{LIME}">0101</text><text class="m" x="{x+12}" y="{y+68}" font-size="20" fill="{YEL}">1101</text><text class="m" x="{x+76}" y="{y+42}" font-size="20" fill="{PAPER}">0x</text><text class="m" x="{x+76}" y="{y+68}" font-size="20" fill="{CORAL}">3F</text>'
+    elif kind == "sky":
+        o += f'<circle cx="{x+60}" cy="{y+54}" r="38" fill="{PAPER}" {S}/><circle cx="{x+74}" cy="{y+44}" r="34" fill="{COBALT}"/>'
+        o += "".join(f'<path d="M{px} {py-6}v12M{px-6} {py}h12" stroke="{INK}" stroke-width="3" stroke-linecap="round"/>' for px, py in [(x+14, y+18), (x+112, y+22), (x+104, y+84), (x+22, y+82)])
+    else:
+        o += f'<rect x="{x+2}" y="{y+14}" width="124" height="72" fill="{PAPER}" {S}/>'
+        o += f'<text class="m" x="{x+12}" y="{y+46}" font-size="15" fill="{INK}">README.md</text><rect x="{x+12}" y="{y+58}" width="70" height="7" fill="{INK}" fill-opacity=".5"/><rect x="{x+12}" y="{y+70}" width="48" height="7" fill="{INK}" fill-opacity=".5"/><rect class="blink" x="{x+90}" y="{y+56}" width="10" height="20" fill="{VERM}"/>'
+    sc.add(o)
+
+
+KINDS = {"Samagra-OS": "kernel", "PRAHARI": "chain", "AkashaLens": "tiles", "Tarang": "record", "Rinti-Ai": "cited", "orbit-os": "orbit",
+         "Krama": "shoe", "Niriksh-AI": "anomaly", "SkyCast-Weather-App": "weather", "Sam-s_Portfolio": "window", "samudra-kar-portfolio": "site",
+         "noir-cafe": "cup", "the-waffle-house": "waffle", "singularity-login": "lock", "speed-of-numbers-fca": "bits", "website": "site",
+         "vyom": "sky", "Samudra-GITHub": "readme"}
+
+
+def repositories():
+    n = len(REPOS)
+    rows = (n + 1) // 2
+    ch, gap = 136, 26
+    H = 190 + rows * (ch + gap) + 24
+    sc = Scene("rp", H, PAPER, "All repositories",
+               "All public repositories on GitHub as designed cards, two per row, each with its own small illustration: " + ", ".join(r[0] for r in REPOS) + ".")
+    sc.css = """
+.hv{animation:hv 12s ease-in-out infinite}
+@keyframes hv{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+"""
+    sc.defs.append(f'<radialGradient id="rp-ball" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFBD0"/><stop offset=".35" stop-color="{YEL}"/><stop offset="1" stop-color="{GOLD}"/></radialGradient>')
+    sc.add(f'<rect width="{W}" height="{H}" fill="url(#rp-dots)"/>')
+    s, _ = tag(32, 24, f"ALL {n} REPOSITORIES", fill=INK, color=PAPER, size=12)
+    sc.add(s)
+    sc.add(sc.display("THE ARCHIVE.", 32, 128, sc.fit("THE ARCHIVE.", 520), rise=0.1))
+    sc.add(f'<text class="m" x="34" y="162" font-size="12" fill="{INK}">EVERY PUBLIC REPOSITORY · FEATURED FIRST</text>')
+    cw = 452
+    for i, (name, line, tech, fill, flag) in enumerate(REPOS):
+        r, c = divmod(i, 2)
+        x, y = 32 + c * (cw + 32), 190 + r * (ch + gap)
+        tc = PAPER if fill in (COBALT, INK) else INK
+        sc.add(f'<g class="hv" style="animation-delay:-{(i*0.7)%6:.1f}s">' + card(x, y, cw, ch, fill, sh=6))
+        sc.add(f'<text class="m" x="{x+18}" y="{y+26}" font-size="11" fill="{tc}" fill-opacity=".75">{i+1:02d} / {n}</text>')
+        size = min(25, sc.fit(name.upper(), 250))
+        sc.add(sc.display(name.upper(), x + 18, y + 66, size, fill=tc))
+        sc.add(f'<text class="m" x="{x+18}" y="{y+90}" font-size="11" fill="{tc}">{e(line)}</text>')
+        ts, tw_ = tag(x + 18, y + 102, tech.upper(), fill=PAPER, color=INK, size=9.5, h=22)
+        sc.add(ts)
+        if flag:
+            fs, _ = tag(x + 18 + tw_ + 8, y + 102, flag, fill=INK, color=LIME, size=9.5, h=22)
+            sc.add(fs)
+        repo_art(sc, KINDS.get(name, "readme"), x + cw - 144, y + 18, tc)
+        sc.add('</g>')
+    note(sc, "Illustrations are decorative. Descriptions are short summaries, not the GitHub description field.", y=H - 14)
+    return sc
+
+
 SCENES = {
     "about.svg": about, "samagra-os.svg": samagra, "prahari.svg": prahari, "akashalens.svg": akashalens,
     "tarang.svg": tarang, "rinti-ai.svg": rinti, "orbit-os.svg": orbit, "ai-workflow.svg": ai_workflow,
-    "capabilities.svg": capabilities, "closing.svg": closing,
+    "capabilities.svg": capabilities, "closing.svg": closing, "repositories.svg": repositories,
 }
 
 
