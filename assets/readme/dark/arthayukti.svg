@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="img" aria-labelledby="t d" fill="none">
+<title id="t">ArthaYukti</title>
+<desc id="d">ArthaYukti: multi-goal financial planning under uncertainty. Goal bars fill, one goal slips and the smallest fix is found, while a trajectory draws. Illustrative artwork; nothing in it is live data.</desc>
+<defs><path id="g65" d="M234 -97V-247H918V-97ZM10 0 439 -640H717L1150 0H875L504 -573H653L285 0Z"/><path id="g89" d="M1065 -640 660 -163V0H410V-163L5 -640H300L629 -225H444L770 -640Z"/><path id="g97" d="M408 14Q300 14 216 -16Q132 -47 84 -105Q35 -163 35 -245Q35 -331 84 -389Q132 -447 216 -476Q300 -505 408 -505Q528 -505 616 -472Q703 -440 750 -382Q798 -323 798 -245Q798 -187 771 -140Q744 -92 693 -58Q642 -23 570 -4Q498 14 408 14ZM498 -138Q574 -138 638 -148Q701 -157 740 -180Q778 -203 778 -245Q778 -288 740 -311Q701 -334 638 -343Q574 -352 498 -352Q396 -352 340 -326Q284 -299 284 -245Q284 -210 309 -186Q334 -162 382 -150Q430 -138 498 -138ZM778 -490H1018V0H792Q792 0 788 -23Q785 -46 782 -89Q778 -132 778 -190Z"/><path id="g104" d="M723 0V-182Q723 -227 705 -258Q687 -289 642 -304Q596 -320 513 -320Q466 -320 422 -312Q377 -303 342 -291Q306 -279 285 -267L283 -315Q287 -330 310 -360Q334 -391 379 -424Q424 -458 492 -482Q561 -505 655 -505Q714 -505 769 -494Q824 -483 868 -458Q911 -432 937 -389Q963 -346 963 -282V0ZM55 0V-690H295V0Z"/><path id="g105" d="M309 -747V-597H55V-747ZM62 -490H302V0H62Z"/><path id="g107" d="M55 -690H295V0H55ZM903 -490 507 -215 512 -345 937 0H633L299 -279L585 -490Z"/><path id="g114" d="M45 -490H285V0H45ZM543 -305Q478 -305 424 -293Q370 -281 332 -264Q294 -248 275 -232L273 -280Q276 -301 289 -330Q302 -358 324 -388Q346 -419 378 -446Q410 -472 452 -488Q493 -505 543 -505Z"/><path id="g116" d="M20 -490H608V-340H20ZM194 -640H434V0H194Z"/><path id="g117" d="M953 0H713V-490H953ZM723 -253 725 -205Q722 -184 706 -156Q689 -128 660 -98Q631 -68 589 -42Q547 -17 493 -1Q439 15 373 15Q307 15 248 2Q189 -12 143 -43Q97 -74 71 -126Q45 -179 45 -258V-490H285V-283Q285 -228 304 -198Q322 -168 362 -156Q402 -145 465 -145Q524 -145 574 -162Q625 -180 664 -205Q702 -230 723 -253Z"/><pattern id="grid1" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#22314F" stroke-opacity=".45" stroke-width="1"/></pattern><clipPath id="clip2"><rect width="480" height="300" rx="20"/></clipPath></defs>
+<style>
+.m{font-family:ui-monospace,"JetBrains Mono","Cascadia Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-weight:600}
+.s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:500}
+.fb{transform-box:fill-box;transform-origin:center}
+.rise{animation:rise 14s cubic-bezier(.16,1,.3,1) infinite both}
+@keyframes rise{0%{transform:translateY(110%)}6%,90%{transform:translateY(0)}96%,100%{transform:translateY(110%)}}
+.flow{stroke-dasharray:3 9;animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-24}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
+.spinr{transform-box:fill-box;transform-origin:center;animation:spin 30s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bob{animation:bob 4s ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:0}}
+.tw{animation:tw 3.2s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.15}to{opacity:1}}
+.rip{transform-box:fill-box;transform-origin:center;animation:rip 2.8s cubic-bezier(.2,.6,.3,1) infinite}
+@keyframes rip{0%{transform:scale(.25);opacity:.95}100%{transform:scale(2.8);opacity:0}}
+.eq{transform-box:fill-box;transform-origin:50% 100%;animation:eq 1.1s ease-in-out infinite alternate}
+@keyframes eq{from{transform:scaleY(.22)}to{transform:scaleY(1)}}
+.grow{transform-box:fill-box;transform-origin:0 50%;animation:grow 7s cubic-bezier(.65,0,.35,1) infinite}
+@keyframes grow{0%{transform:scaleX(0)}35%,85%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.draw{stroke-dasharray:100;animation:draw 7s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:100}45%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:-100}}
+.glow{animation:glow 2.4s ease-in-out infinite alternate}
+@keyframes glow{from{opacity:.35}to{opacity:1}}
+.steam{transform-box:fill-box;transform-origin:50% 100%;animation:steam 3.6s ease-out infinite}
+@keyframes steam{0%{transform:translateY(8px) scaleY(.6);opacity:0}30%{opacity:.9}100%{transform:translateY(-18px) scaleY(1.1);opacity:0}}
+.drift{animation:drift 9s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-14px)}to{transform:translateX(18px)}}
+.drip{transform-box:fill-box;transform-origin:50% 0;animation:drip 4.5s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(.15)}60%,85%{transform:scaleY(1)}100%{transform:scaleY(.15)}}
+.shim{animation:shim 2.6s ease-in-out infinite}
+@keyframes shim{0%{transform:translateX(-120px)}100%{transform:translateX(330px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+.fx0{opacity:1;animation:fx0 7s linear infinite}@keyframes fx0{0%,48.80%{opacity:1}50.00%,98.80%{opacity:0}100%{opacity:1}}.fx1{opacity:0;animation:fx1 7s linear infinite}@keyframes fx1{0%,50.00%{opacity:0}51.20%,98.80%{opacity:1}100.00%,100%{opacity:0}}</style>
+<rect x=".75" y=".75" width="478.5" height="298.5" rx="20" fill="#0A1020"/>
+<rect width="480" height="300" fill="url(#grid1)" clip-path="url(#clip2)" opacity=".55"/>
+<text x="28" y="44" class="m" font-size="11" fill="#4ADE9A" letter-spacing=".1em">02</text><text x="52" y="44" class="m" font-size="11" fill="#8E9BB6" letter-spacing=".12em">TYPESCRIPT · PYTHON</text>
+<circle cx="446" cy="40" r="4" fill="#4ADE9A" class="glow"/>
+<g fill="#E8EEF9"><use href="#g65" transform="translate(26.0 88.0) scale(0.0340)"/><use href="#g114" transform="translate(65.4 88.0) scale(0.0340)"/><use href="#g116" transform="translate(84.6 88.0) scale(0.0340)"/><use href="#g104" transform="translate(105.9 88.0) scale(0.0340)"/><use href="#g97" transform="translate(140.2 88.0) scale(0.0340)"/><use href="#g89" transform="translate(176.3 88.0) scale(0.0340)"/><use href="#g117" transform="translate(212.7 88.0) scale(0.0340)"/><use href="#g107" transform="translate(246.7 88.0) scale(0.0340)"/><use href="#g116" transform="translate(278.7 88.0) scale(0.0340)"/><use href="#g105" transform="translate(300.0 88.0) scale(0.0340)"/></g>
+<g transform="translate(24 106)"><text x="0" y="18" class="m" font-size="9.5" fill="#8E9BB6" letter-spacing=".06em">EMERGENCY FUND</text><rect x="0" y="24" width="230" height="7" rx="3.5" fill="#18233B"/><rect x="0" y="24" width="207" height="7" rx="3.5" fill="#4ADE9A" class="grow" style="animation-delay:0.0s"/><text x="0" y="50" class="m" font-size="9.5" fill="#8E9BB6" letter-spacing=".06em">HOME</text><rect x="0" y="56" width="230" height="7" rx="3.5" fill="#18233B"/><rect x="0" y="56" width="110" height="7" rx="3.5" fill="#FF8A4C" class="grow" style="animation-delay:0.25s"/><text x="0" y="82" class="m" font-size="9.5" fill="#8E9BB6" letter-spacing=".06em">EDUCATION</text><rect x="0" y="88" width="230" height="7" rx="3.5" fill="#18233B"/><rect x="0" y="88" width="161" height="7" rx="3.5" fill="#4ADE9A" class="grow" style="animation-delay:0.5s"/><text x="0" y="114" class="m" font-size="9.5" fill="#8E9BB6" letter-spacing=".06em">RETIREMENT</text><rect x="0" y="120" width="230" height="7" rx="3.5" fill="#18233B"/><rect x="0" y="120" width="133" height="7" rx="3.5" fill="#4ADE9A" class="grow" style="animation-delay:0.75s"/><g class="fx0"><rect x="150" y="30" width="49.9" height="18" rx="9.0" fill="none" stroke="#FF8A4C" stroke-width="1.2"/><text x="161" y="42.2" class="m" font-size="9" fill="#FF8A4C" letter-spacing=".04em">SLIPS</text></g><g class="fx1"><rect x="150" y="30" width="89" height="18" rx="9.0" fill="none" stroke="#4ADE9A" stroke-width="1.2"/><text x="161" y="42.2" class="m" font-size="9" fill="#4ADE9A" letter-spacing=".04em">SMALLEST FIX</text></g><path d="M256 124H432M256 124V10" stroke="#22314F"/><path d="M258.0 120.0 L275.0 102.7 L292.0 91.9 L309.0 87.7 L326.0 85.6 L343.0 80.5 L360.0 71.1 L377.0 61.0 L394.0 55.2 L411.0 55.4 L428.0 58.4" pathLength="100" stroke="#4ADE9A" stroke-width="2.4" stroke-linecap="round" class="draw"/><text x="260" y="140" class="m" font-size="9" fill="#8E9BB6" letter-spacing=".08em">TRAJECTORY · TODAY'S MONEY</text></g>
+<text x="28" y="276" class="m" font-size="10.5" fill="#8E9BB6" letter-spacing=".06em">FASTAPI  ·  REACT  ·  TAILWIND  ·  GEMINI</text>
+<rect x=".75" y=".75" width="478.5" height="298.5" rx="20" fill="none" stroke="#22314F" stroke-width="1.5"/><path d="M14 23V14H23M457 14H466V23M466 277V286H457M23 286H14V277" stroke="#4ADE9A" stroke-width="1.6" stroke-linecap="round"/>
+</svg>

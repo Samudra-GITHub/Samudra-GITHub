@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="img" aria-labelledby="t d" fill="none">
+<title id="t">website</title>
+<desc id="d">website: an early website experiment. HTML types itself into a browser window. Illustrative artwork; nothing in it is live data.</desc>
+<defs><path id="g98" d="M690 14Q600 14 528 -4Q456 -23 405 -58Q354 -92 327 -140Q300 -187 300 -245Q300 -303 327 -351Q354 -399 405 -434Q456 -468 528 -486Q600 -505 690 -505Q798 -505 882 -476Q967 -447 1015 -389Q1063 -331 1063 -245Q1063 -163 1015 -105Q967 -47 882 -16Q798 14 690 14ZM600 -138Q668 -138 716 -150Q764 -162 789 -186Q814 -210 814 -245Q814 -299 758 -326Q702 -352 600 -352Q524 -352 460 -343Q397 -334 358 -311Q320 -288 320 -245Q320 -203 358 -180Q397 -157 460 -148Q524 -138 600 -138ZM320 -690V-190Q320 -126 316 -74Q311 -23 306 0H80V-690Z"/><path id="g101" d="M721 -176H957Q948 -118 900 -75Q851 -32 758 -8Q666 15 523 15Q372 15 262 -9Q153 -33 94 -90Q35 -147 35 -244Q35 -340 92 -398Q150 -455 259 -480Q368 -505 523 -505Q675 -505 772 -478Q869 -451 915 -390Q961 -330 959 -227H279Q284 -201 308 -179Q331 -157 380 -144Q430 -130 513 -130Q599 -130 654 -142Q710 -154 721 -176ZM513 -360Q407 -360 352 -337Q296 -314 286 -291H726Q719 -317 670 -338Q621 -360 513 -360Z"/><path id="g105" d="M309 -747V-597H55V-747ZM62 -490H302V0H62Z"/><path id="g115" d="M40 -176H261Q275 -150 314 -140Q354 -130 428 -130Q485 -130 512 -136Q540 -142 548 -152Q557 -162 557 -173Q557 -190 538 -196Q520 -203 476 -204Q432 -206 355 -206Q282 -206 224 -212Q167 -219 127 -234Q87 -248 66 -274Q45 -300 45 -339Q45 -387 76 -420Q107 -452 160 -470Q213 -489 282 -497Q352 -505 428 -505Q554 -505 634 -480Q714 -454 752 -411Q790 -368 789 -314H574Q563 -340 532 -350Q502 -360 428 -360Q358 -360 326 -350Q295 -339 295 -316Q295 -301 310 -294Q326 -286 370 -283Q413 -280 497 -280Q555 -280 610 -276Q666 -272 710 -259Q755 -246 781 -219Q807 -192 807 -145Q807 -88 760 -52Q714 -17 629 -1Q544 15 428 15Q327 15 258 2Q188 -11 144 -32Q100 -54 76 -80Q53 -105 46 -130Q38 -156 40 -176Z"/><path id="g116" d="M20 -490H608V-340H20ZM194 -640H434V0H194Z"/><path id="g119" d="M1079 -92 975 -94 1192 -490H1457L1148 0H922L669 -380L787 -379L524 0H298L5 -490H269L473 -94H370L596 -490H861Z"/><pattern id="grid1" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#D3DCEA" stroke-opacity=".45" stroke-width="1"/></pattern><clipPath id="clip2"><rect width="480" height="300" rx="20"/></clipPath><clipPath id="ty3"><rect x="18" y="38" height="20"><animate attributeName="width" values="0;0;116;116;0" keyTimes="0;0.08;0.20;.92;1" dur="8s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ty4"><rect x="18" y="60" height="20"><animate attributeName="width" values="0;0;49;49;0" keyTimes="0;0.26;0.38;.92;1" dur="8s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ty5"><rect x="18" y="82" height="20"><animate attributeName="width" values="0;0;160;160;0" keyTimes="0;0.44;0.56;.92;1" dur="8s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ty6"><rect x="18" y="104" height="20"><animate attributeName="width" values="0;0;56;56;0" keyTimes="0;0.62;0.74;.92;1" dur="8s" repeatCount="indefinite"/></rect></clipPath></defs>
+<style>
+.m{font-family:ui-monospace,"JetBrains Mono","Cascadia Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-weight:600}
+.s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:500}
+.fb{transform-box:fill-box;transform-origin:center}
+.rise{animation:rise 14s cubic-bezier(.16,1,.3,1) infinite both}
+@keyframes rise{0%{transform:translateY(110%)}6%,90%{transform:translateY(0)}96%,100%{transform:translateY(110%)}}
+.flow{stroke-dasharray:3 9;animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-24}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
+.spinr{transform-box:fill-box;transform-origin:center;animation:spin 30s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bob{animation:bob 4s ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:0}}
+.tw{animation:tw 3.2s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.15}to{opacity:1}}
+.rip{transform-box:fill-box;transform-origin:center;animation:rip 2.8s cubic-bezier(.2,.6,.3,1) infinite}
+@keyframes rip{0%{transform:scale(.25);opacity:.95}100%{transform:scale(2.8);opacity:0}}
+.eq{transform-box:fill-box;transform-origin:50% 100%;animation:eq 1.1s ease-in-out infinite alternate}
+@keyframes eq{from{transform:scaleY(.22)}to{transform:scaleY(1)}}
+.grow{transform-box:fill-box;transform-origin:0 50%;animation:grow 7s cubic-bezier(.65,0,.35,1) infinite}
+@keyframes grow{0%{transform:scaleX(0)}35%,85%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.draw{stroke-dasharray:100;animation:draw 7s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:100}45%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:-100}}
+.glow{animation:glow 2.4s ease-in-out infinite alternate}
+@keyframes glow{from{opacity:.35}to{opacity:1}}
+.steam{transform-box:fill-box;transform-origin:50% 100%;animation:steam 3.6s ease-out infinite}
+@keyframes steam{0%{transform:translateY(8px) scaleY(.6);opacity:0}30%{opacity:.9}100%{transform:translateY(-18px) scaleY(1.1);opacity:0}}
+.drift{animation:drift 9s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-14px)}to{transform:translateX(18px)}}
+.drip{transform-box:fill-box;transform-origin:50% 0;animation:drip 4.5s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(.15)}60%,85%{transform:scaleY(1)}100%{transform:scaleY(.15)}}
+.shim{animation:shim 2.6s ease-in-out infinite}
+@keyframes shim{0%{transform:translateX(-120px)}100%{transform:translateX(330px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x=".75" y=".75" width="478.5" height="298.5" rx="20" fill="#FFFFFF"/>
+<rect width="480" height="300" fill="url(#grid1)" clip-path="url(#clip2)" opacity=".55"/>
+<text x="28" y="44" class="m" font-size="11" fill="#56627A" letter-spacing=".1em">17</text><text x="52" y="44" class="m" font-size="11" fill="#55627C" letter-spacing=".12em">HTML</text>
+<circle cx="446" cy="40" r="4" fill="#56627A" class="glow"/>
+<g fill="#0B1222"><use href="#g119" transform="translate(26.0 88.0) scale(0.0340)"/><use href="#g101" transform="translate(75.7 88.0) scale(0.0340)"/><use href="#g98" transform="translate(109.5 88.0) scale(0.0340)"/><use href="#g115" transform="translate(146.8 88.0) scale(0.0340)"/><use href="#g105" transform="translate(175.5 88.0) scale(0.0340)"/><use href="#g116" transform="translate(187.8 88.0) scale(0.0340)"/><use href="#g101" transform="translate(209.2 88.0) scale(0.0340)"/></g>
+<g transform="translate(24 106)"><rect x="0" y="0" width="432" height="138" rx="12" fill="#F1F5FB" stroke="#D3DCEA"/><path d="M0 26H432" stroke="#D3DCEA"/><rect x="70" y="7" width="240" height="13" rx="6.5" fill="#E6ECF5"/><circle cx="16" cy="13" r="4" fill="#BF2828"/><circle cx="30" cy="13" r="4" fill="#A87200"/><circle cx="44" cy="13" r="4" fill="#15803D"/><g clip-path="url(#ty3)"><text x="20" y="54" class="m" font-size="12" fill="#0B1222">&lt;!DOCTYPE html&gt;</text></g><g clip-path="url(#ty4)"><text x="20" y="76" class="m" font-size="12" fill="#0B1222">&lt;html&gt;</text></g><g clip-path="url(#ty5)"><text x="20" y="98" class="m" font-size="12" fill="#56627A">  &lt;h1&gt;hello, web&lt;/h1&gt;</text></g><g clip-path="url(#ty6)"><text x="20" y="120" class="m" font-size="12" fill="#0B1222">&lt;/html&gt;</text></g><rect x="74" y="108" width="7" height="14" fill="#56627A" class="blink"/></g>
+<text x="28" y="276" class="m" font-size="10.5" fill="#55627C" letter-spacing=".06em">EARLY EXPERIMENT</text>
+<rect x=".75" y=".75" width="478.5" height="298.5" rx="20" fill="none" stroke="#D3DCEA" stroke-width="1.5"/><path d="M14 23V14H23M457 14H466V23M466 277V286H457M23 286H14V277" stroke="#56627A" stroke-width="1.6" stroke-linecap="round"/>
+</svg>

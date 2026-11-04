@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 290" width="1000" height="290" role="img" aria-labelledby="t d" fill="none">
+<title id="t">Stack</title>
+<desc id="d">Stack. Languages: TypeScript, JavaScript, Python, C, x86-64 Assembly. Systems: Clang, LLD, NASM, QEMU, Git, Docker. Web: React, Next.js, Tailwind, Framer Motion, GSAP, Three.js, CesiumJS. Ai / Vision: PyTorch, NumPy, SciPy, scikit-image, LLM APIs, Ollama. Design: Figma, Design Systems, Motion Design. Illustrative artwork; nothing in it is live data.</desc>
+<defs><pattern id="grid1" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#22314F" stroke-opacity=".45" stroke-width="1"/></pattern><clipPath id="clip2"><rect width="1000" height="290" rx="22"/></clipPath></defs>
+<style>
+.m{font-family:ui-monospace,"JetBrains Mono","Cascadia Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-weight:600}
+.s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:500}
+.fb{transform-box:fill-box;transform-origin:center}
+.rise{animation:rise 14s cubic-bezier(.16,1,.3,1) infinite both}
+@keyframes rise{0%{transform:translateY(110%)}6%,90%{transform:translateY(0)}96%,100%{transform:translateY(110%)}}
+.flow{stroke-dasharray:3 9;animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-24}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
+.spinr{transform-box:fill-box;transform-origin:center;animation:spin 30s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bob{animation:bob 4s ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:0}}
+.tw{animation:tw 3.2s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.15}to{opacity:1}}
+.rip{transform-box:fill-box;transform-origin:center;animation:rip 2.8s cubic-bezier(.2,.6,.3,1) infinite}
+@keyframes rip{0%{transform:scale(.25);opacity:.95}100%{transform:scale(2.8);opacity:0}}
+.eq{transform-box:fill-box;transform-origin:50% 100%;animation:eq 1.1s ease-in-out infinite alternate}
+@keyframes eq{from{transform:scaleY(.22)}to{transform:scaleY(1)}}
+.grow{transform-box:fill-box;transform-origin:0 50%;animation:grow 7s cubic-bezier(.65,0,.35,1) infinite}
+@keyframes grow{0%{transform:scaleX(0)}35%,85%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.draw{stroke-dasharray:100;animation:draw 7s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:100}45%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:-100}}
+.glow{animation:glow 2.4s ease-in-out infinite alternate}
+@keyframes glow{from{opacity:.35}to{opacity:1}}
+.steam{transform-box:fill-box;transform-origin:50% 100%;animation:steam 3.6s ease-out infinite}
+@keyframes steam{0%{transform:translateY(8px) scaleY(.6);opacity:0}30%{opacity:.9}100%{transform:translateY(-18px) scaleY(1.1);opacity:0}}
+.drift{animation:drift 9s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-14px)}to{transform:translateX(18px)}}
+.drip{transform-box:fill-box;transform-origin:50% 0;animation:drip 4.5s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(.15)}60%,85%{transform:scaleY(1)}100%{transform:scaleY(.15)}}
+.shim{animation:shim 2.6s ease-in-out infinite}
+@keyframes shim{0%{transform:translateX(-120px)}100%{transform:translateX(330px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+.sk0{opacity:1;animation:sk0 10s linear infinite}@keyframes sk0{0%,18.50%{opacity:1}20.00%,98.50%{opacity:0}100%{opacity:1}}.sk1{opacity:0;animation:sk1 10s linear infinite}@keyframes sk1{0%,20.00%{opacity:0}21.50%,38.50%{opacity:1}40.00%,100%{opacity:0}}.sk2{opacity:0;animation:sk2 10s linear infinite}@keyframes sk2{0%,40.00%{opacity:0}41.50%,58.50%{opacity:1}60.00%,100%{opacity:0}}.sk3{opacity:0;animation:sk3 10s linear infinite}@keyframes sk3{0%,60.00%{opacity:0}61.50%,78.50%{opacity:1}80.00%,100%{opacity:0}}.sk4{opacity:0;animation:sk4 10s linear infinite}@keyframes sk4{0%,80.00%{opacity:0}81.50%,98.50%{opacity:1}100.00%,100%{opacity:0}}</style>
+<rect x=".75" y=".75" width="998.5" height="288.5" rx="22" fill="#0A1020"/>
+<rect width="1000" height="290" fill="url(#grid1)" clip-path="url(#clip2)" opacity=".55"/>
+<g class="sk0"><rect x="24" y="30" width="952" height="40" rx="12" fill="#5CC8FF" fill-opacity=".08" stroke="#5CC8FF" stroke-opacity=".5"/></g>
+<text x="44" y="55" class="m" font-size="11" fill="#5CC8FF" letter-spacing=".18em">LANGUAGES</text>
+<rect x="190" y="38" width="96.4" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="201" y="54.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">TypeScript</text><rect x="296.4" y="38" width="96.4" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="307.4" y="54.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">JavaScript</text><rect x="402.8" y="38" width="66.6" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="413.8" y="54.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">Python</text><rect x="479.4" y="38" width="29.4" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="490.4" y="54.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">C</text><rect x="518.9" y="38" width="133.6" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="529.9" y="54.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">x86-64 Assembly</text>
+<g class="sk1"><rect x="24" y="78" width="952" height="40" rx="12" fill="#5CC8FF" fill-opacity=".08" stroke="#5CC8FF" stroke-opacity=".5"/></g>
+<text x="44" y="103" class="m" font-size="11" fill="#5CC8FF" letter-spacing=".18em">SYSTEMS</text>
+<rect x="190" y="86" width="59.2" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="201" y="102.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">Clang</text><rect x="259.2" y="86" width="44.3" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="270.2" y="102.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">LLD</text><rect x="313.5" y="86" width="51.8" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="324.5" y="102.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">NASM</text><rect x="375.3" y="86" width="51.8" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="386.3" y="102.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">QEMU</text><rect x="437" y="86" width="44.3" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="448" y="102.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">Git</text><rect x="491.4" y="86" width="66.6" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="502.4" y="102.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">Docker</text>
+<g class="sk2"><rect x="24" y="126" width="952" height="40" rx="12" fill="#5CC8FF" fill-opacity=".08" stroke="#5CC8FF" stroke-opacity=".5"/></g>
+<text x="44" y="151" class="m" font-size="11" fill="#5CC8FF" letter-spacing=".18em">WEB</text>
+<rect x="190" y="134" width="59.2" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="201" y="150.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">React</text><rect x="259.2" y="134" width="74.1" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="270.2" y="150.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">Next.js</text><rect x="343.3" y="134" width="81.5" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="354.3" y="150.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">Tailwind</text><rect x="434.8" y="134" width="118.7" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="445.8" y="150.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">Framer Motion</text><rect x="563.5" y="134" width="51.8" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="574.5" y="150.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">GSAP</text><rect x="625.3" y="134" width="81.5" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="636.3" y="150.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">Three.js</text><rect x="716.8" y="134" width="81.5" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="727.8" y="150.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">CesiumJS</text>
+<g class="sk3"><rect x="24" y="174" width="952" height="40" rx="12" fill="#5CC8FF" fill-opacity=".08" stroke="#5CC8FF" stroke-opacity=".5"/></g>
+<text x="44" y="199" class="m" font-size="11" fill="#5CC8FF" letter-spacing=".18em">AI / VISION</text>
+<rect x="190" y="182" width="74.1" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="201" y="198.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">PyTorch</text><rect x="274.1" y="182" width="59.2" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="285.1" y="198.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">NumPy</text><rect x="343.3" y="182" width="59.2" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="354.3" y="198.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">SciPy</text><rect x="412.5" y="182" width="111.3" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="423.5" y="198.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">scikit-image</text><rect x="533.8" y="182" width="81.5" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="544.8" y="198.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">LLM APIs</text><rect x="625.3" y="182" width="66.6" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="636.3" y="198.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">Ollama</text>
+<g class="sk4"><rect x="24" y="222" width="952" height="40" rx="12" fill="#5CC8FF" fill-opacity=".08" stroke="#5CC8FF" stroke-opacity=".5"/></g>
+<text x="44" y="247" class="m" font-size="11" fill="#5CC8FF" letter-spacing=".18em">DESIGN</text>
+<rect x="190" y="230" width="59.2" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="201" y="246.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">Figma</text><rect x="259.2" y="230" width="126.2" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="270.2" y="246.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">Design Systems</text><rect x="395.4" y="230" width="118.7" height="24" rx="12.0" fill="none" stroke="#22314F" stroke-width="1.2"/><text x="406.4" y="246.3" class="m" font-size="12" fill="#E8EEF9" letter-spacing=".04em">Motion Design</text>
+<rect x=".75" y=".75" width="998.5" height="288.5" rx="22" fill="none" stroke="#22314F" stroke-width="1.5"/><path d="M14 23V14H23M977 14H986V23M986 267V276H977M23 276H14V267" stroke="#5CC8FF" stroke-width="1.6" stroke-linecap="round"/>
+</svg>

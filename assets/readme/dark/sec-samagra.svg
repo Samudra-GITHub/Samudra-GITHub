@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 64" width="1000" height="64" role="img" aria-labelledby="t d" fill="none">
+<title id="t">Also Building</title>
+<desc id="d">Section heading: Also Building. Illustrative artwork; nothing in it is live data.</desc>
+<defs><path id="g65" d="M234 -97V-247H918V-97ZM10 0 439 -640H717L1150 0H875L504 -573H653L285 0Z"/><path id="g66" d="M70 0V-640H700Q894 -640 986 -602Q1078 -564 1078 -470Q1078 -410 1038 -378Q999 -346 926 -334Q852 -321 749 -318L757 -326Q832 -326 896 -322Q960 -318 1008 -304Q1056 -290 1083 -261Q1110 -232 1110 -181Q1110 -119 1066 -79Q1022 -39 941 -20Q860 0 750 0ZM320 -188H750Q803 -188 826 -198Q850 -208 850 -230Q850 -245 840 -254Q829 -263 807 -268Q785 -272 750 -272H320ZM320 -368H708Q761 -368 784 -378Q808 -388 808 -410Q808 -433 784 -442Q761 -452 708 -452H320Z"/><path id="g68" d="M790 -640Q925 -640 1013 -614Q1101 -588 1151 -543Q1201 -498 1222 -440Q1242 -383 1242 -320Q1242 -257 1219 -200Q1196 -142 1144 -97Q1091 -52 1004 -26Q918 0 790 0H70V-640ZM320 -200H780Q836 -200 875 -208Q914 -215 938 -230Q961 -245 972 -268Q982 -290 982 -320Q982 -350 972 -372Q961 -395 938 -410Q914 -425 875 -432Q836 -440 780 -440H320Z"/><path id="g71" d="M653 20Q523 20 414 4Q306 -11 226 -48Q147 -86 104 -151Q60 -216 60 -315Q60 -414 104 -480Q148 -547 230 -586Q313 -626 428 -643Q542 -660 683 -660Q868 -660 994 -626Q1119 -592 1185 -530Q1251 -467 1256 -381H996Q984 -403 952 -424Q920 -444 856 -457Q792 -470 683 -470Q555 -470 475 -454Q395 -439 358 -405Q321 -371 321 -315Q321 -266 359 -234Q397 -202 481 -186Q565 -170 703 -170Q800 -170 872 -178Q943 -187 1002 -205Q1060 -223 1118 -250L1142 -221Q1080 -104 958 -42Q836 20 653 20ZM1074 0Q1074 -30 1082 -68Q1090 -106 1102 -148Q1115 -189 1127 -226H737V-331H1270V0Z"/><path id="g73" d="M85 -640H335V0H85Z"/><path id="g76" d="M320 -640V-190H903V0H70V-640Z"/><path id="g78" d="M1073 -196 980 -143V-640H1230V0H980L227 -436L320 -490V0H70V-640H320Z"/><path id="g79" d="M665 20Q447 20 314 -18Q181 -57 120 -132Q60 -208 60 -320Q60 -432 120 -508Q181 -583 314 -622Q447 -660 665 -660Q883 -660 1016 -622Q1149 -583 1210 -508Q1270 -432 1270 -320Q1270 -208 1210 -132Q1149 -57 1016 -18Q883 20 665 20ZM665 -170Q768 -170 843 -182Q918 -195 959 -228Q1000 -260 1000 -320Q1000 -380 959 -412Q918 -445 843 -458Q768 -470 665 -470Q562 -470 484 -458Q407 -445 364 -412Q320 -380 320 -320Q320 -260 364 -228Q407 -195 484 -182Q562 -170 665 -170Z"/><path id="g83" d="M35 -235H308Q315 -214 349 -200Q383 -185 440 -178Q498 -170 574 -170Q649 -170 692 -174Q736 -179 754 -190Q772 -202 772 -222Q772 -241 743 -252Q714 -262 640 -266Q566 -270 432 -270Q332 -270 260 -280Q187 -289 140 -310Q94 -330 72 -362Q50 -393 50 -437Q50 -513 102 -562Q153 -612 258 -636Q362 -661 519 -661Q749 -661 870 -594Q992 -528 992 -403H733Q728 -436 671 -454Q614 -471 509 -471Q405 -471 354 -459Q304 -447 304 -418Q304 -403 318 -394Q332 -385 366 -380Q401 -374 464 -372Q527 -370 624 -370Q731 -370 806 -360Q881 -349 928 -328Q974 -307 995 -274Q1016 -242 1016 -198Q1016 -122 968 -74Q920 -26 816 -3Q712 20 544 20Q449 20 370 9Q290 -2 228 -24Q166 -45 123 -76Q80 -108 58 -148Q35 -187 35 -235Z"/><path id="g85" d="M969 -365V-640H1219V-320Q1219 -235 1188 -176Q1156 -116 1100 -78Q1044 -39 971 -18Q898 3 814 12Q731 20 645 20Q554 20 469 12Q384 3 312 -18Q239 -39 185 -78Q131 -116 100 -176Q70 -235 70 -320V-640H320V-365Q320 -285 359 -243Q398 -201 470 -186Q543 -170 645 -170Q744 -170 817 -186Q890 -201 930 -243Q969 -285 969 -365Z"/></defs>
+<style>
+.m{font-family:ui-monospace,"JetBrains Mono","Cascadia Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-weight:600}
+.s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:500}
+.fb{transform-box:fill-box;transform-origin:center}
+.rise{animation:rise 14s cubic-bezier(.16,1,.3,1) infinite both}
+@keyframes rise{0%{transform:translateY(110%)}6%,90%{transform:translateY(0)}96%,100%{transform:translateY(110%)}}
+.flow{stroke-dasharray:3 9;animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-24}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
+.spinr{transform-box:fill-box;transform-origin:center;animation:spin 30s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bob{animation:bob 4s ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:0}}
+.tw{animation:tw 3.2s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.15}to{opacity:1}}
+.rip{transform-box:fill-box;transform-origin:center;animation:rip 2.8s cubic-bezier(.2,.6,.3,1) infinite}
+@keyframes rip{0%{transform:scale(.25);opacity:.95}100%{transform:scale(2.8);opacity:0}}
+.eq{transform-box:fill-box;transform-origin:50% 100%;animation:eq 1.1s ease-in-out infinite alternate}
+@keyframes eq{from{transform:scaleY(.22)}to{transform:scaleY(1)}}
+.grow{transform-box:fill-box;transform-origin:0 50%;animation:grow 7s cubic-bezier(.65,0,.35,1) infinite}
+@keyframes grow{0%{transform:scaleX(0)}35%,85%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.draw{stroke-dasharray:100;animation:draw 7s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:100}45%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:-100}}
+.glow{animation:glow 2.4s ease-in-out infinite alternate}
+@keyframes glow{from{opacity:.35}to{opacity:1}}
+.steam{transform-box:fill-box;transform-origin:50% 100%;animation:steam 3.6s ease-out infinite}
+@keyframes steam{0%{transform:translateY(8px) scaleY(.6);opacity:0}30%{opacity:.9}100%{transform:translateY(-18px) scaleY(1.1);opacity:0}}
+.drift{animation:drift 9s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-14px)}to{transform:translateX(18px)}}
+.drip{transform-box:fill-box;transform-origin:50% 0;animation:drip 4.5s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(.15)}60%,85%{transform:scaleY(1)}100%{transform:scaleY(.15)}}
+.shim{animation:shim 2.6s ease-in-out infinite}
+@keyframes shim{0%{transform:translateX(-120px)}100%{transform:translateX(330px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<text x="4" y="40" class="m" font-size="14" fill="#FFB547" letter-spacing=".1em">02</text>
+<g fill="#E8EEF9"><use href="#g65" transform="translate(40.0 42.0) scale(0.0260)"/><use href="#g76" transform="translate(70.7 42.0) scale(0.0260)"/><use href="#g83" transform="translate(95.7 42.0) scale(0.0260)"/><use href="#g79" transform="translate(123.7 42.0) scale(0.0260)"/><use href="#g66" transform="translate(167.4 42.0) scale(0.0260)"/><use href="#g85" transform="translate(197.5 42.0) scale(0.0260)"/><use href="#g73" transform="translate(231.6 42.0) scale(0.0260)"/><use href="#g76" transform="translate(243.0 42.0) scale(0.0260)"/><use href="#g68" transform="translate(268.0 42.0) scale(0.0260)"/><use href="#g73" transform="translate(302.4 42.0) scale(0.0260)"/><use href="#g78" transform="translate(313.9 42.0) scale(0.0260)"/><use href="#g71" transform="translate(348.2 42.0) scale(0.0260)"/></g>
+<path d="M406 33H996" stroke="#22314F" stroke-width="1.2"/>
+<path d="M406 33H996" stroke="#FFB547" stroke-width="1.4" class="flow"/>
+<circle cy="33" r="3.5" fill="#FFB547"><animate attributeName="cx" values="406;996;406" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".6 0 .4 1;.6 0 .4 1"/></circle>
+
+</svg>
