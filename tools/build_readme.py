@@ -412,7 +412,7 @@ def wed_hero(th):
     s.add(T(236, 392, "one line, one behaviour per state", 12, P["mute"], cls="s"))
     s.add(pills(48, 448, ("OLLAMA · LOCAL MODEL", "CAPABILITY BROKER", "127.0.0.1 ONLY"), P["text"], P["line"], 11))
     s.add(pills(48, 482, ("CESIUMJS EARTH", "PUSH-TO-TALK"), P["text"], P["line"], 11))
-    s.add(pill(268, 482, "NEW · MOON MODE", s.acc("moon"), s.acc("moon"), 11, dot=s.acc("moon"))[0])
+    s.add(pill(48 + sum(mono_w(c, 11) + 30 for c in ("CESIUMJS EARTH", "PUSH-TO-TALK")), 482, "NEW · MOON MODE", s.acc("moon"), s.acc("moon"), 11, dot=s.acc("moon"))[0])
     # globe
     cx, cy, R = 745, 270, 168
     s.add(f'<path d="{ring_path(cx, cy, 228, 70)}" stroke="{P["line"]}" stroke-width="1.2" transform="rotate(-22 {cx} {cy})"/>')
