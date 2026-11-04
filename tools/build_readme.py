@@ -460,7 +460,7 @@ def wed_moon(th):
     rows = (("IMAGERY", "NASA Moon Trek · LRO mosaics"),
             ("EPHEMERIS", "JPL Horizons, live: LRO, Chandrayaan-2, Danuri"),
             ("SITES", "NSSDCA landing & impact catalogue, source-attributed"))
-    s.stagger("mr", 3, 10, on=0.08, hold=0.9)
+    s.stagger("mr", 3, 16, on=0.05, hold=0.95)
     for i, (k, v) in enumerate(rows):
         y = 190 + i * 40
         s.add(f'<g class="mr{i}"><rect x="{x0}" y="{y-22}" width="476" height="32" rx="10" fill="{P["panel"]}" stroke="{P["line"]}"/>'
@@ -475,7 +475,7 @@ def wed_pipeline(th):
               "Anything with consequences waits for your approval.")
     P, A = s.P, s.acc("wed")
     s.frame(A, 22)
-    s.add(T(40, 50, "ASK THE EARTH", 12, A, ls=".2em") + T(160, 50, "how a question becomes a confirmed action on the globe", 13, P["mute"], cls="s"))
+    s.add(T(40, 50, "ASK THE EARTH", 12, A, ls=".2em") + T(206, 50, "how a question becomes a confirmed action on the globe", 13, P["mute"], cls="s"))
     nodes = (("YOU ASK", "type or speak"), ("LOCAL MODEL", "Ollama · qwen2.5:7b"), ("BROKER", "deny by default"),
              ("TOOL", "public source + time"), ("TYPED REQUEST", "fixed list of actions"), ("EARTH CONFIRMS", "backend · app · globe"))
     bw, gap, y = 140, 16, 82
@@ -559,7 +559,7 @@ def samagra(th):
     P, A = s.P, s.acc("samagra")
     s.frame(A, 24)
     s.add(pill(44, 40, "ALSO BUILDING", P["card"], A, 11, fill=A)[0])
-    s.add(s.display("SAMAGRA OS", 42, 120, 64, P["text"], rise=0.2))
+    s.add(s.display("SAMAGRA OS", 42, 120, s.fit("SAMAGRA OS", 390, cap=64), P["text"], rise=0.2))
     s.add(T(46, 152, "A REAL x86-64 OPERATING SYSTEM,", 12.5, A, ls=".14em") + T(46, 172, "BUILT FROM FIRST PRINCIPLES", 12.5, A, ls=".14em"))
     s.add(T(46, 210, "Long mode, paging, interrupts, a preemptive", 15, P["mute"], cls="s") + T(46, 230, "scheduler, early Ring 3 and system calls.", 15, P["mute"], cls="s"))
     s.add(pills(46, 262, ("C", "x86-64 ASM", "CLANG · LLD · NASM", "QEMU"), P["text"], P["line"], 11))
@@ -834,9 +834,9 @@ def d_noir(s, P, A):
             f'<path d="M136 66h8a14 14 0 0 1 0 28h-10" stroke="{A}" stroke-width="2.2"/>'
             f'<ellipse cx="90" cy="132" rx="70" ry="7" stroke="{A}" stroke-width="2"/>'
             f'<ellipse cx="90" cy="60" rx="44" ry="5" fill="{A}" fill-opacity=".55"/>')
-    s.stagger("nc", 3, 10, on=.12)
-    for i, l in enumerate(("SPECIALTY COFFEE", "SLOW, CINEMATIC SCROLL", "ONE ORIGIN AT A TIME")):
-        out += f'<g class="nc{i}">' + s.display(l.split(",")[0] if i == 1 else l, 210, 34 + i * 40, 17, P["text"] if i != 1 else A) + "</g>"
+    s.stagger("nc", 3, 12, on=.12, hold=.92)
+    for i, l in enumerate(("SPECIALTY", "COFFEE,", "CINEMATIC")):
+        out += f'<g class="nc{i}">' + s.display(l, 206, 40 + i * 44, s.fit("SPECIALTY", 220, cap=30), P["text"] if i != 1 else A) + "</g>"
     return out
 
 
@@ -850,8 +850,8 @@ def d_waffle(s, P, A):
     for x, h, d in ((48, 60, 0), (100, 86, 1.4), (128, 44, 2.6)):
         out += f'<path d="M{x} 10V{10+h}" stroke="{syrup}" stroke-width="7" stroke-linecap="round" class="drip" style="animation-delay:-{d}s"/>'
     for i, l in enumerate(("RESTAURANT", "LANDING PAGE")):
-        out += s.display(l, 190, 50 + i * 34, 22, P["text"] if i == 0 else A)
-    out += T(190, 120, "MENU · HOURS · RESERVE", 10, P["mute"], ls=".12em")
+        out += s.display(l, 180, 50 + i * 34, s.fit("LANDING PAGE", 245, cap=22), P["text"] if i == 0 else A)
+    out += T(180, 120, "MENU · HOURS · RESERVE", 10, P["mute"], ls=".12em")
     return out
 
 
@@ -985,8 +985,8 @@ def ai_workflow(th):
     P, A, B = s.P, s.acc("ai"), s.acc("wed")
     s.frame(A, 22)
     nodes = {"me": (500, 66, "SAMUDRA", "architecture · direction · validation", P["text"]),
-             "cc": (190, 160, "CLAUDE CODE", "UI · UX · design tokens · docs", A),
-             "ag": (810, 160, "ANTIGRAVITY", "boot · memory · interrupts · scheduler · drivers", B),
+             "cc": (230, 160, "CLAUDE CODE", "UI · UX · design tokens · docs", A),
+             "ag": (760, 160, "ANTIGRAVITY", "boot · memory · interrupts · scheduler · drivers", B),
              "repo": (500, 236, "SHARED REPOSITORY", "docs · API contracts · handoff notes · commits", OK[th])}
     links = (("me", "cc"), ("me", "ag"), ("cc", "repo"), ("ag", "repo"))
     for a, b in links:

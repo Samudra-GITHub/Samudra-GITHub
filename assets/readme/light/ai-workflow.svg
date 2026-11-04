@@ -41,23 +41,23 @@
 </style>
 <rect x=".75" y=".75" width="998.5" height="298.5" rx="22" fill="#FFFFFF"/>
 <rect width="1000" height="300" fill="url(#grid1)" clip-path="url(#clip2)" opacity=".55"/>
-<path d="M500 66 C500 113.0 190 113.0 190 160" stroke="#D3DCEA" stroke-width="1.6"/><path d="M500 66 C500 113.0 190 113.0 190 160" stroke="#A32F9A" stroke-width="1.6" class="flow"/>
-<g><circle r="4" fill="#A32F9A"/><animateMotion dur="3.2s" begin="-1.00s" repeatCount="indefinite" path="M500 66 C500 113.0 190 113.0 190 160"/></g>
-<path d="M500 66 C500 113.0 810 113.0 810 160" stroke="#D3DCEA" stroke-width="1.6"/><path d="M500 66 C500 113.0 810 113.0 810 160" stroke="#0A76B8" stroke-width="1.6" class="flow"/>
-<g><circle r="4" fill="#0A76B8"/><animateMotion dur="3.2s" begin="-1.00s" repeatCount="indefinite" path="M500 66 C500 113.0 810 113.0 810 160"/></g>
-<path d="M190 160 C190 198.0 500 198.0 500 236" stroke="#D3DCEA" stroke-width="1.6"/><path d="M190 160 C190 198.0 500 198.0 500 236" stroke="#A32F9A" stroke-width="1.6" class="flow"/>
-<g><circle r="4" fill="#A32F9A"/><animateMotion dur="3.2s" begin="-0.00s" repeatCount="indefinite" path="M190 160 C190 198.0 500 198.0 500 236"/></g>
-<path d="M810 160 C810 198.0 500 198.0 500 236" stroke="#D3DCEA" stroke-width="1.6"/><path d="M810 160 C810 198.0 500 198.0 500 236" stroke="#0A76B8" stroke-width="1.6" class="flow"/>
-<g><circle r="4" fill="#0A76B8"/><animateMotion dur="3.2s" begin="-2.00s" repeatCount="indefinite" path="M810 160 C810 198.0 500 198.0 500 236"/></g>
+<path d="M500 66 C500 113.0 230 113.0 230 160" stroke="#D3DCEA" stroke-width="1.6"/><path d="M500 66 C500 113.0 230 113.0 230 160" stroke="#A32F9A" stroke-width="1.6" class="flow"/>
+<g><circle r="4" fill="#A32F9A"/><animateMotion dur="3.2s" begin="-1.00s" repeatCount="indefinite" path="M500 66 C500 113.0 230 113.0 230 160"/></g>
+<path d="M500 66 C500 113.0 760 113.0 760 160" stroke="#D3DCEA" stroke-width="1.6"/><path d="M500 66 C500 113.0 760 113.0 760 160" stroke="#0A76B8" stroke-width="1.6" class="flow"/>
+<g><circle r="4" fill="#0A76B8"/><animateMotion dur="3.2s" begin="-0.00s" repeatCount="indefinite" path="M500 66 C500 113.0 760 113.0 760 160"/></g>
+<path d="M230 160 C230 198.0 500 198.0 500 236" stroke="#D3DCEA" stroke-width="1.6"/><path d="M230 160 C230 198.0 500 198.0 500 236" stroke="#A32F9A" stroke-width="1.6" class="flow"/>
+<g><circle r="4" fill="#A32F9A"/><animateMotion dur="3.2s" begin="-1.00s" repeatCount="indefinite" path="M230 160 C230 198.0 500 198.0 500 236"/></g>
+<path d="M760 160 C760 198.0 500 198.0 500 236" stroke="#D3DCEA" stroke-width="1.6"/><path d="M760 160 C760 198.0 500 198.0 500 236" stroke="#0A76B8" stroke-width="1.6" class="flow"/>
+<g><circle r="4" fill="#0A76B8"/><animateMotion dur="3.2s" begin="-0.00s" repeatCount="indefinite" path="M760 160 C760 198.0 500 198.0 500 236"/></g>
 <path d="M680 236 C960 236 960 66 640 66" stroke="#55627C" stroke-width="1.2" stroke-dasharray="4 6"/>
 <g><circle r="3.5" fill="#0B1222"/><animateMotion dur="5s" begin="-0.00s" repeatCount="indefinite" path="M680 236 C960 236 960 66 640 66"/></g>
 <text x="942" y="280" class="m" font-size="10" fill="#55627C" text-anchor="end" letter-spacing=".1em">REVIEW · RUN · ACCEPT / REJECT  ↺</text>
 <rect x="360" y="40" width="281" height="52" rx="14" fill="#F1F5FB" stroke="#0B1222" stroke-width="1.5"/>
 <text x="500" y="62" class="m" font-size="13" fill="#0B1222" text-anchor="middle" letter-spacing=".08em">SAMUDRA</text><text x="500" y="81" class="m" font-size="10.5" fill="#55627C" text-anchor="middle">architecture · direction · validation</text>
-<rect x="72" y="134" width="235" height="52" rx="14" fill="#F1F5FB" stroke="#A32F9A" stroke-width="1.5"/>
-<text x="190" y="156" class="m" font-size="13" fill="#0B1222" text-anchor="middle" letter-spacing=".08em">CLAUDE CODE</text><text x="190" y="175" class="m" font-size="10.5" fill="#55627C" text-anchor="middle">UI · UX · design tokens · docs</text>
-<rect x="634" y="134" width="352" height="52" rx="14" fill="#F1F5FB" stroke="#0A76B8" stroke-width="1.5"/>
-<text x="810" y="156" class="m" font-size="13" fill="#0B1222" text-anchor="middle" letter-spacing=".08em">ANTIGRAVITY</text><text x="810" y="175" class="m" font-size="10.5" fill="#55627C" text-anchor="middle">boot · memory · interrupts · scheduler · drivers</text>
+<rect x="112" y="134" width="235" height="52" rx="14" fill="#F1F5FB" stroke="#A32F9A" stroke-width="1.5"/>
+<text x="230" y="156" class="m" font-size="13" fill="#0B1222" text-anchor="middle" letter-spacing=".08em">CLAUDE CODE</text><text x="230" y="175" class="m" font-size="10.5" fill="#55627C" text-anchor="middle">UI · UX · design tokens · docs</text>
+<rect x="584" y="134" width="352" height="52" rx="14" fill="#F1F5FB" stroke="#0A76B8" stroke-width="1.5"/>
+<text x="760" y="156" class="m" font-size="13" fill="#0B1222" text-anchor="middle" letter-spacing=".08em">ANTIGRAVITY</text><text x="760" y="175" class="m" font-size="10.5" fill="#55627C" text-anchor="middle">boot · memory · interrupts · scheduler · drivers</text>
 <rect x="330" y="210" width="339" height="52" rx="14" fill="#F1F5FB" stroke="#15803D" stroke-width="1.5"/>
 <text x="500" y="232" class="m" font-size="13" fill="#0B1222" text-anchor="middle" letter-spacing=".08em">SHARED REPOSITORY</text><text x="500" y="251" class="m" font-size="10.5" fill="#55627C" text-anchor="middle">docs · API contracts · handoff notes · commits</text>
 <text x="40" y="40" class="m" font-size="10" fill="#A32F9A" letter-spacing=".18em">AI AGENTS, NOT PEOPLE</text>
