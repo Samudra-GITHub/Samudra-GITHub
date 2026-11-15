@@ -1,8 +1,8 @@
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/hero.svg"><img src="./assets/readme/light/hero.svg" width="100%" alt="SAMUDRA KAR. Computer Science engineering student building across systems, AI and product, from first principles. A turning wireframe Earth with a moon and a satellite in orbit."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/hero.svg"><img src="./assets/readme/light/hero.svg" width="100%" alt="Samudra Kar. Systems, AI and product, from first principles, with a designer's eye. A wireframe mountain range turns on a turntable with a pin on its summit, beside floating glass cards for the flagship W.E.D.N.E.S.D.A.Y. and 20+ public repositories."></picture>
 
-<sub><a href="#flagship">Flagship</a> &nbsp;·&nbsp; <a href="#samagra">Samagra OS</a> &nbsp;·&nbsp; <a href="#projects">All projects</a> &nbsp;·&nbsp; <a href="#engineering-with-ai">Engineering with AI</a> &nbsp;·&nbsp; <a href="#stack">Stack</a> &nbsp;·&nbsp; <a href="#contact">Contact</a></sub>
+<sub><a href="#flagship">Flagship</a> &nbsp;·&nbsp; <a href="#samagra">Samagra OS</a> &nbsp;·&nbsp; <a href="#waymark">Waymark</a> &nbsp;·&nbsp; <a href="#projects">All projects</a> &nbsp;·&nbsp; <a href="#engineering-with-ai">Engineering with AI</a> &nbsp;·&nbsp; <a href="#stack">Stack</a> &nbsp;·&nbsp; <a href="#contact">Contact</a></sub>
 
 </div>
 
@@ -48,13 +48,28 @@
 
 **[Samagra OS](https://github.com/Samudra-GITHub/Samagra-OS)** is a real x86-64 operating system, built from first principles. It boots into long mode, manages physical and virtual memory, handles CPU exceptions and hardware interrupts, and runs a preemptive scheduler over kernel tasks. Early user-mode support has started: Ring 3, per-process address spaces, a small system-call interface and a non-persistent RAM filesystem. Persistent storage, networking and a native desktop are still to come.
 
+<a id="waymark"></a>
+
+<a href="https://github.com/Samudra-GITHub/waymark"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/waymark.svg"><img src="./assets/readme/light/waymark.svg" width="100%" alt="Waymark: India-first travel discovery and trip planning. Find your somewhere. 34 destinations, 10 moods, 6 collections, 5 regions. A wireframe of the Western Ghats turns with three pins and a dashed route; glass cards show The Western Ghats Escape in Coorg and an estimated ₹12,000 weekend budget."></picture></a>
+
+**[Waymark](https://github.com/Samudra-GITHub/waymark)** is new: an India-first travel discovery and trip-planning app. Start with a mood, a collection or a region; then turn a place into a plan with an editable itinerary, a map of the places you've pinned and a per-person budget in ₹ that always says it's an estimate. It never invents live prices, availability or weather, and the destination schema is ready for markets beyond India.
+
+<p>
+<img src="https://img.shields.io/badge/React-19-142329?style=flat-square&logo=react&logoColor=D5EF62" alt="React 19">
+<img src="https://img.shields.io/badge/TypeScript-strict-142329?style=flat-square&logo=typescript&logoColor=D5EF62" alt="TypeScript">
+<img src="https://img.shields.io/badge/Tailwind-4-142329?style=flat-square&logo=tailwindcss&logoColor=D5EF62" alt="Tailwind 4">
+<img src="https://img.shields.io/badge/Motion-for_React-142329?style=flat-square&logo=framer&logoColor=D5EF62" alt="Motion">
+<img src="https://img.shields.io/badge/Leaflet-OpenStreetMap-142329?style=flat-square&logo=leaflet&logoColor=D5EF62" alt="Leaflet">
+</p>
+
+
 <br>
 
 <a id="projects"></a>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/sec-projects.svg"><img src="./assets/readme/light/sec-projects.svg" width="100%" alt="03 All projects"></picture>
 
-Every other public repository, two per row. Each card is a small animated scene of what the project does; the readings inside them are illustrative, not live data.
+Every other public repository, two per row. Each card is a small animated scene of what the project does, drawn in the same Waymark × Noir language; the readings inside them are illustrative, not live data.
 
 <table>
 <tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/arthayukti"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/arthayukti.svg"><img src="./assets/readme/light/arthayukti.svg" width="100%" alt="ArthaYukti: animated project card"></picture></a><br><sub>Multi-goal financial planning under uncertainty: when income can't cover every goal, it shows which goal slips, by how long, and the smallest fix, and the engine re-checks every fix. An AI advisor explains the trade-offs; the engine does the arithmetic. English and हिन्दी. Built for Srujana Hackathon 2026.</sub><br><sub>FastAPI · React · TypeScript · Tailwind · Gemini &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/arthayukti">GitHub ↗</a> &nbsp;·&nbsp; <a href="https://arthayukti.vercel.app">Live ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/PRAHARI"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/prahari.svg"><img src="./assets/readme/light/prahari.svg" width="100%" alt="PRAHARI: animated project card"></picture></a><br><sub>Mine safety and compliance monitoring: explainable risk scores, a tamper-evident audit log, and a copilot limited to permission-scoped data. Built for the Smart India Hackathon.</sub><br><sub>Next.js · Prisma · PostgreSQL · Docker &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/PRAHARI">GitHub ↗</a></sub></td></tr>
@@ -65,7 +80,7 @@ Every other public repository, two per row. Each card is a small animated scene 
 <tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/samudra-kar-portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/samudra-kar-portfolio.svg"><img src="./assets/readme/light/samudra-kar-portfolio.svg" width="100%" alt="samudra-kar-portfolio: animated project card"></picture></a><br><sub>An earlier interactive developer portfolio.</sub><br><sub>TypeScript &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/samudra-kar-portfolio">GitHub ↗</a> &nbsp;·&nbsp; <a href="https://samudra-kar-portfolio.vercel.app">Live ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/noir-cafe"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/noir-cafe.svg"><img src="./assets/readme/light/noir-cafe.svg" width="100%" alt="noir-cafe: animated project card"></picture></a><br><sub>A cinematic specialty-coffee site.</sub><br><sub>Next.js · TypeScript · Tailwind · Framer Motion · Lenis &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/noir-cafe">GitHub ↗</a></sub></td></tr>
 <tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/the-waffle-house"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/the-waffle-house.svg"><img src="./assets/readme/light/the-waffle-house.svg" width="100%" alt="the-waffle-house: animated project card"></picture></a><br><sub>A restaurant landing page.</sub><br><sub>TypeScript &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/the-waffle-house">GitHub ↗</a> &nbsp;·&nbsp; <a href="https://the-waffle-house.vercel.app">Live ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/singularity-login"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/singularity-login.svg"><img src="./assets/readme/light/singularity-login.svg" width="100%" alt="singularity-login: animated project card"></picture></a><br><sub>A glassmorphism sign-in UI.</sub><br><sub>Next.js · TypeScript · Tailwind &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/singularity-login">GitHub ↗</a></sub></td></tr>
 <tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/speed-of-numbers-fca"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/speed-of-numbers-fca.svg"><img src="./assets/readme/light/speed-of-numbers-fca.svg" width="100%" alt="speed-of-numbers-fca: animated project card"></picture></a><br><sub>A team lab on numeric representation and execution speed on the ESP32.</sub><br><sub>Arduino · TeX &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/speed-of-numbers-fca">GitHub ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/website"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/website.svg"><img src="./assets/readme/light/website.svg" width="100%" alt="website: animated project card"></picture></a><br><sub>An early website experiment.</sub><br><sub>HTML &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/website">GitHub ↗</a></sub></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/vyom"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/vyom.svg"><img src="./assets/readme/light/vyom.svg" width="100%" alt="vyom: animated project card"></picture></a><br><sub>Work in progress.</sub><br><sub><a href="https://github.com/Samudra-GITHub/vyom">GitHub ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/Samudra-GITHub"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/samudra-github.svg"><img src="./assets/readme/light/samudra-github.svg" width="100%" alt="Samudra-GITHub: animated project card"></picture></a><br><sub>This profile README and the generator behind its artwork: every SVG here is drawn by <code>tools/build_readme.py</code>, in a dark and a light version.</sub><br><sub>Python &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/Samudra-GITHub">GitHub ↗</a></sub></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/vyom"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/vyom.svg"><img src="./assets/readme/light/vyom.svg" width="100%" alt="vyom: animated project card"></picture></a><br><sub>Work in progress.</sub><br><sub><a href="https://github.com/Samudra-GITHub/vyom">GitHub ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/Samudra-GITHub"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/samudra-github.svg"><img src="./assets/readme/light/samudra-github.svg" width="100%" alt="Samudra-GITHub: animated project card"></picture></a><br><sub>This profile README and the generator behind its artwork: every SVG here is drawn by <code>tools/build_readme.py</code>, in an Espresso (dark) and a Canvas (light) version, including the real 3D wireframes.</sub><br><sub>Python &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/Samudra-GITHub">GitHub ↗</a></sub></td></tr>
 </table>
 
 <br>
@@ -88,6 +103,9 @@ Claude Code and Antigravity are AI engineering agents, not people. I use them as
 
 **Interests** &nbsp; Systems · AI / Computer Vision · Product Engineering · UI / UX · Developer Tools
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake-dark.svg"><img src="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake.svg" width="100%" alt="A lime snake eats a year of GitHub contributions, drawn as roasted-coffee squares."></picture>
+
+
 <br>
 
 <a id="contact"></a>
@@ -97,3 +115,11 @@ Claude Code and Antigravity are AI engineering agents, not people. I use them as
 <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/closing.svg"><img src="./assets/readme/light/closing.svg" width="100%" alt="Let's build something real. Samudra Kar, open to internships. Bangalore, India. Chanakya University."></picture>
 
 <p align="center"><a href="https://sam-sportfolio.vercel.app">Portfolio</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/samudra-kar-a495951b5/">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub">GitHub</a> &nbsp;·&nbsp; <a href="mailto:hi.samsstudio@gmail.com">Email</a></p>
+
+<details>
+<summary><sub><b>About this design</b></sub></summary>
+<br>
+
+<sub>The artwork folds two of my own design systems into one, <b>Waymark × Noir</b>. From <a href="https://github.com/Samudra-GITHub/waymark">Waymark</a>: Fjord, Canvas, Trail, Sage and Lime, Sora display type, rounded photo containers, glass cards, lime pill buttons and topographic lines. From <a href="https://github.com/Samudra-GITHub/noir-cafe">Noir Café</a>: Espresso, Walnut and Caramel, Cormorant Garamond, film grain and steam. The mountain ranges and the coffee cup are real 3D wireframes: <code>tools/build_readme.py</code> projects them at every angle and SMIL interpolates between the frames. No scripts, no external resources, and every scene still reads as a finished composition with motion turned off.</sub>
+
+</details>

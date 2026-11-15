@@ -25,8 +25,8 @@ jobs:
         with:
           github_user_name: Samudra-GITHub
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=#5B7A0C&color_dots=#EFE5D7,#E2C9A8,#C99B6C,#A86A3C,#5C3A1E
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#D5EF62&color_dots=#2A221C,#4A3424,#7A5233,#A86A3C,#E2B48A
 
       - name: Push output to output branch
         uses: crazy-max/ghaction-github-pages@v4

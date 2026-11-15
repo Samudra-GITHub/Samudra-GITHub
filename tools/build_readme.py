@@ -3,14 +3,19 @@
 
     python tools/build_readme.py
 
-Design language: "Orbital". An instrument-panel look borrowed from the flagship,
-W.E.D.N.E.S.D.A.Y., and its living Earth and Moon.
-  themes   every scene is rendered twice, assets/readme/dark/ and assets/readme/light/,
-           and the README picks one with <picture> and prefers-color-scheme
-  palette  deep navy or paper-white panels, hairline grids, one accent hue per project
-  type     Syne ExtraBold drawn as outlined paths from tools/fonts/syne-800.json, so titles
-           render identically everywhere; system mono for labels
-  forms    rounded panels with corner registration ticks, orbit ellipses, mono index chips
+Design language: "Waymark x Noir". Two of my own design systems folded into one:
+Waymark (India-first travel: Fjord, Canvas, Trail, Sage, Lime; Sora; glass cards, lime
+pill CTAs, topographic lines) and Noir Cafe (specialty coffee: Espresso, Walnut, Caramel,
+Beige; Cormorant Garamond; film grain, steam, a quiet editorial serif).
+  themes   every scene is rendered twice: "Espresso" (dark) and "Canvas" (light), in
+           assets/readme/dark/ and assets/readme/light/; the README picks one with <picture>
+  palette  espresso or canvas cards with film grain and faint contour lines; lime, trail and
+           caramel lead, and every project keeps one earthy accent of its own
+  type     Sora ExtraBold (Waymark) and Cormorant Garamond (Noir) drawn as outlined paths from
+           tools/fonts/*.json, so titles render identically everywhere; IBM Plex Mono labels
+  forms    soft 28px panels, glass chips, lime pills with an arrow badge, waymark pins
+  depth    real 3D wireframes (terrain, a coffee cup) projected in Python and animated frame
+           by frame with SMIL, plus floating glass cards that drift in perspective
   motion   CSS keyframes and SMIL only. No scripts, no external resources. The static
            (reduced-motion) state of every scene is a complete composition.
 Nothing here is live telemetry. Every reading, record and status inside the artwork is
@@ -26,31 +31,38 @@ from xml.sax.saxutils import escape
 
 HERE = pathlib.Path(__file__).resolve().parent
 OUT = HERE.parent / "assets" / "readme"
-FONT = json.loads((HERE / "fonts" / "syne-800.json").read_text(encoding="utf-8"))
+FONTS = {"sora": json.loads((HERE / "fonts" / "sora-800.json").read_text(encoding="utf-8")),
+         "corm": json.loads((HERE / "fonts" / "cormorant-500.json").read_text(encoding="utf-8"))}
+FONT = FONTS["sora"]
 UPM, CAP = FONT["upm"], FONT["capHeight"]
 
 THEMES = {
-    "dark": dict(card="#0A1020", panel="#101A2E", line="#22314F", text="#E8EEF9", mute="#8E9BB6",
-                 faint="#18233B", star="#DCE6FF", night="#000510", ocean="#0B2340", glass="#FFFFFF"),
-    "light": dict(card="#FFFFFF", panel="#F1F5FB", line="#D3DCEA", text="#0B1222", mute="#55627C",
-                  faint="#E6ECF5", star="#7D8BA8", night="#0B1222", ocean="#DCEBFA", glass="#0B1222"),
+    # Espresso: Noir's espresso and walnut, with Waymark's fjord for the "sky" panels
+    "dark": dict(card="#17120E", panel="#211A15", line="#3A322B", text="#F8F4EC", mute="#B0A69B",
+                 faint="#2A221C", star="#EFE5D7", night="#0B0806", ocean="#142329", glass="#FFFFFF",
+                 sky0="#1B3036", sky1="#142329", grain=".10"),
+    # Canvas: Waymark's canvas with Noir's ivory cards and espresso ink
+    "light": dict(card="#FFFCF7", panel="#F4F1E8", line="#D8CEC0", text="#17120E", mute="#6D645B",
+                  faint="#EFE5D7", star="#A29E9A", night="#142329", ocean="#E3E8DD", glass="#17120E",
+                  sky0="#EEF1E8", sky1="#DCE4D6", grain=".06"),
 }
-# (dark, light) accent per project
+# (dark, light) accent per project: an earthy family drawn from both systems
 ACC = {
-    "wed": ("#5CC8FF", "#0A76B8"), "moon": ("#C9D3E3", "#5D6A84"), "samagra": ("#FFB547", "#B86200"),
-    "artha": ("#4ADE9A", "#0C8552"), "prahari": ("#FF8A4C", "#C0470C"), "akasha": ("#3EE0D0", "#0B847A"),
-    "tarang": ("#FF6FB5", "#BE1D70"), "rinti": ("#A78BFA", "#6A3CDC"), "orbit": ("#7C9CFF", "#2D4CD2"),
-    "krama": ("#FF9E5E", "#C0520E"), "niriksh": ("#C6F04B", "#5A8400"), "skycast": ("#6CC8FF", "#0F72BA"),
-    "portfolio": ("#7EE8FA", "#0886A0"), "skp": ("#8DA2FF", "#344FD4"), "noir": ("#E2B48A", "#87582C"),
-    "waffle": ("#FFC94D", "#A87200"), "singularity": ("#C084FC", "#8629DC"), "fca": ("#FF6B6B", "#BF2828"),
-    "website": ("#B8C2D6", "#56627A"), "vyom": ("#93A5FF", "#3F53CC"), "profile": ("#5EEA9F", "#15854C"),
-    "ai": ("#F5A3FF", "#A32F9A"),
+    "wed": ("#D5EF62", "#5B7A0C"), "moon": ("#D9D4C9", "#6D645B"), "samagra": ("#E9A55C", "#9A5A16"),
+    "artha": ("#9FD37E", "#3F7A22"), "prahari": ("#E97956", "#B4522F"), "akasha": ("#7FC9BC", "#2C7A6E"),
+    "tarang": ("#E58FA8", "#A63C5C"), "rinti": ("#B7A3E0", "#6A4FB0"), "orbit": ("#9DB3D9", "#3E5C94"),
+    "krama": ("#E9935E", "#A8521E"), "niriksh": ("#C9E06A", "#5F7A10"), "skycast": ("#8DC3DE", "#2F6F92"),
+    "portfolio": ("#93D6CF", "#28796F"), "skp": ("#A9B4E6", "#4A57A6"), "noir": ("#D9A06E", "#905B33"),
+    "waffle": ("#E8C26A", "#94690F"), "singularity": ("#C5A0E8", "#7A43B0"), "fca": ("#E7837A", "#A8392F"),
+    "website": ("#C4BAAE", "#6D645B"), "vyom": ("#A9B4E6", "#4A57A6"), "profile": ("#A9B9A4", "#4E6249"),
+    "ai": ("#E2B48A", "#87582C"), "waymark": ("#D5EF62", "#5B7A0C"), "trail": ("#E97956", "#B4522F"),
+    "caramel": ("#D9A06E", "#905B33"), "sage": ("#A9B9A4", "#4E6249"),
 }
-OK = {"dark": "#4ADE80", "light": "#15803D"}
+OK = {"dark": "#A9B9A4", "light": "#4E6249"}
 
 BASE_CSS = """
-.m{font-family:ui-monospace,"JetBrains Mono","Cascadia Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-weight:600}
-.s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:500}
+.m{font-family:"IBM Plex Mono",ui-monospace,"JetBrains Mono","Cascadia Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-weight:600}
+.s{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:500}
 .fb{transform-box:fill-box;transform-origin:center}
 .rise{animation:rise 14s cubic-bezier(.16,1,.3,1) infinite both}
 @keyframes rise{0%{transform:translateY(110%)}6%,90%{transform:translateY(0)}96%,100%{transform:translateY(110%)}}
@@ -83,6 +95,16 @@ BASE_CSS = """
 @keyframes drip{0%{transform:scaleY(.15)}60%,85%{transform:scaleY(1)}100%{transform:scaleY(.15)}}
 .shim{animation:shim 2.6s ease-in-out infinite}
 @keyframes shim{0%{transform:translateX(-120px)}100%{transform:translateX(330px)}}
+.float{animation:float 7s ease-in-out infinite alternate}
+@keyframes float{0%{transform:translateY(0) skewY(0deg)}50%{transform:translateY(-8px) skewY(-1.4deg)}100%{transform:translateY(-2px) skewY(.9deg)}}
+.pin{transform-box:fill-box;transform-origin:50% 100%;animation:pin 2.6s cubic-bezier(.5,0,.5,1) infinite alternate}
+@keyframes pin{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+.sheen{animation:sheen 6s ease-in-out infinite}
+@keyframes sheen{0%,55%{transform:translateX(-200px) skewX(-20deg)}85%,100%{transform:translateX(620px) skewX(-20deg)}}
+.breathe{transform-box:fill-box;transform-origin:center;animation:breathe 5s ease-in-out infinite alternate}
+@keyframes breathe{from{transform:scale(.96);opacity:.55}to{transform:scale(1.04);opacity:1}}
+.nudge{animation:nudge 1.8s cubic-bezier(.5,0,.5,1) infinite alternate}
+@keyframes nudge{from{transform:translate(0,0)}to{transform:translate(2px,-2px)}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 """
 
@@ -113,15 +135,23 @@ class Scene:
         self.parts.extend(xs)
 
     # ---- display type (Syne paths) ---------------------------------------------
-    def tw(self, s, size, ls=0.0):
-        return sum(FONT["glyphs"].get(c, {"adv": 600})["adv"] for c in s) * size / UPM + ls * size * len(s)
+    def tw(self, s, size, ls=0.0, font="sora"):
+        F = FONTS[font]
+        return sum(F["glyphs"].get(c, {"adv": 600})["adv"] for c in s) * size / F["upm"] + ls * size * len(s)
 
-    def fit(self, s, width, ls=0.0, cap=999):
-        return min(cap, width / self.tw(s, 1.0, ls))
+    def fit(self, s, width, ls=0.0, cap=999, font="sora"):
+        return min(cap, width / self.tw(s, 1.0, ls, font))
 
-    def display(self, s, x, y, size, fill, ls=0.0, anchor="start", rise=None):
-        """Syne ExtraBold with baseline at y. rise = start delay (s) for a masked letter reveal."""
-        width = self.tw(s, size, ls)
+    def serif(self, s, x, y, size, fill, **kw):
+        """Cormorant Garamond, Noir Cafe's display serif."""
+        return self.display(s, x, y, size, fill, font="corm", **kw)
+
+    def display(self, s, x, y, size, fill, ls=0.0, anchor="start", rise=None, font="sora"):
+        """Sora ExtraBold (or Cormorant with font="corm") with baseline at y.
+        rise = start delay (s) for a masked letter reveal."""
+        FONT = FONTS[font]
+        UPM, CAP = FONT["upm"], FONT["capHeight"]
+        width = self.tw(s, size, ls, font)
         if anchor == "middle":
             x -= width / 2
         elif anchor == "end":
@@ -134,8 +164,8 @@ class Scene:
                 cx += 0.5 * size
                 continue
             if c != " ":
-                self.glyphs.add(c)
-                use = f'<use href="#g{ord(c)}" transform="translate({cx:.1f} {y:.1f}) scale({k:.4f})"/>'
+                self.glyphs.add((font, c))
+                use = f'<use href="#{font}{ord(c)}" transform="translate({cx:.1f} {y:.1f}) scale({k:.4f})"/>'
                 if rise is not None:
                     use = f'<g class="rise" style="animation-delay:{rise + i * 0.05:.2f}s">{use}</g>'
                 out += use
@@ -147,17 +177,19 @@ class Scene:
             return f'<g clip-path="url(#{cid})" fill="{fill}">{out}</g>'
         return f'<g fill="{fill}">{out}</g>'
 
-    def frame(self, accent, rx=22):
+    def frame(self, accent, rx=28, contour=True, seed=None):
+        """Card with Noir's film grain and Waymark's topographic contour lines."""
         P, w, h = self.P, self.w, self.h
-        gid = self.uid("grid")
-        self.defs.append(f'<pattern id="{gid}" width="32" height="32" patternUnits="userSpaceOnUse">'
-                         f'<path d="M32 0H0V32" fill="none" stroke="{P["line"]}" stroke-opacity=".45" stroke-width="1"/></pattern>')
+        seed = sum(map(ord, self.name)) if seed is None else seed
         cid = self.uid("clip")
         self.defs.append(f'<clipPath id="{cid}"><rect width="{w}" height="{h}" rx="{rx}"/></clipPath>')
-        self.add(f'<rect x=".75" y=".75" width="{w-1.5}" height="{h-1.5}" rx="{rx}" fill="{P["card"]}"/>',
-                 f'<rect width="{w}" height="{h}" fill="url(#{gid})" clip-path="url(#{cid})" opacity=".55"/>')
+        self.add(f'<rect x=".75" y=".75" width="{w-1.5}" height="{h-1.5}" rx="{rx}" fill="{P["card"]}"/>')
+        if contour:
+            self.add(f'<g clip-path="url(#{cid})">{contours(self, w, h, seed, accent)}</g>')
+        self.add(f'<g clip-path="url(#{cid})">{grain(self, w, h)}</g>')
         self.tail = (f'<rect x=".75" y=".75" width="{w-1.5}" height="{h-1.5}" rx="{rx}" fill="none" stroke="{P["line"]}" stroke-width="1.5"/>'
-                     + ticks(14, 14, w - 28, h - 28, accent))
+                     + f'<rect x="7" y="7" width="{w-14}" height="{h-14}" rx="{max(rx-6, 4)}" fill="none" stroke="{P["line"]}" '
+                     f'stroke-opacity=".7" stroke-dasharray="1 5" stroke-linecap="round"/>')
 
     def seq(self, key, n, dur, fade=1.2):
         """Classes key0..key{n-1}; exactly one is visible at a time. key0 is the static state."""
@@ -177,7 +209,7 @@ class Scene:
                          f"@keyframes {key}{i}{{0%,{a:.1f}%{{opacity:0;transform:translateY(8px)}}{a+6:.1f}%,{hold*100:.1f}%{{opacity:1;transform:translateY(0)}}{hold*100+5:.1f}%,100%{{opacity:0;transform:translateY(0)}}}}")
 
     def render(self):
-        gdefs = "".join(f'<path id="g{ord(c)}" d="{FONT["glyphs"][c]["d"]}"/>' for c in sorted(self.glyphs))
+        gdefs = "".join(f'<path id="{f}{ord(c)}" d="{FONTS[f]["glyphs"][c]["d"]}"/>' for f, c in sorted(self.glyphs))
         return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {self.w} {self.h}" width="{self.w}" height="{self.h}" '
                 f'role="img" aria-labelledby="t d" fill="none">\n<title id="t">{e(self.title)}</title>\n<desc id="d">{e(self.desc)}</desc>\n'
                 f'<defs>{gdefs}{"".join(self.defs)}</defs>\n<style>{BASE_CSS}{self.css}</style>\n'
@@ -329,6 +361,184 @@ def wcore(cx, y, w, A, P, s, states=True):
     return out
 
 
+# ------------------------------------------------------------------ Waymark x Noir
+def grain(s, w, h):
+    """Noir Cafe's film grain: fractal noise turned into soft specks."""
+    fid = s.uid("gr")
+    c = "1" if s.theme == "dark" else "0.09"
+    s.defs.append(f'<filter id="{fid}" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" '
+                  f'numOctaves="2" seed="{len(s.name)}" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 {c} 0 0 0 0 {c} 0 0 0 0 {c} 1.6 0 0 0 -.62"/></filter>')
+    return f'<rect width="{w}" height="{h}" filter="url(#{fid})" opacity="{s.P["grain"]}"/>'
+
+
+def blob(cx, cy, r, ph, n=64):
+    pts = []
+    for i in range(n):
+        t = 2 * math.pi * i / n
+        rr = r * (1 + .11 * math.sin(3 * t + ph) + .06 * math.sin(5 * t + 2 * ph) + .03 * math.sin(7 * t - ph))
+        pts.append(f"{cx + rr * math.cos(t):.1f} {cy + rr * .72 * math.sin(t):.1f}")
+    return "M" + " L".join(pts) + "Z"
+
+
+def contours(s, w, h, seed, accent):
+    """Waymark's topographic lines: a few concentric, slightly wobbly height rings."""
+    rnd = random.Random(seed)
+    cx, cy = rnd.choice((w * .92, w * .08, w * .85)), rnd.choice((h * .1, h * .95))
+    base, ph = max(w, h) * .12, rnd.random() * 6
+    out = ""
+    for k in range(9):
+        op = .55 if k % 4 else .9
+        out += f'<path d="{blob(cx, cy, base * (1 + k * .42), ph + k * .35)}" stroke="{s.P["line"]}" stroke-opacity="{op}" stroke-width="1"/>'
+    out += f'<path d="{blob(cx, cy, base * 2.26, ph + 1.4)}" stroke="{accent}" stroke-opacity=".35" stroke-width="1.1" stroke-dasharray="2 5"/>'
+    return out
+
+
+def proj(v, th, tilt=.42, dist=4.0):
+    """Rotate a point about the vertical axis by th, view it from tilt radians above,
+    and apply a gentle perspective. Returns screen x, y (y up) and depth (+ = far)."""
+    x, y, z = v
+    xr, zr = x * math.cos(th) + z * math.sin(th), -x * math.sin(th) + z * math.cos(th)
+    ct, st = math.cos(tilt), math.sin(tilt)
+    yr, zz = y * ct + zr * st, zr * ct - y * st
+    f = dist / (dist + zz)
+    return xr * f, yr * f, zz
+
+
+def mesh3d(polys, cx, cy, scale, color, period=36, frames=24, width=1.1, tilt=.42, op=(.18, .95), static=False):
+    """Real 3D wireframe: every polyline is projected at `frames` angles and SMIL interpolates
+    between them, so the object turns on its axis. Far lines fade, near lines brighten."""
+    out = ""
+    for poly in polys:
+        ds, ops = [], []
+        for j in range(frames + 1):
+            th = 2 * math.pi * j / frames
+            pts = [proj(v, th, tilt) for v in poly]
+            ds.append("M" + " L".join(f"{cx + x * scale:.1f} {cy - y * scale:.1f}" for x, y, _ in pts))
+            dep = sum(z for *_, z in pts) / len(pts)
+            ops.append(f"{op[0] + (op[1] - op[0]) * min(1, max(0, .5 - dep * .55)):.2f}")
+        if static:
+            out += f'<path d="{ds[0]}" stroke="{color}" stroke-width="{width}" stroke-opacity="{ops[0]}" stroke-linejoin="round"/>'
+            continue
+        out += (f'<path d="{ds[0]}" stroke="{color}" stroke-width="{width}" stroke-opacity="{ops[0]}" stroke-linejoin="round">'
+                f'<animate attributeName="d" dur="{period}s" repeatCount="indefinite" values="{";".join(ds)}"/>'
+                f'<animate attributeName="stroke-opacity" dur="{period}s" repeatCount="indefinite" values="{";".join(ops)}"/></path>')
+    return out
+
+
+def track3d(v, cx, cy, scale, period=36, frames=24, tilt=.42):
+    """animateTransform values that keep an overlay glued to a point on a turning mesh."""
+    vals = []
+    for j in range(frames + 1):
+        x, y, _ = proj(v, 2 * math.pi * j / frames, tilt)
+        vals.append(f"{cx + x * scale:.1f} {cy - y * scale:.1f}")
+    return (f'<animateTransform attributeName="transform" type="translate" dur="{period}s" repeatCount="indefinite" '
+            f'values="{";".join(vals)}"/>'), vals[0]
+
+
+def path3d(vs, cx, cy, scale, period=36, frames=24, tilt=.42):
+    ds = []
+    for j in range(frames + 1):
+        th = 2 * math.pi * j / frames
+        ds.append("M" + " L".join(f"{cx + x * scale:.1f} {cy - y * scale:.1f}" for x, y, _ in (proj(v, th, tilt) for v in vs)))
+    return ds[0], f'<animate attributeName="d" dur="{period}s" repeatCount="indefinite" values="{";".join(ds)}"/>'
+
+
+def peaks_h(peaks):
+    def h(x, z):
+        r2 = x * x + z * z
+        v = sum(a * math.exp(-((x - px) ** 2 + (z - pz) ** 2) / (w * w)) for px, pz, a, w in peaks)
+        return v * max(0.0, 1 - r2 ** 2) + .015 * math.sin(7 * x) * math.cos(6 * z)
+    return h
+
+
+def terrain(peaks, n=13):
+    """Rows and columns of a heightfield clipped to a round turntable."""
+    h = peaks_h(peaks)
+    polys, g = [], [-1 + 2 * i / (n - 1) for i in range(n)]
+    fine = [-1 + 2 * i / 28 for i in range(29)]
+    for a in g[1:-1]:
+        for horiz in (True, False):
+            pts = []
+            for b in fine:
+                x, z = (b, a) if horiz else (a, b)
+                if x * x + z * z <= .985:
+                    pts.append((x, h(x, z), z))
+            if len(pts) > 2:
+                polys.append(pts[::2] if len(pts) > 16 else pts)
+    rim = [(math.cos(t), 0, math.sin(t)) for t in (2 * math.pi * i / 48 for i in range(49))]
+    return polys, rim, h
+
+
+def waypin(c, ink, r=9):
+    """A map pin whose tip sits at (0, 0)."""
+    return (f'<g class="pin"><path d="M0 0C-{r*.25:.1f} -{r*.9:.1f} -{r} -{r*1.25:.1f} -{r} -{r*2:.1f}A{r} {r} 0 1 1 {r} -{r*2:.1f}'
+            f'C{r} -{r*1.25:.1f} {r*.25:.1f} -{r*.9:.1f} 0 0Z" fill="{c}"/><circle cy="-{r*2:.1f}" r="{r*.38:.1f}" fill="{ink}"/></g>')
+
+
+def sky(s, x, y, w, h, rx=24):
+    """Waymark's rounded photo container, painted as a soft sky gradient."""
+    P = s.P
+    gid, cid = s.uid("sky"), s.uid("skc")
+    s.defs.append(f'<linearGradient id="{gid}" x1="0" y1="0" x2=".3" y2="1"><stop offset="0" stop-color="{P["sky0"]}"/>'
+                  f'<stop offset="1" stop-color="{P["sky1"]}"/></linearGradient>')
+    s.defs.append(f'<clipPath id="{cid}"><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}"/></clipPath>')
+    return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="url(#{gid})"/>'), cid
+
+
+def glass(s, x, y, w, h, inner, delay=0.0, rx=16):
+    """A floating glass card: translucent fill, hairline edge, a passing sheen."""
+    P = s.P
+    cid = s.uid("gl")
+    s.defs.append(f'<clipPath id="{cid}"><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}"/></clipPath>')
+    fill, edge = (("#FFFCF7", ".09"), ("#FFFFFF", ".26")) if s.theme == "dark" else (("#FFFCF7", ".82"), ("#17120E", ".12"))
+    return (f'<g class="float" style="animation-delay:-{delay:.1f}s">'
+            f'<rect x="{x+4}" y="{y+10}" width="{w}" height="{h}" rx="{rx}" fill="#000" fill-opacity="{.28 if s.theme == "dark" else .07}"/>'
+            f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill[0]}" fill-opacity="{fill[1]}" stroke="{edge[0]}" stroke-opacity="{edge[1]}"/>'
+            f'<g clip-path="url(#{cid})"><rect x="{x}" y="{y-20}" width="46" height="{h+40}" fill="{edge[0]}" fill-opacity=".10" class="sheen" '
+            f'style="animation-delay:-{delay*1.7:.1f}s"/></g>{inner}</g>')
+
+
+def cta(s, x, y, label, h=40, fill=None, ink=None):
+    """Waymark's lime pill with the round arrow badge."""
+    fill = fill or ACC["wed"][0]
+    ink = ink or "#142329"
+    w = mono_w(label, 11.5) + 38 + h
+    out = (f'<rect x="{x}" y="{y}" width="{w:.0f}" height="{h}" rx="{h/2}" fill="{fill}"/>'
+           + T(x + 20, y + h / 2 + 4.2, label, 11.5, ink, ls=".08em")
+           + f'<circle cx="{x + w - h/2:.1f}" cy="{y + h/2}" r="{h/2 - 5}" fill="{ink}"/>'
+           + f'<g class="nudge"><path d="M{x + w - h/2 - 4:.1f} {y + h/2 + 4}l8 -8m-6 0h6v6" stroke="{fill}" stroke-width="1.8" '
+             f'stroke-linecap="round" stroke-linejoin="round"/></g>')
+    return out, w
+
+
+def cup_scene(s, cx, cy, scale, A, period=28):
+    """A specialty-coffee cup and saucer as a true 3D wireframe turning on its axis."""
+    prof = [(.48, 0), (.6, .1), (.7, .32), (.76, .58), (.8, .84), (.82, 1.0)]
+    mer = [[(r * math.cos(a), y, r * math.sin(a)) for r, y in prof] for a in (2 * math.pi * i / 16 for i in range(16))]
+    handle = [(.79 + .3 * math.sin(t), .78 - .5 * (1 - math.cos(t)) / 2 - .1, 0) for t in (math.pi * i / 10 for i in range(11))]
+    saucer = [[(r * math.cos(a), y, r * math.sin(a)) for r, y in ((.5, -.06), (1.0, -.03), (1.28, .05))]
+              for a in (2 * math.pi * i / 24 for i in range(24))]
+    rings = []
+    for r, y in ((.82, 1.0), (.76, .58), (.6, .1), (1.28, .05), (1.0, -.03)):
+        rings.append([(r * math.cos(t), y, r * math.sin(t)) for t in (2 * math.pi * i / 48 for i in range(49))])
+    P = s.P
+    out = f'<ellipse cx="{cx}" cy="{cy + 18}" rx="{scale*1.45:.0f}" ry="{scale*.3:.0f}" fill="#000" fill-opacity="{.35 if s.theme == "dark" else .08}"/>'
+    out += mesh3d(rings, cx, cy, scale, A, width=1.4, op=(.35, 1), static=True)
+    out += mesh3d(saucer, cx, cy, scale, A, period, frames=16, width=.9, op=(.08, .55))
+    out += mesh3d(mer, cx, cy, scale, A, period, frames=16, width=1.1, op=(.1, .9))
+    out += mesh3d([handle], cx, cy, scale, A, period, frames=24, width=2.2, op=(.15, 1))
+    # crema
+    x0, y0, _ = proj((0, .95, 0), 0)
+    out += f'<ellipse cx="{cx}" cy="{cy - y0*scale:.1f}" rx="{scale*.74:.1f}" ry="{scale*.28:.1f}" fill="{A}" fill-opacity=".22"/>'
+    for i, dx in enumerate((-.28, 0, .28)):
+        sx = cx + dx * scale
+        sy = cy - 1.25 * scale
+        out += (f'<path d="M{sx:.1f} {sy:.1f}c-9 -13 9 -22 0 -34c-8 -10 6 -17 0 -26" stroke="{P["mute"]}" stroke-width="2.2" '
+                f'stroke-linecap="round" class="steam" style="animation-delay:-{i*1.2:.1f}s"/>')
+    return out
+
+
+
 def save(s):
     svg = s.render()
     xml.dom.minidom.parseString(svg.encode("utf-8"))
@@ -345,42 +555,136 @@ def both(fn):
 
 # ================================================================== scenes
 def hero(th):
-    s = Scene("hero", 1000, 400, th, "Samudra Kar",
+    s = Scene("hero", 1000, 440, th, "Samudra Kar",
               "Samudra Kar. Computer Science engineering student building across systems, AI and product, from first principles. "
-              "A turning wireframe Earth with a moon and satellites in orbit.")
-    P, A, M = s.P, s.acc("wed"), s.acc("moon")
-    s.frame(A)
-    s.add(stars(s, 20, 20, 960, 360, 70, 3))
-    s.add(T(56, 74, "// HELLO, I'M", 13, A, ls=".2em"))
-    s.add(s.display("SAMUDRA", 52, 168, s.fit("SAMUDRA", 470), P["text"], rise=0.2))
-    s.add(s.display("KAR", 52, 252, s.fit("SAMUDRA", 470), "none", rise=0.6).replace('fill="none"', f'fill="{P["card"]}" stroke="{A}" stroke-width="{2.2/(s.fit("SAMUDRA",470)/UPM):.0f}"', 1))
-    s.add(T(56, 292, "Computer Science engineering student building across", 16, P["mute"], cls="s"))
-    s.add(T(56, 314, "systems, AI and product, from first principles.", 16, P["mute"], cls="s"))
+              "A wireframe mountain range turns on a turntable with a pin on its summit, while glass cards float beside it.")
+    P, A, Tr, C = s.P, s.acc("wed"), s.acc("trail"), s.acc("caramel")
+    s.frame(A, 30, seed=3)
+    s.add(f'<circle cx="60" cy="68" r="4" fill="{A}" class="glow"/>' + T(74, 72, "HELLO — I'M", 12, P["mute"], ls=".22em"))
+    big = s.fit("Samudra", 440, cap=106)
+    s.add(s.display("Samudra", 52, 160, big, P["text"], rise=0.2))
+    s.add(s.display("Kar", 52, 252, big, P["text"], rise=0.5))
+    s.add(s.display(".", 52 + s.tw("Kar", big), 252, big, Tr, rise=0.75))
+    s.add(s.serif("systems, AI & product — from first", 56, 296, 29, C))
+    s.add(s.serif("principles, with a designer’s eye.", 56, 328, 29, C))
+    b, w = cta(s, 56, 360, "NOW BUILDING")
+    s.add(b)
     s.seq("now", 3, 12)
-    for i, w in enumerate(("W.E.D.N.E.S.D.A.Y.  ·  LOCAL-FIRST AI + LIVING EARTH",
-                           "LUNAR INTELLIGENCE  ·  A 3D MOON, LIVE EPHEMERIS",
-                           "SAMAGRA OS  ·  x86-64, FROM FIRST PRINCIPLES")):
-        s.add(f'<g class="now{i}">' + T(56, 352, "NOW BUILDING  →  " + w, 12.5, A, ls=".08em") + "</g>")
-    cx, cy = 770, 200
-    s.add(f'<path d="{ring_path(cx, cy, 190, 62)}" stroke="{P["line"]}" stroke-width="1.2" transform="rotate(-14 {cx} {cy})"/>')
-    s.add(f'<path d="{ring_path(cx, cy, 138, 44)}" stroke="{A}" stroke-opacity=".35" stroke-dasharray="2 6" transform="rotate(24 {cx} {cy})"/>')
-    s.add(globe(s, cx, cy, 104, A, points=((35, 20, s.acc("prahari")), (-10, 140, s.acc("prahari")), (50, 250, A))))
-    s.add(f'<g transform="rotate(-14 {cx} {cy})">' + orbiter(ring_path(cx, cy, 190, 62), 26, moon(s, 0, 0, 15, M)) + "</g>")
-    s.add(f'<g transform="rotate(24 {cx} {cy})">' + orbiter(ring_path(cx, cy, 138, 44), 9, f'<rect x="-4" y="-2.5" width="8" height="5" fill="{P["text"]}"/><path d="M-11 0H11" stroke="{A}" stroke-width="2"/>') + "</g>")
-    s.add(T(944, 368, "N 12.97°  E 77.59°  ·  BANGALORE", 10.5, P["mute"], anchor="end", ls=".1em"))
+    for i, t in enumerate(("W.E.D.N.E.S.D.A.Y. · LOCAL-FIRST AI", "WAYMARK · INDIA-FIRST TRAVEL", "SAMAGRA OS · x86-64 KERNEL")):
+        s.add(f'<g class="now{i}">' + T(56 + w + 16, 384, t, 12, P["text"], ls=".08em") + "</g>")
+    # Waymark-style photo container with a turning range
+    x, y, W, H = 548, 30, 422, 380
+    bg, cid = sky(s, x, y, W, H)
+    s.add(bg)
+    cx, cy, sc = x + W / 2, y + 278, 158
+    polys, rim, h = terrain(((-.15, .1, .72, .34), (.35, -.25, .5, .3), (-.45, -.4, .36, .26), (.3, .45, .3, .28)), 13)
+    ink = A if th == "dark" else "#293B40"
+    inner = (f'<ellipse cx="{cx}" cy="{cy + 10}" rx="{sc*1.02:.0f}" ry="{sc*.42:.0f}" fill="#000" fill-opacity="{.3 if th == "dark" else .07}"/>'
+             + mesh3d([rim], cx, cy, sc, ink, width=1.6, op=(.6, .6), static=True)
+             + mesh3d(polys, cx, cy, sc, ink, width=1.05, op=(.12, .95)))
+    mot, _ = track3d((-.15, h(-.15, .1), .1), cx, cy, sc)
+    inner += f'<g>{waypin(Tr, P["card"] if th == "dark" else "#FFFCF7", 9)}{mot}</g>'
+    s.add(f'<g clip-path="url(#{cid})">{inner}</g>')
+    s.add(T(x + 22, y + H - 18, "N 12.97°  E 77.59°  ·  BENGALURU", 10, P["mute"] if th == "light" else "#C9D4CF", ls=".14em"))
+    ink2 = P["text"]
+    s.add(glass(s, x + 20, y + 22, 214, 74,
+                f'<circle cx="{x+40}" cy="{y+46}" r="4" fill="{A}" class="glow"/>' + T(x + 52, y + 50, "FLAGSHIP", 10, P["mute"], ls=".18em")
+                + s.display("W.E.D.N.E.S.D.A.Y.", x + 36, y + 80, s.fit("W.E.D.N.E.S.D.A.Y.", 180, cap=18), ink2), 0))
+    gx, gy = x + W - 190, y + 98
+    s.add(glass(s, gx, gy, 172, 82,
+                s.display("20+", gx + 18, gy + 38, 28, ink2) + T(gx + 82, gy + 30, "PUBLIC", 9.5, P["mute"], ls=".14em")
+                + T(gx + 82, gy + 44, "REPOS", 9.5, P["mute"], ls=".14em")
+                + T(gx + 18, gy + 66, "3 HACKATHONS · 1 KERNEL", 9.5, C, ls=".06em"), 2.4))
     return s
 
 
 def section(th, key, idx, label, accent="wed"):
-    s = Scene(f"sec-{key}", 1000, 64, th, label.title(), f"Section heading: {label.title()}.")
+    s = Scene(f"sec-{key}", 1000, 76, th, label.title(), f"Section heading: {label.title()}.")
     P, A = s.P, s.acc(accent)
-    s.add(T(4, 40, f"{idx:02d}", 14, A, ls=".1em"))
-    s.add(s.display(label, 40, 42, 26, P["text"], ls=0.02))
-    x = 40 + s.tw(label, 26, 0.02) + 22
-    s.add(f'<path d="M{x:.0f} 33H996" stroke="{P["line"]}" stroke-width="1.2"/>')
-    s.add(f'<path d="M{x:.0f} 33H996" stroke="{A}" stroke-width="1.4" class="flow"/>')
-    s.add(f'<circle cy="33" r="3.5" fill="{A}"><animate attributeName="cx" values="{x:.0f};996;{x:.0f}" dur="9s" repeatCount="indefinite" '
-          f'calcMode="spline" keySplines=".6 0 .4 1;.6 0 .4 1"/></circle>')
+    s.add(s.serif("No.", 2, 50, 18, P["mute"]))
+    s.add(s.serif(f"{idx:02d}", 30, 52, 42, A))
+    x0 = 30 + s.tw(f"{idx:02d}", 42, font="corm") + 16
+    s.add(s.display(label, x0, 50, 25, P["text"], ls=0.02))
+    x = x0 + s.tw(label, 25, 0.02) + 22
+    s.add(f'<path d="M{x:.0f} 42H990" stroke="{P["line"]}" stroke-width="1.2"/>')
+    s.add(f'<path d="M{x:.0f} 42H990" stroke="{A}" stroke-width="1.4" class="flow"/>')
+    s.add(f'<circle cx="990" cy="42" r="3" fill="{A}"/>')
+    s.add(f'<g><g transform="translate(0 41)">{waypin(A, P["card"] if th == "dark" else "#FFFCF7", 6)}</g>'
+          f'<animateTransform attributeName="transform" type="translate" values="{x:.0f} 0;980 0;{x:.0f} 0" dur="12s" repeatCount="indefinite" '
+          f'calcMode="spline" keySplines=".6 0 .4 1;.6 0 .4 1"/></g>')
+    return s
+
+
+def waymark(th, variant="feature"):
+    name = "waymark" if variant == "feature" else "waymark-banner"
+    s = Scene(name, 1000, 480, th, "Waymark",
+              "Waymark: India-first travel discovery and trip planning. A wireframe of the Western Ghats turns on a turntable while "
+              "three pins and a dashed route ride on it; glass cards show the featured Coorg escape and an estimated trip budget.")
+    P, A, Tr, C, Sg = s.P, s.acc("waymark"), s.acc("trail"), s.acc("caramel"), s.acc("sage")
+    s.frame(A, 30, seed=7)
+    lab = "NEW · INDIA-FIRST TRAVEL" if variant == "feature" else "INDIA-FIRST · GLOBAL-READY"
+    s.add(pill(48, 44, lab, "#142329" if th == "dark" else "#FFFCF7", A, 11, fill=A)[0])
+    s.add(s.display("Waymark", 46, 150, s.fit("Waymark", 400, cap=96), P["text"], rise=0.15))
+    s.add(s.serif("Find your somewhere.", 50, 200, s.fit("Find your somewhere.", 380, cap=46, font="corm"), Tr))
+    for i, line in enumerate(("Discover India by mood, region and collection,",
+                              "then plan it: an editable itinerary, a map of",
+                              "places and a budget in ₹, clearly an estimate.")):
+        s.add(T(50, 240 + i * 23, line, 15.5, P["mute"], cls="s"))
+    stats = (("34", "DESTINATIONS"), ("10", "MOODS"), ("6", "COLLECTIONS"), ("5", "REGIONS"))
+    s.stagger("ws", 4, 10, on=.08)
+    for i, (n, l) in enumerate(stats):
+        xx = 50 + i * 104
+        s.add(f'<g class="ws{i}">' + s.display(n, xx, 352, 30, P["text"]) + T(xx, 372, l, 9, P["mute"], ls=".14em") + "</g>")
+    if variant == "feature":
+        s.add(cta(s, 50, 404, "EXPLORE THE REPO")[0])
+    else:
+        s.add(pills(50, 412, ("REACT 19", "TYPESCRIPT", "TAILWIND 4", "LEAFLET"), P["text"], P["line"], 11))
+    x, y, W, H = 512, 34, 452, 412
+    bg, cid = sky(s, x, y, W, H)
+    s.add(bg)
+    cx, cy, sc = x + W / 2, y + 268, 178
+    ridge = tuple((-.7 + i * .35, -.15 + .22 * math.sin(i * 1.7), .44 + .1 * math.cos(i * 2.1), .3) for i in range(5))
+    polys, rim, h = terrain(ridge + ((.4, .5, .25, .25),), 13)
+    ink = A if th == "dark" else "#293B40"
+    inner = (f'<ellipse cx="{cx}" cy="{cy + 10}" rx="{sc*1.02:.0f}" ry="{sc*.42:.0f}" fill="#000" fill-opacity="{.3 if th == "dark" else .07}"/>'
+             + mesh3d([rim], cx, cy, sc, ink, width=1.6, op=(.6, .6), static=True)
+             + mesh3d(polys, cx, cy, sc, ink, width=1.05, op=(.12, .95)))
+    stops = [(-.55, .25), (0.05, -.35), (.5, .2)]
+    route = []
+    for px, pz in stops:
+        for t in range(1):
+            route.append((px, h(px, pz) + .02, pz))
+    fine = []
+    for (ax, az), (bx, bz) in zip(stops, stops[1:]):
+        for k in range(8):
+            u = k / 8
+            px, pz = ax + (bx - ax) * u, az + (bz - az) * u
+            fine.append((px, h(px, pz) + .02, pz))
+    fine.append(route[-1])
+    d0, anim = path3d(fine, cx, cy, sc)
+    inner += f'<path d="{d0}" stroke="{Tr}" stroke-width="2" stroke-dasharray="5 6" stroke-linecap="round">{anim}</path>'
+    for i, v in enumerate(route):
+        mot, _ = track3d(v, cx, cy, sc)
+        inner += f'<g>{waypin(Tr if i != 1 else A, "#FFFCF7" if th == "light" else "#17120E", 8)}{mot}</g>'
+    s.add(f'<g clip-path="url(#{cid})">{inner}</g>')
+    ink2 = P["text"]
+    s.add(glass(s, x + 20, y + 20, 232, 92,
+                T(x + 38, y + 44, "WEEKEND · 2–4 DAYS", 9.5, P["mute"], ls=".14em")
+                + s.display("The Western Ghats", x + 38, y + 70, 17, ink2) + s.display("Escape", x + 38, y + 92, 17, ink2)
+                + f'<circle cx="{x+226}" cy="{y+80}" r="15" fill="{A}"/>'
+                + f'<path d="M{x+220} {y+80}h12m-5 -5l5 5l-5 5" stroke="#142329" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>', 0))
+    bx, by = x + W - 222, y + H - 112
+    cats = (("#142329" if th == "light" else "#F8F4EC", 5000), ("#293B40" if th == "light" else "#A9B9A4", 2400), (Sg, 1500), (Tr, 2000), (A, 700), (P["line"], 400))
+    bar, xx = "", bx + 18
+    for col, v in cats:
+        ww = 166 * v / 12000
+        bar += f'<rect x="{xx:.1f}" y="{by+58}" width="{max(ww-2,1):.1f}" height="8" rx="3" fill="{col}"/>'
+        xx += ww
+    s.add(glass(s, bx, by, 202, 92,
+                T(bx + 18, by + 24, "A WEEKEND IN COORG", 9.5, P["mute"], ls=".14em")
+                + T(bx + 18, by + 49, "₹", 20, ink2, cls="s") + s.display("12,000", bx + 33, by + 50, 22, ink2) + T(bx + 122, by + 48, "ESTIMATE", 9, C, ls=".14em")
+                + bar + T(bx + 18, by + 82, "3 DAYS · 2 TRAVELLERS", 9, P["mute"], ls=".1em"), 3.1))
+    s.add(T(x + 22, y + 140, "COORG · KARNATAKA · 12.42° N", 9.5, "#C9D4CF" if th == "dark" else P["mute"], ls=".14em"))
     return s
 
 
@@ -1026,27 +1330,36 @@ def stack(th):
 
 
 def closing(th):
-    s = Scene("closing", 1000, 240, th, "Contact",
-              "Samudra Kar. Open to internships. Bangalore, India. Chanakya University.")
-    P, A = s.P, s.acc("wed")
-    s.frame(A, 24)
-    s.add(stars(s, 20, 20, 960, 200, 50, 41))
-    s.add(globe(s, 860, 120, 76, A, period=30, n=10, points=((13, 77.6 - 90, OK[th]),)))
-    s.add(s.display("LET'S BUILD", 48, 104, 54, P["text"], rise=0.2))
-    s.add(s.display("SOMETHING REAL.", 48, 162, 54, A, rise=0.6))
-    s.add(pill(48, 186, "OPEN TO INTERNSHIPS", P["text"], OK[th], 11, dot=OK[th])[0])
-    s.add(T(256, 203, "BANGALORE, INDIA  ·  CHANAKYA UNIVERSITY", 11, P["mute"], ls=".12em"))
+    s = Scene("closing", 1000, 300, th, "Contact",
+              "Let's build something real, over a good cup of coffee. Samudra Kar, open to internships. Bangalore, India. "
+              "Chanakya University. A wireframe coffee cup turns on its saucer while steam rises.")
+    P, A, Tr, C = s.P, s.acc("wed"), s.acc("trail"), s.acc("caramel")
+    s.frame(C, 30, seed=11)
+    s.add(T(52, 62, "CONTACT  ·  BANGALORE, INDIA", 11, P["mute"], ls=".2em"))
+    s.add(s.display("Let's build", 48, 128, 58, P["text"], rise=0.2))
+    s.add(s.display("something", 48, 192, 58, P["text"], rise=0.45))
+    s.add(s.display("real.", 48 + s.tw("something ", 58), 192, 58, A if th == "dark" else s.acc("waymark"), rise=0.7))
+    s.add(s.serif("— over a good cup of coffee.", 52, 232, 28, C))
+    s.add(pill(52, 252, "OPEN TO INTERNSHIPS", P["text"], OK[th], 11, dot=OK[th])[0])
+    s.add(T(262, 268, "CHANAKYA UNIVERSITY", 11, P["mute"], ls=".12em"))
+    x, y, W, H = 640, 24, 336, 252
+    bg, cid = sky(s, x, y, W, H, 22)
+    s.add(bg)
+    s.add(f'<g clip-path="url(#{cid})">{cup_scene(s, x + W/2, y + 188, 74, C if th == "dark" else "#3C2415")}</g>')
+    s.add(glass(s, x + 18, y + 18, 150, 40, f'<circle cx="{x+36}" cy="{y+38}" r="4" fill="{Tr}" class="glow"/>'
+                + T(x + 48, y + 42, "BREWING IDEAS", 9.5, P["text"], ls=".14em"), 1.2, rx=20))
     return s
 
 
 def main():
     both(hero)
-    for i, (k, lab, acc) in enumerate((("flagship", "FLAGSHIP", "wed"), ("samagra", "ALSO BUILDING", "samagra"),
-                                       ("projects", "ALL PROJECTS", "orbit"), ("ai", "ENGINEERING WITH AI", "ai"),
-                                       ("stack", "STACK", "wed"), ("contact", "CONTACT", "profile")), 1):
+    for i, (k, lab, acc) in enumerate((("flagship", "FLAGSHIP", "wed"), ("samagra", "ALSO BUILDING", "waymark"),
+                                       ("projects", "ALL PROJECTS", "trail"), ("ai", "ENGINEERING WITH AI", "ai"),
+                                       ("stack", "STACK", "sage"), ("contact", "CONTACT", "caramel")), 1):
         both(lambda th, k=k, i=i, lab=lab, acc=acc: section(th, k, i, lab, acc))
-    for fn in (wed_hero, wed_moon, wed_pipeline, wed_modes, samagra, ai_workflow, stack, closing):
+    for fn in (wed_hero, wed_moon, wed_pipeline, wed_modes, samagra, waymark, ai_workflow, stack, closing):
         both(fn)
+    both(lambda th: waymark(th, "banner"))
     for idx, (slug, key, title, lang, chips, draw, desc) in enumerate(PROJECTS, 2):
         both(lambda th, *a: card(th, slug, key, idx, title, lang, chips, draw, desc))
     n = len(list(OUT.rglob("*.svg")))
