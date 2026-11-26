@@ -1,10 +1,14 @@
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/hero.svg"><img src="./assets/readme/light/hero.svg" width="100%" alt="Samudra Kar. Systems, AI and product, from first principles, with a designer's eye. A wireframe mountain range turns on a turntable with a pin on its summit, beside floating glass cards for the flagship W.E.D.N.E.S.D.A.Y. and 20+ public repositories."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/hero.svg"><img src="./assets/readme/light/hero.svg" width="100%" alt="Samudra Kar. Designer and developer. A twisting chrome ribbon sits between the words SAMUDRA and KAR."></picture>
 
-<sub><a href="#flagship">Flagship</a> &nbsp;·&nbsp; <a href="#samagra">Samagra OS</a> &nbsp;·&nbsp; <a href="#waymark">Waymark</a> &nbsp;·&nbsp; <a href="#projects">All projects</a> &nbsp;·&nbsp; <a href="#engineering-with-ai">Engineering with AI</a> &nbsp;·&nbsp; <a href="#stack">Stack</a> &nbsp;·&nbsp; <a href="#contact">Contact</a></sub>
+<sub><a href="#flagship">Flagship</a> &nbsp;·&nbsp; <a href="#selected-work">Selected work</a> &nbsp;·&nbsp; <a href="#also-building">Also building</a> &nbsp;·&nbsp; <a href="#engineering-with-ai">Engineering with AI</a> &nbsp;·&nbsp; <a href="#stack">Stack</a> &nbsp;·&nbsp; <a href="#contact">Contact</a></sub>
 
 </div>
+
+<br>
+
+I'm **Samudra Kar**, a computer science student at Chanakya University in Bangalore. I like work where the engineering and the interface have to agree: operating systems, local AI, computer vision, product engineering, UI/UX and developer tools. I'm looking for internships. Below are the eight projects I'd most like you to open, and what is actually inside each one.
 
 <br>
 
@@ -14,74 +18,52 @@
 
 <a href="https://github.com/Samudra-GITHub/W.E.D.N.E.S.D.A.Y."><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/wed-hero.svg"><img src="./assets/readme/light/wed-hero.svg" width="100%" alt="W.E.D.N.E.S.D.A.Y.: Watchful Earth-Data Navigator, Entirely Self-hosted Desktop Assistant for You. A personal AI assistant that runs on your own computer, with a living Earth at its centre."></picture></a>
 
-**[W.E.D.N.E.S.D.A.Y.](https://github.com/Samudra-GITHub/W.E.D.N.E.S.D.A.Y.)** is my flagship: a desktop assistant for Windows 11 that answers with a language model running on your own machine through Ollama. It can use tools (the time, your workspace, earthquakes, weather, nearby places), but every call goes through a capability broker that denies by default, and anything with consequences waits for your approval. Around it sits a full 3D Earth of live public data, and now a Moon.
+**[W.E.D.N.E.S.D.A.Y.](https://github.com/Samudra-GITHub/W.E.D.N.E.S.D.A.Y.)** is a desktop assistant for Windows 11 that answers with a language model running on your own machine through Ollama. It can use tools (the time, your workspace, earthquakes, weather, nearby places), but every call goes through a capability broker that denies by default, and anything with consequences waits for your approval. Around it sits a 3D Earth of live public data, and a Moon.
 
-<a href="https://github.com/Samudra-GITHub/W.E.D.N.E.S.D.A.Y."><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/wed-moon.svg"><img src="./assets/readme/light/wed-moon.svg" width="100%" alt="Lunar Intelligence, new in W.E.D.N.E.S.D.A.Y.: an interactive 3D Moon with NASA Moon Trek LRO imagery, live JPL Horizons ephemeris for LRO, Chandrayaan-2 and Danuri, and a source-attributed NSSDCA catalogue of landing and impact sites."></picture></a>
-
-<a href="https://github.com/Samudra-GITHub/W.E.D.N.E.S.D.A.Y."><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/wed-pipeline.svg"><img src="./assets/readme/light/wed-pipeline.svg" width="100%" alt="Ask the Earth: you ask, the local model picks a tool, the capability broker checks it, the tool fetches public records with source and time, and a typed request goes to the globe, which confirms it at the backend, app and globe."></picture></a>
-
-<a href="https://github.com/Samudra-GITHub/W.E.D.N.E.S.D.A.Y."><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/wed-modes.svg"><img src="./assets/readme/light/wed-modes.svg" width="100%" alt="Mind: conversation, voice and approvals on a local model. World: the living Earth in Live, Time and Orbit. Pulse: significant records with source and time. Private: the core binds to 127.0.0.1."></picture></a>
-
-- **A living Earth.** A CesiumJS globe lit by the real sun: live aircraft, about 800 tracked satellites, USGS earthquakes, NASA EONET events, GDACS alerts and more, each layer showing its source and how fresh it is.
-- **Lunar Intelligence.** A 3D Moon on NASA Moon Trek LRO imagery, live JPL Horizons positions for LRO, Chandrayaan-2 and Danuri, and an NSSDCA catalogue of landing and impact sites with sources attached.
+- **A living Earth.** A CesiumJS globe lit by the real sun, with live aircraft, tracked satellites, USGS earthquakes, NASA EONET events and GDACS alerts, each layer showing its source and how fresh it is.
 - **Ask the Earth.** Plain-language questions become typed requests the globe must confirm. The model can't send code, and records it invents are flagged.
-- **Time and Orbit.** Play back up to 92 days of history or compare two periods; follow what's in orbit, including the ISS.
 - **Private by design.** Local model, local speech, push-to-talk with no wake word, and a core that listens only on `127.0.0.1`.
 
-<p>
-<img src="https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.12">
-<img src="https://img.shields.io/badge/FastAPI-local_core-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
-<img src="https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React 18">
-<img src="https://img.shields.io/badge/CesiumJS-3D_Earth-6CADDF?style=flat-square&logo=cesium&logoColor=white" alt="CesiumJS">
-<img src="https://img.shields.io/badge/Ollama-qwen2.5:7b-1E1E2E?style=flat-square&logo=ollama&logoColor=white" alt="Ollama qwen2.5:7b">
-</p>
-
-**[Explore the repository →](https://github.com/Samudra-GITHub/W.E.D.N.E.S.D.A.Y.)**
+`Python` · `FastAPI` · `React` · `CesiumJS` · `Ollama` &nbsp;·&nbsp; **[Repository →](https://github.com/Samudra-GITHub/W.E.D.N.E.S.D.A.Y.)**
 
 <br>
 
-<a id="samagra"></a>
+<a id="selected-work"></a>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/sec-samagra.svg"><img src="./assets/readme/light/sec-samagra.svg" width="100%" alt="02 Also building"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/sec-selected.svg"><img src="./assets/readme/light/sec-selected.svg" width="100%" alt="02 Selected work"></picture>
+
+<a href="https://github.com/Samudra-GITHub/discreta"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/discreta.svg"><img src="./assets/readme/light/discreta.svg" width="100%" alt="DISCRETA, a cryptography lab, version 1.0.0. A Caesar cipher alphabet shifted by three above a letter-frequency chart whose tallest bar is H. Built with Python, FastAPI, React 19 and TypeScript by team BugSquad, with 1,410 backend and 262 frontend tests."></picture></a>
+
+**[DISCRETA](https://github.com/Samudra-GITHub/discreta)** is a classical cryptography and frequency-analysis laboratory, built with Shriyanshu Rout Roy as team BugSquad. You encrypt and decrypt with the Caesar, affine and Vigenère ciphers, then attack the ciphertext with letter frequencies, χ², the index of coincidence and Kasiski examination. Every ranking is labelled as measured, calculated or a suggestion, and never as proof. The number theory (gcd, extended Euclid, modular inverse) is written from scratch and checked against independent implementations: **1,410 backend and 262 frontend tests pass**. It ships with an academic [project report](https://github.com/Samudra-GITHub/discreta/blob/main/docs/report/DISCRETA_Project_Report.pdf), an API reference and mathematics notes. I implemented the software, tests and documentation; Shriyanshu did the mathematics research and review.
+
+`Python` · `FastAPI` · `React 19` · `TypeScript` &nbsp;·&nbsp; **[Repository →](https://github.com/Samudra-GITHub/discreta)**
+
+<br>
+
+<a href="https://github.com/Samudra-GITHub/waymark"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/waymark.svg"><img src="./assets/readme/light/waymark.svg" width="100%" alt="Waymark: India-first travel discovery and trip planning. Find your somewhere. 34 destinations, 10 moods, 6 collections, 5 regions. A wireframe of the Western Ghats turns with three pins and a dashed route; glass cards show The Western Ghats Escape in Coorg and an estimated ₹12,000 weekend budget."></picture></a>
+
+**[Waymark](https://github.com/Samudra-GITHub/waymark)** is an India-first travel discovery and trip-planning app. Start with a mood, a collection or a region, then turn a place into a plan: an editable itinerary, a map of the places you've pinned and a per-person budget in ₹ that always says it is an estimate. It never invents live prices, availability or weather.
+
+`React 19` · `TypeScript` · `Tailwind 4` · `Leaflet` &nbsp;·&nbsp; **[Repository →](https://github.com/Samudra-GITHub/waymark)**
+
+<br>
+
+<table>
+<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/arthayukti"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/arthayukti.svg"><img src="./assets/readme/light/arthayukti.svg" width="100%" alt="ArthaYukti: animated project card"></picture></a><br><sub>Multi-goal financial planning under uncertainty: when income can't cover every goal, it shows which goal slips, by how long, and the smallest fix, and the engine re-checks every fix. An AI advisor explains the trade-offs; the engine does the arithmetic. English and हिन्दी. Built for Srujana Hackathon 2026.</sub><br><sub>FastAPI · React · TypeScript · Tailwind · Gemini &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/arthayukti">GitHub ↗</a> &nbsp;·&nbsp; <a href="https://arthayukti.vercel.app">Live ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/AkashaLens"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/akashalens.svg"><img src="./assets/readme/light/akashalens.svg" width="100%" alt="AkashaLens: animated project card"></picture></a><br><sub>A PyTorch U-Net prototype that reconstructs cloud-covered Sentinel-2 satellite scenes. Built for ISRO Hackathon 2026, and trained on a tiny sample set.</sub><br><sub>PyTorch · scikit-image · Flask &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/AkashaLens">GitHub ↗</a></sub></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/Rinti-Ai"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/rinti-ai.svg"><img src="./assets/readme/light/rinti-ai.svg" width="100%" alt="Rinti AI: animated project card"></picture></a><br><sub>A chat workspace with per-user memory, cited multi-step research and real account sessions: Argon2 hashing, HttpOnly cookies, CSRF checks.</sub><br><sub>FastAPI · Next.js · Groq · Tavily &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/Rinti-Ai">GitHub ↗</a> &nbsp;·&nbsp; <a href="https://rinti-ai.vercel.app">Live ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/Tarang"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/tarang.svg"><img src="./assets/readme/light/tarang.svg" width="100%" alt="Tarang: animated project card"></picture></a><br><sub>A music web app built around one persistent player that expands into a full now-playing view, with time-synced lyrics and a documented design system. Frontend only, on seed data.</sub><br><sub>Next.js · TypeScript · Framer Motion · Zustand &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/Tarang">GitHub ↗</a> &nbsp;·&nbsp; <a href="https://tarang-ecru.vercel.app">Live ↗</a></sub></td></tr>
+</table>
+
+<sub>The readings inside the cards are illustrative, not live data. More work: [PRAHARI](https://github.com/Samudra-GITHub/PRAHARI) (mine-safety monitoring, Smart India Hackathon) · [Krama](https://github.com/Samudra-GITHub/Krama) · [Niriksh AI](https://github.com/Samudra-GITHub/Niriksh-AI) · [SkyCast](https://github.com/Samudra-GITHub/SkyCast-Weather-App) · [orbit-os](https://github.com/Samudra-GITHub/orbit-os) · [noir-cafe](https://github.com/Samudra-GITHub/noir-cafe) · [Sam's Portfolio](https://github.com/Samudra-GITHub/Sam-s_Portfolio) ([live](https://sam-sportfolio.vercel.app)) · [speed-of-numbers-fca](https://github.com/Samudra-GITHub/speed-of-numbers-fca)</sub>
+
+<br>
+
+<a id="also-building"></a>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/sec-systems.svg"><img src="./assets/readme/light/sec-systems.svg" width="100%" alt="03 Also building"></picture>
 
 <a href="https://github.com/Samudra-GITHub/Samagra-OS"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/samagra-os.svg"><img src="./assets/readme/light/samagra-os.svg" width="100%" alt="Samagra OS: a real x86-64 operating system built from first principles. Boot stages, physical page frames and a preemptive scheduler, animated."></picture></a>
 
 **[Samagra OS](https://github.com/Samudra-GITHub/Samagra-OS)** is a real x86-64 operating system, built from first principles. It boots into long mode, manages physical and virtual memory, handles CPU exceptions and hardware interrupts, and runs a preemptive scheduler over kernel tasks. Early user-mode support has started: Ring 3, per-process address spaces, a small system-call interface and a non-persistent RAM filesystem. Persistent storage, networking and a native desktop are still to come.
-
-<a id="waymark"></a>
-
-<a href="https://github.com/Samudra-GITHub/waymark"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/waymark.svg"><img src="./assets/readme/light/waymark.svg" width="100%" alt="Waymark: India-first travel discovery and trip planning. Find your somewhere. 34 destinations, 10 moods, 6 collections, 5 regions. A wireframe of the Western Ghats turns with three pins and a dashed route; glass cards show The Western Ghats Escape in Coorg and an estimated ₹12,000 weekend budget."></picture></a>
-
-**[Waymark](https://github.com/Samudra-GITHub/waymark)** is new: an India-first travel discovery and trip-planning app. Start with a mood, a collection or a region; then turn a place into a plan with an editable itinerary, a map of the places you've pinned and a per-person budget in ₹ that always says it's an estimate. It never invents live prices, availability or weather, and the destination schema is ready for markets beyond India.
-
-<p>
-<img src="https://img.shields.io/badge/React-19-142329?style=flat-square&logo=react&logoColor=D5EF62" alt="React 19">
-<img src="https://img.shields.io/badge/TypeScript-strict-142329?style=flat-square&logo=typescript&logoColor=D5EF62" alt="TypeScript">
-<img src="https://img.shields.io/badge/Tailwind-4-142329?style=flat-square&logo=tailwindcss&logoColor=D5EF62" alt="Tailwind 4">
-<img src="https://img.shields.io/badge/Motion-for_React-142329?style=flat-square&logo=framer&logoColor=D5EF62" alt="Motion">
-<img src="https://img.shields.io/badge/Leaflet-OpenStreetMap-142329?style=flat-square&logo=leaflet&logoColor=D5EF62" alt="Leaflet">
-</p>
-
-
-<br>
-
-<a id="projects"></a>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/sec-projects.svg"><img src="./assets/readme/light/sec-projects.svg" width="100%" alt="03 All projects"></picture>
-
-Every other public repository, two per row. Each card is a small animated scene of what the project does, drawn in the same Waymark × Noir language; the readings inside them are illustrative, not live data.
-
-<table>
-<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/arthayukti"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/arthayukti.svg"><img src="./assets/readme/light/arthayukti.svg" width="100%" alt="ArthaYukti: animated project card"></picture></a><br><sub>Multi-goal financial planning under uncertainty: when income can't cover every goal, it shows which goal slips, by how long, and the smallest fix, and the engine re-checks every fix. An AI advisor explains the trade-offs; the engine does the arithmetic. English and हिन्दी. Built for Srujana Hackathon 2026.</sub><br><sub>FastAPI · React · TypeScript · Tailwind · Gemini &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/arthayukti">GitHub ↗</a> &nbsp;·&nbsp; <a href="https://arthayukti.vercel.app">Live ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/PRAHARI"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/prahari.svg"><img src="./assets/readme/light/prahari.svg" width="100%" alt="PRAHARI: animated project card"></picture></a><br><sub>Mine safety and compliance monitoring: explainable risk scores, a tamper-evident audit log, and a copilot limited to permission-scoped data. Built for the Smart India Hackathon.</sub><br><sub>Next.js · Prisma · PostgreSQL · Docker &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/PRAHARI">GitHub ↗</a></sub></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/AkashaLens"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/akashalens.svg"><img src="./assets/readme/light/akashalens.svg" width="100%" alt="AkashaLens: animated project card"></picture></a><br><sub>A PyTorch U-Net prototype that reconstructs cloud-covered Sentinel-2 satellite scenes. Built for ISRO Hackathon 2026, and trained on a tiny sample set.</sub><br><sub>PyTorch · scikit-image · Flask &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/AkashaLens">GitHub ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/Tarang"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/tarang.svg"><img src="./assets/readme/light/tarang.svg" width="100%" alt="Tarang: animated project card"></picture></a><br><sub>A music web app built around one persistent player that expands into a full now-playing view, with time-synced lyrics and a documented design system. Frontend only, on seed data.</sub><br><sub>Next.js · TypeScript · Framer Motion · Zustand &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/Tarang">GitHub ↗</a> &nbsp;·&nbsp; <a href="https://tarang-ecru.vercel.app">Live ↗</a></sub></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/Rinti-Ai"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/rinti-ai.svg"><img src="./assets/readme/light/rinti-ai.svg" width="100%" alt="Rinti AI: animated project card"></picture></a><br><sub>A chat workspace with per-user memory, cited multi-step research and real account sessions: Argon2 hashing, HttpOnly cookies, CSRF checks.</sub><br><sub>FastAPI · Next.js · Groq · Tavily &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/Rinti-Ai">GitHub ↗</a> &nbsp;·&nbsp; <a href="https://rinti-ai.vercel.app">Live ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/orbit-os"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/orbit-os.svg"><img src="./assets/readme/light/orbit-os.svg" width="100%" alt="orbit-os: animated project card"></picture></a><br><sub>A personal dashboard that borrows from operating-system design. An interface exploration with mock data, not a real operating system.</sub><br><sub>Next.js · TypeScript · Framer Motion &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/orbit-os">GitHub ↗</a></sub></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/Krama"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/krama.svg"><img src="./assets/readme/light/krama.svg" width="100%" alt="Krama: animated project card"></picture></a><br><sub>A luxury sneaker marketplace, told as a story.</sub><br><sub>Next.js · TypeScript · GSAP &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/Krama">GitHub ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/Niriksh-AI"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/niriksh-ai.svg"><img src="./assets/readme/light/niriksh-ai.svg" width="100%" alt="Niriksh AI: animated project card"></picture></a><br><sub>An AI operations teammate for merchants.</sub><br><sub>Next.js · TypeScript &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/Niriksh-AI">GitHub ↗</a></sub></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/SkyCast-Weather-App"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/skycast.svg"><img src="./assets/readme/light/skycast.svg" width="100%" alt="SkyCast: animated project card"></picture></a><br><sub>One screen of weather: conditions, forecast, UV and air quality for any city, over OpenWeatherMap.</sub><br><sub>Python · Flask &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/SkyCast-Weather-App">GitHub ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/Sam-s_Portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/sams-portfolio.svg"><img src="./assets/readme/light/sams-portfolio.svg" width="100%" alt="Sam's Portfolio: animated project card"></picture></a><br><sub>My current portfolio: a single-screen WebGL glass-drop homepage, an exhibition of 16 projects with interactive case-study worlds, and an optional generated soundtrack.</sub><br><sub>React 19 · Vite · GSAP · WebGL · Web Audio &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/Sam-s_Portfolio">GitHub ↗</a> &nbsp;·&nbsp; <a href="https://sam-sportfolio.vercel.app">Live ↗</a></sub></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/samudra-kar-portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/samudra-kar-portfolio.svg"><img src="./assets/readme/light/samudra-kar-portfolio.svg" width="100%" alt="samudra-kar-portfolio: animated project card"></picture></a><br><sub>An earlier interactive developer portfolio.</sub><br><sub>TypeScript &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/samudra-kar-portfolio">GitHub ↗</a> &nbsp;·&nbsp; <a href="https://samudra-kar-portfolio.vercel.app">Live ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/noir-cafe"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/noir-cafe.svg"><img src="./assets/readme/light/noir-cafe.svg" width="100%" alt="noir-cafe: animated project card"></picture></a><br><sub>A cinematic specialty-coffee site.</sub><br><sub>Next.js · TypeScript · Tailwind · Framer Motion · Lenis &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/noir-cafe">GitHub ↗</a></sub></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/the-waffle-house"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/the-waffle-house.svg"><img src="./assets/readme/light/the-waffle-house.svg" width="100%" alt="the-waffle-house: animated project card"></picture></a><br><sub>A restaurant landing page.</sub><br><sub>TypeScript &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/the-waffle-house">GitHub ↗</a> &nbsp;·&nbsp; <a href="https://the-waffle-house.vercel.app">Live ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/singularity-login"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/singularity-login.svg"><img src="./assets/readme/light/singularity-login.svg" width="100%" alt="singularity-login: animated project card"></picture></a><br><sub>A glassmorphism sign-in UI.</sub><br><sub>Next.js · TypeScript · Tailwind &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/singularity-login">GitHub ↗</a></sub></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/speed-of-numbers-fca"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/speed-of-numbers-fca.svg"><img src="./assets/readme/light/speed-of-numbers-fca.svg" width="100%" alt="speed-of-numbers-fca: animated project card"></picture></a><br><sub>A team lab on numeric representation and execution speed on the ESP32.</sub><br><sub>Arduino · TeX &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/speed-of-numbers-fca">GitHub ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/website"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/website.svg"><img src="./assets/readme/light/website.svg" width="100%" alt="website: animated project card"></picture></a><br><sub>An early website experiment.</sub><br><sub>HTML &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/website">GitHub ↗</a></sub></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/vyom"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/vyom.svg"><img src="./assets/readme/light/vyom.svg" width="100%" alt="vyom: animated project card"></picture></a><br><sub>Work in progress.</sub><br><sub><a href="https://github.com/Samudra-GITHub/vyom">GitHub ↗</a></sub></td><td width="50%" valign="top"><a href="https://github.com/Samudra-GITHub/Samudra-GITHub"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/samudra-github.svg"><img src="./assets/readme/light/samudra-github.svg" width="100%" alt="Samudra-GITHub: animated project card"></picture></a><br><sub>This profile README and the generator behind its artwork: every SVG here is drawn by <code>tools/build_readme.py</code>, in an Espresso (dark) and a Canvas (light) version, including the real 3D wireframes.</sub><br><sub>Python &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub/Samudra-GITHub">GitHub ↗</a></sub></td></tr>
-</table>
 
 <br>
 
@@ -91,7 +73,7 @@ Every other public repository, two per row. Each card is a small animated scene 
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/ai-workflow.svg"><img src="./assets/readme/light/ai-workflow.svg" width="100%" alt="Engineering with AI: Samudra directs two AI engineering agents. Claude Code works on UI, UX, design tokens and docs; Antigravity on boot, memory, interrupts, scheduler and drivers. Both share one repository with docs, API contracts, handoff notes and commits, and a review, run, accept or reject loop returns to Samudra."></picture>
 
-Claude Code and Antigravity are AI engineering agents, not people. I use them as part of my workflow, not as a replacement for engineering decisions: I set architecture, direction and validation, and they implement. They coordinate through the repository itself: shared docs, interface contracts, handoff notes and commits.
+Claude Code and Antigravity are AI engineering agents, not people. I use them as part of my workflow, not as a replacement for engineering decisions: I set the architecture, direction and validation, and they implement. They coordinate through the repository itself: shared docs, interface contracts, handoff notes and commits.
 
 <br>
 
@@ -101,25 +83,20 @@ Claude Code and Antigravity are AI engineering agents, not people. I use them as
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/stack.svg"><img src="./assets/readme/light/stack.svg" width="100%" alt="Stack. Languages: TypeScript, JavaScript, Python, C, x86-64 Assembly. Systems: Clang, LLD, NASM, QEMU, Git, Docker. Web: React, Next.js, Tailwind, Framer Motion, GSAP, Three.js, CesiumJS. AI and vision: PyTorch, NumPy, SciPy, scikit-image, LLM APIs, Ollama. Design: Figma, design systems, motion design."></picture>
 
-**Interests** &nbsp; Systems · AI / Computer Vision · Product Engineering · UI / UX · Developer Tools
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake-dark.svg"><img src="https://raw.githubusercontent.com/Samudra-GITHub/Samudra-GITHub/output/github-contribution-grid-snake.svg" width="100%" alt="A lime snake eats a year of GitHub contributions, drawn as roasted-coffee squares."></picture>
-
-
 <br>
 
 <a id="contact"></a>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/sec-contact.svg"><img src="./assets/readme/light/sec-contact.svg" width="100%" alt="06 Contact"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/closing.svg"><img src="./assets/readme/light/closing.svg" width="100%" alt="Let's build something real. Samudra Kar, open to internships. Bangalore, India. Chanakya University."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/readme/dark/closing.svg"><img src="./assets/readme/light/closing.svg" width="100%" alt="Let's build something real. Open to internships. Bangalore, India. Chanakya University."></picture>
 
 <p align="center"><a href="https://sam-sportfolio.vercel.app">Portfolio</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/samudra-kar-a495951b5/">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/Samudra-GITHub">GitHub</a> &nbsp;·&nbsp; <a href="mailto:hi.samsstudio@gmail.com">Email</a></p>
 
 <details>
-<summary><sub><b>About this design</b></sub></summary>
+<summary><sub><b>About this page</b></sub></summary>
 <br>
 
-<sub>The artwork folds two of my own design systems into one, <b>Waymark × Noir</b>. From <a href="https://github.com/Samudra-GITHub/waymark">Waymark</a>: Fjord, Canvas, Trail, Sage and Lime, Sora display type, rounded photo containers, glass cards, lime pill buttons and topographic lines. From <a href="https://github.com/Samudra-GITHub/noir-cafe">Noir Café</a>: Espresso, Walnut and Caramel, Cormorant Garamond, film grain and steam. The mountain ranges and the coffee cup are real 3D wireframes: <code>tools/build_readme.py</code> projects them at every angle and SMIL interpolates between the frames. No scripts, no external resources, and every scene still reads as a finished composition with motion turned off.</sub>
+<sub>Every picture here is an SVG drawn by <code>tools/build_readme.py</code>, in a light and a dark version that follow your GitHub theme. The look follows my <a href="https://sam-sportfolio.vercel.app">portfolio</a>: ivory and graphite with violet and cobalt accents, and a chrome ribbon rendered in Python from a twisted strip. Headline type is Sora, converted to paths so it renders the same everywhere. There are no scripts and no external resources, and every scene reads as a finished composition with motion turned off.</sub>
 
 </details>

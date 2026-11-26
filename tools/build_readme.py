@@ -1,25 +1,27 @@
 #!/usr/bin/env python3
 """Generates every SVG in assets/readme/ and validates them.
 
-    python tools/build_readme.py
+    python tools/build_readme.py          # the artwork the README uses
+    python tools/build_readme.py --all    # also the earlier project cards and scenes
 
-Design language: "Waymark x Noir". Two of my own design systems folded into one:
-Waymark (India-first travel: Fjord, Canvas, Trail, Sage, Lime; Sora; glass cards, lime
-pill CTAs, topographic lines) and Noir Cafe (specialty coffee: Espresso, Walnut, Caramel,
-Beige; Cormorant Garamond; film grain, steam, a quiet editorial serif).
-  themes   every scene is rendered twice: "Espresso" (dark) and "Canvas" (light), in
+Design language: "Spatial Studio", the visual identity of my live portfolio
+(https://sam-sportfolio.vercel.app): an ivory ground and graphite ink, one violet accent used
+sparingly, Sora for display type (700 for the name, 500 for titles, 300 for secondary lines), Inter
+for text and IBM Plex Mono for technical metadata, hairline frames, no shadows, and one liquid-chrome
+sculpture, a band closed on itself with three half-twists, set between SAMUDRA and KAR. Each project
+may bring one tint of its own.
+  themes   every scene is rendered twice: "Graphite" (dark) and "Ivory" (light), in
            assets/readme/dark/ and assets/readme/light/; the README picks one with <picture>
-  palette  espresso or canvas cards with film grain and faint contour lines; lime, trail and
-           caramel lead, and every project keeps one earthy accent of its own
-  type     Sora ExtraBold (Waymark) and Cormorant Garamond (Noir) drawn as outlined paths from
-           tools/fonts/*.json, so titles render identically everywhere; IBM Plex Mono labels
-  forms    soft 28px panels, glass chips, lime pills with an arrow badge, waymark pins
-  depth    real 3D wireframes (terrain, a coffee cup) projected in Python and animated frame
-           by frame with SMIL, plus floating glass cards that drift in perspective
+  type     Sora drawn as outlined paths from tools/fonts/*.json, so titles render identically
+           everywhere (GitHub serves README SVGs as images, which cannot load web fonts)
+  3D       the chrome band is a real parametric surface, shaded and projected in Python
   motion   CSS keyframes and SMIL only. No scripts, no external resources. The static
            (reduced-motion) state of every scene is a complete composition.
 Nothing here is live telemetry. Every reading, record and status inside the artwork is
 illustrative, and each SVG's <desc> says so.
+
+The earlier "Waymark x Noir" scenes are kept in this file and still build with --all, now in the
+Studio palette.
 """
 import json
 import math
@@ -31,41 +33,44 @@ from xml.sax.saxutils import escape
 
 HERE = pathlib.Path(__file__).resolve().parent
 OUT = HERE.parent / "assets" / "readme"
-FONTS = {"sora": json.loads((HERE / "fonts" / "sora-800.json").read_text(encoding="utf-8")),
-         "corm": json.loads((HERE / "fonts" / "cormorant-500.json").read_text(encoding="utf-8"))}
+FONTS = {"sora": json.loads((HERE / "fonts" / "sora-700.json").read_text(encoding="utf-8")),
+         "title": json.loads((HERE / "fonts" / "sora-500.json").read_text(encoding="utf-8")),
+         # "corm" keeps its old name so earlier scenes still build; it is Sora Light, the studio's secondary weight
+         "corm": json.loads((HERE / "fonts" / "sora-300.json").read_text(encoding="utf-8"))}
 FONT = FONTS["sora"]
 UPM, CAP = FONT["upm"], FONT["capHeight"]
 
 THEMES = {
-    # Espresso: Noir's espresso and walnut, with Waymark's fjord for the "sky" panels
-    "dark": dict(card="#17120E", panel="#211A15", line="#3A322B", text="#F8F4EC", mute="#B0A69B",
-                 faint="#2A221C", star="#EFE5D7", night="#0B0806", ocean="#142329", glass="#FFFFFF",
-                 sky0="#1B3036", sky1="#142329", grain=".10"),
-    # Canvas: Waymark's canvas with Noir's ivory cards and espresso ink
-    "light": dict(card="#FFFCF7", panel="#F4F1E8", line="#D8CEC0", text="#17120E", mute="#6D645B",
-                  faint="#EFE5D7", star="#A29E9A", night="#142329", ocean="#E3E8DD", glass="#17120E",
-                  sky0="#EEF1E8", sky1="#DCE4D6", grain=".06"),
+    # Graphite: the studio's ink as the ground, ivory type
+    "dark": dict(card="#17191D", panel="#1F2227", line="#363A42", text="#F5F3EE", mute="#A5AAB0",
+                 faint="#272B31", star="#F5F3EE", night="#0F1114", ocean="#1B1F26", glass="#FFFFFF",
+                 sky0="#20242C", sky1="#171A20", grain="0", violet="#8275FF", cobalt="#536BFA"),
+    # Ivory: the studio's ground, graphite type
+    "light": dict(card="#F5F3EE", panel="#FFFFFF", line="#D6D2C9", text="#17191D", mute="#50535B",
+                  faint="#E8E5DE", star="#A5AAB0", night="#17191D", ocean="#E8E5DE", glass="#17191D",
+                  sky0="#EEEDF6", sky1="#E4E3EE", grain="0", violet="#5B49E0", cobalt="#3149D6"),
 }
-# (dark, light) accent per project: an earthy family drawn from both systems
+# (dark, light) accent per project. The studio uses violet and cobalt; a project may bring one tint
+# of its own (DISCRETA's orange, Tarang's teal, Krama's midnight).
 ACC = {
-    "wed": ("#D5EF62", "#5B7A0C"), "moon": ("#D9D4C9", "#6D645B"), "samagra": ("#E9A55C", "#9A5A16"),
-    "artha": ("#9FD37E", "#3F7A22"), "prahari": ("#E97956", "#B4522F"), "akasha": ("#7FC9BC", "#2C7A6E"),
-    "tarang": ("#E58FA8", "#A63C5C"), "rinti": ("#B7A3E0", "#6A4FB0"), "orbit": ("#9DB3D9", "#3E5C94"),
-    "krama": ("#E9935E", "#A8521E"), "niriksh": ("#C9E06A", "#5F7A10"), "skycast": ("#8DC3DE", "#2F6F92"),
-    "portfolio": ("#93D6CF", "#28796F"), "skp": ("#A9B4E6", "#4A57A6"), "noir": ("#D9A06E", "#905B33"),
-    "waffle": ("#E8C26A", "#94690F"), "singularity": ("#C5A0E8", "#7A43B0"), "fca": ("#E7837A", "#A8392F"),
-    "website": ("#C4BAAE", "#6D645B"), "vyom": ("#A9B4E6", "#4A57A6"), "profile": ("#A9B9A4", "#4E6249"),
-    "ai": ("#E2B48A", "#87582C"), "waymark": ("#D5EF62", "#5B7A0C"), "trail": ("#E97956", "#B4522F"),
-    "caramel": ("#D9A06E", "#905B33"), "sage": ("#A9B9A4", "#4E6249"),
+    "wed": ("#8275FF", "#5B49E0"), "moon": ("#A5AAB0", "#50535B"), "samagra": ("#536BFA", "#3149D6"),
+    "artha": ("#7FB48C", "#2F6B4A"), "prahari": ("#E97956", "#B4522F"), "akasha": ("#5FC8BA", "#1F7A6E"),
+    "tarang": ("#5FC8BA", "#1F7A6E"), "rinti": ("#8275FF", "#5B49E0"), "orbit": ("#536BFA", "#3149D6"),
+    "krama": ("#7C8CF0", "#3D4BB5"), "niriksh": ("#8275FF", "#5B49E0"), "skycast": ("#536BFA", "#3149D6"),
+    "portfolio": ("#8275FF", "#5B49E0"), "skp": ("#8275FF", "#5B49E0"), "noir": ("#D9A06E", "#905B33"),
+    "waffle": ("#E8C26A", "#94690F"), "singularity": ("#8275FF", "#5B49E0"), "fca": ("#E7837A", "#A8392F"),
+    "website": ("#A5AAB0", "#50535B"), "vyom": ("#8275FF", "#5B49E0"), "profile": ("#8275FF", "#5B49E0"),
+    "ai": ("#8275FF", "#5B49E0"), "waymark": ("#8275FF", "#5B49E0"), "trail": ("#536BFA", "#3149D6"),
+    "caramel": ("#A5AAB0", "#50535B"), "sage": ("#A5AAB0", "#50535B"), "discreta": ("#E47B50", "#BC4A27"),
 }
-OK = {"dark": "#A9B9A4", "light": "#4E6249"}
+OK = {"dark": "#84C49D", "light": "#2F6B4A"}
 
 BASE_CSS = """
 .m{font-family:"IBM Plex Mono",ui-monospace,"JetBrains Mono","Cascadia Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-weight:600}
 .s{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:500}
 .fb{transform-box:fill-box;transform-origin:center}
-.rise{animation:rise 14s cubic-bezier(.16,1,.3,1) infinite both}
-@keyframes rise{0%{transform:translateY(110%)}6%,90%{transform:translateY(0)}96%,100%{transform:translateY(110%)}}
+.rise{animation:rise 1.1s cubic-bezier(.16,1,.3,1) both}
+@keyframes rise{from{transform:translateY(110%)}to{transform:translateY(0)}}
 .flow{stroke-dasharray:3 9;animation:flow 1.6s linear infinite}
 @keyframes flow{to{stroke-dashoffset:-24}}
 .spin{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
@@ -142,6 +147,10 @@ class Scene:
     def fit(self, s, width, ls=0.0, cap=999, font="sora"):
         return min(cap, width / self.tw(s, 1.0, ls, font))
 
+    def titleface(self, s, x, y, size, fill, **kw):
+        """Sora Medium (500), the studio's title weight."""
+        return self.display(s, x, y, size, fill, font="title", **kw)
+
     def serif(self, s, x, y, size, fill, **kw):
         """Cormorant Garamond, Noir Cafe's display serif."""
         return self.display(s, x, y, size, fill, font="corm", **kw)
@@ -178,18 +187,11 @@ class Scene:
         return f'<g fill="{fill}">{out}</g>'
 
     def frame(self, accent, rx=28, contour=True, seed=None):
-        """Card with Noir's film grain and Waymark's topographic contour lines."""
+        """A studio frame: a flat ground and one hairline. No grain, no contours, no shadow."""
         P, w, h = self.P, self.w, self.h
-        seed = sum(map(ord, self.name)) if seed is None else seed
-        cid = self.uid("clip")
-        self.defs.append(f'<clipPath id="{cid}"><rect width="{w}" height="{h}" rx="{rx}"/></clipPath>')
+        rx = min(rx, 14)
         self.add(f'<rect x=".75" y=".75" width="{w-1.5}" height="{h-1.5}" rx="{rx}" fill="{P["card"]}"/>')
-        if contour:
-            self.add(f'<g clip-path="url(#{cid})">{contours(self, w, h, seed, accent)}</g>')
-        self.add(f'<g clip-path="url(#{cid})">{grain(self, w, h)}</g>')
-        self.tail = (f'<rect x=".75" y=".75" width="{w-1.5}" height="{h-1.5}" rx="{rx}" fill="none" stroke="{P["line"]}" stroke-width="1.5"/>'
-                     + f'<rect x="7" y="7" width="{w-14}" height="{h-14}" rx="{max(rx-6, 4)}" fill="none" stroke="{P["line"]}" '
-                     f'stroke-opacity=".7" stroke-dasharray="1 5" stroke-linecap="round"/>')
+        self.tail = f'<rect x=".75" y=".75" width="{w-1.5}" height="{h-1.5}" rx="{rx}" fill="none" stroke="{P["line"]}" stroke-width="1.5"/>'
 
     def seq(self, key, n, dur, fade=1.2):
         """Classes key0..key{n-1}; exactly one is visible at a time. key0 is the static state."""
@@ -554,64 +556,90 @@ def both(fn):
 
 
 # ================================================================== scenes
+# ------------------------------------------------------------------ the chrome sculpture
+def _mix(a, b, t):
+    pa = [int(a[i:i + 2], 16) for i in (1, 3, 5)]
+    pb = [int(b[i:i + 2], 16) for i in (1, 3, 5)]
+    return "#" + "".join(f"{round(x + (y - x) * t):02X}" for x, y in zip(pa, pb))
+
+
+def chrome_band(cx, cy, R, w, spin, theme, violet, nu=150, nv=6, tilt=1.18, twists=1.5):
+    """The studio's liquid-chrome band: a ring with three half-twists (a closed strip), projected
+    orthographically and shaded like a mirror. Returns SVG polygons, far to near."""
+    dark, mid, light = ("#0F1114", "#9EA3AB", "#F5F3EE") if theme == "dark" else ("#17191D", "#9EA3AB", "#FFFFFF")
+    ct, st = math.cos(tilt), math.sin(tilt)
+
+    def pt(u, v):
+        phi = twists * u + spin
+        r = R + v * math.cos(phi)
+        x, y, z = r * math.cos(u), r * math.sin(u), v * math.sin(phi)
+        return x, y * ct - z * st, y * st + z * ct          # screen x, depth, screen y (up)
+
+    quads = []
+    for i in range(nu):
+        u0, u1 = 2 * math.pi * i / nu, 2 * math.pi * (i + 1) / nu
+        for j in range(nv):
+            v0, v1 = -w + 2 * w * j / nv, -w + 2 * w * (j + 1) / nv
+            quads.append([pt(u0, v0), pt(u1, v0), pt(u1, v1), pt(u0, v1)])
+    out = []
+    for q in sorted(quads, key=lambda q: -sum(p[1] for p in q) / 4):
+        (ax, ay, az), (bx, by, bz), (_, _, _), (dx, dy, dz) = q
+        e1, e2 = (bx - ax, by - ay, bz - az), (dx - ax, dy - ay, dz - az)
+        n = (e1[1] * e2[2] - e1[2] * e2[1], e1[2] * e2[0] - e1[0] * e2[2], e1[0] * e2[1] - e1[1] * e2[0])
+        ln = math.sqrt(sum(c * c for c in n)) or 1.0
+        n = tuple(c / ln for c in n)
+        if n[1] > 0:
+            n = tuple(-c for c in n)
+        # mirror the view direction (0, 1, 0) about the normal to look up an environment
+        d = 2 * n[1]
+        rx, rz = -d * n[0], -d * n[2]
+        band = 0.5 + 0.5 * math.sin(1.9 * rz + 1.1 * rx + 0.8)
+        fill = _mix(dark, mid, min(1, band * 1.6)) if band < .62 else _mix(mid, light, (band - .62) / .38)
+        tint = max(0.0, min(1.0, (rx + 0.15) * 1.4)) * (1 - abs(band - .45) * 1.2)
+        if tint > 0.08:
+            fill = _mix(fill, violet, min(.75, tint * .9))
+        pts = " ".join(f"{cx + p[0]:.1f},{cy - p[2]:.1f}" for p in q)
+        out.append(f'<polygon points="{pts}" fill="{fill}" stroke="{fill}"/>')
+    return '<g stroke-width=".8" stroke-linejoin="round">' + "".join(out) + "</g>"
+
+
 def hero(th):
-    s = Scene("hero", 1000, 440, th, "Samudra Kar",
-              "Samudra Kar. Computer Science engineering student building across systems, AI and product, from first principles. "
-              "A wireframe mountain range turns on a turntable with a pin on its summit, while glass cards float beside it.")
-    P, A, Tr, C = s.P, s.acc("wed"), s.acc("trail"), s.acc("caramel")
-    s.frame(A, 30, seed=3)
-    s.add(f'<circle cx="60" cy="68" r="4" fill="{A}" class="glow"/>' + T(74, 72, "HELLO — I'M", 12, P["mute"], ls=".22em"))
-    big = s.fit("Samudra", 440, cap=106)
-    s.add(s.display("Samudra", 52, 160, big, P["text"], rise=0.2))
-    s.add(s.display("Kar", 52, 252, big, P["text"], rise=0.5))
-    s.add(s.display(".", 52 + s.tw("Kar", big), 252, big, Tr, rise=0.75))
-    s.add(s.serif("systems, AI & product — from first", 56, 296, 29, C))
-    s.add(s.serif("principles, with a designer’s eye.", 56, 328, 29, C))
-    b, w = cta(s, 56, 360, "NOW BUILDING")
-    s.add(b)
-    s.seq("now", 3, 12)
-    for i, t in enumerate(("W.E.D.N.E.S.D.A.Y. · LOCAL-FIRST AI", "WAYMARK · INDIA-FIRST TRAVEL", "SAMAGRA OS · x86-64 KERNEL")):
-        s.add(f'<g class="now{i}">' + T(56 + w + 16, 384, t, 12, P["text"], ls=".08em") + "</g>")
-    # Waymark-style photo container with a turning range
-    x, y, W, H = 548, 30, 422, 380
-    bg, cid = sky(s, x, y, W, H)
-    s.add(bg)
-    cx, cy, sc = x + W / 2, y + 278, 158
-    polys, rim, h = terrain(((-.15, .1, .72, .34), (.35, -.25, .5, .3), (-.45, -.4, .36, .26), (.3, .45, .3, .28)), 13)
-    ink = A if th == "dark" else "#293B40"
-    inner = (f'<ellipse cx="{cx}" cy="{cy + 10}" rx="{sc*1.02:.0f}" ry="{sc*.42:.0f}" fill="#000" fill-opacity="{.3 if th == "dark" else .07}"/>'
-             + mesh3d([rim], cx, cy, sc, ink, width=1.6, op=(.6, .6), static=True)
-             + mesh3d(polys, cx, cy, sc, ink, width=1.05, op=(.12, .95)))
-    mot, _ = track3d((-.15, h(-.15, .1), .1), cx, cy, sc)
-    inner += f'<g>{waypin(Tr, P["card"] if th == "dark" else "#FFFCF7", 9)}{mot}</g>'
-    s.add(f'<g clip-path="url(#{cid})">{inner}</g>')
-    s.add(T(x + 22, y + H - 18, "N 12.97°  E 77.59°  ·  BENGALURU", 10, P["mute"] if th == "light" else "#C9D4CF", ls=".14em"))
-    ink2 = P["text"]
-    s.add(glass(s, x + 20, y + 22, 214, 74,
-                f'<circle cx="{x+40}" cy="{y+46}" r="4" fill="{A}" class="glow"/>' + T(x + 52, y + 50, "FLAGSHIP", 10, P["mute"], ls=".18em")
-                + s.display("W.E.D.N.E.S.D.A.Y.", x + 36, y + 80, s.fit("W.E.D.N.E.S.D.A.Y.", 180, cap=18), ink2), 0))
-    gx, gy = x + W - 190, y + 98
-    s.add(glass(s, gx, gy, 172, 82,
-                s.display("20+", gx + 18, gy + 38, 28, ink2) + T(gx + 82, gy + 30, "PUBLIC", 9.5, P["mute"], ls=".14em")
-                + T(gx + 82, gy + 44, "REPOS", 9.5, P["mute"], ls=".14em")
-                + T(gx + 18, gy + 66, "3 HACKATHONS · 1 KERNEL", 9.5, C, ls=".06em"), 2.4))
+    s = Scene("hero", 1000, 420, th, "Samudra Kar",
+              "Samudra Kar, designer and developer. I build interactive interfaces, AI tools, systems software and digital experiences. "
+              "The name SAMUDRA KAR is set large, with a liquid-chrome band of three half-twists between the two words.")
+    P = s.P
+    A = P["violet"]
+    s.frame(A, 14)
+    s.add(T(40, 50, "COMPUTER SCIENCE ENGINEERING  ·  CHANAKYA UNIVERSITY  ·  BANGALORE, INDIA", 11, P["mute"], ls=".1em"))
+    s.add(f'<circle cx="960" cy="46" r="4" fill="{A}" class="glow"/>')
+    gap = 176
+    size = min(112, (920 - gap) / (s.tw("SAMUDRA", 1.0, -0.04) + s.tw("KAR", 1.0, -0.04)))
+    w1, w2 = s.tw("SAMUDRA", size, -0.04), s.tw("KAR", size, -0.04)
+    base = 218
+    s.add(s.display("SAMUDRA", 40, base, size, P["text"], ls=-0.04, rise=0.1))
+    s.add(s.display("KAR", 40 + w1 + gap, base, size, P["text"], ls=-0.04, rise=0.35))
+    bx = 40 + w1 + gap / 2
+    s.add(f'<g class="float">{chrome_band(bx, base - size * 0.30, gap * 0.31, gap * 0.12, 0.0, th, A)}</g>')
+    s.add(s.titleface("Designer & Developer", 960, 300, 38, P["mute"], anchor="end"))
+    s.add(T(40, 316, "I build interactive interfaces, AI tools,", 18, P["text"], cls="s"))
+    s.add(T(40, 342, "systems software and digital experiences.", 18, P["text"], cls="s"))
+    pl, pw = pill(40, 366, "SELECTED WORK  ↓", P["card"], A, 11, fill=A, h=30)
+    s.add(pl)
+    s.add(T(40 + pw + 18, 386, "SYSTEMS  ·  AI  ·  PRODUCT  ·  UI / UX  ·  DEVELOPER TOOLS", 10.5, P["mute"], ls=".08em"))
     return s
 
 
 def section(th, key, idx, label, accent="wed"):
-    s = Scene(f"sec-{key}", 1000, 76, th, label.title(), f"Section heading: {label.title()}.")
-    P, A = s.P, s.acc(accent)
-    s.add(s.serif("No.", 2, 50, 18, P["mute"]))
-    s.add(s.serif(f"{idx:02d}", 30, 52, 42, A))
-    x0 = 30 + s.tw(f"{idx:02d}", 42, font="corm") + 16
-    s.add(s.display(label, x0, 50, 25, P["text"], ls=0.02))
-    x = x0 + s.tw(label, 25, 0.02) + 22
+    s = Scene(f"sec-{key}", 1000, 76, th, label, f"Section heading: {label}.")
+    P = s.P
+    A = P["violet"]
+    s.add(T(2, 46, f"{idx:02d}", 13, A, ls=".1em"))
+    x0 = 44
+    s.add(s.titleface(label, x0, 52, 34, P["text"]))
+    x = x0 + s.tw(label, 34, 0, "title") + 22
     s.add(f'<path d="M{x:.0f} 42H990" stroke="{P["line"]}" stroke-width="1.2"/>')
-    s.add(f'<path d="M{x:.0f} 42H990" stroke="{A}" stroke-width="1.4" class="flow"/>')
-    s.add(f'<circle cx="990" cy="42" r="3" fill="{A}"/>')
-    s.add(f'<g><g transform="translate(0 41)">{waypin(A, P["card"] if th == "dark" else "#FFFCF7", 6)}</g>'
-          f'<animateTransform attributeName="transform" type="translate" values="{x:.0f} 0;980 0;{x:.0f} 0" dur="12s" repeatCount="indefinite" '
-          f'calcMode="spline" keySplines=".6 0 .4 1;.6 0 .4 1"/></g>')
+    s.add(f'<path d="M{x:.0f} 42H990" stroke="{A}" stroke-width="1.2" class="flow"/>')
+    s.add(f'<circle cx="990" cy="42" r="3.5" fill="{A}"/>')
     return s
 
 
@@ -896,6 +924,49 @@ def samagra(th):
     for k, lane in enumerate(order):
         s.add(f'<rect x="{x0+56+k*slot+1:.1f}" y="{200+lane*22+2}" width="{slot-2:.1f}" height="12" rx="3" fill="{A}" fill-opacity="{.4 if lane else .2}"/>')
     s.add(f'<rect y="196" width="2" height="88" fill="{P["text"]}"><animate attributeName="x" values="{x0+56};{x0+w0}" dur="6s" repeatCount="indefinite"/></rect>')
+    return s
+
+
+ENGLISH = (8.167, 1.492, 2.782, 4.253, 12.702, 2.228, 2.015, 6.094, 6.966, 0.153, 0.772, 4.025, 2.406,
+           6.749, 7.507, 1.929, 0.095, 5.987, 6.327, 9.056, 2.758, 0.978, 2.36, 0.15, 1.974, 0.074)
+
+
+def discreta(th):
+    s = Scene("discreta", 1000, 340, th, "DISCRETA",
+              "DISCRETA: a classical cryptography and frequency analysis laboratory. The alphabet shifted by a Caesar key sits above "
+              "a letter-frequency chart in which the ciphertext distribution is the English reference shifted by the key, with the "
+              "most frequent letter highlighted. The bars use the published English reference frequencies.")
+    P, A = s.P, s.acc("discreta")
+    s.frame(A, 14)
+    s.add(pill(44, 38, "CRYPTOGRAPHY LAB  ·  V1.0.0", P["card"], A, 11, fill=A)[0])
+    s.add(s.display("DISCRETA", 42, 126, s.fit("DISCRETA", 380, ls=-0.03, cap=62), P["text"], ls=-0.03, rise=0.2))
+    s.add(T(46, 160, "Encrypt with Caesar, affine and Vigen\u00e8re,", 15, P["text"], cls="s") + T(46, 182, "then break them with frequencies, \u03c7\u00b2,", 15, P["text"], cls="s")
+          + T(46, 204, "the index of coincidence and Kasiski.", 15, P["text"], cls="s"))
+    s.add(pills(46, 232, ("PYTHON", "FASTAPI", "REACT 19", "TYPESCRIPT"), P["text"], P["line"], 10.5, gap=7, h=24))
+    s.add(T(46, 286, "TEAM BUGSQUAD  \u00b7  1,410 + 262 TESTS  \u00b7  MIT", 10.5, P["mute"], ls=".1em"))
+    x0, w0 = 470, 486
+    # the Caesar strip: plain above, cipher below (k = 3)
+    s.add(T(x0, 50, "CAESAR, K = 3:  E(x) = (x + k) mod 26", 10.5, P["mute"], ls=".14em"))
+    cw = w0 / 26
+    for i in range(26):
+        hit = i == 4
+        s.add(f'<text x="{x0 + i * cw + cw / 2:.1f}" y="76" class="m" font-size="11.5" text-anchor="middle" fill="{A if hit else P["mute"]}">{chr(65 + i)}</text>')
+        s.add(f'<text x="{x0 + i * cw + cw / 2:.1f}" y="104" class="m" font-size="11.5" text-anchor="middle" fill="{A if hit else P["text"]}">{chr(65 + (i + 3) % 26)}</text>')
+    s.add(f'<path d="M{x0} 88H{x0 + w0}" stroke="{P["line"]}"/><circle cx="{x0 + 4 * cw + cw / 2:.1f}" cy="88" r="3" fill="{A}" class="glow"/>')
+    # the frequency chart: ciphertext = English shifted by the key
+    s.add(T(x0, 148, "LETTER FREQUENCY OF THE CIPHERTEXT", 10.5, P["mute"], ls=".14em"))
+    top, base, hmax = 166, 290, 116
+    peak = max(ENGLISH)
+    s.add(f'<path d="M{x0} {base}H{x0 + w0}" stroke="{P["line"]}"/>')
+    for i in range(26):
+        v = ENGLISH[(i - 3) % 26]
+        bh = hmax * v / peak
+        hit = v == peak
+        s.add(f'<rect x="{x0 + i * cw + 3:.1f}" y="{base - bh:.1f}" width="{cw - 6:.1f}" height="{bh:.1f}" rx="2" fill="{A if hit else P["mute"]}" '
+              f'fill-opacity="{1 if hit else .55}" class="eq" style="animation-duration:{2.4 + (i % 5) * .35:.2f}s;animation-delay:{(i % 7) * -.3:.2f}s"/>')
+        s.add(f'<text x="{x0 + i * cw + cw / 2:.1f}" y="{base + 16}" class="m" font-size="9.5" text-anchor="middle" fill="{A if hit else P["mute"]}">{chr(65 + i)}</text>')
+    s.add(T(x0 + w0, 148, "H LEADS", 10.5, A, anchor="end", ls=".14em"))
+    s.add(T(x0, 326, "Illustrative: the English reference, shifted by the key.", 9.5, P["mute"], ls=".04em"))
     return s
 
 
@@ -1331,37 +1402,43 @@ def stack(th):
 
 def closing(th):
     s = Scene("closing", 1000, 300, th, "Contact",
-              "Let's build something real, over a good cup of coffee. Samudra Kar, open to internships. Bangalore, India. "
-              "Chanakya University. A wireframe coffee cup turns on its saucer while steam rises.")
-    P, A, Tr, C = s.P, s.acc("wed"), s.acc("trail"), s.acc("caramel")
-    s.frame(C, 30, seed=11)
-    s.add(T(52, 62, "CONTACT  ·  BANGALORE, INDIA", 11, P["mute"], ls=".2em"))
-    s.add(s.display("Let's build", 48, 128, 58, P["text"], rise=0.2))
-    s.add(s.display("something", 48, 192, 58, P["text"], rise=0.45))
-    s.add(s.display("real.", 48 + s.tw("something ", 58), 192, 58, A if th == "dark" else s.acc("waymark"), rise=0.7))
-    s.add(s.serif("— over a good cup of coffee.", 52, 232, 28, C))
-    s.add(pill(52, 252, "OPEN TO INTERNSHIPS", P["text"], OK[th], 11, dot=OK[th])[0])
-    s.add(T(262, 268, "CHANAKYA UNIVERSITY", 11, P["mute"], ls=".12em"))
-    x, y, W, H = 640, 24, 336, 252
-    bg, cid = sky(s, x, y, W, H, 22)
-    s.add(bg)
-    s.add(f'<g clip-path="url(#{cid})">{cup_scene(s, x + W/2, y + 188, 74, C if th == "dark" else "#3C2415")}</g>')
-    s.add(glass(s, x + 18, y + 18, 150, 40, f'<circle cx="{x+36}" cy="{y+38}" r="4" fill="{Tr}" class="glow"/>'
-                + T(x + 48, y + 42, "BREWING IDEAS", 9.5, P["text"], ls=".14em"), 1.2, rx=20))
+              "Let's build something real. Samudra Kar, open to internships. Bangalore, India. Chanakya University. "
+              "A liquid-chrome band of three half-twists turns slowly on the right.")
+    P = s.P
+    A = P["violet"]
+    s.frame(A, 14)
+    s.add(T(44, 56, "CONTACT  ·  BANGALORE, INDIA", 11, P["mute"], ls=".14em"))
+    s.add(s.display("Let's build", 40, 138, 62, P["text"], ls=-0.04, rise=0.2))
+    s.add(s.display("something", 40, 204, 62, P["text"], ls=-0.04, rise=0.45))
+    s.add(s.display("real.", 40 + s.tw("something ", 62, -0.04), 204, 62, A, ls=-0.04, rise=0.7))
+    s.add(pill(44, 236, "OPEN TO INTERNSHIPS", P["text"], OK[th], 11, dot=OK[th])[0])
+    s.add(T(264, 252, "CHANAKYA UNIVERSITY", 11, P["mute"], ls=".12em"))
+    s.add(f'<g class="float">{chrome_band(790, 150, 118, 40, 0.5, th, A, tilt=0.9)}</g>')
     return s
 
 
 def main():
+    everything = "--all" in sys.argv
     both(hero)
-    for i, (k, lab, acc) in enumerate((("flagship", "FLAGSHIP", "wed"), ("samagra", "ALSO BUILDING", "waymark"),
-                                       ("projects", "ALL PROJECTS", "trail"), ("ai", "ENGINEERING WITH AI", "ai"),
-                                       ("stack", "STACK", "sage"), ("contact", "CONTACT", "caramel")), 1):
-        both(lambda th, k=k, i=i, lab=lab, acc=acc: section(th, k, i, lab, acc))
-    for fn in (wed_hero, wed_moon, wed_pipeline, wed_modes, samagra, waymark, ai_workflow, stack, closing):
+    labels = (("flagship", "Flagship"), ("selected", "Selected work"), ("systems", "Also building"), ("ai", "Engineering with AI"),
+              ("stack", "Stack"), ("contact", "Contact"))
+    for i, (k, lab) in enumerate(labels, 1):
+        both(lambda th, k=k, i=i, lab=lab: section(th, k, i, lab))
+    scenes = [wed_hero, samagra, discreta, waymark, ai_workflow, stack, closing]
+    if everything:
+        scenes += [wed_moon, wed_pipeline, wed_modes]
+    for fn in scenes:
         both(fn)
-    both(lambda th: waymark(th, "banner"))
-    for idx, (slug, key, title, lang, chips, draw, desc) in enumerate(PROJECTS, 2):
-        both(lambda th, *a: card(th, slug, key, idx, title, lang, chips, draw, desc))
+    if everything:
+        both(lambda th: waymark(th, "banner"))
+    # card order = order on the profile; the number on each card follows it
+    featured = ["arthayukti", "akashalens", "rinti-ai", "tarang"]
+    by_slug = {p[0]: p for p in PROJECTS}
+    rest = [p[0] for p in PROJECTS if p[0] not in featured] if everything else []
+    for idx, slug in enumerate(featured + rest, 1):
+        _, key, title, lang, chips, draw, desc = by_slug[slug]
+        both(lambda th, slug=slug, key=key, idx=idx, title=title, lang=lang, chips=chips, draw=draw, desc=desc:
+             card(th, slug, key, idx, title, lang, chips, draw, desc))
     n = len(list(OUT.rglob("*.svg")))
     print(f"wrote {n} SVGs to {OUT}")
 

@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-labelledby="t d" fill="none">
+<title id="t">DISCRETA</title>
+<desc id="d">DISCRETA: a classical cryptography and frequency analysis laboratory. The alphabet shifted by a Caesar key sits above a letter-frequency chart in which the ciphertext distribution is the English reference shifted by the key, with the most frequent letter highlighted. The bars use the published English reference frequencies. Illustrative artwork; nothing in it is live data.</desc>
+<defs><path id="sora65" d="M13 0 254 -730H519L768 0H599L397 -616L449 -596H320L374 -616L177 0ZM196 -181 246 -317H532L582 -181Z"/><path id="sora67" d="M417 20Q318 20 247 -15Q176 -50 131 -106Q86 -162 64 -228Q42 -294 42 -356V-378Q42 -446 64 -513Q86 -579 132 -633Q178 -687 248 -719Q317 -752 412 -752Q511 -752 587 -715Q662 -678 708 -612Q754 -546 762 -459H597Q590 -503 565 -534Q540 -565 500 -582Q461 -598 412 -598Q363 -598 325 -582Q287 -565 261 -534Q236 -503 222 -461Q208 -418 208 -366Q208 -314 222 -272Q236 -230 262 -198Q289 -167 328 -150Q366 -134 417 -134Q493 -134 545 -171Q598 -208 609 -273H773Q764 -193 719 -126Q675 -60 598 -20Q522 20 417 20Z"/><path id="sora68" d="M226 4V-149H362Q413 -149 454 -164Q495 -180 524 -209Q552 -237 568 -277Q583 -318 583 -367Q583 -418 568 -458Q552 -498 524 -526Q495 -554 454 -568Q413 -582 362 -582H226V-736H353Q452 -736 526 -707Q600 -678 650 -628Q700 -578 724 -514Q749 -449 749 -378V-356Q749 -290 724 -225Q700 -161 650 -109Q600 -58 526 -27Q452 4 353 4ZM82 4V-736H246V4Z"/><path id="sora69" d="M82 0V-730H242V0ZM222 0V-136H541V0ZM222 -303V-439H518V-303ZM222 -594V-730H534V-594Z"/><path id="sora73" d="M84 0V-730H248V0Z"/><path id="sora82" d="M82 0V-736H246V0ZM525 0 310 -314H491L715 0ZM202 -234V-363H382Q418 -363 444 -378Q470 -392 485 -418Q500 -445 500 -480Q500 -515 485 -541Q470 -568 444 -582Q418 -597 382 -597H202V-736H369Q460 -736 527 -708Q594 -681 630 -627Q666 -572 666 -491V-475Q666 -394 629 -341Q593 -287 526 -261Q460 -234 369 -234Z"/><path id="sora83" d="M336 20Q237 20 169 -12Q101 -44 66 -98Q30 -153 30 -224H190Q190 -196 205 -172Q220 -148 253 -133Q285 -118 336 -118Q382 -118 413 -131Q444 -143 460 -165Q476 -186 476 -214Q476 -249 446 -270Q416 -290 349 -296L294 -300Q185 -310 120 -369Q55 -428 55 -524Q55 -595 88 -646Q122 -697 182 -724Q242 -752 324 -752Q410 -752 472 -722Q533 -692 566 -639Q599 -586 599 -514H439Q439 -541 426 -564Q413 -586 387 -600Q362 -614 324 -614Q288 -614 264 -602Q239 -590 227 -569Q215 -549 215 -524Q215 -494 237 -471Q259 -448 309 -444L365 -439Q445 -432 506 -404Q567 -377 601 -329Q636 -282 636 -214Q636 -144 599 -91Q563 -38 496 -10Q429 20 336 20Z"/><path id="sora84" d="M227 0V-606H391V0ZM22 -586V-730H596V-586Z"/><clipPath id="c1"><rect x="34.0" y="72.1" width="330.0" height="65.1"/></clipPath></defs>
+<style>
+.m{font-family:"IBM Plex Mono",ui-monospace,"JetBrains Mono","Cascadia Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-weight:600}
+.s{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:500}
+.fb{transform-box:fill-box;transform-origin:center}
+.rise{animation:rise 1.1s cubic-bezier(.16,1,.3,1) both}
+@keyframes rise{from{transform:translateY(110%)}to{transform:translateY(0)}}
+.flow{stroke-dasharray:3 9;animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-24}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
+.spinr{transform-box:fill-box;transform-origin:center;animation:spin 30s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bob{animation:bob 4s ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:0}}
+.tw{animation:tw 3.2s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.15}to{opacity:1}}
+.rip{transform-box:fill-box;transform-origin:center;animation:rip 2.8s cubic-bezier(.2,.6,.3,1) infinite}
+@keyframes rip{0%{transform:scale(.25);opacity:.95}100%{transform:scale(2.8);opacity:0}}
+.eq{transform-box:fill-box;transform-origin:50% 100%;animation:eq 1.1s ease-in-out infinite alternate}
+@keyframes eq{from{transform:scaleY(.22)}to{transform:scaleY(1)}}
+.grow{transform-box:fill-box;transform-origin:0 50%;animation:grow 7s cubic-bezier(.65,0,.35,1) infinite}
+@keyframes grow{0%{transform:scaleX(0)}35%,85%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.draw{stroke-dasharray:100;animation:draw 7s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:100}45%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:-100}}
+.glow{animation:glow 2.4s ease-in-out infinite alternate}
+@keyframes glow{from{opacity:.35}to{opacity:1}}
+.steam{transform-box:fill-box;transform-origin:50% 100%;animation:steam 3.6s ease-out infinite}
+@keyframes steam{0%{transform:translateY(8px) scaleY(.6);opacity:0}30%{opacity:.9}100%{transform:translateY(-18px) scaleY(1.1);opacity:0}}
+.drift{animation:drift 9s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-14px)}to{transform:translateX(18px)}}
+.drip{transform-box:fill-box;transform-origin:50% 0;animation:drip 4.5s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(.15)}60%,85%{transform:scaleY(1)}100%{transform:scaleY(.15)}}
+.shim{animation:shim 2.6s ease-in-out infinite}
+@keyframes shim{0%{transform:translateX(-120px)}100%{transform:translateX(330px)}}
+.float{animation:float 7s ease-in-out infinite alternate}
+@keyframes float{0%{transform:translateY(0) skewY(0deg)}50%{transform:translateY(-8px) skewY(-1.4deg)}100%{transform:translateY(-2px) skewY(.9deg)}}
+.pin{transform-box:fill-box;transform-origin:50% 100%;animation:pin 2.6s cubic-bezier(.5,0,.5,1) infinite alternate}
+@keyframes pin{from{transform:translateY(0)}to{transform:translateY(-7px)}}
+.sheen{animation:sheen 6s ease-in-out infinite}
+@keyframes sheen{0%,55%{transform:translateX(-200px) skewX(-20deg)}85%,100%{transform:translateX(620px) skewX(-20deg)}}
+.breathe{transform-box:fill-box;transform-origin:center;animation:breathe 5s ease-in-out infinite alternate}
+@keyframes breathe{from{transform:scale(.96);opacity:.55}to{transform:scale(1.04);opacity:1}}
+.nudge{animation:nudge 1.8s cubic-bezier(.5,0,.5,1) infinite alternate}
+@keyframes nudge{from{transform:translate(0,0)}to{transform:translate(2px,-2px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x=".75" y=".75" width="998.5" height="338.5" rx="14" fill="#F5F3EE"/>
+<rect x="44" y="38" width="206.1" height="24" rx="12.0" fill="#BC4A27" stroke="#BC4A27" stroke-width="1.2"/><text x="55" y="54" class="m" font-size="11" fill="#F5F3EE" letter-spacing=".04em">CRYPTOGRAPHY LAB  ·  V1.0.0</text>
+<g clip-path="url(#c1)" fill="#17191D"><g class="rise" style="animation-delay:0.20s"><use href="#sora68" transform="translate(42.0 126.0) scale(0.0620)"/></g><g class="rise" style="animation-delay:0.25s"><use href="#sora73" transform="translate(88.6 126.0) scale(0.0620)"/></g><g class="rise" style="animation-delay:0.30s"><use href="#sora83" transform="translate(107.3 126.0) scale(0.0620)"/></g><g class="rise" style="animation-delay:0.35s"><use href="#sora67" transform="translate(146.8 126.0) scale(0.0620)"/></g><g class="rise" style="animation-delay:0.40s"><use href="#sora82" transform="translate(194.5 126.0) scale(0.0620)"/></g><g class="rise" style="animation-delay:0.45s"><use href="#sora69" transform="translate(237.9 126.0) scale(0.0620)"/></g><g class="rise" style="animation-delay:0.50s"><use href="#sora84" transform="translate(272.9 126.0) scale(0.0620)"/></g><g class="rise" style="animation-delay:0.55s"><use href="#sora65" transform="translate(309.3 126.0) scale(0.0620)"/></g></g>
+<text x="46" y="160" class="s" font-size="15" fill="#17191D">Encrypt with Caesar, affine and Vigenère,</text><text x="46" y="182" class="s" font-size="15" fill="#17191D">then break them with frequencies, χ²,</text><text x="46" y="204" class="s" font-size="15" fill="#17191D">the index of coincidence and Kasiski.</text>
+<rect x="46" y="232" width="61.1" height="24" rx="12.0" fill="none" stroke="#D6D2C9" stroke-width="1.2"/><text x="57" y="247.8" class="m" font-size="10.5" fill="#17191D" letter-spacing=".04em">PYTHON</text><rect x="114.1" y="232" width="67.6" height="24" rx="12.0" fill="none" stroke="#D6D2C9" stroke-width="1.2"/><text x="125.1" y="247.8" class="m" font-size="10.5" fill="#17191D" letter-spacing=".04em">FASTAPI</text><rect x="188.6" y="232" width="74.1" height="24" rx="12.0" fill="none" stroke="#D6D2C9" stroke-width="1.2"/><text x="199.6" y="247.8" class="m" font-size="10.5" fill="#17191D" letter-spacing=".04em">REACT 19</text><rect x="269.7" y="232" width="87.1" height="24" rx="12.0" fill="none" stroke="#D6D2C9" stroke-width="1.2"/><text x="280.7" y="247.8" class="m" font-size="10.5" fill="#17191D" letter-spacing=".04em">TYPESCRIPT</text>
+<text x="46" y="286" class="m" font-size="10.5" fill="#50535B" letter-spacing=".1em">TEAM BUGSQUAD  ·  1,410 + 262 TESTS  ·  MIT</text>
+<text x="470" y="50" class="m" font-size="10.5" fill="#50535B" letter-spacing=".14em">CAESAR, K = 3:  E(x) = (x + k) mod 26</text>
+<text x="479.3" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">A</text>
+<text x="479.3" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">D</text>
+<text x="498.0" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">B</text>
+<text x="498.0" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">E</text>
+<text x="516.7" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">C</text>
+<text x="516.7" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">F</text>
+<text x="535.4" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">D</text>
+<text x="535.4" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">G</text>
+<text x="554.1" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#BC4A27">E</text>
+<text x="554.1" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#BC4A27">H</text>
+<text x="572.8" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">F</text>
+<text x="572.8" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">I</text>
+<text x="591.5" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">G</text>
+<text x="591.5" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">J</text>
+<text x="610.2" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">H</text>
+<text x="610.2" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">K</text>
+<text x="628.9" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">I</text>
+<text x="628.9" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">L</text>
+<text x="647.6" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">J</text>
+<text x="647.6" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">M</text>
+<text x="666.3" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">K</text>
+<text x="666.3" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">N</text>
+<text x="685.0" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">L</text>
+<text x="685.0" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">O</text>
+<text x="703.7" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">M</text>
+<text x="703.7" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">P</text>
+<text x="722.3" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">N</text>
+<text x="722.3" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">Q</text>
+<text x="741.0" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">O</text>
+<text x="741.0" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">R</text>
+<text x="759.7" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">P</text>
+<text x="759.7" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">S</text>
+<text x="778.4" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">Q</text>
+<text x="778.4" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">T</text>
+<text x="797.1" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">R</text>
+<text x="797.1" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">U</text>
+<text x="815.8" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">S</text>
+<text x="815.8" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">V</text>
+<text x="834.5" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">T</text>
+<text x="834.5" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">W</text>
+<text x="853.2" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">U</text>
+<text x="853.2" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">X</text>
+<text x="871.9" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">V</text>
+<text x="871.9" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">Y</text>
+<text x="890.6" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">W</text>
+<text x="890.6" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">Z</text>
+<text x="909.3" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">X</text>
+<text x="909.3" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">A</text>
+<text x="928.0" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">Y</text>
+<text x="928.0" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">B</text>
+<text x="946.7" y="76" class="m" font-size="11.5" text-anchor="middle" fill="#50535B">Z</text>
+<text x="946.7" y="104" class="m" font-size="11.5" text-anchor="middle" fill="#17191D">C</text>
+<path d="M470 88H956" stroke="#D6D2C9"/><circle cx="554.1" cy="88" r="3" fill="#BC4A27" class="glow"/>
+<text x="470" y="148" class="m" font-size="10.5" fill="#50535B" letter-spacing=".14em">LETTER FREQUENCY OF THE CIPHERTEXT</text>
+<path d="M470 290H956" stroke="#D6D2C9"/>
+<rect x="473.0" y="288.6" width="12.7" height="1.4" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:2.40s;animation-delay:-0.00s"/>
+<text x="479.3" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">A</text>
+<rect x="491.7" y="272.0" width="12.7" height="18.0" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:2.75s;animation-delay:-0.30s"/>
+<text x="498.0" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">B</text>
+<rect x="510.4" y="289.3" width="12.7" height="0.7" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.10s;animation-delay:-0.60s"/>
+<text x="516.7" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">C</text>
+<rect x="529.1" y="215.4" width="12.7" height="74.6" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.45s;animation-delay:-0.90s"/>
+<text x="535.4" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">D</text>
+<rect x="547.8" y="276.4" width="12.7" height="13.6" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.80s;animation-delay:-1.20s"/>
+<text x="554.1" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">E</text>
+<rect x="566.5" y="264.6" width="12.7" height="25.4" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:2.40s;animation-delay:-1.50s"/>
+<text x="572.8" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">F</text>
+<rect x="585.2" y="251.2" width="12.7" height="38.8" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:2.75s;animation-delay:-1.80s"/>
+<text x="591.5" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">G</text>
+<rect x="603.8" y="174.0" width="12.7" height="116.0" rx="2" fill="#BC4A27" fill-opacity="1" class="eq" style="animation-duration:3.10s;animation-delay:-0.00s"/>
+<text x="610.2" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#BC4A27">H</text>
+<rect x="622.5" y="269.7" width="12.7" height="20.3" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.45s;animation-delay:-0.30s"/>
+<text x="628.9" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">I</text>
+<rect x="641.2" y="271.6" width="12.7" height="18.4" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.80s;animation-delay:-0.60s"/>
+<text x="647.6" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">J</text>
+<rect x="659.9" y="234.3" width="12.7" height="55.7" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:2.40s;animation-delay:-0.90s"/>
+<text x="666.3" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">K</text>
+<rect x="678.6" y="226.4" width="12.7" height="63.6" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:2.75s;animation-delay:-1.20s"/>
+<text x="685.0" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">L</text>
+<rect x="697.3" y="288.6" width="12.7" height="1.4" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.10s;animation-delay:-1.50s"/>
+<text x="703.7" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">M</text>
+<rect x="716.0" y="282.9" width="12.7" height="7.1" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.45s;animation-delay:-1.80s"/>
+<text x="722.3" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">N</text>
+<rect x="734.7" y="253.2" width="12.7" height="36.8" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.80s;animation-delay:-0.00s"/>
+<text x="741.0" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">O</text>
+<rect x="753.4" y="268.0" width="12.7" height="22.0" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:2.40s;animation-delay:-0.30s"/>
+<text x="759.7" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">P</text>
+<rect x="772.1" y="228.4" width="12.7" height="61.6" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:2.75s;animation-delay:-0.60s"/>
+<text x="778.4" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">Q</text>
+<rect x="790.8" y="221.4" width="12.7" height="68.6" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.10s;animation-delay:-0.90s"/>
+<text x="797.1" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">R</text>
+<rect x="809.5" y="272.4" width="12.7" height="17.6" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.45s;animation-delay:-1.20s"/>
+<text x="815.8" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">S</text>
+<rect x="828.2" y="289.1" width="12.7" height="0.9" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.80s;animation-delay:-1.50s"/>
+<text x="834.5" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">T</text>
+<rect x="846.8" y="235.3" width="12.7" height="54.7" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:2.40s;animation-delay:-1.80s"/>
+<text x="853.2" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">U</text>
+<rect x="865.5" y="232.2" width="12.7" height="57.8" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:2.75s;animation-delay:-0.00s"/>
+<text x="871.9" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">V</text>
+<rect x="884.2" y="207.3" width="12.7" height="82.7" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.10s;animation-delay:-0.30s"/>
+<text x="890.6" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">W</text>
+<rect x="902.9" y="264.8" width="12.7" height="25.2" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.45s;animation-delay:-0.60s"/>
+<text x="909.3" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">X</text>
+<rect x="921.6" y="281.1" width="12.7" height="8.9" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:3.80s;animation-delay:-0.90s"/>
+<text x="928.0" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">Y</text>
+<rect x="940.3" y="268.4" width="12.7" height="21.6" rx="2" fill="#50535B" fill-opacity="0.55" class="eq" style="animation-duration:2.40s;animation-delay:-1.20s"/>
+<text x="946.7" y="306" class="m" font-size="9.5" text-anchor="middle" fill="#50535B">Z</text>
+<text x="956" y="148" class="m" font-size="10.5" fill="#BC4A27" text-anchor="end" letter-spacing=".14em">H LEADS</text>
+<text x="470" y="326" class="m" font-size="9.5" fill="#50535B" letter-spacing=".04em">Illustrative: the English reference, shifted by the key.</text>
+<rect x=".75" y=".75" width="998.5" height="338.5" rx="14" fill="none" stroke="#D6D2C9" stroke-width="1.5"/>
+</svg>

@@ -3,9 +3,11 @@
 draw titles as paths (GitHub serves README SVGs as images, which can't load web fonts).
 
     python tools/extract_glyphs.py sora path/to/sora-latin-wght-normal.woff2 800
+    python tools/extract_glyphs.py sora path/to/sora-latin-wght-normal.woff2 700   # likewise 500 and 300
     python tools/extract_glyphs.py cormorant path/to/cormorant-garamond-latin-wght400-500.woff2 500
 
-Sora is Waymark's display face; Cormorant Garamond is Noir Cafe's. Both are SIL OFL 1.1.
+Sora is the headline face of the profile and of the portfolio it follows (weights 700, 500 and 300 for the
+current look, 800 for the earlier Waymark scenes); Cormorant Garamond is Noir Cafe's, used by the legacy scenes. Both are SIL OFL 1.1.
 Needs fontTools + brotli (only for this step; the generator itself has no dependencies).
 """
 import json, sys, pathlib
